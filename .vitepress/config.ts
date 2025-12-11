@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
   srcDir: "docs",
-  base: 'ue-too.github.io/documentation/',
+  base: 'https://ue-too.github.io/documentation/',
   
   title: "uē-tôo",
   description: "Everything about uē-tôo",
