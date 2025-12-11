@@ -2,7 +2,7 @@
 
 # Class: ReadyToSelectState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:213](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L213)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:213](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L213)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to select state of the keyboard mouse and trackpad input state machine
 
 > **new ReadyToSelectState**(): `ReadyToSelectState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:215](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L215)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:215](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L215)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_delay**: `Delay`\<[`SelectionContext`](../type-aliases/SelectionContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`ReadyToSelectStatePossibleTargetStates`](../type-aliases/ReadyToSelectStatePossibleTargetStates.md)\> \| `undefined` = `undefined`
 
-Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L291)
+Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L291)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L290)
+Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L290)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`SelectionContext`](../type-aliases/SelectionContext.md), [`ReadyToSelectStatePossibleTargetStates`](../type-aliases/ReadyToSelectStatePossibleTargetStates.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:225](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L225)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:225](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L225)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L289)
+Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L289)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-t
 
 > **leftPointerMove**: (`context`, `payload`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:219](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L219)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:219](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L219)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L301)
+Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L301)
 
 ##### Returns
 
@@ -120,7 +120,7 @@ Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-t
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L297)
+Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L297)
 
 ##### Returns
 
@@ -138,7 +138,7 @@ Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-t
 
 > **get** **eventReactions**(): `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`SelectionContext`](../type-aliases/SelectionContext.md), [`ReadyToSelectStatePossibleTargetStates`](../type-aliases/ReadyToSelectStatePossibleTargetStates.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:240](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L240)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:240](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L240)
 
 ##### Returns
 
@@ -156,7 +156,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L293)
+Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L293)
 
 ##### Returns
 
@@ -172,7 +172,7 @@ Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-t
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L309)
+Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L309)
 
 #### Parameters
 
@@ -202,7 +202,7 @@ Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-t
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventHandledResult`\<[`ReadyToSelectStatePossibleTargetStates`](../type-aliases/ReadyToSelectStatePossibleTargetStates.md)\>
 
-Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L313)
+Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L313)
 
 #### Type Parameters
 
@@ -238,7 +238,7 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L305)
+Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L305)
 
 #### Parameters
 

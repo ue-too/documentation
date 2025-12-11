@@ -8,11 +8,8 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/@ue-too/board.svg?style=for-the-badge)](https://www.npmjs.com/package/@ue-too/board)
-
 [![ci tests](https://img.shields.io/github/actions/workflow/status/ue-too/ue-too/ci-test.yml?label=test&style=for-the-badge)](https://github.com/ue-too/ue-too/actions/workflows/ci-test.yml)
-
 [![License](https://img.shields.io/github/license/ue-too/ue-too?style=for-the-badge)](https://github.com/ue-too/ue-too/blob/main/LICENSE.txt)
-
 [![bundle size](https://img.shields.io/bundlephobia/minzip/@ue-too/board?color=success&label=gzipped%20bundle%20size&style=for-the-badge)](https://bundlephobia.com/package/@ue-too/board)
 
 </div>

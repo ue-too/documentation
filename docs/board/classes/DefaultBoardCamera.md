@@ -2,7 +2,7 @@
 
 # Class: DefaultBoardCamera
 
-Defined in: [packages/board/src/camera/default-camera.ts:26](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L26)
+Defined in: [packages/board/src/camera/default-camera.ts:26](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L26)
 
 ## Description
 
@@ -19,7 +19,7 @@ But it's observable.
 
 > **new DefaultBoardCamera**(`viewPortWidth`, `viewPortHeight`, `position`, `rotation`, `zoomLevel`, `boundaries`, `zoomLevelBoundaries`, `rotationBoundaries`): `DefaultBoardCamera`
 
-Defined in: [packages/board/src/camera/default-camera.ts:40](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L40)
+Defined in: [packages/board/src/camera/default-camera.ts:40](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L40)
 
 #### Parameters
 
@@ -83,7 +83,7 @@ The boundaries of the rotation of the camera
 
 > **get** **boundaries**(): [`Boundaries`](../type-aliases/Boundaries.md) \| `undefined`
 
-Defined in: [packages/board/src/camera/default-camera.ts:50](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L50)
+Defined in: [packages/board/src/camera/default-camera.ts:50](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L50)
 
 ##### Description
 
@@ -97,7 +97,7 @@ The boundaries of the camera in the world coordinate system.
 
 > **set** **boundaries**(`boundaries`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:54](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L54)
+Defined in: [packages/board/src/camera/default-camera.ts:54](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L54)
 
 ##### Parameters
 
@@ -121,7 +121,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:54](https://github.com/
 
 > **get** **position**(): `Point`
 
-Defined in: [packages/board/src/camera/default-camera.ts:89](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L89)
+Defined in: [packages/board/src/camera/default-camera.ts:89](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L89)
 
 ##### Description
 
@@ -143,7 +143,7 @@ The position of the camera in the world coordinate system.
 
 > **get** **rotation**(): `number`
 
-Defined in: [packages/board/src/camera/default-camera.ts:163](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L163)
+Defined in: [packages/board/src/camera/default-camera.ts:163](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L163)
 
 ##### Description
 
@@ -165,7 +165,7 @@ The rotation of the camera in the world coordinate system.
 
 > **get** **rotationBoundaries**(): [`RotationLimits`](../type-aliases/RotationLimits.md) \| `undefined`
 
-Defined in: [packages/board/src/camera/default-camera.ts:172](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L172)
+Defined in: [packages/board/src/camera/default-camera.ts:172](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L172)
 
 ##### Description
 
@@ -179,7 +179,7 @@ The boundaries of the rotation of the camera.
 
 > **set** **rotationBoundaries**(`rotationBoundaries`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:176](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L176)
+Defined in: [packages/board/src/camera/default-camera.ts:176](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L176)
 
 ##### Parameters
 
@@ -203,7 +203,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:176](https://github.com
 
 > **get** **viewPortHeight**(): `number`
 
-Defined in: [packages/board/src/camera/default-camera.ts:76](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L76)
+Defined in: [packages/board/src/camera/default-camera.ts:76](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L76)
 
 ##### Description
 
@@ -217,7 +217,7 @@ The height of the viewport. (The height of the canvas in css pixels)
 
 > **set** **viewPortHeight**(`height`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:80](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L80)
+Defined in: [packages/board/src/camera/default-camera.ts:80](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L80)
 
 ##### Parameters
 
@@ -241,7 +241,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:80](https://github.com/
 
 > **get** **viewPortWidth**(): `number`
 
-Defined in: [packages/board/src/camera/default-camera.ts:63](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L63)
+Defined in: [packages/board/src/camera/default-camera.ts:63](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L63)
 
 ##### Description
 
@@ -255,7 +255,7 @@ The width of the viewport. (The width of the canvas in css pixels)
 
 > **set** **viewPortWidth**(`width`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:67](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L67)
+Defined in: [packages/board/src/camera/default-camera.ts:67](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L67)
 
 ##### Parameters
 
@@ -279,7 +279,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:67](https://github.com/
 
 > **get** **zoomBoundaries**(): [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md) \| `undefined`
 
-Defined in: [packages/board/src/camera/default-camera.ts:125](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L125)
+Defined in: [packages/board/src/camera/default-camera.ts:125](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L125)
 
 ##### Description
 
@@ -293,7 +293,7 @@ The boundaries of the zoom level of the camera.
 
 > **set** **zoomBoundaries**(`zoomBoundaries`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:129](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L129)
+Defined in: [packages/board/src/camera/default-camera.ts:129](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L129)
 
 ##### Parameters
 
@@ -317,7 +317,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:129](https://github.com
 
 > **get** **zoomLevel**(): `number`
 
-Defined in: [packages/board/src/camera/default-camera.ts:116](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L116)
+Defined in: [packages/board/src/camera/default-camera.ts:116](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L116)
 
 ##### Description
 
@@ -337,7 +337,7 @@ The zoom level of the camera.
 
 > **convertFromViewPort2WorldSpace**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/default-camera.ts:227](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L227)
+Defined in: [packages/board/src/camera/default-camera.ts:227](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L227)
 
 #### Parameters
 
@@ -367,7 +367,7 @@ Converts a point from the viewport coordinate system to the world coordinate sys
 
 > **convertFromWorld2ViewPort**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/default-camera.ts:237](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L237)
+Defined in: [packages/board/src/camera/default-camera.ts:237](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L237)
 
 #### Parameters
 
@@ -397,7 +397,7 @@ Converts a point from the world coordinate system to the viewport coordinate sys
 
 > **getCameraOriginInWindow**(`centerInWindow`): `Point`
 
-Defined in: [packages/board/src/camera/default-camera.ts:217](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L217)
+Defined in: [packages/board/src/camera/default-camera.ts:217](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L217)
 
 #### Parameters
 
@@ -429,7 +429,7 @@ The origin of the camera in the window coordinate system.
 
 > **getTransform**(`devicePixelRatio`, `alignCoorindate`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Defined in: [packages/board/src/camera/default-camera.ts:192](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L192)
+Defined in: [packages/board/src/camera/default-camera.ts:192](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L192)
 
 #### Parameters
 
@@ -470,7 +470,7 @@ The order of the transformation is as follows:
 
 > **getTRS**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-Defined in: [packages/board/src/camera/default-camera.ts:308](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L308)
+Defined in: [packages/board/src/camera/default-camera.ts:308](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L308)
 
 #### Parameters
 
@@ -524,7 +524,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:308](https://github.com
 
 > **invertFromWorldSpace2ViewPort**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/default-camera.ts:247](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L247)
+Defined in: [packages/board/src/camera/default-camera.ts:247](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L247)
 
 #### Parameters
 
@@ -550,7 +550,7 @@ Inverts a point from the world coordinate system to the viewport coordinate syst
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/camera/default-camera.ts:304](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L304)
+Defined in: [packages/board/src/camera/default-camera.ts:304](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L304)
 
 #### Type Parameters
 
@@ -598,7 +598,7 @@ This function is used to subscribe to the camera events.
 
 > **setHorizontalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:255](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L255)
+Defined in: [packages/board/src/camera/default-camera.ts:255](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L255)
 
 #### Parameters
 
@@ -624,7 +624,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:255](https://github.com
 
 > **setMaxZoomLevel**(`maxZoomLevel`): `boolean`
 
-Defined in: [packages/board/src/camera/default-camera.ts:133](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L133)
+Defined in: [packages/board/src/camera/default-camera.ts:133](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L133)
 
 #### Parameters
 
@@ -646,7 +646,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:133](https://github.com
 
 > **setMinZoomLevel**(`minZoomLevel`): `boolean`
 
-Defined in: [packages/board/src/camera/default-camera.ts:142](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L142)
+Defined in: [packages/board/src/camera/default-camera.ts:142](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L142)
 
 #### Parameters
 
@@ -668,7 +668,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:142](https://github.com
 
 > **setPosition**(`destination`): `boolean`
 
-Defined in: [packages/board/src/camera/default-camera.ts:102](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L102)
+Defined in: [packages/board/src/camera/default-camera.ts:102](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L102)
 
 #### Parameters
 
@@ -704,7 +704,7 @@ If the destination point is within the boundaries, the function will return true
 
 > **setRotation**(`rotation`): `boolean`
 
-Defined in: [packages/board/src/camera/default-camera.ts:201](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L201)
+Defined in: [packages/board/src/camera/default-camera.ts:201](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L201)
 
 #### Parameters
 
@@ -734,7 +734,7 @@ This function is used to set the rotation of the camera.
 
 > **setVerticalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/default-camera.ts:278](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L278)
+Defined in: [packages/board/src/camera/default-camera.ts:278](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L278)
 
 #### Parameters
 
@@ -760,7 +760,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:278](https://github.com
 
 > **setZoomLevel**(`zoomLevel`): `boolean`
 
-Defined in: [packages/board/src/camera/default-camera.ts:149](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L149)
+Defined in: [packages/board/src/camera/default-camera.ts:149](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L149)
 
 #### Parameters
 
@@ -782,7 +782,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:149](https://github.com
 
 > **viewPortAABB**(`alignCoordinate`): `object`
 
-Defined in: [packages/board/src/camera/default-camera.ts:316](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L316)
+Defined in: [packages/board/src/camera/default-camera.ts:316](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L316)
 
 #### Parameters
 
@@ -812,7 +812,7 @@ Defined in: [packages/board/src/camera/default-camera.ts:316](https://github.com
 
 > **viewPortInWorldSpace**(`alignCoordinate`): `object`
 
-Defined in: [packages/board/src/camera/default-camera.ts:312](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/default-camera.ts#L312)
+Defined in: [packages/board/src/camera/default-camera.ts:312](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/default-camera.ts#L312)
 
 #### Parameters
 

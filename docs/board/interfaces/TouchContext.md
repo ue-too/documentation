@@ -2,7 +2,7 @@
 
 # Interface: TouchContext
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:17](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L17)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:17](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L17)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **addTouchPoints**: (`points`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:18](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L18)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:18](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L18)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **alignCoordinateSystem**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:25](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L25)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:25](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L25)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **canvas**: [`Canvas`](Canvas.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:26](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L26)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:26](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L26)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **getCurrentTouchPointsCount**: () => `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:20](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L20)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:20](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L20)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **getInitialTouchPointsPositions**: (`idents`) => [`TouchPoints`](../type-aliases/TouchPoints.md)[]
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:21](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:21](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L21)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **notifyOnPan**: (`delta`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:23](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L23)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:23](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L23)
 
 #### Parameters
 
@@ -96,7 +96,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **notifyOnZoom**: (`zoomAmount`, `anchorPoint`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:24](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L24)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:24](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L24)
 
 #### Parameters
 
@@ -118,7 +118,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **removeTouchPoints**: (`idents`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:19](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L19)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:19](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L19)
 
 #### Parameters
 
@@ -136,7 +136,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **updateTouchPoints**: (`pointsMoved`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:22](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L22)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:22](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L22)
 
 #### Parameters
 
@@ -154,7 +154,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **cleanup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L3)
+Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L3)
 
 #### Returns
 
@@ -170,7 +170,7 @@ Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too
 
 > **setup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L2)
+Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/being/src/interface.ts#L2)
 
 #### Returns
 

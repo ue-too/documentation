@@ -2,7 +2,7 @@
 
 # Class: EdgeAutoCameraInput
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:4](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L4)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:4](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L4)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:4](https://gith
 
 > **new EdgeAutoCameraInput**(`cameraMux`): `EdgeAutoCameraInput`
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:13](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L13)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:13](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L13)
 
 #### Parameters
 
@@ -28,13 +28,13 @@ Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:13](https://git
 
 > **setDirection**(`horizontalDirection`, `verticalDirection`): `void`
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:25](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L25)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:25](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L25)
 
 #### Parameters
 
 ##### horizontalDirection
 
-`"none"` | `"left"` | `"right"`
+`"left"` | `"right"` | `"none"`
 
 ##### verticalDirection
 
@@ -50,7 +50,7 @@ Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:25](https://git
 
 > **toggleOff**(): `void`
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:17](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L17)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:17](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L17)
 
 #### Returns
 
@@ -62,7 +62,7 @@ Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:17](https://git
 
 > **toggleOn**(): `void`
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:21](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L21)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:21](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L21)
 
 #### Returns
 
@@ -74,7 +74,7 @@ Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:21](https://git
 
 > **update**(`deltaTime`): `void`
 
-Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:30](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-edge-auto-input.ts#L30)
+Defined in: [packages/board/src/camera/camera-edge-auto-input.ts:30](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-edge-auto-input.ts#L30)
 
 #### Parameters
 

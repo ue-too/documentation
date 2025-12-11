@@ -4,7 +4,7 @@
 
 > **ZoomLevelLimits** = `object`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/utils/zoom.ts#L6)
 
 ## Description
 
@@ -16,7 +16,7 @@ The limits of the zoom level.
 
 > `optional` **max**: `number`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/utils/zoom.ts#L6)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-to
 
 > `optional` **min**: `number`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/utils/zoom.ts#L6)

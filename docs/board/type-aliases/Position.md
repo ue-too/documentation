@@ -4,7 +4,7 @@
 
 > **Position** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:3](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L3)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:3](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L3)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update
 
 > **x**: `number`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:4](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L4)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:4](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L4)
 
 ***
 
@@ -20,4 +20,4 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update
 
 > **y**: `number`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:5](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L5)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts:5](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/camera-rig/update-batcher/position-update-batcher.ts#L5)

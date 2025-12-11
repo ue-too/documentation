@@ -2,7 +2,7 @@
 
 # Class: RawUserInputPublisherWithWebWorkerRelay
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:179](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L179)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:179](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L179)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **new RawUserInputPublisherWithWebWorkerRelay**(`webWorker`): `RawUserInputPublisherWithWebWorkerRelay`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:187](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L187)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:187](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L187)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:195](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L195)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:195](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L195)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:207](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L207)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:207](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L207)
 
 #### Parameters
 
@@ -76,7 +76,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:201](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L201)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:201](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L201)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:213](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L213)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:213](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L213)
 
 #### Type Parameters
 

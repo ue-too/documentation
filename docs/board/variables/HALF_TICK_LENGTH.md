@@ -4,4 +4,4 @@
 
 > `const` **HALF\_TICK\_LENGTH**: `number`
 
-Defined in: [packages/board/src/utils/drawing.ts:27](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/drawing.ts#L27)
+Defined in: [packages/board/src/utils/drawing.ts:27](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/utils/drawing.ts#L27)

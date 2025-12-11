@@ -4,7 +4,7 @@
 
 > **PointerEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:19](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L19)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:19](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L19)
 
 ## Description
 
@@ -16,7 +16,7 @@ The payload for the pointer event.
 
 > **x**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:20](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L20)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:20](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L20)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **y**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:21](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:21](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L21)

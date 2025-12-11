@@ -2,7 +2,7 @@
 
 # Interface: TouchEventParser
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:10](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L10)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:10](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L10)
 
 ## Description
 
@@ -15,7 +15,7 @@ This is for the interoperability between the vanilla javascript and the pixijs e
 
 > **disabled**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:11](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L11)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:11](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L11)
 
 ***
 
@@ -23,7 +23,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **panDisabled**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:12](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L12)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:12](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L12)
 
 ***
 
@@ -31,7 +31,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **rotateDisabled**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:14](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L14)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:14](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L14)
 
 ***
 
@@ -39,7 +39,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **zoomDisabled**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:13](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L13)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:13](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L13)
 
 ## Methods
 
@@ -47,7 +47,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L17)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L17)
 
 #### Parameters
 
@@ -65,7 +65,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **setUp**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:15](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L15)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:15](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L15)
 
 #### Returns
 
@@ -77,7 +77,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:16](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L16)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:16](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L16)
 
 #### Returns
 

@@ -4,7 +4,7 @@
 
 > **SelectionContext** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:200](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L200)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:200](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L200)
 
 ## Description
 
@@ -16,7 +16,7 @@ The context for the ready to select state.
 
 > **canvas**: `HTMLCanvasElement`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:205](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L205)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:205](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L205)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **cleanup**: () => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:203](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L203)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:203](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L203)
 
 #### Returns
 
@@ -36,7 +36,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **setSelectionEndPoint**: (`point`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:201](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L201)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:201](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L201)
 
 #### Parameters
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **setup**: () => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:204](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L204)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:204](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L204)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **toggleSelectionBox**: (`show`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:202](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L202)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:202](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L202)
 
 #### Parameters
 

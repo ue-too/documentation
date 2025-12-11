@@ -2,7 +2,7 @@
 
 # Interface: ObservableBoardCamera
 
-Defined in: [packages/board/src/camera/interface.ts:15](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L15)
+Defined in: [packages/board/src/camera/interface.ts:15](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L15)
 
 ## Description
 
@@ -18,7 +18,7 @@ The interface for the observable board camera.
 
 > `optional` **boundaries**: [`Boundaries`](../type-aliases/Boundaries.md)
 
-Defined in: [packages/board/src/camera/interface.ts:30](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L30)
+Defined in: [packages/board/src/camera/interface.ts:30](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L30)
 
 #### Inherited from
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/camera/interface.ts:30](https://github.com/ue-to
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:25](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L25)
+Defined in: [packages/board/src/camera/interface.ts:25](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L25)
 
 #### Inherited from
 
@@ -42,7 +42,7 @@ Defined in: [packages/board/src/camera/interface.ts:25](https://github.com/ue-to
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:26](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L26)
+Defined in: [packages/board/src/camera/interface.ts:26](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L26)
 
 #### Inherited from
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/camera/interface.ts:26](https://github.com/ue-to
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](../type-aliases/RotationLimits.md)
 
-Defined in: [packages/board/src/camera/interface.ts:32](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L32)
+Defined in: [packages/board/src/camera/interface.ts:32](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L32)
 
 #### Inherited from
 
@@ -66,7 +66,7 @@ Defined in: [packages/board/src/camera/interface.ts:32](https://github.com/ue-to
 
 > **viewPortHeight**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:29](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L29)
+Defined in: [packages/board/src/camera/interface.ts:29](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L29)
 
 #### Inherited from
 
@@ -78,7 +78,7 @@ Defined in: [packages/board/src/camera/interface.ts:29](https://github.com/ue-to
 
 > **viewPortWidth**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:28](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L28)
+Defined in: [packages/board/src/camera/interface.ts:28](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L28)
 
 #### Inherited from
 
@@ -90,7 +90,7 @@ Defined in: [packages/board/src/camera/interface.ts:28](https://github.com/ue-to
 
 > `optional` **zoomBoundaries**: [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md)
 
-Defined in: [packages/board/src/camera/interface.ts:31](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L31)
+Defined in: [packages/board/src/camera/interface.ts:31](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L31)
 
 #### Inherited from
 
@@ -102,7 +102,7 @@ Defined in: [packages/board/src/camera/interface.ts:31](https://github.com/ue-to
 
 > **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:27](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L27)
+Defined in: [packages/board/src/camera/interface.ts:27](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L27)
 
 #### Inherited from
 
@@ -114,7 +114,7 @@ Defined in: [packages/board/src/camera/interface.ts:27](https://github.com/ue-to
 
 > **convertFromViewPort2WorldSpace**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:43](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L43)
+Defined in: [packages/board/src/camera/interface.ts:43](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L43)
 
 #### Parameters
 
@@ -136,7 +136,7 @@ Defined in: [packages/board/src/camera/interface.ts:43](https://github.com/ue-to
 
 > **convertFromWorld2ViewPort**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:44](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L44)
+Defined in: [packages/board/src/camera/interface.ts:44](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L44)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [packages/board/src/camera/interface.ts:44](https://github.com/ue-to
 
 > **getCameraOriginInWindow**(`centerInWindow`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:42](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L42)
+Defined in: [packages/board/src/camera/interface.ts:42](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L42)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [packages/board/src/camera/interface.ts:42](https://github.com/ue-to
 
 > **getTransform**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:46](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L46)
+Defined in: [packages/board/src/camera/interface.ts:46](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L46)
 
 #### Parameters
 
@@ -230,7 +230,7 @@ Defined in: [packages/board/src/camera/interface.ts:46](https://github.com/ue-to
 
 > **getTRS**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:45](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L45)
+Defined in: [packages/board/src/camera/interface.ts:45](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L45)
 
 #### Parameters
 
@@ -284,7 +284,7 @@ Defined in: [packages/board/src/camera/interface.ts:45](https://github.com/ue-to
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/camera/interface.ts:16](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L16)
+Defined in: [packages/board/src/camera/interface.ts:16](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L16)
 
 #### Type Parameters
 
@@ -316,7 +316,7 @@ Defined in: [packages/board/src/camera/interface.ts:16](https://github.com/ue-to
 
 > **setHorizontalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:40](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L40)
+Defined in: [packages/board/src/camera/interface.ts:40](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L40)
 
 #### Parameters
 
@@ -342,7 +342,7 @@ Defined in: [packages/board/src/camera/interface.ts:40](https://github.com/ue-to
 
 > **setMaxZoomLevel**(`maxZoomLevel`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:39](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L39)
+Defined in: [packages/board/src/camera/interface.ts:39](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L39)
 
 #### Parameters
 
@@ -364,7 +364,7 @@ Defined in: [packages/board/src/camera/interface.ts:39](https://github.com/ue-to
 
 > **setMinZoomLevel**(`minZoomLevel`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:38](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L38)
+Defined in: [packages/board/src/camera/interface.ts:38](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L38)
 
 #### Parameters
 
@@ -386,7 +386,7 @@ Defined in: [packages/board/src/camera/interface.ts:38](https://github.com/ue-to
 
 > **setPosition**(`destination`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:35](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L35)
+Defined in: [packages/board/src/camera/interface.ts:35](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L35)
 
 #### Parameters
 
@@ -408,7 +408,7 @@ Defined in: [packages/board/src/camera/interface.ts:35](https://github.com/ue-to
 
 > **setRotation**(`rotation`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:37](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L37)
+Defined in: [packages/board/src/camera/interface.ts:37](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L37)
 
 #### Parameters
 
@@ -430,7 +430,7 @@ Defined in: [packages/board/src/camera/interface.ts:37](https://github.com/ue-to
 
 > **setVerticalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:41](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L41)
+Defined in: [packages/board/src/camera/interface.ts:41](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L41)
 
 #### Parameters
 
@@ -456,7 +456,7 @@ Defined in: [packages/board/src/camera/interface.ts:41](https://github.com/ue-to
 
 > **setZoomLevel**(`zoomLevel`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:36](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L36)
+Defined in: [packages/board/src/camera/interface.ts:36](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L36)
 
 #### Parameters
 
@@ -478,7 +478,7 @@ Defined in: [packages/board/src/camera/interface.ts:36](https://github.com/ue-to
 
 > **viewPortAABB**(`alignCoordinate?`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:33](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L33)
+Defined in: [packages/board/src/camera/interface.ts:33](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L33)
 
 #### Parameters
 
@@ -508,7 +508,7 @@ Defined in: [packages/board/src/camera/interface.ts:33](https://github.com/ue-to
 
 > **viewPortInWorldSpace**(`alignCoordinate?`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:34](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/interface.ts#L34)
+Defined in: [packages/board/src/camera/interface.ts:34](https://github.com/ue-too/ue-too/blob/407e414f82d0bb1a2a3cfbf5160e331d5a81d8be/packages/board/src/camera/interface.ts#L34)
 
 #### Parameters
 
