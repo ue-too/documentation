@@ -1,0 +1,62 @@
+[@ue-too/board](../globals.md) / EventTargetWithPointerEvents
+
+# Type Alias: EventTargetWithPointerEvents
+
+> **EventTargetWithPointerEvents** = `object`
+
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:61](https://github.com/ue-too/ue-too/blob/fdbfb1431206f8d7c812dca3e1d0dcd7389f1d6d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L61)
+
+## Description
+
+The event target with pointer events.
+This is for the interoperability between the vanilla javascript and the pixijs event system.
+
+## Properties
+
+### addEventListener()
+
+> **addEventListener**: (`type`, `listener`, `options?`) => `void`
+
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:62](https://github.com/ue-too/ue-too/blob/fdbfb1431206f8d7c812dca3e1d0dcd7389f1d6d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L62)
+
+#### Parameters
+
+##### type
+
+`string`
+
+##### listener
+
+(`event`) => `void`
+
+##### options?
+
+###### passive
+
+`boolean`
+
+#### Returns
+
+`void`
+
+***
+
+### removeEventListener()
+
+> **removeEventListener**: (`type`, `listener`) => `void`
+
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:63](https://github.com/ue-too/ue-too/blob/fdbfb1431206f8d7c812dca3e1d0dcd7389f1d6d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L63)
+
+#### Parameters
+
+##### type
+
+`string`
+
+##### listener
+
+(`event`) => `void`
+
+#### Returns
+
+`void`
