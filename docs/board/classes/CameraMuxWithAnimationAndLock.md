@@ -2,7 +2,7 @@
 
 # Class: CameraMuxWithAnimationAndLock
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:22](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L22)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:22](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L22)
 
 ## Description
 
@@ -24,7 +24,7 @@ The internal ruleset on which input is used and which is ignored is controlled b
 
 > **new CameraMuxWithAnimationAndLock**(`panStateMachine`, `zoomStateMachine`, `rotateStateMachine`): `CameraMuxWithAnimationAndLock`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:28](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L28)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:28](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L28)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **get** **panStateMachine**(): [`PanControlStateMachine`](PanControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:82](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L82)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:82](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L82)
 
 ##### Returns
 
@@ -66,7 +66,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **get** **rotateStateMachine**(): [`RotateControlStateMachine`](RotateControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:78](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L78)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:78](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L78)
 
 ##### Returns
 
@@ -80,7 +80,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **get** **zoomStateMachine**(): [`ZoomControlStateMachine`](ZoomControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:86](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L86)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:86](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L86)
 
 ##### Returns
 
@@ -92,7 +92,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **initatePanTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:66](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L66)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:66](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L66)
 
 #### Returns
 
@@ -104,7 +104,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **initateRotateTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:74](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L74)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:74](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L74)
 
 #### Returns
 
@@ -116,7 +116,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **initateZoomTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:70](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L70)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:70](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L70)
 
 #### Returns
 
@@ -128,7 +128,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyPanInput**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:38](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L38)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L38)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyPanToAnimationInput**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:34](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L34)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:34](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L34)
 
 #### Parameters
 
@@ -168,7 +168,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyRotateByInput**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:46](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L46)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:46](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L46)
 
 #### Parameters
 
@@ -186,7 +186,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyRotateToAnimationInput**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:50](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L50)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:50](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L50)
 
 #### Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyRotationInput**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:62](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L62)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:62](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L62)
 
 #### Parameters
 
@@ -226,7 +226,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyZoomInput**(`delta`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:42](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L42)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:42](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L42)
 
 #### Parameters
 
@@ -252,7 +252,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyZoomInputAnimation**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:54](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L54)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:54](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L54)
 
 #### Parameters
 
@@ -274,7 +274,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 > **notifyZoomInputAnimationWorld**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:58](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L58)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:58](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L58)
 
 #### Parameters
 

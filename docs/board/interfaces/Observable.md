@@ -2,7 +2,7 @@
 
 # Interface: Observable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:7](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L7)
+Defined in: [packages/board/src/utils/observable.ts:7](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L7)
 
 ## Type Parameters
 
@@ -16,7 +16,7 @@ Defined in: [packages/board/src/utils/observable.ts:7](https://github.com/ue-too
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:9](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L9)
+Defined in: [packages/board/src/utils/observable.ts:9](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L9)
 
 #### Parameters
 
@@ -34,7 +34,7 @@ Defined in: [packages/board/src/utils/observable.ts:9](https://github.com/ue-too
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:8](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L8)
+Defined in: [packages/board/src/utils/observable.ts:8](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L8)
 
 #### Parameters
 

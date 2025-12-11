@@ -2,7 +2,7 @@
 
 # Class: AsyncObservable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:12](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L12)
+Defined in: [packages/board/src/utils/observable.ts:12](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L12)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/utils/observable.ts:12](https://github.com/ue-to
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:41](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L41)
+Defined in: [packages/board/src/utils/observable.ts:41](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L41)
 
 #### Parameters
 
@@ -52,7 +52,7 @@ Defined in: [packages/board/src/utils/observable.ts:41](https://github.com/ue-to
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:15](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/utils/observable.ts#L15)
+Defined in: [packages/board/src/utils/observable.ts:15](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/observable.ts#L15)
 
 #### Parameters
 

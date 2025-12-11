@@ -2,7 +2,7 @@
 
 # Class: CameraZoomUpdateBatcher
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:21](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L21)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:21](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L21)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **new CameraZoomUpdateBatcher**(): `CameraZoomUpdateBatcher`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:32](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L32)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:32](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L32)
 
 #### Returns
 
@@ -22,7 +22,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **getDebugInfo**(): `object`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:146](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L146)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:146](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L146)
 
 Get debug information about queue method calls since last update
 
@@ -48,7 +48,7 @@ Get debug information about queue method calls since last update
 
 > **processQueuedUpdates**(): [`ZoomUpdate`](../type-aliases/ZoomUpdate.md) \| `null`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:106](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L106)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:106](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L106)
 
 Process and clear all queued zoom updates
 
@@ -64,7 +64,7 @@ the update to apply to the zoom level, with type information
 
 > **queueZoomByAtWorld**(`delta`, `worldAnchor`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:72](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L72)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:72](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L72)
 
 Queue a zoom update by delta at a world anchor to be processed in the next animation frame
 
@@ -88,7 +88,7 @@ Queue a zoom update by delta at a world anchor to be processed in the next anima
 
 > **queueZoomToAtWorld**(`destination`, `worldAnchor`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:89](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L89)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:89](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L89)
 
 Queue a zoom update to a specific destination at a world anchor to be processed in the next animation frame
 
@@ -112,7 +112,7 @@ Queue a zoom update to a specific destination at a world anchor to be processed 
 
 > **queueZoomUpdateBy**(`delta`, `anchor?`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:55](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L55)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:55](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L55)
 
 Queue a zoom update by delta to be processed in the next animation frame
 
@@ -136,7 +136,7 @@ Queue a zoom update by delta to be processed in the next animation frame
 
 > **queueZoomUpdateTo**(`destination`, `anchor?`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:39](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L39)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L39)
 
 Queue a zoom update to a specific destination to be processed in the next animation frame
 
@@ -160,7 +160,7 @@ Queue a zoom update to a specific destination to be processed in the next animat
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:139](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L139)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:139](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L139)
 
 Subscribe to zoom updates
 

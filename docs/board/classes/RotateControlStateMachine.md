@@ -2,7 +2,7 @@
 
 # Class: RotateControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:66](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L66)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:66](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L66)
 
 ## Description
 
@@ -20,7 +20,7 @@ A few helper functions are in place to make it easier to use. (user don't have t
 
 > **new RotateControlStateMachine**(`states`, `initialState`, `context`): `RotateControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:68](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L68)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:68](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L68)
 
 #### Parameters
 
@@ -50,7 +50,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **initateTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:95](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L95)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:95](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L95)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Initate the transition.
 
 > **notifyRotateByInput**(`diff`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L77)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L77)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Notify the pan input event.
 
 > **notifyRotateToAnimationInput**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:86](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L86)
 
 #### Parameters
 
@@ -110,7 +110,7 @@ Notify the rotate to animation input event.
 
 > `protected` **\_context**: [`RotateContext`](../interfaces/RotateContext.md)
 
-Defined in: [packages/being/src/interface.ts:213](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L213)
+Defined in: [packages/being/src/interface.ts:213](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L213)
 
 #### Inherited from
 
@@ -122,7 +122,7 @@ Defined in: [packages/being/src/interface.ts:213](https://github.com/ue-too/ue-t
 
 > `protected` **\_currentState**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)
 
-Defined in: [packages/being/src/interface.ts:211](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L211)
+Defined in: [packages/being/src/interface.ts:211](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L211)
 
 #### Inherited from
 
@@ -134,7 +134,7 @@ Defined in: [packages/being/src/interface.ts:211](https://github.com/ue-too/ue-t
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: [packages/being/src/interface.ts:216](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L216)
+Defined in: [packages/being/src/interface.ts:216](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L216)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ Defined in: [packages/being/src/interface.ts:216](https://github.com/ue-too/ue-t
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>[]
 
-Defined in: [packages/being/src/interface.ts:215](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L215)
+Defined in: [packages/being/src/interface.ts:215](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L215)
 
 #### Inherited from
 
@@ -172,7 +172,7 @@ Defined in: [packages/being/src/interface.ts:215](https://github.com/ue-too/ue-t
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`\>\>
 
-Defined in: [packages/being/src/interface.ts:212](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L212)
+Defined in: [packages/being/src/interface.ts:212](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L212)
 
 #### Inherited from
 
@@ -184,7 +184,7 @@ Defined in: [packages/being/src/interface.ts:212](https://github.com/ue-too/ue-t
 
 > `protected` **\_statesArray**: [`RotateControlStates`](../type-aliases/RotateControlStates.md)[]
 
-Defined in: [packages/being/src/interface.ts:214](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L214)
+Defined in: [packages/being/src/interface.ts:214](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L214)
 
 #### Inherited from
 
@@ -196,7 +196,7 @@ Defined in: [packages/being/src/interface.ts:214](https://github.com/ue-too/ue-t
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-Defined in: [packages/being/src/interface.ts:217](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L217)
+Defined in: [packages/being/src/interface.ts:217](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L217)
 
 #### Inherited from
 
@@ -210,7 +210,7 @@ Defined in: [packages/being/src/interface.ts:217](https://github.com/ue-too/ue-t
 
 > **get** **currentState**(): `States`
 
-Defined in: [packages/being/src/interface.ts:260](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L260)
+Defined in: [packages/being/src/interface.ts:260](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L260)
 
 ##### Returns
 
@@ -228,7 +228,7 @@ Defined in: [packages/being/src/interface.ts:260](https://github.com/ue-too/ue-t
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: [packages/being/src/interface.ts:268](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L268)
+Defined in: [packages/being/src/interface.ts:268](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L268)
 
 ##### Returns
 
@@ -246,7 +246,7 @@ Defined in: [packages/being/src/interface.ts:268](https://github.com/ue-too/ue-t
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`\>\>
 
-Defined in: [packages/being/src/interface.ts:272](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L272)
+Defined in: [packages/being/src/interface.ts:272](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L272)
 
 ##### Returns
 
@@ -264,7 +264,7 @@ Defined in: [packages/being/src/interface.ts:272](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventHandledResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
 
-Defined in: [packages/being/src/interface.ts:234](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L234)
+Defined in: [packages/being/src/interface.ts:234](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L234)
 
 ##### Type Parameters
 
@@ -290,7 +290,7 @@ Defined in: [packages/being/src/interface.ts:234](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventHandledResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
 
-Defined in: [packages/being/src/interface.ts:235](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L235)
+Defined in: [packages/being/src/interface.ts:235](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L235)
 
 ##### Type Parameters
 
@@ -318,7 +318,7 @@ Defined in: [packages/being/src/interface.ts:235](https://github.com/ue-too/ue-t
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:256](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L256)
+Defined in: [packages/being/src/interface.ts:256](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L256)
 
 #### Parameters
 
@@ -340,7 +340,7 @@ Defined in: [packages/being/src/interface.ts:256](https://github.com/ue-too/ue-t
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:252](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L252)
+Defined in: [packages/being/src/interface.ts:252](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L252)
 
 #### Parameters
 
@@ -362,7 +362,7 @@ Defined in: [packages/being/src/interface.ts:252](https://github.com/ue-too/ue-t
 
 > **setContext**(`context`): `void`
 
-Defined in: [packages/being/src/interface.ts:264](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L264)
+Defined in: [packages/being/src/interface.ts:264](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L264)
 
 #### Parameters
 
@@ -384,7 +384,7 @@ Defined in: [packages/being/src/interface.ts:264](https://github.com/ue-too/ue-t
 
 > **switchTo**(`state`): `void`
 
-Defined in: [packages/being/src/interface.ts:229](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L229)
+Defined in: [packages/being/src/interface.ts:229](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L229)
 
 #### Parameters
 

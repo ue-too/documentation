@@ -2,7 +2,7 @@
 
 # Class: CameraUpdatePublisher
 
-Defined in: [packages/board/src/camera/update-publisher.ts:146](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L146)
+Defined in: [packages/board/src/camera/update-publisher.ts:146](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L146)
 
 ## Description
 
@@ -14,7 +14,7 @@ The camera update publisher.
 
 > **new CameraUpdatePublisher**(): `CameraUpdatePublisher`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:153](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L153)
+Defined in: [packages/board/src/camera/update-publisher.ts:153](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L153)
 
 #### Returns
 
@@ -26,7 +26,7 @@ Defined in: [packages/board/src/camera/update-publisher.ts:153](https://github.c
 
 > **notifyPan**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:166](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L166)
+Defined in: [packages/board/src/camera/update-publisher.ts:166](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L166)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Will also notify the "all" event.
 
 > **notifyRotate**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:188](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L188)
+Defined in: [packages/board/src/camera/update-publisher.ts:188](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L188)
 
 #### Parameters
 
@@ -80,7 +80,7 @@ Will also notify the "all" event.
 
 > **notifyZoom**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:177](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L177)
+Defined in: [packages/board/src/camera/update-publisher.ts:177](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L177)
 
 #### Parameters
 
@@ -107,7 +107,7 @@ Will also notify the "all" event.
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:208](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L208)
+Defined in: [packages/board/src/camera/update-publisher.ts:208](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L208)
 
 #### Type Parameters
 

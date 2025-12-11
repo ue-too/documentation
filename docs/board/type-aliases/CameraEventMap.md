@@ -4,7 +4,7 @@
 
 > **CameraEventMap** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:37](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L37)
+Defined in: [packages/board/src/camera/update-publisher.ts:37](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L37)
 
 ## Description
 
@@ -17,7 +17,7 @@ This is primarily used for type inference.
 
 > **all**: [`AllCameraEventPayload`](AllCameraEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:41](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L41)
+Defined in: [packages/board/src/camera/update-publisher.ts:41](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L41)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [packages/board/src/camera/update-publisher.ts:41](https://github.co
 
 > **pan**: [`CameraPanEventPayload`](CameraPanEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:38](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L38)
+Defined in: [packages/board/src/camera/update-publisher.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L38)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [packages/board/src/camera/update-publisher.ts:38](https://github.co
 
 > **rotate**: [`CameraRotateEventPayload`](CameraRotateEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:40](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L40)
+Defined in: [packages/board/src/camera/update-publisher.ts:40](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L40)
 
 ***
 
@@ -41,4 +41,4 @@ Defined in: [packages/board/src/camera/update-publisher.ts:40](https://github.co
 
 > **zoom**: [`CameraZoomEventPayload`](CameraZoomEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:39](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/update-publisher.ts#L39)
+Defined in: [packages/board/src/camera/update-publisher.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L39)

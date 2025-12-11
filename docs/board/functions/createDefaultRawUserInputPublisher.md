@@ -4,7 +4,7 @@
 
 > **createDefaultRawUserInputPublisher**(`camera`): [`RawUserInputPublisher`](../classes/RawUserInputPublisher.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:175](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L175)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:175](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L175)
 
 ## Parameters
 

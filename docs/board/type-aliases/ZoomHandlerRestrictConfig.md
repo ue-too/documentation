@@ -4,7 +4,7 @@
 
 > **ZoomHandlerRestrictConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:19](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/zoom-handler.ts#L19)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:19](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/zoom-handler.ts#L19)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:19](https://gi
 
 > **restrictZoom**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:23](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/zoom-handler.ts#L23)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:23](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/zoom-handler.ts#L23)
 
 #### Description
 

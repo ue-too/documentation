@@ -2,7 +2,7 @@
 
 # Class: CameraRotationUpdateBatcher
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:19](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L19)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:19](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L19)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update
 
 > **new CameraRotationUpdateBatcher**(): `CameraRotationUpdateBatcher`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:29](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L29)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:29](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L29)
 
 #### Returns
 
@@ -22,7 +22,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update
 
 > **getDebugInfo**(): `object`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:110](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L110)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:110](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L110)
 
 Get debug information about queue method calls since last update
 
@@ -52,7 +52,7 @@ Get debug information about queue method calls since last update
 
 > **processQueuedUpdates**(): [`RotationUpdate`](../type-aliases/RotationUpdate.md) \| `null`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:71](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L71)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:71](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L71)
 
 Process and clear all queued rotation updates
 
@@ -68,7 +68,7 @@ the update to apply to the rotation, with type information
 
 > **queueRotationUpdate**(`rotation`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:36](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L36)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:36](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L36)
 
 Queue an absolute rotation update to be processed in the next animation frame
 
@@ -88,7 +88,7 @@ Queue an absolute rotation update to be processed in the next animation frame
 
 > **queueRotationUpdateBy**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:55](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L55)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:55](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L55)
 
 Queue a rotation update by delta to be processed in the next animation frame
 This will be ignored if there's a pending destination update
@@ -109,7 +109,7 @@ This will be ignored if there's a pending destination update
 
 > **queueRotationUpdateTo**(`destination`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:45](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L45)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:45](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L45)
 
 Queue a rotation update to a specific destination to be processed in the next animation frame
 This will override any pending delta updates
@@ -130,7 +130,7 @@ This will override any pending delta updates
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:103](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L103)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts:103](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/rotation-update-batcher.ts#L103)
 
 Subscribe to rotation updates
 

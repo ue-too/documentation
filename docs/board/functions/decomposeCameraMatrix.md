@@ -4,7 +4,7 @@
 
 > **decomposeCameraMatrix**(`transformMatrix`, `devicePixelRatio`, `canvasWidth`, `canvasHeight`): `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:34](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/utils/matrix.ts#L34)
+Defined in: [packages/board/src/camera/utils/matrix.ts:34](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L34)
 
 Decomposes a camera transformation matrix back to camera parameters
 
