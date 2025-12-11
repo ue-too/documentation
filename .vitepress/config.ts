@@ -15,10 +15,9 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
-      { text: 'Test',
+      { text: 'API',
         items: [
-          { text: 'Test1', link: 'https://google.com' },
-          { text: 'Test2', link: 'google.com' },
+          { text: 'v0.9.x', link: '/0.9.x' },
         ]
       }
     ],
