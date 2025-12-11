@@ -1,0 +1,23 @@
+/* Support for align attribute (for GitHub markdown compatibility) */
+[align="center"] {
+  text-align: center;
+}
+
+[align="left"] {
+  text-align: left;
+}
+
+[align="right"] {
+  text-align: right;
+}
+
+/* Support for flexbox centering on divs */
+div[align="center"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+

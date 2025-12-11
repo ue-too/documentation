@@ -1,0 +1,359 @@
+[@ue-too/board](../globals.md) / RotationTransitionState
+
+# Class: RotationTransitionState
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:143](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L143)
+
+## Description
+
+The transition state of the rotate control state machine.
+
+## Extends
+
+- `TemplateState`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateContext`](../interfaces/RotateContext.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+## Constructors
+
+### Constructor
+
+> **new RotationTransitionState**(): `RotationTransitionState`
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:145](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L145)
+
+#### Returns
+
+`RotationTransitionState`
+
+#### Overrides
+
+`TemplateState<RotateEventPayloadMapping, RotateContext, RotateControlStates>.constructor`
+
+## Properties
+
+### \_delay
+
+> `protected` **\_delay**: `Delay`\<[`RotateContext`](../interfaces/RotateContext.md), [`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\> \| `undefined` = `undefined`
+
+Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L291)
+
+#### Inherited from
+
+`TemplateState._delay`
+
+***
+
+### \_eventGuards
+
+> `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L290)
+
+#### Inherited from
+
+`TemplateState._eventGuards`
+
+***
+
+### \_guards
+
+> `protected` **\_guards**: `Guard`\<`Context`\>
+
+Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L289)
+
+#### Inherited from
+
+`TemplateState._guards`
+
+***
+
+### eventReactions
+
+> **eventReactions**: `EventReactions`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateContext`](../interfaces/RotateContext.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:149](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L149)
+
+#### Overrides
+
+`TemplateState.eventReactions`
+
+## Accessors
+
+### delay
+
+#### Get Signature
+
+> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+
+Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L301)
+
+##### Returns
+
+`Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+
+#### Inherited from
+
+`TemplateState.delay`
+
+***
+
+### eventGuards
+
+#### Get Signature
+
+> **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
+
+Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L297)
+
+##### Returns
+
+`Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
+
+#### Inherited from
+
+`TemplateState.eventGuards`
+
+***
+
+### guards
+
+#### Get Signature
+
+> **get** **guards**(): `Guard`\<`Context`\>
+
+Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L293)
+
+##### Returns
+
+`Guard`\<`Context`\>
+
+#### Inherited from
+
+`TemplateState.guards`
+
+## Methods
+
+### beforeExit()
+
+> **beforeExit**(`context`, `stateMachine`, `to`): `void`
+
+Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L309)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateContext`](../interfaces/RotateContext.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+##### to
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateState.beforeExit`
+
+***
+
+### handles()
+
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventHandledResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L313)
+
+#### Type Parameters
+
+##### K
+
+`K` *extends* `string`
+
+#### Parameters
+
+##### args
+
+`EventArgs`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `K`\>
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateContext`](../interfaces/RotateContext.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+#### Returns
+
+`EventHandledResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+#### Inherited from
+
+`TemplateState.handles`
+
+***
+
+### lockedOnObjectRotateByInputHandler()
+
+> **lockedOnObjectRotateByInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:178](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L178)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateByInputEventPayload`](../type-aliases/RotateByInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+***
+
+### lockedOnObjectRotateToInputHandler()
+
+> **lockedOnObjectRotateToInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:183](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L183)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateToInputEventPayload`](../type-aliases/RotateToInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+***
+
+### transitionRotateByInputHandler()
+
+> **transitionRotateByInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:168](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L168)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateByInputEventPayload`](../type-aliases/RotateByInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+***
+
+### transitionRotateToInputHandler()
+
+> **transitionRotateToInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:173](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L173)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateToInputEventPayload`](../type-aliases/RotateToInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+***
+
+### uponEnter()
+
+> **uponEnter**(`context`, `stateMachine`, `from`): `void`
+
+Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/being/src/interface.ts#L305)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### stateMachine
+
+`StateMachine`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), [`RotateContext`](../interfaces/RotateContext.md), [`RotateControlStates`](../type-aliases/RotateControlStates.md)\>
+
+##### from
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateState.uponEnter`
+
+***
+
+### userRotateByInputHandler()
+
+> **userRotateByInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:158](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L158)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateByInputEventPayload`](../type-aliases/RotateByInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+***
+
+### userRotateToInputHandler()
+
+> **userRotateToInputHandler**(`context`, `payload`): [`RotateControlStates`](../type-aliases/RotateControlStates.md)
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:163](https://github.com/ue-too/ue-too/blob/e0ad36978d99a0fba62213691fb721d4dca7c035/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L163)
+
+#### Parameters
+
+##### context
+
+[`RotateContext`](../interfaces/RotateContext.md)
+
+##### payload
+
+[`RotateToInputEventPayload`](../type-aliases/RotateToInputEventPayload.md)
+
+#### Returns
+
+[`RotateControlStates`](../type-aliases/RotateControlStates.md)
