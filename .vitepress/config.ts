@@ -15,6 +15,12 @@ export default defineConfig({
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Examples', link: '/markdown-examples' },
+      { text: 'Test',
+        items: [
+          { text: 'Test1', link: 'https://google.com' },
+          { text: 'Test2', link: 'google.com' },
+        ]
+      }
     ],
 
     sidebar: [
