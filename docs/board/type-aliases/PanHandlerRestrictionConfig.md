@@ -4,7 +4,7 @@
 
 > **PanHandlerRestrictionConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:24](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/pan-handler.ts#L24)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:24](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/pan-handler.ts#L24)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:24](https://git
 
 > **restrictRelativeXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:36](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/pan-handler.ts#L36)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:36](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/pan-handler.ts#L36)
 
 #### Description
 
@@ -24,7 +24,7 @@ Whether to restrict the relative x translation. (because the camera can be rotat
 
 > **restrictRelativeYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:40](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/pan-handler.ts#L40)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:40](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/pan-handler.ts#L40)
 
 #### Description
 
@@ -36,7 +36,7 @@ Whether to restrict the relative y translation. (because the camera can be rotat
 
 > **restrictXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:28](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/pan-handler.ts#L28)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:28](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/pan-handler.ts#L28)
 
 #### Description
 
@@ -48,7 +48,7 @@ Whether to restrict the x translation.
 
 > **restrictYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:32](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/pan-handler.ts#L32)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:32](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/pan-handler.ts#L32)
 
 #### Description
 

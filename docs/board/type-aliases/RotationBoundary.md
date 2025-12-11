@@ -4,7 +4,7 @@
 
 > **RotationBoundary** = `object`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/rotation.ts#L13)
 
 ## Description
 
@@ -16,7 +16,7 @@ The boundary of the rotation. (experimental)
 
 > **end**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/rotation.ts#L13)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **positiveDirection**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/rotation.ts#L13)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **start**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/rotation.ts#L13)
 
 ***
 
@@ -40,4 +40,4 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **startAsTieBreaker**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/rotation.ts#L13)

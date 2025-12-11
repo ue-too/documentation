@@ -4,7 +4,7 @@
 
 > **TransformationMatrix** = `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:12](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L12)
+Defined in: [packages/board/src/camera/utils/matrix.ts:12](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L12)
 
 ## Description
 
@@ -22,7 +22,7 @@ It's in the format like this:
 
 > **a**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L13)
+Defined in: [packages/board/src/camera/utils/matrix.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L13)
 
 ***
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/camera/utils/matrix.ts:13](https://github.com/ue
 
 > **b**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:14](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L14)
+Defined in: [packages/board/src/camera/utils/matrix.ts:14](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L14)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/board/src/camera/utils/matrix.ts:14](https://github.com/ue
 
 > **c**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:15](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L15)
+Defined in: [packages/board/src/camera/utils/matrix.ts:15](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L15)
 
 ***
 
@@ -46,7 +46,7 @@ Defined in: [packages/board/src/camera/utils/matrix.ts:15](https://github.com/ue
 
 > **d**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:16](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L16)
+Defined in: [packages/board/src/camera/utils/matrix.ts:16](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L16)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [packages/board/src/camera/utils/matrix.ts:16](https://github.com/ue
 
 > **e**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:17](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L17)
+Defined in: [packages/board/src/camera/utils/matrix.ts:17](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L17)
 
 ***
 
@@ -62,4 +62,4 @@ Defined in: [packages/board/src/camera/utils/matrix.ts:17](https://github.com/ue
 
 > **f**: `number`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:18](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/utils/matrix.ts#L18)
+Defined in: [packages/board/src/camera/utils/matrix.ts:18](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/utils/matrix.ts#L18)

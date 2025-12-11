@@ -2,7 +2,7 @@
 
 # Interface: CameraMux
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:9](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/interface.ts#L9)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:9](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/interface.ts#L9)
 
 ## Description
 
@@ -15,7 +15,7 @@ It should at least have user input handlers for pan, zoom and rotation.
 
 > **notifyPanInput**(`diff`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:10](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/interface.ts#L10)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:10](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/interface.ts#L10)
 
 #### Parameters
 
@@ -33,7 +33,7 @@ Defined in: [packages/board/src/camera/camera-mux/interface.ts:10](https://githu
 
 > **notifyRotationInput**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:12](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/interface.ts#L12)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:12](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/interface.ts#L12)
 
 #### Parameters
 
@@ -51,7 +51,7 @@ Defined in: [packages/board/src/camera/camera-mux/interface.ts:12](https://githu
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:11](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/interface.ts#L11)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:11](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/interface.ts#L11)
 
 #### Parameters
 

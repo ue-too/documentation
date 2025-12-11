@@ -4,7 +4,7 @@
 
 > **PanEventPayloadMapping** = `object`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L38)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:38](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L38)
 
 ## Description
 
@@ -16,7 +16,7 @@ The payload mapping for the events of the pan control state machine.
 
 > **initateTransition**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:46](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L46)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:46](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L46)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **lockedOnObjectPanByInput**: [`PanByInputEventPayload`](PanByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:43](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L43)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:43](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L43)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **lockedOnObjectPanToInput**: [`PanToInputEventPayload`](PanToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:44](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L44)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:44](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L44)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **transitionPanByInput**: [`PanByInputEventPayload`](PanByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:41](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L41)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:41](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L41)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **transitionPanToInput**: [`PanToInputEventPayload`](PanToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:42](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L42)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:42](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L42)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **unlock**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:45](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L45)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:45](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L45)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **userPanByInput**: [`PanByInputEventPayload`](PanByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L39)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L39)
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **userPanToInput**: [`PanToInputEventPayload`](PanToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:40](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L40)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:40](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L40)

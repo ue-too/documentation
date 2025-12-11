@@ -6,7 +6,7 @@
 
 > **offset**(`curve`, `t`): [`BCurve`](../classes/BCurve.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:1026](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/b-curve.ts#L1026)
+Defined in: [packages/curve/src/b-curve.ts:1026](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/b-curve.ts#L1026)
 
 ### Parameters
 
@@ -26,7 +26,7 @@ Defined in: [packages/curve/src/b-curve.ts:1026](https://github.com/ue-too/ue-to
 
 > **offset**(`curve`, `t`, `d`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:1027](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/b-curve.ts#L1027)
+Defined in: [packages/curve/src/b-curve.ts:1027](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/b-curve.ts#L1027)
 
 ### Parameters
 

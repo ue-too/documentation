@@ -2,7 +2,7 @@
 
 # Class: PointCal
 
-Defined in: [index.ts:14](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L14)
+Defined in: [index.ts:14](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L14)
 
 ## Constructors
 
@@ -20,7 +20,7 @@ Defined in: [index.ts:14](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **addVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:16](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L16)
+Defined in: [index.ts:16](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L16)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [index.ts:16](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **angleFromA2B**(`a`, `b`): `number`
 
-Defined in: [index.ts:88](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L88)
+Defined in: [index.ts:88](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L88)
 
 #### Parameters
 
@@ -68,7 +68,7 @@ Gets the angle from vector a to vector b. (returned angle is always between -π 
 
 > `static` **crossProduct**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:64](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L64)
+Defined in: [index.ts:64](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L64)
 
 #### Parameters
 
@@ -90,7 +90,7 @@ Defined in: [index.ts:64](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **distanceBetweenPoints**(`a`, `b`): `number`
 
-Defined in: [index.ts:98](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L98)
+Defined in: [index.ts:98](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L98)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: [index.ts:98](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **divideVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L39)
+Defined in: [index.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L39)
 
 #### Parameters
 
@@ -134,7 +134,7 @@ Defined in: [index.ts:39](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **dotProduct**(`a`, `b`): `number`
 
-Defined in: [index.ts:55](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L55)
+Defined in: [index.ts:55](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L55)
 
 #### Parameters
 
@@ -156,7 +156,7 @@ Defined in: [index.ts:55](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **flipYAxis**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:102](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L102)
+Defined in: [index.ts:102](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L102)
 
 #### Parameters
 
@@ -174,7 +174,7 @@ Defined in: [index.ts:102](https://github.com/ue-too/ue-too/blob/95dd78435970713
 
 > `static` **getLineIntersection**(`startPoint`, `endPoint`, `startPoint2`, `endPoint2`): `object`
 
-Defined in: [index.ts:124](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L124)
+Defined in: [index.ts:124](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L124)
 
 #### Parameters
 
@@ -216,7 +216,7 @@ Defined in: [index.ts:124](https://github.com/ue-too/ue-too/blob/95dd78435970713
 
 > `static` **isEqual**(`a`, `b`): `boolean`
 
-Defined in: [index.ts:114](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L114)
+Defined in: [index.ts:114](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L114)
 
 #### Parameters
 
@@ -238,7 +238,7 @@ Defined in: [index.ts:114](https://github.com/ue-too/ue-too/blob/95dd78435970713
 
 > `static` **linearInterpolation**(`a`, `b`, `t`): [`point`](../type-aliases/point.md)
 
-Defined in: [index.ts:106](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L106)
+Defined in: [index.ts:106](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L106)
 
 #### Parameters
 
@@ -264,7 +264,7 @@ Defined in: [index.ts:106](https://github.com/ue-too/ue-too/blob/95dd78435970713
 
 > `static` **magnitude**(`a`): `number`
 
-Defined in: [index.ts:45](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L45)
+Defined in: [index.ts:45](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L45)
 
 #### Parameters
 
@@ -282,7 +282,7 @@ Defined in: [index.ts:45](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **multiplyVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:34](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L34)
+Defined in: [index.ts:34](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L34)
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: [index.ts:34](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **rotatePoint**(`point`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:76](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L76)
+Defined in: [index.ts:76](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L76)
 
 #### Parameters
 
@@ -326,7 +326,7 @@ Defined in: [index.ts:76](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **subVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:25](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L25)
+Defined in: [index.ts:25](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L25)
 
 #### Parameters
 
@@ -348,7 +348,7 @@ Defined in: [index.ts:25](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **transform2NewAxis**(`point`, `angleFromOriginalAxis2DestAxis`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:80](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L80)
+Defined in: [index.ts:80](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L80)
 
 #### Parameters
 
@@ -370,7 +370,7 @@ Defined in: [index.ts:80](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **transformPointWRTAnchor**(`point`, `anchor`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:92](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L92)
+Defined in: [index.ts:92](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L92)
 
 #### Parameters
 
@@ -396,7 +396,7 @@ Defined in: [index.ts:92](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **unitVector**(`a`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:50](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L50)
+Defined in: [index.ts:50](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L50)
 
 #### Parameters
 
@@ -414,7 +414,7 @@ Defined in: [index.ts:50](https://github.com/ue-too/ue-too/blob/95dd784359707132
 
 > `static` **unitVectorFromA2B**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:72](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L72)
+Defined in: [index.ts:72](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L72)
 
 #### Parameters
 

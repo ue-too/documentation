@@ -4,7 +4,7 @@
 
 > **Handler**\<`T`, `Args`\> = (`value`, ...`args`) => `T`
 
-Defined in: [packages/board/src/utils/handler-pipeline.ts:9](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/handler-pipeline.ts#L9)
+Defined in: [packages/board/src/utils/handler-pipeline.ts:9](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/handler-pipeline.ts#L9)
 
 ## Type Parameters
 

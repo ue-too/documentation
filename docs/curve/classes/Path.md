@@ -2,7 +2,7 @@
 
 # Class: Path
 
-Defined in: [packages/curve/src/path.ts:23](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L23)
+Defined in: [packages/curve/src/path.ts:23](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L23)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [packages/curve/src/path.ts:23](https://github.com/ue-too/ue-too/blo
 
 > **new Path**(`lines`): `Path`
 
-Defined in: [packages/curve/src/path.ts:27](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L27)
+Defined in: [packages/curve/src/path.ts:27](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L27)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [packages/curve/src/path.ts:27](https://github.com/ue-too/ue-too/blo
 
 > **append**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:31](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L31)
+Defined in: [packages/curve/src/path.ts:31](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L31)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/curve/src/path.ts:31](https://github.com/ue-too/ue-too/blo
 
 > **clear**(): `void`
 
-Defined in: [packages/curve/src/path.ts:35](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L35)
+Defined in: [packages/curve/src/path.ts:35](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L35)
 
 #### Returns
 
@@ -58,7 +58,7 @@ Defined in: [packages/curve/src/path.ts:35](https://github.com/ue-too/ue-too/blo
 
 > **getLength**(): `number`
 
-Defined in: [packages/curve/src/path.ts:47](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L47)
+Defined in: [packages/curve/src/path.ts:47](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L47)
 
 #### Returns
 
@@ -70,7 +70,7 @@ Defined in: [packages/curve/src/path.ts:47](https://github.com/ue-too/ue-too/blo
 
 > **getLines**(): [`Line`](Line.md)[]
 
-Defined in: [packages/curve/src/path.ts:43](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L43)
+Defined in: [packages/curve/src/path.ts:43](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L43)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: [packages/curve/src/path.ts:43](https://github.com/ue-too/ue-too/blo
 
 > **getPercentages**(): `object`[]
 
-Defined in: [packages/curve/src/path.ts:57](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L57)
+Defined in: [packages/curve/src/path.ts:57](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L57)
 
 #### Returns
 
@@ -94,7 +94,7 @@ Defined in: [packages/curve/src/path.ts:57](https://github.com/ue-too/ue-too/blo
 
 > **getPointByPercentage**(`percentage`): `Point`
 
-Defined in: [packages/curve/src/path.ts:73](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L73)
+Defined in: [packages/curve/src/path.ts:73](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L73)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: [packages/curve/src/path.ts:73](https://github.com/ue-too/ue-too/blo
 
 > **prepend**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/curve/src/path.ts#L39)
+Defined in: [packages/curve/src/path.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/curve/src/path.ts#L39)
 
 #### Parameters
 

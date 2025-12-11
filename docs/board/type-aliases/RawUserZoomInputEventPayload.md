@@ -4,7 +4,7 @@
 
 > **RawUserZoomInputEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:37](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L37)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:37](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L37)
 
 ## Description
 
@@ -16,7 +16,7 @@ The raw user zoom input event payload.
 
 > **anchorPoint**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L39)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L39)
 
 ***
 
@@ -24,4 +24,4 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **deltaZoomAmount**: `number`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L38)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:38](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L38)

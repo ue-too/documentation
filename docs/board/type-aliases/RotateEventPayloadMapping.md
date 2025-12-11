@@ -4,7 +4,7 @@
 
 > **RotateEventPayloadMapping** = `object`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:37](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L37)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:37](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L37)
 
 ## Description
 
@@ -16,7 +16,7 @@ The payload mapping for the events of the rotate control state machine.
 
 > **initateTransition**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:45](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L45)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:45](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L45)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **lockedOnObjectRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:42](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L42)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:42](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L42)
 
 ***
 
@@ -32,7 +32,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **lockedOnObjectRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:43](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L43)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:43](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L43)
 
 ***
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:40](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L40)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:40](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L40)
 
 ***
 
@@ -48,7 +48,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **transitionRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:41](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L41)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:41](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L41)
 
 ***
 
@@ -56,7 +56,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **unlock**: `EmptyPayload`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:44](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L44)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:44](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L44)
 
 ***
 
@@ -64,7 +64,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateByInput**: [`RotateByInputEventPayload`](RotateByInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L38)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:38](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L38)
 
 ***
 
@@ -72,4 +72,4 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **userRotateToInput**: [`RotateToInputEventPayload`](RotateToInputEventPayload.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L39)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L39)

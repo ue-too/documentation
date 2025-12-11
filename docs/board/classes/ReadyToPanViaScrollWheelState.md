@@ -2,7 +2,7 @@
 
 # Class: ReadyToPanViaScrollWheelState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:374](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L374)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:374](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L374)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to pan via scroll wheel state of the keyboard mouse and trackpad input
 
 > **new ReadyToPanViaScrollWheelState**(): `ReadyToPanViaScrollWheelState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:376](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L376)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:376](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L376)
 
 #### Returns
 
@@ -34,7 +34,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_delay**: `Delay`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\> \| `undefined` = `undefined`
 
-Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L291)
+Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L291)
 
 #### Inherited from
 
@@ -46,7 +46,7 @@ Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L290)
+Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L290)
 
 #### Inherited from
 
@@ -58,7 +58,7 @@ Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:380](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L380)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:380](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L380)
 
 ***
 
@@ -66,7 +66,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L289)
+Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L289)
 
 #### Inherited from
 
@@ -80,7 +80,7 @@ Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-t
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L301)
+Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L301)
 
 ##### Returns
 
@@ -98,7 +98,7 @@ Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-t
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L297)
+Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L297)
 
 ##### Returns
 
@@ -116,7 +116,7 @@ Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-t
 
 > **get** **eventReactions**(): `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:391](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L391)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:391](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L391)
 
 ##### Returns
 
@@ -134,7 +134,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L293)
+Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L293)
 
 ##### Returns
 
@@ -150,7 +150,7 @@ Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-t
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L309)
+Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L309)
 
 #### Parameters
 
@@ -180,7 +180,7 @@ Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-t
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventHandledResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L313)
+Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L313)
 
 #### Type Parameters
 
@@ -216,7 +216,7 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 > **uponEnter**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:395](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L395)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:395](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L395)
 
 #### Parameters
 

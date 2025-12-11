@@ -2,7 +2,7 @@
 
 # Interface: StateMachine\<EventPayloadMapping, Context, States\>
 
-Defined in: [interface.ts:57](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L57)
+Defined in: [interface.ts:57](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L57)
 
 ## Description
 
@@ -41,7 +41,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **possibleStates**: `States`[]
 
-Defined in: [interface.ts:70](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L70)
+Defined in: [interface.ts:70](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L70)
 
 ***
 
@@ -49,7 +49,7 @@ Defined in: [interface.ts:70](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **states**: `Record`\<`States`, [`State`](State.md)\<`EventPayloadMapping`, `Context`, `string` *extends* `States` ? `string` : `States`\>\>
 
-Defined in: [interface.ts:68](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L68)
+Defined in: [interface.ts:68](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L68)
 
 ## Methods
 
@@ -59,7 +59,7 @@ Defined in: [interface.ts:68](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **happens**\<`K`\>(...`args`): [`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
 
-Defined in: [interface.ts:60](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L60)
+Defined in: [interface.ts:60](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L60)
 
 ##### Type Parameters
 
@@ -81,7 +81,7 @@ Defined in: [interface.ts:60](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **happens**\<`K`\>(...`args`): [`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
 
-Defined in: [interface.ts:64](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L64)
+Defined in: [interface.ts:64](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L64)
 
 ##### Type Parameters
 
@@ -105,7 +105,7 @@ Defined in: [interface.ts:64](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [interface.ts:71](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L71)
+Defined in: [interface.ts:71](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L71)
 
 #### Parameters
 
@@ -123,7 +123,7 @@ Defined in: [interface.ts:71](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [interface.ts:69](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L69)
+Defined in: [interface.ts:69](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L69)
 
 #### Parameters
 
@@ -141,7 +141,7 @@ Defined in: [interface.ts:69](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **setContext**(`context`): `void`
 
-Defined in: [interface.ts:67](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L67)
+Defined in: [interface.ts:67](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L67)
 
 #### Parameters
 
@@ -159,7 +159,7 @@ Defined in: [interface.ts:67](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **switchTo**(`state`): `void`
 
-Defined in: [interface.ts:58](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L58)
+Defined in: [interface.ts:58](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L58)
 
 #### Parameters
 

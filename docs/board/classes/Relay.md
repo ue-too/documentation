@@ -2,7 +2,7 @@
 
 # Class: Relay
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/relay.ts#L13)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/relay.ts#L13)
 
 ## Description
 
@@ -19,7 +19,7 @@ This would be the default flow control for [Board](Board.md).
 
 > **new Relay**(`cameraRig`): `Relay`
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:17](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/relay.ts#L17)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:17](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/relay.ts#L17)
 
 #### Parameters
 
@@ -37,7 +37,7 @@ Defined in: [packages/board/src/camera/camera-mux/relay.ts:17](https://github.co
 
 > **notifyPanInput**(`diff`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:21](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/relay.ts#L21)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:21](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/relay.ts#L21)
 
 #### Parameters
 
@@ -59,7 +59,7 @@ Defined in: [packages/board/src/camera/camera-mux/relay.ts:21](https://github.co
 
 > **notifyRotationInput**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:29](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/relay.ts#L29)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:29](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/relay.ts#L29)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ Defined in: [packages/board/src/camera/camera-mux/relay.ts:29](https://github.co
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:25](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/relay.ts#L25)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:25](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/relay.ts#L25)
 
 #### Parameters
 

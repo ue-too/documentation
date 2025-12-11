@@ -2,7 +2,7 @@
 
 # Class: VanillaKMTEventParser
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:73](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L73)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:73](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L73)
 
 ## Description
 
@@ -19,7 +19,7 @@ This parser converts the raw events to events that can be used by the input stat
 
 > **new VanillaKMTEventParser**(`kmtInputStateMachine`, `canvas?`): `VanillaKMTEventParser`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:82](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L82)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:82](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L82)
 
 #### Parameters
 
@@ -43,7 +43,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:90](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L90)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:90](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L90)
 
 ##### Returns
 
@@ -53,7 +53,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **set** **disabled**(`value`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:94](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L94)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:94](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L94)
 
 ##### Parameters
 
@@ -77,7 +77,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **get** **stateMachine**(): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:98](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L98)
 
 ##### Returns
 
@@ -93,7 +93,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **addEventListeners**(`signal`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:102](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L102)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:102](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L102)
 
 #### Parameters
 
@@ -111,7 +111,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:211](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L211)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:211](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L211)
 
 #### Parameters
 
@@ -133,7 +133,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **bindFunctions**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:127](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L127)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:127](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L127)
 
 #### Returns
 
@@ -145,7 +145,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **keypressHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:189](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L189)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:189](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L189)
 
 #### Parameters
 
@@ -163,7 +163,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **keyupHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:202](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L202)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:202](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L202)
 
 #### Parameters
 
@@ -181,7 +181,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **pointerDownHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:136](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L136)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:136](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L136)
 
 #### Parameters
 
@@ -199,7 +199,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **pointerMoveHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:164](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L164)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:164](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L164)
 
 #### Parameters
 
@@ -217,7 +217,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **pointerUpHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:150](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L150)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:150](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L150)
 
 #### Parameters
 
@@ -235,7 +235,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **scrollHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:179](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L179)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:179](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L179)
 
 #### Parameters
 
@@ -253,7 +253,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **setUp**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:114](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L114)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:114](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L114)
 
 #### Returns
 
@@ -269,7 +269,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:121](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L121)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:121](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L121)
 
 #### Returns
 

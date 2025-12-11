@@ -4,7 +4,7 @@
 
 > **CanvasDimensions** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **height**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **width**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:27](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L27)

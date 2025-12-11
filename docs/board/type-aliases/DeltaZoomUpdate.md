@@ -4,7 +4,7 @@
 
 > **DeltaZoomUpdate** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:10](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L10)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:10](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L10)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > `optional` **anchor**: `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:13](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L13)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:13](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L13)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **delta**: `number`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:12](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L12)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:12](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L12)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **type**: `"delta"`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:11](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L11)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:11](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L11)

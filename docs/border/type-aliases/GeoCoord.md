@@ -4,7 +4,7 @@
 
 > **GeoCoord** = `object`
 
-Defined in: [projection.ts:3](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/border/src/projection.ts#L3)
+Defined in: [projection.ts:3](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/border/src/projection.ts#L3)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [projection.ts:3](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **latitude**: `number`
 
-Defined in: [projection.ts:5](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/border/src/projection.ts#L5)
+Defined in: [projection.ts:5](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/border/src/projection.ts#L5)
 
 ***
 
@@ -20,4 +20,4 @@ Defined in: [projection.ts:5](https://github.com/ue-too/ue-too/blob/95dd78435970
 
 > **longitude**: `number`
 
-Defined in: [projection.ts:4](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/border/src/projection.ts#L4)
+Defined in: [projection.ts:4](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/border/src/projection.ts#L4)

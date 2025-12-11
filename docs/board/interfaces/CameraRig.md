@@ -2,7 +2,7 @@
 
 # Interface: CameraRig
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:35](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L35)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:35](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L35)
 
 ## Description
 
@@ -18,7 +18,7 @@ The context for the pan control state machine.
 
 > **camera**: [`ObservableBoardCamera`](ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:36](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L36)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:36](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L36)
 
 #### Overrides
 
@@ -30,7 +30,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:36](https://gith
 
 > **config**: [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:37](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L37)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:37](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L37)
 
 ***
 
@@ -38,7 +38,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:37](https://gith
 
 > **limitEntireViewPort**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L56)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L56)
 
 #### Inherited from
 
@@ -50,7 +50,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panByViewPort**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:57](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L57)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:57](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L57)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panByWorld**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L59)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L59)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panToViewPort**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L58)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L58)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panToWorld**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L60)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L60)
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **rotateBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:55](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L55)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:55](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L55)
 
 #### Parameters
 
@@ -160,7 +160,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **rotateTo**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L56)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L56)
 
 #### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **zoomBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:78](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L78)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:78](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L78)
 
 #### Parameters
 
@@ -204,7 +204,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomByAt**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:76](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L76)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:76](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L76)
 
 #### Parameters
 
@@ -230,7 +230,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomByAtWorld**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:80](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L80)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:80](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L80)
 
 #### Parameters
 
@@ -256,7 +256,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomTo**: (`targetZoom`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L77)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L77)
 
 #### Parameters
 
@@ -278,7 +278,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomToAt**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:75](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L75)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:75](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L75)
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomToAtWorld**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:79](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L79)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:79](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L79)
 
 #### Parameters
 
@@ -330,7 +330,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **cleanup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L3)
+Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L3)
 
 #### Returns
 
@@ -346,7 +346,7 @@ Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L38)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:38](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L38)
 
 #### Parameters
 
@@ -364,7 +364,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:38](https://gith
 
 > **setup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L2)
+Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L2)
 
 #### Returns
 
@@ -380,7 +380,7 @@ Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too
 
 > **update**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L39)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L39)
 
 #### Returns
 

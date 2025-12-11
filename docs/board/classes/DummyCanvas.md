@@ -2,7 +2,7 @@
 
 # Class: DummyCanvas
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:35](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L35)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:35](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L35)
 
 ## Description
 
@@ -34,7 +34,7 @@ DummyKmtInputContext
 
 > **detached**: `boolean` = `false`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:41](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L41)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:41](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L41)
 
 #### Implementation of
 
@@ -46,7 +46,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **dimensions**: `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:40](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L40)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:40](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L40)
 
 #### height
 
@@ -70,7 +70,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **height**: `number` = `0`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:37](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L37)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:37](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L37)
 
 #### Implementation of
 
@@ -82,7 +82,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:38](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L38)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:38](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L38)
 
 #### Implementation of
 
@@ -94,7 +94,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **setCursor**: (`style`) => `void` = `NO_OP`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:39](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L39)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:39](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L39)
 
 #### Parameters
 
@@ -116,7 +116,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **tearDown**: () => `void` = `NO_OP`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:42](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L42)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:42](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L42)
 
 #### Returns
 
@@ -132,7 +132,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **width**: `number` = `0`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:36](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L36)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:36](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L36)
 
 #### Implementation of
 

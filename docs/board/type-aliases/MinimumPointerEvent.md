@@ -4,7 +4,7 @@
 
 > **MinimumPointerEvent** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:21](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L21)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:21](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L21)
 
 ## Description
 
@@ -17,7 +17,7 @@ This is for the interoperability between the vanilla javascript and the pixijs e
 
 > **button**: `number`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:22](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L22)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:22](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L22)
 
 ***
 
@@ -25,7 +25,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **buttons**: `number`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:26](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L26)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:26](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L26)
 
 ***
 
@@ -33,7 +33,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **clientX**: `number`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:24](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L24)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:24](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L24)
 
 ***
 
@@ -41,7 +41,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **clientY**: `number`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:25](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L25)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:25](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L25)
 
 ***
 
@@ -49,4 +49,4 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **pointerType**: `string`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:23](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L23)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:23](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L23)

@@ -4,7 +4,7 @@
 
 > **ZoomUpdate** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:16](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L16)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:16](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L16)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **anchorCoordinateSystem**: `"world"` \| `"viewport"`
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:17](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L17)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:17](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L17)
 
 ***
 
@@ -20,4 +20,4 @@ Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-bat
 
 > **update**: [`DestinationZoomUpdate`](DestinationZoomUpdate.md) \| [`DeltaZoomUpdate`](DeltaZoomUpdate.md)
 
-Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:18](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L18)
+Defined in: [packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts:18](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/update-batcher/zoom-udpate-batcher.ts#L18)

@@ -4,7 +4,7 @@
 
 > **EventTargetWithPointerEvents** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:61](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L61)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:61](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L61)
 
 ## Description
 
@@ -17,7 +17,7 @@ This is for the interoperability between the vanilla javascript and the pixijs e
 
 > **addEventListener**: (`type`, `listener`, `options?`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:62](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L62)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:62](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L62)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **removeEventListener**: (`type`, `listener`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:63](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L63)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:63](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L63)
 
 #### Parameters
 

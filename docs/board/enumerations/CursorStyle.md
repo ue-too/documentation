@@ -2,7 +2,7 @@
 
 # Enumeration: CursorStyle
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:7](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L7)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:7](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L7)
 
 ## Enumeration Members
 
@@ -10,7 +10,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **DEFAULT**: `"default"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:9](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L9)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:9](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L9)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRAB**: `"grab"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:8](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L8)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:8](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L8)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRABBING**: `"grabbing"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:10](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L10)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:10](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L10)

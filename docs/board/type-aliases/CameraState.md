@@ -4,7 +4,7 @@
 
 > **CameraState** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:79](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L79)
+Defined in: [packages/board/src/camera/update-publisher.ts:79](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/update-publisher.ts#L79)
 
 ## Description
 
@@ -16,7 +16,7 @@ The type of the camera state.
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:80](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L80)
+Defined in: [packages/board/src/camera/update-publisher.ts:80](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/update-publisher.ts#L80)
 
 ***
 
@@ -24,7 +24,7 @@ Defined in: [packages/board/src/camera/update-publisher.ts:80](https://github.co
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:82](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L82)
+Defined in: [packages/board/src/camera/update-publisher.ts:82](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/update-publisher.ts#L82)
 
 ***
 
@@ -32,4 +32,4 @@ Defined in: [packages/board/src/camera/update-publisher.ts:82](https://github.co
 
 > **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:81](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/update-publisher.ts#L81)
+Defined in: [packages/board/src/camera/update-publisher.ts:81](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/update-publisher.ts#L81)

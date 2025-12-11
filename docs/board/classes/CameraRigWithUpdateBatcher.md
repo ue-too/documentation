@@ -2,7 +2,7 @@
 
 # Class: CameraRigWithUpdateBatcher
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:51](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L51)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:51](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L51)
 
 ## Description
 
@@ -21,7 +21,7 @@ Essentially, it is a controller that controls the camera, so you don't have to f
 
 > **new CameraRigWithUpdateBatcher**(`config`, `camera`): `CameraRigWithUpdateBatcher`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L64)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L64)
 
 #### Parameters
 
@@ -45,7 +45,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://gith
 
 > **get** **camera**(): [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:180](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L180)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:180](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L180)
 
 ##### Returns
 
@@ -63,7 +63,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:180](https://git
 
 > **get** **config**(): [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:184](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L184)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:184](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L184)
 
 ##### Returns
 
@@ -73,7 +73,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:184](https://git
 
 > **set** **config**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:188](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L188)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:188](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L188)
 
 ##### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:188](https://git
 
 > **get** **limitEntireViewPort**(): `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:176](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L176)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:176](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L176)
 
 ##### Description
 
@@ -111,7 +111,7 @@ Whether the entire view port is limited.
 
 > **set** **limitEntireViewPort**(`limit`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:169](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L169)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:169](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L169)
 
 ##### Parameters
 
@@ -133,7 +133,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:169](https://git
 
 > **cleanup**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:331](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L331)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:331](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L331)
 
 #### Returns
 
@@ -153,7 +153,7 @@ Cleanup the camera rig.
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:324](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L324)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:324](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L324)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Configure the camera rig.
 
 > **panByViewPort**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:141](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L141)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:141](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L141)
 
 #### Parameters
 
@@ -201,7 +201,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:141](https://git
 
 > **panByWorld**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L137)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L137)
 
 #### Parameters
 
@@ -223,7 +223,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://git
 
 > **panToViewPort**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:150](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L150)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:150](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L150)
 
 #### Parameters
 
@@ -245,7 +245,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:150](https://git
 
 > **panToWorld**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:146](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L146)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:146](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L146)
 
 #### Parameters
 
@@ -267,7 +267,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:146](https://git
 
 > **rotateBy**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:158](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L158)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:158](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L158)
 
 #### Parameters
 
@@ -293,7 +293,7 @@ Rotate by a certain amount.
 
 > **rotateTo**(`target`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:165](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L165)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:165](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L165)
 
 #### Parameters
 
@@ -319,7 +319,7 @@ Rotate to a certain angle.
 
 > **setup**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:337](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L337)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:337](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L337)
 
 #### Returns
 
@@ -339,7 +339,7 @@ Setup the camera rig.
 
 > **update**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:274](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L274)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:274](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L274)
 
 #### Returns
 
@@ -355,7 +355,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:274](https://git
 
 > **updatePosition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:192](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L192)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:192](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L192)
 
 #### Returns
 
@@ -367,7 +367,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:192](https://git
 
 > **updateRotation**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:255](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L255)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:255](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L255)
 
 #### Returns
 
@@ -379,7 +379,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:255](https://git
 
 > **updateZoom**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:209](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L209)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:209](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L209)
 
 #### Returns
 
@@ -391,7 +391,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:209](https://git
 
 > **zoomBy**(`delta`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:102](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L102)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:102](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L102)
 
 #### Parameters
 
@@ -417,7 +417,7 @@ Zoom by a certain amount with respect to the center of the viewport.
 
 > **zoomByAt**(`delta`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:88](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L88)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:88](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L88)
 
 #### Parameters
 
@@ -447,7 +447,7 @@ Zoom by a certain amount at a certain point. The point is in the viewport coordi
 
 > **zoomByAtWorld**(`delta`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:116](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L116)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:116](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L116)
 
 #### Parameters
 
@@ -477,7 +477,7 @@ Zoom by a certain amount with respect to a point in the world coordinate system.
 
 > **zoomTo**(`targetZoom`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:95](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L95)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:95](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L95)
 
 #### Parameters
 
@@ -503,7 +503,7 @@ Zoom to a certain zoom level with respect to the center of the viewport.
 
 > **zoomToAt**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:81](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L81)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:81](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L81)
 
 #### Parameters
 
@@ -533,7 +533,7 @@ Zoom to a certain zoom level at a certain point. The point is in the viewport co
 
 > **zoomToAtWorld**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:109](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/camera-rig.ts#L109)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:109](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/camera-rig.ts#L109)
 
 #### Parameters
 

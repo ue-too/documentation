@@ -4,7 +4,7 @@
 
 > **RotateToHandlerFunction** = (`targetRotation`, `camera`, `config`) => `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:44](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/camera/camera-rig/rotation-handler.ts#L44)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:44](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/camera/camera-rig/rotation-handler.ts#L44)
 
 ## Parameters
 

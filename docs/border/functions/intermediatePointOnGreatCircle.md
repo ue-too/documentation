@@ -4,7 +4,7 @@
 
 > **intermediatePointOnGreatCircle**(`startCoord`, `endCoord`, `fraction`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [greateCircle.ts:11](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/border/src/greateCircle.ts#L11)
+Defined in: [greateCircle.ts:11](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/border/src/greateCircle.ts#L11)
 
 ## Parameters
 

@@ -4,7 +4,7 @@
 
 > **EventReactions**\<`EventPayloadMapping`, `Context`, `States`\> = `{ [K in keyof Partial<EventPayloadMapping>]: { action: (context: Context, event: EventPayloadMapping[K], stateMachine: StateMachine<EventPayloadMapping, Context, States>) => void; defaultTargetState?: States } }`
 
-Defined in: [interface.ts:117](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L117)
+Defined in: [interface.ts:117](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L117)
 
 ## Type Parameters
 

@@ -2,7 +2,7 @@
 
 # Class: CanvasPositionDimensionPublisher
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:6](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/canvas-position-dimension.ts#L6)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:6](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/canvas-position-dimension.ts#L6)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:6](https://gi
 
 > **new CanvasPositionDimensionPublisher**(`canvas?`): `CanvasPositionDimensionPublisher`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/canvas-position-dimension.ts#L16)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/canvas-position-dimension.ts#L16)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://g
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/canvas-position-dimension.ts#L66)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/canvas-position-dimension.ts#L66)
 
 #### Parameters
 
@@ -46,7 +46,7 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://g
 
 > **dispose**(): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:54](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/canvas-position-dimension.ts#L54)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:54](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/canvas-position-dimension.ts#L54)
 
 #### Returns
 
@@ -58,7 +58,7 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:54](https://g
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:108](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/utils/canvas-position-dimension.ts#L108)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:108](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/utils/canvas-position-dimension.ts#L108)
 
 #### Parameters
 

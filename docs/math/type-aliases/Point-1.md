@@ -4,7 +4,7 @@
 
 > **Point** = `object`
 
-Defined in: [index.ts:7](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L7)
+Defined in: [index.ts:7](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L7)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [index.ts:7](https://github.com/ue-too/ue-too/blob/95dd7843597071320
 
 > **x**: `number`
 
-Defined in: [index.ts:8](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L8)
+Defined in: [index.ts:8](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L8)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [index.ts:8](https://github.com/ue-too/ue-too/blob/95dd7843597071320
 
 > **y**: `number`
 
-Defined in: [index.ts:9](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L9)
+Defined in: [index.ts:9](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L9)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [index.ts:9](https://github.com/ue-too/ue-too/blob/95dd7843597071320
 
 > `optional` **z**: `number`
 
-Defined in: [index.ts:10](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/math/src/index.ts#L10)
+Defined in: [index.ts:10](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/math/src/index.ts#L10)

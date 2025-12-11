@@ -2,7 +2,7 @@
 
 # Abstract Class: TemplateState\<EventPayloadMapping, Context, States\>
 
-Defined in: [interface.ts:286](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L286)
+Defined in: [interface.ts:286](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L286)
 
 ## Description
 
@@ -47,7 +47,7 @@ You can define an eventReactions object that maps only the events that you need.
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L291)
+Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L291)
 
 ***
 
@@ -55,7 +55,7 @@ Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:290](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L290)
+Defined in: [interface.ts:290](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L290)
 
 ***
 
@@ -63,7 +63,7 @@ Defined in: [interface.ts:290](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:289](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L289)
+Defined in: [interface.ts:289](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L289)
 
 ***
 
@@ -71,7 +71,7 @@ Defined in: [interface.ts:289](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > `abstract` **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`\>
 
-Defined in: [interface.ts:288](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L288)
+Defined in: [interface.ts:288](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L288)
 
 #### Implementation of
 
@@ -85,7 +85,7 @@ Defined in: [interface.ts:288](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
 
-Defined in: [interface.ts:301](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L301)
+Defined in: [interface.ts:301](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L301)
 
 ##### Returns
 
@@ -103,7 +103,7 @@ Defined in: [interface.ts:301](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L297)
+Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L297)
 
 ##### Returns
 
@@ -121,7 +121,7 @@ Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:293](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L293)
+Defined in: [interface.ts:293](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L293)
 
 ##### Returns
 
@@ -137,7 +137,7 @@ Defined in: [interface.ts:293](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L309)
+Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L309)
 
 #### Parameters
 
@@ -167,7 +167,7 @@ Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
 
-Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L313)
+Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L313)
 
 #### Type Parameters
 
@@ -203,7 +203,7 @@ Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/95dd7843597
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [interface.ts:305](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/being/src/interface.ts#L305)
+Defined in: [interface.ts:305](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/being/src/interface.ts#L305)
 
 #### Parameters
 

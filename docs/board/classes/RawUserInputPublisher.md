@@ -2,7 +2,7 @@
 
 # Class: RawUserInputPublisher
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:112](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L112)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:112](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L112)
 
 ## Description
 
@@ -19,7 +19,7 @@ Publishs raw user input events to the input flow control, and subscribers.
 
 > **new RawUserInputPublisher**(`cameraMux`): `RawUserInputPublisher`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:120](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L120)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:120](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L120)
 
 #### Parameters
 
@@ -39,7 +39,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:161](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L161)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:161](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L161)
 
 ##### Returns
 
@@ -49,7 +49,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:165](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L165)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:165](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L165)
 
 ##### Parameters
 
@@ -67,7 +67,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:128](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L128)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:128](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L128)
 
 #### Parameters
 
@@ -89,7 +89,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:140](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L140)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:140](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L140)
 
 #### Parameters
 
@@ -111,7 +111,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:134](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L134)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:134](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L134)
 
 #### Parameters
 
@@ -137,7 +137,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:146](https://github.com/ue-too/ue-too/blob/95dd78435970713202a67be3986e96a80ff00749/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L146)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:146](https://github.com/ue-too/ue-too/blob/fe7fe80879019da785d08f475b37a73725116e88/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L146)
 
 #### Type Parameters
 
