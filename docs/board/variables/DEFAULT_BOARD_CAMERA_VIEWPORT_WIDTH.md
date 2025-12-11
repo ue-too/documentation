@@ -1,0 +1,7 @@
+[@ue-too/board](../globals.md) / DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH
+
+# Variable: DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH
+
+> `const` **DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH**: `1000` = `1000`
+
+Defined in: [packages/board/src/camera/default-camera.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/default-camera.ts#L13)
