@@ -4,22 +4,11 @@ layout: home
 
 hero:
   name: "uē-tôo"
-  text: "Everything about uē-tôo"
-  tagline: My great project tagline
+  text: "Canvas Toolkit for HTML"
+  tagline: Infinite canvas, animations, state machines, curves, physics, and more. A modular library for building rich canvas applications.
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: View Packages API
+      link: /packages
 ---
 
