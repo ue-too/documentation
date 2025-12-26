@@ -2,7 +2,29 @@
 
 # Class: NumberAnimationHelper
 
-Defined in: animatable-attribute.d.ts:16
+Defined in: [animatable-attribute.ts:130](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L130)
+
+Interface for type-specific interpolation helpers.
+
+## Remarks
+
+Animation helpers provide the `lerp` (linear interpolation) logic for specific types.
+Different types require different interpolation strategies:
+- Numbers: Simple linear interpolation
+- Points: Component-wise interpolation
+- Colors (RGB): Component-wise color interpolation
+- Strings: Step-based (threshold) interpolation
+
+## Example
+
+```typescript
+const myHelper: AnimatableAttributeHelper<number> = {
+  lerp: (ratio, start, end) => {
+    const t = (ratio - start.percentage) / (end.percentage - start.percentage);
+    return start.value + t * (end.value - start.value);
+  }
+};
+```
 
 ## Implements
 
@@ -14,7 +36,7 @@ Defined in: animatable-attribute.d.ts:16
 
 > **new NumberAnimationHelper**(): `NumberAnimationHelper`
 
-Defined in: animatable-attribute.d.ts:17
+Defined in: [animatable-attribute.ts:132](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L132)
 
 #### Returns
 
@@ -26,7 +48,9 @@ Defined in: animatable-attribute.d.ts:17
 
 > **lerp**(`ratio`, `start`, `end`): `number`
 
-Defined in: animatable-attribute.d.ts:18
+Defined in: [animatable-attribute.ts:136](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L136)
+
+Interpolates between two keyframes at a given ratio.
 
 #### Parameters
 
@@ -34,17 +58,25 @@ Defined in: animatable-attribute.d.ts:18
 
 `number`
 
+Current animation progress (0.0 to 1.0)
+
 ##### start
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<`number`\>
+
+Starting keyframe
 
 ##### end
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<`number`\>
 
+Ending keyframe
+
 #### Returns
 
 `number`
+
+Interpolated value at the given ratio
 
 #### Implementation of
 

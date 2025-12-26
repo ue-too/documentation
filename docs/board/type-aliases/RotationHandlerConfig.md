@@ -4,9 +4,20 @@
 
 > **RotationHandlerConfig** = [`RotationHandlerRestrictConfig`](RotationHandlerRestrictConfig.md) & [`RotationHandlerClampConfig`](RotationHandlerClampConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/rotation-handler.ts#L11)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:20](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/rotation-handler.ts#L20)
 
-## Description
+Combined configuration for rotation handler behavior, merging restriction and clamping settings.
 
-This is the configuration for the rotation handler functions.
-This is the configuration object that is passed to the rotation handler functions.
+## Remarks
+
+This type combines [RotationHandlerRestrictConfig](RotationHandlerRestrictConfig.md) and [RotationHandlerClampConfig](RotationHandlerClampConfig.md)
+to provide complete control over camera rotation behavior.
+
+Rotation handlers use this configuration to:
+- Completely disable rotation operations (restriction)
+- Clamp rotation angle to stay within defined angular limits
+
+## See
+
+ - [RotationHandlerRestrictConfig](RotationHandlerRestrictConfig.md) for rotation locking options
+ - [RotationHandlerClampConfig](RotationHandlerClampConfig.md) for angular boundary options

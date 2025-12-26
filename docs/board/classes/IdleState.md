@@ -2,15 +2,22 @@
 
 # Class: IdleState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:32](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L32)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:102](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L102)
 
-## Description
+IDLE state - waiting for two-finger touch.
 
-The idle state of the touch input state machine.
+## Remarks
+
+This state handles touch lifecycle but only transitions to PENDING when exactly
+two touches are active. Single touches and three+ touches are ignored.
+
+**Guard Condition**:
+Transitions to PENDING only when `getCurrentTouchPointsCount() === 2`.
+This ensures the state machine only handles two-finger gestures.
 
 ## Extends
 
-- `TemplateState`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+- `TemplateState`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
 ## Constructors
 
@@ -24,15 +31,15 @@ The idle state of the touch input state machine.
 
 #### Inherited from
 
-`TemplateState<TouchEventMapping, TouchContext, TouchStates>.constructor`
+`TemplateState<TouchEventMapping, TouchContext, TouchStates, TouchInputEventOutputMapping>.constructor`
 
 ## Properties
 
 ### \_delay
 
-> `protected` **\_delay**: `Delay`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md)\> \| `undefined` = `undefined`
+> `protected` **\_delay**: `Delay`\<[`TouchContext`](../interfaces/TouchContext.md), [`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\> \| `undefined` = `undefined`
 
-Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L291)
+Defined in: [packages/being/src/interface.ts:593](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L593)
 
 #### Inherited from
 
@@ -44,7 +51,7 @@ Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), *typeof* [`_guards`](#guards)\>\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:51](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L51)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:121](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L121)
 
 #### Overrides
 
@@ -56,7 +63,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"touchPointsCount"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:45](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L45)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
 
 #### Overrides
 
@@ -68,13 +75,13 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 #### Get Signature
 
-> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L301)
+Defined in: [packages/being/src/interface.ts:603](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L603)
 
 ##### Returns
 
-`Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+`Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
 #### Inherited from
 
@@ -88,7 +95,7 @@ Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-t
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L297)
+Defined in: [packages/being/src/interface.ts:599](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L599)
 
 ##### Returns
 
@@ -104,13 +111,13 @@ Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-t
 
 #### Get Signature
 
-> **get** **eventReactions**(): `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+> **get** **eventReactions**(): `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:62](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L62)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:132](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L132)
 
 ##### Returns
 
-`EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+`EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
 #### Overrides
 
@@ -124,7 +131,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L293)
+Defined in: [packages/being/src/interface.ts:595](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L595)
 
 ##### Returns
 
@@ -140,7 +147,7 @@ Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-t
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L309)
+Defined in: [packages/being/src/interface.ts:611](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L611)
 
 #### Parameters
 
@@ -150,7 +157,7 @@ Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-t
 
 ##### stateMachine
 
-`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
 ##### to
 
@@ -168,9 +175,9 @@ Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-t
 
 ### handles()
 
-> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventHandledResult`\<[`TouchStates`](../type-aliases/TouchStates.md)\>
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`TouchStates`](../type-aliases/TouchStates.md), `K` *extends* `"touchmove"` ? [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L313)
+Defined in: [packages/being/src/interface.ts:615](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L615)
 
 #### Type Parameters
 
@@ -190,11 +197,11 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 ##### stateMachine
 
-`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
 #### Returns
 
-`EventHandledResult`\<[`TouchStates`](../type-aliases/TouchStates.md)\>
+`EventResult`\<[`TouchStates`](../type-aliases/TouchStates.md), `K` *extends* `"touchmove"` ? [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
 #### Inherited from
 
@@ -206,7 +213,7 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 > **touchend**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:70](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L70)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:140](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L140)
 
 #### Parameters
 
@@ -228,7 +235,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:66](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L66)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:136](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L136)
 
 #### Parameters
 
@@ -250,7 +257,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L305)
+Defined in: [packages/being/src/interface.ts:607](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L607)
 
 #### Parameters
 
@@ -260,7 +267,7 @@ Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-t
 
 ##### stateMachine
 
-`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md)\>
+`StateMachine`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
 ##### from
 

@@ -4,38 +4,64 @@
 
 > `const` **CollisionCategory**: `object`
 
-Defined in: collision-filter.d.ts:8
+Defined in: [collision-filter.ts:140](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/collision-filter.ts#L140)
+
+Predefined collision categories for common game entities.
 
 ## Type Declaration
 
 ### DYNAMIC
 
-> `readonly` **DYNAMIC**: `2`
+> `readonly` **DYNAMIC**: `2` = `0x0002`
 
 ### ENEMY
 
-> `readonly` **ENEMY**: `8`
+> `readonly` **ENEMY**: `8` = `0x0008`
 
 ### PICKUP
 
-> `readonly` **PICKUP**: `64`
+> `readonly` **PICKUP**: `64` = `0x0040`
 
 ### PLATFORM
 
-> `readonly` **PLATFORM**: `128`
+> `readonly` **PLATFORM**: `128` = `0x0080`
 
 ### PLAYER
 
-> `readonly` **PLAYER**: `4`
+> `readonly` **PLAYER**: `4` = `0x0004`
 
 ### PROJECTILE
 
-> `readonly` **PROJECTILE**: `16`
+> `readonly` **PROJECTILE**: `16` = `0x0010`
 
 ### SENSOR
 
-> `readonly` **SENSOR**: `32`
+> `readonly` **SENSOR**: `32` = `0x0020`
 
 ### STATIC
 
-> `readonly` **STATIC**: `1`
+> `readonly` **STATIC**: `1` = `0x0001`
+
+## Remarks
+
+These are bitmask constants (powers of 2) that can be combined using bitwise OR.
+You can define up to 16 categories using values from 0x0001 to 0x8000.
+
+## Example
+
+Using predefined categories
+```typescript
+// Player collides with everything except other players
+player.collisionFilter = {
+  category: CollisionCategory.PLAYER,
+  mask: ~CollisionCategory.PLAYER & 0xFFFF,
+  group: 0
+};
+
+// Projectile only collides with enemies and static objects
+projectile.collisionFilter = {
+  category: CollisionCategory.PROJECTILE,
+  mask: CollisionCategory.ENEMY | CollisionCategory.STATIC,
+  group: 0
+};
+```

@@ -4,11 +4,14 @@
 
 > **TouchEventMapping** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:21](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:70](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L70)
 
-## Description
+Event mapping for the touch input state machine.
 
-The touch event mapping.
+## Remarks
+
+Maps touch event names to their payload types. The state machine handles
+the three core touch events: touchstart, touchmove, and touchend.
 
 ## Properties
 
@@ -16,7 +19,7 @@ The touch event mapping.
 
 > **touchend**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L24)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:73](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L73)
 
 ***
 
@@ -24,7 +27,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchmove**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:23](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L23)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:72](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L72)
 
 ***
 
@@ -32,4 +35,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**: [`TouchEventPayload`](TouchEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:22](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L22)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:71](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L71)

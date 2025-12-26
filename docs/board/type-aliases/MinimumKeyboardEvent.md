@@ -4,12 +4,14 @@
 
 > **MinimumKeyboardEvent** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:50](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L50)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:85](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L85)
 
-## Description
+Minimal keyboard event interface for framework interoperability.
 
-The minimum keyboard event.
-This is for the interoperability between the vanilla javascript and the pixijs event system.
+## Remarks
+
+This subset of the DOM KeyboardEvent interface allows the parser to work with
+both vanilla JavaScript KeyboardEvents and framework-wrapped events.
 
 ## Properties
 
@@ -17,7 +19,9 @@ This is for the interoperability between the vanilla javascript and the pixijs e
 
 > **key**: `string`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:52](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L52)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:89](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L89)
+
+The key that was pressed
 
 ***
 
@@ -25,7 +29,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **preventDefault**: () => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:51](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L51)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:87](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L87)
+
+Prevents default keyboard behavior
 
 #### Returns
 

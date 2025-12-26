@@ -4,15 +4,16 @@
 
 > **createTRSMatrix**(`translation`, `rotation`, `scale`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:305](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/matrix.ts#L305)
+Defined in: [packages/board/src/camera/utils/matrix.ts:505](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/matrix.ts#L505)
 
-Creates a transformation matrix from TRS components
+Creates a transformation matrix from Translation, Rotation, and Scale components.
+Inverse of [decomposeTRS](decomposeTRS.md).
 
 ## Parameters
 
 ### translation
 
-Translation vector
+Translation vector (tx, ty)
 
 #### x
 
@@ -26,11 +27,11 @@ Translation vector
 
 `number`
 
-Rotation in radians
+Rotation angle in radians (counter-clockwise)
 
 ### scale
 
-Scale vector
+Scale vector (sx, sy)
 
 #### x
 
@@ -44,4 +45,36 @@ Scale vector
 
 [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Transformation matrix
+Transformation matrix combining TRS
+
+## Remarks
+
+Transformation order: Scale → Rotate → Translate
+
+The resulting matrix is in standard form compatible with Canvas/CSS/SVG.
+Applying this matrix transforms points as:
+1. Scale by (sx, sy)
+2. Rotate by θ radians
+3. Translate by (tx, ty)
+
+## Example
+
+```typescript
+// Create a transform that scales 2x, rotates 45°, then moves to (100, 50)
+const matrix = createTRSMatrix(
+  { x: 100, y: 50 },            // translation
+  Math.PI / 4,                   // 45° rotation
+  { x: 2, y: 2 }                 // 2x scale
+);
+
+ctx.setTransform(matrix.a, matrix.b, matrix.c, matrix.d, matrix.e, matrix.f);
+// Now drawing happens with scale→rotate→translate applied
+
+// Round-trip test
+const decomposed = decomposeTRS(matrix);
+// decomposed ≈ { translation: {x:100, y:50}, rotation: π/4, scale: {x:2, y:2} }
+```
+
+## See
+
+[decomposeTRS](decomposeTRS.md) for extracting TRS from a matrix

@@ -4,7 +4,14 @@
 
 > **EventNotHandled** = `object`
 
-Defined in: [interface.ts:30](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L30)
+Defined in: [interface.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L98)
+
+Result type indicating an event was not handled by the current state.
+
+## Remarks
+
+When a state doesn't have a handler defined for a particular event, it returns this type.
+The state machine will not transition and the event is effectively ignored.
 
 ## Properties
 
@@ -12,4 +19,4 @@ Defined in: [interface.ts:30](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 > **handled**: `false`
 
-Defined in: [interface.ts:31](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L31)
+Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L99)

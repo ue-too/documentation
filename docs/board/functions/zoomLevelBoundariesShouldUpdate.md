@@ -4,15 +4,21 @@
 
 > **zoomLevelBoundariesShouldUpdate**(`zoomLevelBoundaries`, `targetMinZoomLevel`): `targetMinZoomLevel is number`
 
-Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:52](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/zoomlevel-adjustment.ts#L52)
+Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:128](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/zoomlevel-adjustment.ts#L128)
+
+Determines if zoom level boundaries should be updated.
 
 ## Parameters
 
 ### zoomLevelBoundaries
 
+Current zoom level limits
+
 [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md) | `undefined`
 
 ### targetMinZoomLevel
+
+Proposed new minimum zoom level
 
 `number` | `undefined`
 
@@ -20,7 +26,36 @@ Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:52](https://github
 
 `targetMinZoomLevel is number`
 
-## Description
+True if boundaries should be updated (type guard for targetMinZoomLevel)
 
-Determines if the zoom level boundaries should be updated when the canvas is resized.
-Zoom level boundaries adjustment only tightens the zoom level boundaries; it does not relax them.
+## Remarks
+
+Zoom level boundary updates only tighten (increase minimum zoom), never relax.
+This prevents the camera from zooming out too far when boundaries shrink.
+
+Returns true (update needed) when:
+- No current boundaries exist (first-time setup)
+- Target minimum is higher than current minimum (tightening)
+
+Returns false (no update) when:
+- Target is undefined (invalid/incomplete)
+- Target is Infinity (invalid state)
+- Target is lower than current minimum (would relax, not allowed)
+
+This function is a type guard: when it returns true, TypeScript knows
+targetMinZoomLevel is a number (not undefined).
+
+## Example
+
+```typescript
+const currentLimits = { min: 0.5, max: 10 };
+const newMin = 0.8;
+
+if (zoomLevelBoundariesShouldUpdate(currentLimits, newMin)) {
+  // Safe to use newMin as number here
+  currentLimits.min = newMin;  // Tighten the limit
+}
+
+// No update for lower values
+zoomLevelBoundariesShouldUpdate(currentLimits, 0.3);  // false
+```

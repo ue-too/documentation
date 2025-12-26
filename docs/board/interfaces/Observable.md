@@ -2,7 +2,18 @@
 
 # Interface: Observable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:7](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L7)
+Defined in: [packages/board/src/utils/observable.ts:71](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L71)
+
+Interface for the Observable pattern implementation.
+
+## Remarks
+
+Observables allow multiple observers to subscribe and receive notifications
+when data is emitted. This is the pub-sub pattern for event handling.
+
+Implementations can be synchronous or asynchronous:
+- [SynchronousObservable](../classes/SynchronousObservable.md): Notifies observers immediately
+- [AsyncObservable](../classes/AsyncObservable.md): Notifies observers via microtasks
 
 ## Type Parameters
 
@@ -10,13 +21,15 @@ Defined in: [packages/board/src/utils/observable.ts:7](https://github.com/ue-too
 
 `T` *extends* `any`[]
 
+Tuple type of data emitted to observers
+
 ## Methods
 
 ### notify()
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:9](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L9)
+Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L73)
 
 #### Parameters
 
@@ -34,7 +47,7 @@ Defined in: [packages/board/src/utils/observable.ts:9](https://github.com/ue-too
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:8](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L8)
+Defined in: [packages/board/src/utils/observable.ts:72](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L72)
 
 #### Parameters
 

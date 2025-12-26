@@ -4,11 +4,22 @@
 
 > **KmtInputEventMapping** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:53](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L53)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:90](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L90)
 
-## Description
+Event mapping for the KMT input state machine.
 
-The payload mapping for the events of the keyboard mouse and trackpad input state machine.
+## Remarks
+
+Maps event names to their payload types. Used by the state machine framework
+to provide type-safe event handling.
+
+Key events:
+- **leftPointerDown/Up/Move**: Left mouse button interactions
+- **middlePointerDown/Up/Move**: Middle mouse button interactions (pan)
+- **spacebarDown/Up**: Spacebar for pan mode
+- **scroll**: Regular scroll (pan or zoom depending on device)
+- **scrollWithCtrl**: Ctrl + scroll (always zoom)
+- **disable/enable**: Temporarily disable/enable input processing
 
 ## Properties
 
@@ -16,7 +27,7 @@ The payload mapping for the events of the keyboard mouse and trackpad input stat
 
 > **cursorOnElement**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L60)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:97](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L97)
 
 ***
 
@@ -24,7 +35,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **disable**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:66](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L66)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:103](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L103)
 
 ***
 
@@ -32,7 +43,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **enable**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:67](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L67)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:104](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L104)
 
 ***
 
@@ -40,7 +51,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **leftPointerDown**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:54](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L54)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:91](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L91)
 
 ***
 
@@ -48,7 +59,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **leftPointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L56)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:93](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L93)
 
 ***
 
@@ -56,7 +67,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **leftPointerUp**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:55](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L55)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:92](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L92)
 
 ***
 
@@ -64,7 +75,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **middlePointerDown**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:63](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L63)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:100](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L100)
 
 ***
 
@@ -72,7 +83,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **middlePointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:65](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L65)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:102](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L102)
 
 ***
 
@@ -80,7 +91,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **middlePointerUp**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:64](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L64)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:101](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L101)
 
 ***
 
@@ -88,15 +99,15 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **pointerMove**: [`PointerEventPayload`](PointerEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:68](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L68)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:105](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L105)
 
 ***
 
 ### scroll
 
-> **scroll**: [`ScrollEventPayload`](ScrollEventPayload.md)
+> **scroll**: [`ScrollWithCtrlEventPayload`](ScrollWithCtrlEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:61](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L61)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L98)
 
 ***
 
@@ -104,7 +115,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **scrollWithCtrl**: [`ScrollWithCtrlEventPayload`](ScrollWithCtrlEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:62](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L62)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L99)
 
 ***
 
@@ -112,7 +123,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **spacebarDown**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:57](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L57)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:94](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L94)
 
 ***
 
@@ -120,7 +131,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **spacebarUp**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L58)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:95](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L95)
 
 ***
 
@@ -128,4 +139,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **stayIdle**: `EmptyPayload`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L59)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:96](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L96)

@@ -4,11 +4,10 @@
 
 > **CameraState** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:79](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L79)
+Defined in: [packages/board/src/camera/update-publisher.ts:96](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L96)
 
-## Description
-
-The type of the camera state.
+Snapshot of camera state at the time an event occurs.
+Passed to all event callbacks alongside the event payload.
 
 ## Properties
 
@@ -16,7 +15,9 @@ The type of the camera state.
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:80](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L80)
+Defined in: [packages/board/src/camera/update-publisher.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L98)
+
+Camera position in world coordinates
 
 ***
 
@@ -24,7 +25,9 @@ Defined in: [packages/board/src/camera/update-publisher.ts:80](https://github.co
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:82](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L82)
+Defined in: [packages/board/src/camera/update-publisher.ts:102](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L102)
+
+Current rotation in radians
 
 ***
 
@@ -32,4 +35,6 @@ Defined in: [packages/board/src/camera/update-publisher.ts:82](https://github.co
 
 > **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:81](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L81)
+Defined in: [packages/board/src/camera/update-publisher.ts:100](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L100)
+
+Current zoom level

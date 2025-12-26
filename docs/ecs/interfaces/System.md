@@ -2,7 +2,38 @@
 
 # Interface: System
 
-Defined in: index.d.ts:43
+Defined in: [index.ts:407](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L407)
+
+System interface for processing entities with specific component combinations.
+
+## Remarks
+
+A System maintains a set of entities that match its component signature.
+The ECS automatically updates this set when entities are created, destroyed,
+or have their components modified.
+
+Systems contain only the logic for processing entities - the `entities` set
+is automatically managed by the SystemManager.
+
+## Example
+
+```typescript
+const movementSystem: System = {
+  entities: new Set()
+};
+
+// System logic (called in game loop)
+function updateMovement(deltaTime: number) {
+  movementSystem.entities.forEach(entity => {
+    const pos = ecs.getComponentFromEntity<Position>('Position', entity);
+    const vel = ecs.getComponentFromEntity<Velocity>('Velocity', entity);
+    if (pos && vel) {
+      pos.x += vel.x * deltaTime;
+      pos.y += vel.y * deltaTime;
+    }
+  });
+}
+```
 
 ## Properties
 
@@ -10,4 +41,4 @@ Defined in: index.d.ts:43
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: index.d.ts:44
+Defined in: [index.ts:408](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L408)

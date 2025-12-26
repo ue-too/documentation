@@ -4,7 +4,10 @@
 
 > **convert2WorldSpaceAnchorAtCenter**(`point`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:41](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/coordinate-conversion.ts#L41)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:125](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/coordinate-conversion.ts#L125)
+
+Converts a viewport point (center-anchored) to world space.
+This is the most commonly used viewport-to-world conversion function.
 
 ## Parameters
 
@@ -12,24 +15,60 @@ Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:41](https:
 
 `Point`
 
+Point in viewport coordinates (origin at viewport center)
+
 ### cameraPosition
 
 `Point`
+
+Camera position in world coordinates
 
 ### cameraZoomLevel
 
 `number`
 
+Camera zoom level
+
 ### cameraRotation
 
 `number`
+
+Camera rotation in radians
 
 ## Returns
 
 `Point`
 
-## Description
+World space coordinates of the point
 
-Converts the point to world space.
-The point is in the viewport space where the origin is at the center of the viewport.
-Camera position is the position of the camera in world space.
+## Remarks
+
+Viewport coordinates have the origin at the center of the viewport, with:
+- Positive x to the right
+- Positive y upward
+- Point (0, 0) is the center of the viewport
+
+This is the standard coordinate system for camera operations.
+
+## Example
+
+```typescript
+// Convert viewport center (0,0) to world space
+const worldCenter = convert2WorldSpaceAnchorAtCenter(
+  { x: 0, y: 0 },
+  { x: 500, y: 300 },  // camera at world (500, 300)
+  1.0,
+  0
+);
+// worldCenter will be { x: 500, y: 300 }
+
+// Convert point 100 pixels right of center
+const rightPoint = convert2WorldSpaceAnchorAtCenter(
+  { x: 100, y: 0 },
+  { x: 500, y: 300 },
+  2.0,  // 2x zoom
+  0
+);
+// At 2x zoom, 100 viewport pixels = 50 world units
+// Result: { x: 550, y: 300 }
+```

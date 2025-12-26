@@ -2,7 +2,15 @@
 
 # Class: RawUserInputPublisherWithWebWorkerRelay
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:179](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L179)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:265](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L265)
+
+Interface for publishing raw user input events to observers.
+
+## Remarks
+
+This interface defines the contract for broadcasting user input events
+to external subscribers. Implementations provide the observable pattern
+for input event distribution.
 
 ## Implements
 
@@ -14,7 +22,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **new RawUserInputPublisherWithWebWorkerRelay**(`webWorker`): `RawUserInputPublisherWithWebWorkerRelay`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:187](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L187)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:273](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L273)
 
 #### Parameters
 
@@ -32,7 +40,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:195](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L195)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:281](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L281)
+
+Notifies subscribers of a pan gesture
 
 #### Parameters
 
@@ -54,7 +64,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:207](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L207)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:293](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L293)
+
+Notifies subscribers of a rotate gesture
 
 #### Parameters
 
@@ -76,7 +88,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:201](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L201)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:287](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L287)
+
+Notifies subscribers of a zoom gesture
 
 #### Parameters
 
@@ -102,7 +116,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:213](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L213)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:299](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L299)
+
+Subscribes to input events
 
 #### Type Parameters
 

@@ -4,11 +4,9 @@
 
 > **ScrollEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:31](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L31)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:51](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L51)
 
-## Description
-
-The payload for the scroll event.
+Payload for scroll wheel events.
 
 ## Properties
 
@@ -16,7 +14,9 @@ The payload for the scroll event.
 
 > **deltaX**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:32](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L32)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:52](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L52)
+
+Horizontal scroll delta
 
 ***
 
@@ -24,4 +24,6 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **deltaY**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:33](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L33)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:53](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L53)
+
+Vertical scroll delta

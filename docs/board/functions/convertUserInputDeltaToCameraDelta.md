@@ -4,7 +4,9 @@
 
 > **convertUserInputDeltaToCameraDelta**(`delta`, `camera`): `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:191](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L191)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:652](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L652)
+
+Converts a user input delta (viewport space) to camera movement delta (world space).
 
 ## Parameters
 
@@ -12,14 +14,54 @@ Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:191](https://gi
 
 `Point`
 
+Movement delta in viewport/screen coordinates (CSS pixels)
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance (provides rotation and zoom)
 
 ## Returns
 
 `Point`
 
-## Description
+Equivalent delta in world space
 
-Helper function that converts the user input delta to the camera delta.
+## Remarks
+
+This function performs the standard viewport-to-world delta conversion:
+1. Rotate delta by camera rotation (convert screen direction to world direction)
+2. Scale by inverse zoom (convert screen distance to world distance)
+
+Formula: `worldDelta = rotate(viewportDelta, cameraRotation) / zoomLevel`
+
+This is the core conversion used by [DefaultCameraRig.panByViewPort](../classes/DefaultCameraRig.md#panbyviewport).
+
+## Examples
+
+```typescript
+// User drags mouse 100 pixels right, 50 pixels down
+const viewportDelta = { x: 100, y: 50 };
+
+// Camera at 2x zoom, no rotation
+camera.zoomLevel = 2.0;
+camera.rotation = 0;
+
+const worldDelta = convertUserInputDeltaToCameraDelta(viewportDelta, camera);
+// worldDelta = { x: 50, y: 25 } - half the viewport delta due to 2x zoom
+```
+
+```typescript
+// With camera rotation
+camera.zoomLevel = 1.0;
+camera.rotation = Math.PI / 2;  // 90 degrees
+
+const viewportDelta = { x: 100, y: 0 };  // Drag right
+const worldDelta = convertUserInputDeltaToCameraDelta(viewportDelta, camera);
+// worldDelta ≈ { x: 0, y: -100 } - rotated 90 degrees in world space
+```
+
+## See
+
+[DefaultCameraRig.panByViewPort](../classes/DefaultCameraRig.md#panbyviewport) for usage

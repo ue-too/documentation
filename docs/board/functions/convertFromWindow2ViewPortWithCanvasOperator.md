@@ -2,9 +2,11 @@
 
 # Function: convertFromWindow2ViewPortWithCanvasOperator()
 
-> **convertFromWindow2ViewPortWithCanvasOperator**(`point`, `canvasOperator`): `Point`
+> **convertFromWindow2ViewPortWithCanvasOperator**(`point`, `canvas`, `viewportOriginInCanvasSpace`, `viewportHasFlippedYAxis`): `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:82](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L82)
+Defined in: [packages/board/src/utils/coorindate-conversion.ts:105](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/coorindate-conversion.ts#L105)
+
+Converts a point from window coordinates to viewport coordinates in one step.
 
 ## Parameters
 
@@ -12,10 +14,68 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 `Point`
 
-### canvasOperator
+The point in window coordinates (browser viewport)
+
+### canvas
 
 [`Canvas`](../interfaces/Canvas.md)
+
+The canvas object with position and dimensions
+
+### viewportOriginInCanvasSpace
+
+`Point` = `...`
+
+Viewport origin in canvas space (default: canvas center)
+
+### viewportHasFlippedYAxis
+
+`boolean` = `false`
+
+Whether viewport uses mathematical y-axis (default: false)
 
 ## Returns
 
 `Point`
+
+The point in viewport coordinates
+
+## Remarks
+
+This is a convenience function that combines two conversions:
+1. Window to Canvas: convertFromWindow2Canvas
+2. Canvas to Viewport: convertFromCanvas2ViewPort
+
+It's particularly useful for processing input events (mouse clicks, touches)
+that need to be converted directly to viewport space for interaction handling.
+
+The default viewport origin is the canvas center, which is common for
+mathematical/engineering applications where (0,0) should be in the middle.
+
+## Example
+
+```typescript
+// Mouse click event
+const clickPos = { x: event.clientX, y: event.clientY };
+
+const canvas = {
+  position: { x: 100, y: 50 },
+  width: 800,
+  height: 600
+};
+
+// Convert to centered viewport with y-up
+const viewportPos = convertFromWindow2ViewPortWithCanvasOperator(
+  clickPos,
+  canvas,
+  { x: 400, y: 300 },  // center of canvas
+  true  // mathematical coordinates
+);
+
+// viewportPos is now relative to viewport center with y-up
+```
+
+## See
+
+ - convertFromWindow2Canvas for window to canvas conversion
+ - convertFromCanvas2ViewPort for canvas to viewport conversion

@@ -2,7 +2,9 @@
 
 # Interface: SpatialIndex\<T\>
 
-Defined in: dynamic-tree.d.ts:8
+Defined in: [dynamic-tree.ts:15](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L15)
+
+Interface for spatial indexing data structures.
 
 ## Type Parameters
 
@@ -16,7 +18,7 @@ Defined in: dynamic-tree.d.ts:8
 
 > **clear**(): `void`
 
-Defined in: dynamic-tree.d.ts:9
+Defined in: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L16)
 
 #### Returns
 
@@ -28,7 +30,7 @@ Defined in: dynamic-tree.d.ts:9
 
 > `optional` **draw**(`context`): `void`
 
-Defined in: dynamic-tree.d.ts:12
+Defined in: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L19)
 
 #### Parameters
 
@@ -46,7 +48,7 @@ Defined in: dynamic-tree.d.ts:12
 
 > **insert**(`object`): `void`
 
-Defined in: dynamic-tree.d.ts:10
+Defined in: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L17)
 
 #### Parameters
 
@@ -64,7 +66,7 @@ Defined in: dynamic-tree.d.ts:10
 
 > **retrieve**(`object`): `T`[]
 
-Defined in: dynamic-tree.d.ts:11
+Defined in: [dynamic-tree.ts:18](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L18)
 
 #### Parameters
 

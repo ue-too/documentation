@@ -2,13 +2,30 @@
 
 # Class: ComponentArray\<T\>
 
-Defined in: index.d.ts:21
+Defined in: [index.ts:230](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L230)
+
+Efficient sparse-set data structure for storing component data.
+
+## Remarks
+
+ComponentArray uses a sparse-set implementation for O(1) insertion, deletion,
+and lookup while maintaining dense packing for cache-efficient iteration.
+
+The sparse-set consists of:
+- **Dense array**: Packed component data for iteration
+- **Sparse array**: Maps entity ID to dense array index
+- **Reverse array**: Maps dense array index back to entity ID
+
+This structure allows fast component access by entity ID and fast iteration
+over all components without gaps.
 
 ## Type Parameters
 
 ### T
 
 `T`
+
+The component data type
 
 ## Implements
 
@@ -20,7 +37,7 @@ Defined in: index.d.ts:21
 
 > **new ComponentArray**\<`T`\>(`maxEntities`): `ComponentArray`\<`T`\>
 
-Defined in: index.d.ts:26
+Defined in: [index.ts:237](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L237)
 
 #### Parameters
 
@@ -38,7 +55,7 @@ Defined in: index.d.ts:26
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: index.d.ts:30
+Defined in: [index.ts:296](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L296)
 
 #### Parameters
 
@@ -58,9 +75,9 @@ Defined in: index.d.ts:30
 
 ### getData()
 
-> **getData**(`entity`): `T`
+> **getData**(`entity`): `T` \| `null`
 
-Defined in: index.d.ts:28
+Defined in: [index.ts:259](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L259)
 
 #### Parameters
 
@@ -70,7 +87,7 @@ Defined in: index.d.ts:28
 
 #### Returns
 
-`T`
+`T` \| `null`
 
 ***
 
@@ -78,7 +95,7 @@ Defined in: index.d.ts:28
 
 > **insertData**(`entity`, `data`): `void`
 
-Defined in: index.d.ts:27
+Defined in: [index.ts:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L244)
 
 #### Parameters
 
@@ -100,7 +117,7 @@ Defined in: index.d.ts:27
 
 > **removeData**(`entity`): `void`
 
-Defined in: index.d.ts:29
+Defined in: [index.ts:276](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L276)
 
 #### Parameters
 

@@ -1,10 +1,10 @@
 [@ue-too/being](../globals.md) / Delay
 
-# Type Alias: Delay\<Context, EventPayloadMapping, States\>
+# Type Alias: Delay\<Context, EventPayloadMapping, States, EventOutputMapping\>
 
-> **Delay**\<`Context`, `EventPayloadMapping`, `States`\> = `object`
+> **Delay**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> = `object`
 
-Defined in: [interface.ts:155](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L155)
+Defined in: [interface.ts:308](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L308)
 
 ## Type Parameters
 
@@ -20,13 +20,17 @@ Defined in: [interface.ts:155](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 `States` *extends* `string`
 
+### EventOutputMapping
+
+`EventOutputMapping` *extends* `Partial`\<`Record`\<keyof `EventPayloadMapping`, `unknown`\>\> = [`DefaultOutputMapping`](DefaultOutputMapping.md)\<`EventPayloadMapping`\>
+
 ## Properties
 
 ### action
 
-> **action**: [`Action`](Action.md)\<`Context`, `EventPayloadMapping`, `States`\>
+> **action**: [`Action`](Action.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:157](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L157)
+Defined in: [interface.ts:315](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L315)
 
 ***
 
@@ -34,4 +38,4 @@ Defined in: [interface.ts:157](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **time**: `number`
 
-Defined in: [interface.ts:156](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L156)
+Defined in: [interface.ts:314](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L314)

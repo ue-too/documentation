@@ -4,8 +4,6 @@
 
 > **RotateObserver** = [`Callback`](Callback.md)\<`"rotate"`\>
 
-Defined in: [packages/board/src/camera/update-publisher.ts:132](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L132)
+Defined in: [packages/board/src/camera/update-publisher.ts:158](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L158)
 
-## Description
-
-The observer type for the rotate event.
+Callback type for rotation events.

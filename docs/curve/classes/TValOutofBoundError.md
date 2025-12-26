@@ -2,7 +2,9 @@
 
 # Class: TValOutofBoundError
 
-Defined in: [packages/curve/src/b-curve.ts:1231](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/b-curve.ts#L1231)
+Defined in: [packages/curve/src/b-curve.ts:1293](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/b-curve.ts#L1293)
+
+Error thrown when t-value is out of valid range [0, 1].
 
 ## Extends
 
@@ -14,7 +16,7 @@ Defined in: [packages/curve/src/b-curve.ts:1231](https://github.com/ue-too/ue-to
 
 > **new TValOutofBoundError**(`message`): `TValOutofBoundError`
 
-Defined in: [packages/curve/src/b-curve.ts:1232](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/b-curve.ts#L1232)
+Defined in: [packages/curve/src/b-curve.ts:1294](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/b-curve.ts#L1294)
 
 #### Parameters
 

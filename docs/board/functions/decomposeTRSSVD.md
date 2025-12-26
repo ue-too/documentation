@@ -4,7 +4,7 @@
 
 > **decomposeTRSSVD**(`matrix`): `object`
 
-Defined in: [packages/board/src/camera/utils/matrix.ts:332](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/matrix.ts#L332)
+Defined in: [packages/board/src/camera/utils/matrix.ts:532](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/matrix.ts#L532)
 
 Decomposes a matrix using SVD (Singular Value Decomposition) approach
 This is an alternative method that can handle more complex transformations

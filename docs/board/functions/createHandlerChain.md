@@ -4,7 +4,7 @@
 
 > **createHandlerChain**\<`T`, `Args`\>(...`handlers`): [`Handler`](../type-aliases/Handler.md)\<`T`, `Args`\>
 
-Defined in: [packages/board/src/utils/handler-pipeline.ts:31](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/handler-pipeline.ts#L31)
+Defined in: [packages/board/src/utils/handler-pipeline.ts:31](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/handler-pipeline.ts#L31)
 
 ## Type Parameters
 

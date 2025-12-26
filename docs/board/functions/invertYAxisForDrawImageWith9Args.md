@@ -4,7 +4,9 @@
 
 > **invertYAxisForDrawImageWith9Args**(`args`): `any`[]
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:251](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L251)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:677](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L677)
+
+Inverts y-coordinates for the 9-argument variant of drawImage.
 
 ## Parameters
 
@@ -12,6 +14,37 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:251](https://
 
 `any`[]
 
+The arguments array for drawImage
+
 ## Returns
 
 `any`[]
+
+Modified arguments with inverted y-coordinates
+
+## Remarks
+
+The 9-argument drawImage signature is:
+drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight)
+
+When inverting y-axis, we need to adjust:
+- sy (source y): Flip relative to image height
+- sHeight: Negate (height becomes negative in flipped space)
+- dy (destination y): Negate
+- dy offset: Subtract destination height
+
+This ensures images render correctly when the canvas y-axis is flipped.
+
+## Example
+
+```typescript
+// Original call (top-left origin):
+ctx.drawImage(img, 0, 0, 100, 100, 50, 50, 200, 200);
+
+// With flipped y-axis, this becomes:
+// sy = imageHeight - 0, sHeight = -100, dy = -50 - 200, dHeight = -200
+```
+
+## See
+
+[reverseYAxis](reverseYAxis.md) for the main y-axis flipping proxy

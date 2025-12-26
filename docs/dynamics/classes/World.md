@@ -2,15 +2,54 @@
 
 # Class: World
 
-Defined in: world.d.ts:6
+Defined in: [world.ts:64](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L64)
+
+Main physics world managing rigid body simulation.
+
+## Remarks
+
+The World class is the main entry point for physics simulation. It manages
+all rigid bodies, runs collision detection and response, enforces constraints,
+and provides performance optimizations like sleeping and spatial indexing.
+
+### Simulation Loop
+
+Call `world.step(deltaTime)` each frame to advance the simulation. This:
+1. Updates sleeping states
+2. Detects collisions (broad and narrow phase)
+3. Resolves collisions with impulses
+4. Enforces constraints
+5. Updates body positions and velocities
+
+### Performance Tuning
+
+- Choose appropriate spatial index for your use case
+- Enable sleeping for better performance with many bodies
+- Use collision filtering to reduce collision checks
+
+## Example
+
+Basic setup
+```typescript
+const world = new World(2000, 2000, 'dynamictree');
+
+// Add bodies
+const ball = new Circle({ x: 0, y: 100 }, 20, 0, 10, false);
+world.addRigidBody('ball', ball);
+
+// Simulation loop
+function update(dt: number) {
+  world.step(dt);
+}
+```
 
 ## Constructors
 
 ### Constructor
 
-> **new World**(`maxTransWidth`, `maxTransHeight`, `spatialIndexType?`): `World`
+> **new World**(`maxTransWidth`, `maxTransHeight`, `spatialIndexType`): `World`
 
-Defined in: world.d.ts:20
+Defined in: [world.ts:79](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L79)
 
 #### Parameters
 
@@ -22,9 +61,9 @@ Defined in: world.d.ts:20
 
 `number`
 
-##### spatialIndexType?
+##### spatialIndexType
 
-[`SpatialIndexType`](../type-aliases/SpatialIndexType.md)
+[`SpatialIndexType`](../type-aliases/SpatialIndexType.md) = `'dynamictree'`
 
 #### Returns
 
@@ -34,9 +73,9 @@ Defined in: world.d.ts:20
 
 ### \_context
 
-> **\_context**: `CanvasRenderingContext2D`
+> **\_context**: `CanvasRenderingContext2D` \| `null` = `null`
 
-Defined in: world.d.ts:19
+Defined in: [world.ts:77](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L77)
 
 ## Accessors
 
@@ -46,7 +85,7 @@ Defined in: world.d.ts:19
 
 > **get** **currentSpatialIndexType**(): [`SpatialIndexType`](../type-aliases/SpatialIndexType.md)
 
-Defined in: world.d.ts:34
+Defined in: [world.ts:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L244)
 
 ##### Returns
 
@@ -60,7 +99,7 @@ Defined in: world.d.ts:34
 
 > **get** **resolveCollision**(): `boolean`
 
-Defined in: world.d.ts:25
+Defined in: [world.ts:204](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L204)
 
 ##### Returns
 
@@ -70,7 +109,7 @@ Defined in: world.d.ts:25
 
 > **set** **resolveCollision**(`resolveCollision`): `void`
 
-Defined in: world.d.ts:26
+Defined in: [world.ts:208](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L208)
 
 ##### Parameters
 
@@ -90,7 +129,7 @@ Defined in: world.d.ts:26
 
 > **get** **sleepingEnabled**(): `boolean`
 
-Defined in: world.d.ts:37
+Defined in: [world.ts:274](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L274)
 
 ##### Returns
 
@@ -100,7 +139,7 @@ Defined in: world.d.ts:37
 
 > **set** **sleepingEnabled**(`enabled`): `void`
 
-Defined in: world.d.ts:38
+Defined in: [world.ts:278](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L278)
 
 ##### Parameters
 
@@ -118,7 +157,7 @@ Defined in: world.d.ts:38
 
 > **addConstraint**(`constraint`): `void`
 
-Defined in: world.d.ts:31
+Defined in: [world.ts:232](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L232)
 
 #### Parameters
 
@@ -136,7 +175,7 @@ Defined in: world.d.ts:31
 
 > **addPinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `void`
 
-Defined in: world.d.ts:33
+Defined in: [world.ts:240](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L240)
 
 #### Parameters
 
@@ -166,7 +205,7 @@ Defined in: world.d.ts:33
 
 > **addRigidBody**(`ident`, `body`): `void`
 
-Defined in: world.d.ts:21
+Defined in: [world.ts:101](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L101)
 
 #### Parameters
 
@@ -188,7 +227,7 @@ Defined in: world.d.ts:21
 
 > **getCollisionStats**(): `object`
 
-Defined in: world.d.ts:40
+Defined in: [world.ts:296](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L296)
 
 #### Returns
 
@@ -220,7 +259,7 @@ Defined in: world.d.ts:40
 
 > **getConstraints**(): [`Constraint`](../interfaces/Constraint.md)[]
 
-Defined in: world.d.ts:32
+Defined in: [world.ts:236](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L236)
 
 #### Returns
 
@@ -232,7 +271,7 @@ Defined in: world.d.ts:32
 
 > **getPairManager**(): [`PairManager`](PairManager.md)
 
-Defined in: world.d.ts:39
+Defined in: [world.ts:291](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L291)
 
 #### Returns
 
@@ -244,7 +283,7 @@ Defined in: world.d.ts:39
 
 > **getRigidBodyList**(): [`RigidBody`](../interfaces/RigidBody.md)[]
 
-Defined in: world.d.ts:27
+Defined in: [world.ts:212](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L212)
 
 #### Returns
 
@@ -256,7 +295,7 @@ Defined in: world.d.ts:27
 
 > **getRigidBodyMap**(): `Map`\<`string`, [`RigidBody`](../interfaces/RigidBody.md)\>
 
-Defined in: world.d.ts:28
+Defined in: [world.ts:220](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L220)
 
 #### Returns
 
@@ -268,7 +307,7 @@ Defined in: world.d.ts:28
 
 > **getSpatialIndexStats**(): `any`
 
-Defined in: world.d.ts:36
+Defined in: [world.ts:261](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L261)
 
 #### Returns
 
@@ -280,7 +319,7 @@ Defined in: world.d.ts:36
 
 > **removeRigidBody**(`ident`): `void`
 
-Defined in: world.d.ts:22
+Defined in: [world.ts:111](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L111)
 
 #### Parameters
 
@@ -298,7 +337,7 @@ Defined in: world.d.ts:22
 
 > **resolveCollisionPhase**(): `Point`[]
 
-Defined in: world.d.ts:24
+Defined in: [world.ts:160](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L160)
 
 #### Returns
 
@@ -310,7 +349,7 @@ Defined in: world.d.ts:24
 
 > **setMaxTransHeight**(`height`): `void`
 
-Defined in: world.d.ts:29
+Defined in: [world.ts:224](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L224)
 
 #### Parameters
 
@@ -328,7 +367,7 @@ Defined in: world.d.ts:29
 
 > **setMaxTransWidth**(`width`): `void`
 
-Defined in: world.d.ts:30
+Defined in: [world.ts:228](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L228)
 
 #### Parameters
 
@@ -346,7 +385,7 @@ Defined in: world.d.ts:30
 
 > **setSpatialIndexType**(`type`): `void`
 
-Defined in: world.d.ts:35
+Defined in: [world.ts:248](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L248)
 
 #### Parameters
 
@@ -364,7 +403,7 @@ Defined in: world.d.ts:35
 
 > **step**(`deltaTime`): `void`
 
-Defined in: world.d.ts:23
+Defined in: [world.ts:129](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/world.ts#L129)
 
 #### Parameters
 

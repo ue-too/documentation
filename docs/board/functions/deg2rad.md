@@ -4,7 +4,9 @@
 
 > **deg2rad**(`deg`): `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:136](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L136)
+Defined in: [packages/board/src/camera/utils/rotation.ts:254](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L254)
+
+Converts degrees to radians.
 
 ## Parameters
 
@@ -12,10 +14,20 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:136](https://github.com
 
 `number`
 
+Angle in degrees
+
 ## Returns
 
 `number`
 
-## Description
+Equivalent angle in radians
 
-Converts degrees to radians.
+## Example
+
+```typescript
+deg2rad(0);     // 0
+deg2rad(90);    // π/2
+deg2rad(180);   // π
+deg2rad(360);   // 2π
+deg2rad(-45);   // -π/4
+```

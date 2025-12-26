@@ -2,12 +2,56 @@
 
 # Class: VanillaTouchEventParser
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:26](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L26)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:86](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L86)
 
-## Description
+DOM event parser for touch input.
 
-The vanilla touch event parser.
-This parser converts the raw events to events that can be used by the input state machine.
+## Remarks
+
+This parser converts raw DOM TouchEvents into state machine events and coordinates
+with the orchestrator to process outputs. It serves as the entry point for all touch
+input in the input interpretation pipeline.
+
+**Event Flow**:
+```
+DOM TouchEvents → Parser → State Machine → Parser → Orchestrator → Camera/Observers
+```
+
+**Responsibilities**:
+1. Listen for DOM touch events (touchstart/move/end/cancel)
+2. Extract touch point data (identifier, x, y)
+3. Convert to state machine event format
+4. Send events to the state machine
+5. Forward state machine outputs to the orchestrator
+
+**Touch Point Extraction**:
+- touchstart/touchend: Uses `changedTouches` (only new/removed touches)
+- touchmove: Uses `targetTouches` (all touches on the canvas)
+
+**Gesture Control**:
+Individual gesture types (pan, zoom, rotate) can be disabled independently,
+though currently the state machine outputs are filtered by the orchestrator
+rather than the parser.
+
+The parser prevents default touch behavior to avoid browser scroll/zoom
+interfering with canvas gestures.
+
+## Example
+
+```typescript
+const canvasElement = document.getElementById("canvas");
+const stateMachine = createTouchInputStateMachine(context);
+const orchestrator = new InputOrchestrator(cameraMux, cameraRig, publisher);
+const parser = new VanillaTouchEventParser(stateMachine, orchestrator, canvasElement);
+
+parser.setUp(); // Starts listening for touch events
+
+// Disable zoom gestures temporarily
+parser.zoomDisabled = true;
+
+// Cleanup when done
+parser.tearDown();
+```
 
 ## Implements
 
@@ -17,15 +61,19 @@ This parser converts the raw events to events that can be used by the input stat
 
 ### Constructor
 
-> **new VanillaTouchEventParser**(`touchInputStateMachine`, `canvas?`): `VanillaTouchEventParser`
+> **new VanillaTouchEventParser**(`touchInputStateMachine`, `orchestrator`, `canvas?`): `VanillaTouchEventParser`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:38](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L38)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L99)
 
 #### Parameters
 
 ##### touchInputStateMachine
 
 [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
+
+##### orchestrator
+
+[`InputOrchestrator`](InputOrchestrator.md)
 
 ##### canvas?
 
@@ -43,15 +91,41 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:85](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L85)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:155](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L155)
+
+Whether all touch input is disabled
 
 ##### Returns
 
 `boolean`
 
+Whether all touch input is disabled
+
 #### Implementation of
 
 [`TouchEventParser`](../interfaces/TouchEventParser.md).[`disabled`](../interfaces/TouchEventParser.md#disabled)
+
+***
+
+### orchestrator
+
+#### Get Signature
+
+> **get** **orchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
+
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:113](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L113)
+
+The orchestrator that handles state machine outputs
+
+##### Returns
+
+[`InputOrchestrator`](InputOrchestrator.md)
+
+The orchestrator that handles state machine outputs
+
+#### Implementation of
+
+[`TouchEventParser`](../interfaces/TouchEventParser.md).[`orchestrator`](../interfaces/TouchEventParser.md#orchestrator)
 
 ***
 
@@ -61,7 +135,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **panDisabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:89](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L89)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:159](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L159)
+
+Whether pan gestures are disabled
 
 ##### Returns
 
@@ -71,7 +147,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **set** **panDisabled**(`panDisabled`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:93](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L93)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:163](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L163)
+
+Whether pan gestures are disabled
 
 ##### Parameters
 
@@ -82,6 +160,8 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 ##### Returns
 
 `void`
+
+Whether pan gestures are disabled
 
 #### Implementation of
 
@@ -95,7 +175,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **rotateDisabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:105](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L105)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:175](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L175)
+
+Whether rotation gestures are disabled (currently unused)
 
 ##### Returns
 
@@ -105,7 +187,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **set** **rotateDisabled**(`rotateDisabled`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:109](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L109)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:179](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L179)
+
+Whether rotation gestures are disabled (currently unused)
 
 ##### Parameters
 
@@ -117,9 +201,33 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 `void`
 
+Whether rotation gestures are disabled (currently unused)
+
 #### Implementation of
 
 [`TouchEventParser`](../interfaces/TouchEventParser.md).[`rotateDisabled`](../interfaces/TouchEventParser.md#rotatedisabled)
+
+***
+
+### stateMachine
+
+#### Get Signature
+
+> **get** **stateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
+
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:109](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L109)
+
+The state machine that processes parsed events
+
+##### Returns
+
+[`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
+
+The state machine that processes parsed events
+
+#### Implementation of
+
+[`TouchEventParser`](../interfaces/TouchEventParser.md).[`stateMachine`](../interfaces/TouchEventParser.md#statemachine)
 
 ***
 
@@ -129,7 +237,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **touchStateMachine**(): [`TouchInputStateMachine`](../type-aliases/TouchInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:47](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L47)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:117](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L117)
 
 ##### Returns
 
@@ -143,7 +251,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **get** **zoomDisabled**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:97](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L97)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:167](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L167)
+
+Whether zoom gestures are disabled
 
 ##### Returns
 
@@ -153,7 +263,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **set** **zoomDisabled**(`zoomDisabled`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:101](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L101)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:171](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L171)
+
+Whether zoom gestures are disabled
 
 ##### Parameters
 
@@ -165,6 +277,8 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 `void`
 
+Whether zoom gestures are disabled
+
 #### Implementation of
 
 [`TouchEventParser`](../interfaces/TouchEventParser.md).[`zoomDisabled`](../interfaces/TouchEventParser.md#zoomdisabled)
@@ -175,7 +289,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:160](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L160)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:239](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L239)
+
+Attaches to a new canvas element
 
 #### Parameters
 
@@ -197,7 +313,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **bindListeners**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:51](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L51)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
 
 #### Returns
 
@@ -209,7 +325,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **disableStrategy**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:62](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L62)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:132](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L132)
 
 #### Returns
 
@@ -221,7 +337,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **enableStrategy**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:58](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L58)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:128](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L128)
 
 #### Returns
 
@@ -233,7 +349,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **setUp**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:66](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L66)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:136](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L136)
+
+Initializes event listeners
 
 #### Returns
 
@@ -249,7 +367,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:79](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L79)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:149](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L149)
+
+Removes event listeners and cleans up
 
 #### Returns
 
@@ -265,7 +385,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchcancelHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:126](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L126)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:205](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L205)
 
 #### Parameters
 
@@ -283,7 +403,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchendHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:137](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L137)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:216](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L216)
 
 #### Parameters
 
@@ -301,7 +421,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchmoveHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:148](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L148)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:227](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L227)
 
 #### Parameters
 
@@ -319,7 +439,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-to
 
 > **touchstartHandler**(`e`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:113](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L113)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:192](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L192)
 
 #### Parameters
 

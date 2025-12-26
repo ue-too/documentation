@@ -4,7 +4,9 @@
 
 > **restrictZoomByHandler**(`delta`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:92](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/zoom-handler.ts#L92)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:341](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/zoom-handler.ts#L341)
+
+Handler pipeline step that prevents "zoom by" operations when zoom is locked.
 
 ## Parameters
 
@@ -12,23 +14,54 @@ Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:92](https://gi
 
 `number`
 
+Zoom level change
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`ZoomHandlerRestrictConfig`](../type-aliases/ZoomHandlerRestrictConfig.md)
 
+Restriction configuration
+
 ## Returns
 
 `number`
 
-## Description
+Zero (if locked) or delta (if unlocked)
 
-The function that is part of the zoom by handler pipeline.
-Restricts the zoom level to the zoom boundaries.
+## Remarks
+
+This handler implements a global zoom lock for relative zoom operations.
+
+Behavior:
+- If `restrictZoom` is true: Returns 0 (prevents any change)
+- If `restrictZoom` is false: Returns delta unchanged
+
+Use this for:
+- Disabling zoom during specific application states
+- Fixed-zoom viewing modes
+- Read-only camera modes
+
+Can be used standalone, but typically composed into a handler pipeline via
+[createDefaultZoomByOnlyHandler](createDefaultZoomByOnlyHandler.md) or [createHandlerChain](createHandlerChain.md).
+
+## Example
+
+```typescript
+const config: ZoomHandlerRestrictConfig = {
+  restrictZoom: true  // Lock zoom
+};
+
+const delta = 0.5;
+const result = restrictZoomByHandler(delta, camera, config);
+// result = 0 (zoom locked, no change allowed)
+```
 
 ## See
 
-[createHandlerChain](createHandlerChain.md)
+[createDefaultZoomByOnlyHandler](createDefaultZoomByOnlyHandler.md) for default pipeline usage

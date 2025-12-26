@@ -4,7 +4,9 @@
 
 > **restrictPanByHandler**(`delta`, `camera`, `config`): `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:114](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L114)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:397](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L397)
+
+Handler pipeline step that applies axis restrictions to "pan by" deltas.
 
 ## Parameters
 
@@ -12,20 +14,55 @@ Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:114](https://gi
 
 `Point`
 
+Movement delta in world space
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`PanHandlerRestrictionConfig`](../type-aliases/PanHandlerRestrictionConfig.md)
 
+Restriction configuration
+
 ## Returns
 
 `Point`
 
-## Description
+Restricted movement delta
 
-Function that is part of the "pan by" handler pipeline. It restricts the pan delta to within a single axis based on the config. (relative to the current camera position)
-You can use this function standalone to restrict the pan delta to within a single axis based on the config. 
-But it is recommended to use this kind of function as part of the pan handler pipeline. (to include this function in your own custom pan handler pipeline)
+## Remarks
+
+This handler enforces axis-lock constraints on relative camera movement.
+It directly transforms the delta according to restriction rules.
+
+Restrictions applied by [convertDeltaToComplyWithRestriction](convertDeltaToComplyWithRestriction.md):
+- World-space axis locks (X/Y)
+- Viewport-relative axis locks (horizontal/vertical, accounting for rotation)
+
+Can be used standalone, but typically composed into a handler pipeline via
+[createDefaultPanByHandler](createDefaultPanByHandler.md) or [createHandlerChain](createHandlerChain.md).
+
+## Example
+
+```typescript
+// Standalone usage - lock to screen-horizontal movement
+const config: PanHandlerRestrictionConfig = {
+  restrictXTranslation: false,
+  restrictYTranslation: false,
+  restrictRelativeXTranslation: false,
+  restrictRelativeYTranslation: true  // Lock screen-vertical
+};
+
+const delta = { x: 50, y: 30 };
+const restricted = restrictPanByHandler(delta, camera, config);
+// Result depends on camera rotation - only horizontal screen movement allowed
+```
+
+## See
+
+ - [convertDeltaToComplyWithRestriction](convertDeltaToComplyWithRestriction.md) for restriction logic
+ - [createDefaultPanByHandler](createDefaultPanByHandler.md) for default pipeline usage

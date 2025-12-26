@@ -2,7 +2,41 @@
 
 # Class: TouchInputTracker
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:29](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L29)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L98)
+
+Production implementation of TouchContext that tracks multi-touch state.
+
+## Remarks
+
+This class maintains a map of active touch points, storing their initial positions
+to enable gesture recognition. The state machine uses this context to:
+
+- Calculate pan deltas (difference between initial and current midpoint)
+- Calculate zoom factors (change in distance between two touch points)
+- Determine gesture type (pan vs zoom based on relative magnitudes)
+
+**Touch Point Lifecycle**:
+1. `addTouchPoints`: Called on touchstart to register new touches
+2. `updateTouchPoints`: Called on touchmove to update current positions
+3. `removeTouchPoints`: Called on touchend/touchcancel to unregister touches
+
+The initial positions are preserved until the touch ends, allowing continuous
+calculation of deltas throughout the gesture.
+
+## Example
+
+```typescript
+const canvasProxy = new CanvasProxy(canvasElement);
+const context = new TouchInputTracker(canvasProxy);
+const stateMachine = createTouchInputStateMachine(context);
+
+// When a two-finger touch starts
+context.addTouchPoints([
+  {ident: 0, x: 100, y: 200},
+  {ident: 1, x: 300, y: 200}
+]);
+console.log(context.getCurrentTouchPointsCount()); // 2
+```
 
 ## Implements
 
@@ -12,19 +46,15 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 ### Constructor
 
-> **new TouchInputTracker**(`canvas`, `inputPublisher`): `TouchInputTracker`
+> **new TouchInputTracker**(`canvas`): `TouchInputTracker`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:36](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L36)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:104](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L104)
 
 #### Parameters
 
 ##### canvas
 
 [`Canvas`](../interfaces/Canvas.md)
-
-##### inputPublisher
-
-[`RawUserInputPublisher`](RawUserInputPublisher.md)
 
 #### Returns
 
@@ -38,7 +68,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:89](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L89)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:148](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L148)
+
+Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 ##### Returns
 
@@ -48,7 +80,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **set** **alignCoordinateSystem**(`value`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:93](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L93)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:152](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L152)
+
+Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 ##### Parameters
 
@@ -59,6 +93,8 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 ##### Returns
 
 `void`
+
+Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 #### Implementation of
 
@@ -72,11 +108,15 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **get** **canvas**(): [`Canvas`](../interfaces/Canvas.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:97](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L97)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:156](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L156)
+
+Canvas accessor for dimensions and coordinate transformations
 
 ##### Returns
 
 [`Canvas`](../interfaces/Canvas.md)
+
+Canvas accessor for dimensions and coordinate transformations
 
 #### Implementation of
 
@@ -88,7 +128,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **addTouchPoints**(`points`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:42](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L42)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:109](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L109)
+
+Adds new touch points to tracking
 
 #### Parameters
 
@@ -110,7 +152,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **cleanup**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:101](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L101)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:160](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L160)
 
 #### Returns
 
@@ -126,7 +168,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **getCurrentTouchPointsCount**(): `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:56](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L56)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:123](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L123)
+
+Returns the current number of active touch points
 
 #### Returns
 
@@ -142,7 +186,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **getInitialTouchPointsPositions**(`idents`): [`TouchPoints`](../type-aliases/TouchPoints.md)[]
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:60](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L60)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:127](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L127)
+
+Retrieves the initial positions of specific touch points
 
 #### Parameters
 
@@ -160,59 +206,13 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 ***
 
-### notifyOnPan()
-
-> **notifyOnPan**(`delta`): `void`
-
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:81](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L81)
-
-#### Parameters
-
-##### delta
-
-`Point`
-
-#### Returns
-
-`void`
-
-#### Implementation of
-
-[`TouchContext`](../interfaces/TouchContext.md).[`notifyOnPan`](../interfaces/TouchContext.md#notifyonpan)
-
-***
-
-### notifyOnZoom()
-
-> **notifyOnZoom**(`zoomAmount`, `anchorPoint`): `void`
-
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:85](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L85)
-
-#### Parameters
-
-##### zoomAmount
-
-`number`
-
-##### anchorPoint
-
-`Point`
-
-#### Returns
-
-`void`
-
-#### Implementation of
-
-[`TouchContext`](../interfaces/TouchContext.md).[`notifyOnZoom`](../interfaces/TouchContext.md#notifyonzoom)
-
-***
-
 ### removeTouchPoints()
 
 > **removeTouchPoints**(`identifiers`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:48](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L48)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:115](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L115)
+
+Removes touch points from tracking by identifier
 
 #### Parameters
 
@@ -234,7 +234,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **setup**(): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:104](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L104)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:163](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L163)
 
 #### Returns
 
@@ -250,7 +250,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **updateTouchPoints**(`pointsMoved`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:73](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L73)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:140](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L140)
+
+Updates the current positions of touch points
 
 #### Parameters
 

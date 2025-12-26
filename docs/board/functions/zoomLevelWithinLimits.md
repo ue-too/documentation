@@ -4,7 +4,9 @@
 
 > **zoomLevelWithinLimits**(`zoomLevel`, `zoomLevelLimits?`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:44](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L44)
+Defined in: [packages/board/src/camera/utils/zoom.ts:112](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L112)
+
+Checks if a zoom level is within specified limits.
 
 ## Parameters
 
@@ -12,14 +14,38 @@ Defined in: [packages/board/src/camera/utils/zoom.ts:44](https://github.com/ue-t
 
 `number`
 
+The zoom level to check
+
 ### zoomLevelLimits?
 
 [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md)
+
+Optional zoom constraints
 
 ## Returns
 
 `boolean`
 
-## Description
+True if zoom level is valid and within limits, false otherwise
 
-Checks if the zoom level is within the limits.
+## Remarks
+
+Returns false if:
+- Zoom level is ≤ 0 (invalid zoom)
+- Zoom level exceeds maximum limit (if defined)
+- Zoom level is below minimum limit (if defined)
+
+Returns true if no limits are defined or zoom is within bounds.
+
+## Example
+
+```typescript
+const limits = { min: 0.5, max: 4 };
+
+zoomLevelWithinLimits(2.0, limits);   // true
+zoomLevelWithinLimits(0.1, limits);   // false (below min)
+zoomLevelWithinLimits(10, limits);    // false (above max)
+zoomLevelWithinLimits(-1, limits);    // false (negative zoom)
+zoomLevelWithinLimits(0, limits);     // false (zero zoom)
+zoomLevelWithinLimits(2.0);           // true (no limits)
+```

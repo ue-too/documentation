@@ -4,7 +4,7 @@
 
 > **solveWorldPinJointConstraint**(`constraint`, `dt`): `void`
 
-Defined in: constraint.d.ts:35
+Defined in: [constraint.ts:276](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L276)
 
 ## Parameters
 

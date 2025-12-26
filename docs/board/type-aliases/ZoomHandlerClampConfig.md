@@ -4,7 +4,27 @@
 
 > **ZoomHandlerClampConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:12](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/zoom-handler.ts#L12)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:43](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/zoom-handler.ts#L43)
+
+Configuration for zoom level boundary clamping.
+
+## Remarks
+
+Controls whether zoom operations should be constrained to camera's zoom boundaries.
+
+When `clampZoom` is true, zoom handlers enforce [BoardCamera.zoomBoundaries](../interfaces/ObservableBoardCamera.md#zoomboundaries)
+limits (min/max zoom levels). When false, zoom can exceed configured boundaries.
+
+## Example
+
+```typescript
+const config: ZoomHandlerClampConfig = {
+  clampZoom: true  // Enforce zoom boundaries
+};
+
+camera.zoomBoundaries = { min: 0.5, max: 4.0 };
+// Zoom will be clamped to [0.5, 4.0] range
+```
 
 ## Properties
 
@@ -12,8 +32,6 @@ Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:12](https://gi
 
 > **clampZoom**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:16](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/zoom-handler.ts#L16)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:47](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/zoom-handler.ts#L47)
 
-#### Description
-
-Whether to clamp the zoom level.
+Whether to enforce zoom level boundaries.

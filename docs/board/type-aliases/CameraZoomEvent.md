@@ -4,7 +4,10 @@
 
 > **CameraZoomEvent** = `object` & [`CameraZoomEventPayload`](CameraZoomEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:70](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L70)
+Defined in: [packages/board/src/camera/update-publisher.ts:85](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L85)
+
+Zoom event with discriminated type field for 'all' event handling.
+Includes type discriminator and zoom payload.
 
 ## Type Declaration
 
@@ -12,7 +15,4 @@ Defined in: [packages/board/src/camera/update-publisher.ts:70](https://github.co
 
 > **type**: `"zoom"`
 
-## Description
-
-The type of the camera zoom event.
-The type is for discriminating the event type when the all event is triggered.
+Event type discriminator

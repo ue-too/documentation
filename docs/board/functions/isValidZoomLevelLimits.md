@@ -4,11 +4,15 @@
 
 > **isValidZoomLevelLimits**(`zoomLevelLimits`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L11)
+Defined in: [packages/board/src/camera/utils/zoom.ts:37](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L37)
+
+Validates that zoom level limits are logically consistent.
 
 ## Parameters
 
 ### zoomLevelLimits
+
+The zoom limits to validate
 
 [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md) | `undefined`
 
@@ -16,6 +20,20 @@ Defined in: [packages/board/src/camera/utils/zoom.ts:11](https://github.com/ue-t
 
 `boolean`
 
-## Description
+True if limits are valid or undefined, false if min > max
 
-Checks if the zoom level limits are valid.
+## Remarks
+
+Returns true if:
+- Limits are undefined (no constraints)
+- Only min or max is defined
+- Both are defined and min ≤ max
+
+## Example
+
+```typescript
+isValidZoomLevelLimits({ min: 0.5, max: 5 });    // true
+isValidZoomLevelLimits({ min: 5, max: 0.5 });    // false
+isValidZoomLevelLimits({ min: 0.5 });            // true
+isValidZoomLevelLimits(undefined);               // true
+```

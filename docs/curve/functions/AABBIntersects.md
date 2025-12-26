@@ -4,7 +4,9 @@
 
 > **AABBIntersects**(`AABB1`, `AABB2`): `boolean`
 
-Defined in: [packages/curve/src/b-curve.ts:1243](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/b-curve.ts#L1243)
+Defined in: [packages/curve/src/b-curve.ts:1313](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/b-curve.ts#L1313)
+
+Tests if two axis-aligned bounding boxes intersect.
 
 ## Parameters
 

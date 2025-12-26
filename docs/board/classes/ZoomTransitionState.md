@@ -2,15 +2,14 @@
 
 # Class: ZoomTransitionState
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:114](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L114)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:157](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L157)
 
-## Description
-
-The transition state of the zoom control state machine.
+State implementation for zoom animations and transitions.
+Processes animation updates and allows user input to interrupt.
 
 ## Extends
 
-- `TemplateState`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+- `TemplateState`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
 ## Constructors
 
@@ -18,7 +17,7 @@ The transition state of the zoom control state machine.
 
 > **new ZoomTransitionState**(): `ZoomTransitionState`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:116](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L116)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:159](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L159)
 
 #### Returns
 
@@ -26,15 +25,15 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Overrides
 
-`TemplateState<ZoomEventPayloadMapping, ZoomContext, ZoomControlStates>.constructor`
+`TemplateState<ZoomEventPayloadMapping, BaseContext, ZoomControlStates, ZoomControlOutputMapping>.constructor`
 
 ## Properties
 
 ### \_delay
 
-> `protected` **\_delay**: `Delay`\<[`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\> \| `undefined` = `undefined`
+> `protected` **\_delay**: `Delay`\<`BaseContext`, [`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\> \| `undefined` = `undefined`
 
-Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L291)
+Defined in: [packages/being/src/interface.ts:593](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L593)
 
 #### Inherited from
 
@@ -46,7 +45,7 @@ Defined in: [packages/being/src/interface.ts:291](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L290)
+Defined in: [packages/being/src/interface.ts:592](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L592)
 
 #### Inherited from
 
@@ -58,7 +57,7 @@ Defined in: [packages/being/src/interface.ts:290](https://github.com/ue-too/ue-t
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L289)
+Defined in: [packages/being/src/interface.ts:591](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L591)
 
 #### Inherited from
 
@@ -70,13 +69,13 @@ Defined in: [packages/being/src/interface.ts:289](https://github.com/ue-too/ue-t
 
 #### Get Signature
 
-> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+> **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L301)
+Defined in: [packages/being/src/interface.ts:603](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L603)
 
 ##### Returns
 
-`Delay`\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+`Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
 #### Inherited from
 
@@ -90,7 +89,7 @@ Defined in: [packages/being/src/interface.ts:301](https://github.com/ue-too/ue-t
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L297)
+Defined in: [packages/being/src/interface.ts:599](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L599)
 
 ##### Returns
 
@@ -106,13 +105,13 @@ Defined in: [packages/being/src/interface.ts:297](https://github.com/ue-too/ue-t
 
 #### Get Signature
 
-> **get** **eventReactions**(): `EventReactions`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+> **get** **eventReactions**(): `EventReactions`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:131](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L131)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:174](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L174)
 
 ##### Returns
 
-`EventReactions`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+`EventReactions`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
 #### Overrides
 
@@ -126,7 +125,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L293)
+Defined in: [packages/being/src/interface.ts:595](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L595)
 
 ##### Returns
 
@@ -142,17 +141,17 @@ Defined in: [packages/being/src/interface.ts:293](https://github.com/ue-too/ue-t
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L309)
+Defined in: [packages/being/src/interface.ts:611](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L611)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### stateMachine
 
-`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
 ##### to
 
@@ -170,9 +169,9 @@ Defined in: [packages/being/src/interface.ts:309](https://github.com/ue-too/ue-t
 
 ### handles()
 
-> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventHandledResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `K` *extends* keyof [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md) ? [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L313)
+Defined in: [packages/being/src/interface.ts:615](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L615)
 
 #### Type Parameters
 
@@ -188,15 +187,15 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### stateMachine
 
-`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
 #### Returns
 
-`EventHandledResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+`EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `K` *extends* keyof [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md) ? [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
 #### Inherited from
 
@@ -206,15 +205,15 @@ Defined in: [packages/being/src/interface.ts:313](https://github.com/ue-too/ue-t
 
 ### lockedOnObjectZoomByAtInput()
 
-> **lockedOnObjectZoomByAtInput**(`context`, `payload`): `void`
+> **lockedOnObjectZoomByAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:135](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L135)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:178](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L178)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -222,21 +221,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### lockedOnObjectZoomToAtInput()
 
-> **lockedOnObjectZoomToAtInput**(`context`, `payload`): `void`
+> **lockedOnObjectZoomToAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:139](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L139)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:182](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L182)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -244,21 +243,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### transitionZoomByAtCenterInput()
 
-> **transitionZoomByAtCenterInput**(`context`, `payload`): `void`
+> **transitionZoomByAtCenterInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:155](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L155)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:198](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L198)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -266,21 +265,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### transitionZoomByAtInput()
 
-> **transitionZoomByAtInput**(`context`, `payload`): `void`
+> **transitionZoomByAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:151](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L151)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:194](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L194)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -288,21 +287,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### transitionZoomToAtCenterInput()
 
-> **transitionZoomToAtCenterInput**(`context`, `payload`): `void`
+> **transitionZoomToAtCenterInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:163](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L163)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:206](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L206)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -310,21 +309,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### transitionZoomToAtInput()
 
-> **transitionZoomToAtInput**(`context`, `payload`): `void`
+> **transitionZoomToAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:159](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L159)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:202](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L202)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -332,21 +331,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### transitionZoomToAtWorldInput()
 
-> **transitionZoomToAtWorldInput**(`context`, `payload`): `void`
+> **transitionZoomToAtWorldInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:167](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L167)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:210](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L210)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -354,7 +353,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
@@ -362,17 +361,17 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L305)
+Defined in: [packages/being/src/interface.ts:607](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L607)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### stateMachine
 
-`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), [`ZoomContext`](../interfaces/ZoomContext.md), [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>
+`StateMachine`\<[`ZoomEventPayloadMapping`](../type-aliases/ZoomEventPayloadMapping.md), `BaseContext`, [`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\>
 
 ##### from
 
@@ -390,15 +389,15 @@ Defined in: [packages/being/src/interface.ts:305](https://github.com/ue-too/ue-t
 
 ### userZoomByAtInput()
 
-> **userZoomByAtInput**(`context`, `payload`): `void`
+> **userZoomByAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:143](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L143)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:186](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L186)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -406,21 +405,21 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
 ***
 
 ### userZoomToAtInput()
 
-> **userZoomToAtInput**(`context`, `payload`): `void`
+> **userZoomToAtInput**(`context`, `payload`): [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:147](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L147)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:190](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L190)
 
 #### Parameters
 
 ##### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
 
 ##### payload
 
@@ -428,4 +427,4 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 #### Returns
 
-`void`
+[`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)

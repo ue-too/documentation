@@ -4,12 +4,14 @@
 
 > **EventTargetWithPointerEvents** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:61](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L61)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:101](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L101)
 
-## Description
+Minimal event target interface for framework interoperability.
 
-The event target with pointer events.
-This is for the interoperability between the vanilla javascript and the pixijs event system.
+## Remarks
+
+This interface allows the parser to attach event listeners to different
+types of event targets (HTMLElement, Canvas, PixiJS Container, etc.).
 
 ## Properties
 
@@ -17,7 +19,7 @@ This is for the interoperability between the vanilla javascript and the pixijs e
 
 > **addEventListener**: (`type`, `listener`, `options?`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:62](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L62)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:102](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L102)
 
 #### Parameters
 
@@ -45,7 +47,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-km
 
 > **removeEventListener**: (`type`, `listener`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:63](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L63)
+Defined in: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:103](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L103)
 
 #### Parameters
 

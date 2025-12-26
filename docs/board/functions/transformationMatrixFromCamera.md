@@ -4,7 +4,10 @@
 
 > **transformationMatrixFromCamera**(`cameraPosition`, `cameraZoomLevel`, `cameraRotation`): [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:126](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/coordinate-conversion.ts#L126)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:378](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/coordinate-conversion.ts#L378)
+
+Creates a transformation matrix from camera parameters.
+Combines position, zoom, and rotation into a single transform.
 
 ## Parameters
 
@@ -12,14 +15,29 @@ Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:126](https
 
 `Point`
 
+Camera position in world coordinates
+
 ### cameraZoomLevel
 
 `number`
+
+Camera zoom level
 
 ### cameraRotation
 
 `number`
 
+Camera rotation in radians
+
 ## Returns
 
 [`TransformationMatrix`](../type-aliases/TransformationMatrix.md)
+
+Transformation matrix for viewport-to-world conversion
+
+## Remarks
+
+The resulting matrix can be used with [convert2WorldSpaceWithTransformationMatrix](convert2WorldSpaceWithTransformationMatrix.md)
+for efficient batch transformations when camera state doesn't change.
+
+Matrix composition order: Translation → Rotation → Scale(1/zoom)

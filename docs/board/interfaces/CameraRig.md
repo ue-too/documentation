@@ -2,15 +2,30 @@
 
 # Interface: CameraRig
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:35](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/camera-rig.ts#L35)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:59](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L59)
 
-## Description
+High-level camera control interface providing intuitive methods for pan, zoom, and rotation.
+The camera rig acts as a facade over the camera, handling coordinate conversions and constraints.
 
-The context for the pan control state machine.
+## Remarks
+
+CameraRig provides:
+- **Coordinate-aware methods**: Separate methods for viewport and world coordinates
+- **Anchor-point zooming**: Keep points stationary during zoom (zoom-to-cursor)
+- **Configuration management**: Unified config for all camera operations
+- **Handler composition**: Combines pan, zoom, rotation handlers with proper sequencing
+
+The rig ensures correct transformation order when combining operations
+(e.g., zoom-at-point requires zoom followed by pan compensation).
+
+## See
+
+ - [DefaultCameraRig](../classes/DefaultCameraRig.md) for the default implementation
+ - [createDefaultCameraRig](../functions/createDefaultCameraRig.md) for a factory function
 
 ## Extends
 
-- [`PanContext`](PanContext.md).[`ZoomContext`](ZoomContext.md).[`RotateContext`](RotateContext.md)
+- `BaseContext`
 
 ## Properties
 
@@ -18,11 +33,9 @@ The context for the pan control state machine.
 
 > **camera**: [`ObservableBoardCamera`](ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:36](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/camera-rig.ts#L36)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:61](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L61)
 
-#### Overrides
-
-[`PanContext`](PanContext.md).[`camera`](PanContext.md#camera)
+The underlying observable camera being controlled
 
 ***
 
@@ -30,19 +43,9 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:36](https://gith
 
 > **config**: [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:37](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/camera-rig.ts#L37)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L64)
 
-***
-
-### limitEntireViewPort
-
-> **limitEntireViewPort**: `boolean`
-
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L56)
-
-#### Inherited from
-
-[`PanContext`](PanContext.md).[`limitEntireViewPort`](PanContext.md#limitentireviewport)
+Current configuration for all camera operations
 
 ***
 
@@ -50,7 +53,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panByViewPort**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:57](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L57)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:81](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L81)
+
+Pans the camera by a delta in viewport coordinates.
 
 #### Parameters
 
@@ -58,13 +63,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 `Point`
 
+Movement delta in viewport space (CSS pixels, origin at center)
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`PanContext`](PanContext.md).[`panByViewPort`](PanContext.md#panbyviewport)
 
 ***
 
@@ -72,7 +75,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panByWorld**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L59)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:93](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L93)
+
+Pans the camera by a delta in world coordinates.
 
 #### Parameters
 
@@ -80,13 +85,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 `Point`
 
+Movement delta in world space
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`PanContext`](PanContext.md).[`panByWorld`](PanContext.md#panbyworld)
 
 ***
 
@@ -94,7 +97,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panToViewPort**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L58)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:87](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L87)
+
+Pans the camera to a target position in viewport coordinates.
 
 #### Parameters
 
@@ -102,13 +107,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 `Point`
 
+Target position in viewport space
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`PanContext`](PanContext.md).[`panToViewPort`](PanContext.md#pantoviewport)
 
 ***
 
@@ -116,7 +119,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **panToWorld**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L60)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L99)
+
+Pans the camera to a target position in world coordinates.
 
 #### Parameters
 
@@ -124,13 +129,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 `Point`
 
+Target position in world space
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`PanContext`](PanContext.md).[`panToWorld`](PanContext.md#pantoworld)
 
 ***
 
@@ -138,7 +141,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **rotateBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:55](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L55)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:105](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L105)
+
+Rotates the camera by a delta angle.
 
 #### Parameters
 
@@ -146,13 +151,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 `number`
 
+Rotation delta in radians
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`RotateContext`](RotateContext.md).[`rotateBy`](RotateContext.md#rotateby)
 
 ***
 
@@ -160,7 +163,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **rotateTo**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:56](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L56)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:111](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L111)
+
+Rotates the camera to a target angle.
 
 #### Parameters
 
@@ -168,13 +173,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 `number`
 
+Target rotation in radians
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`RotateContext`](RotateContext.md).[`rotateTo`](RotateContext.md#rotateto)
 
 ***
 
@@ -182,7 +185,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-co
 
 > **zoomBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:78](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L78)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L137)
+
+Zooms by a delta at viewport center.
 
 #### Parameters
 
@@ -190,13 +195,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Zoom delta
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomBy`](ZoomContext.md#zoomby)
 
 ***
 
@@ -204,7 +207,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomByAt**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:76](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L76)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:125](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L125)
+
+Zooms by a delta, keeping a viewport point stationary.
 
 #### Parameters
 
@@ -212,17 +217,17 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Zoom delta
+
 ##### at
 
 `Point`
 
+Anchor point in viewport coordinates
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomByAt`](ZoomContext.md#zoombyat)
 
 ***
 
@@ -230,7 +235,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomByAtWorld**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:80](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L80)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:151](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L151)
+
+Zooms by a delta, keeping a world point stationary.
 
 #### Parameters
 
@@ -238,17 +245,17 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Zoom delta
+
 ##### at
 
 `Point`
 
+Anchor point in world coordinates
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomByAtWorld`](ZoomContext.md#zoombyatworld)
 
 ***
 
@@ -256,7 +263,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomTo**: (`targetZoom`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L77)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:131](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L131)
+
+Zooms to a target level at viewport center.
 
 #### Parameters
 
@@ -264,13 +273,11 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Target zoom level
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomTo`](ZoomContext.md#zoomto)
 
 ***
 
@@ -278,7 +285,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomToAt**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:75](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L75)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:118](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L118)
+
+Zooms to a target level, keeping a viewport point stationary.
 
 #### Parameters
 
@@ -286,17 +295,17 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Target zoom level
+
 ##### at
 
 `Point`
 
+Anchor point in viewport coordinates
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomToAt`](ZoomContext.md#zoomtoat)
 
 ***
 
@@ -304,7 +313,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **zoomToAtWorld**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:79](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L79)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:144](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L144)
+
+Zooms to a target level, keeping a world point stationary.
 
 #### Parameters
 
@@ -312,17 +323,17 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 `number`
 
+Target zoom level
+
 ##### at
 
 `Point`
 
+Anchor point in world coordinates
+
 #### Returns
 
 `void`
-
-#### Inherited from
-
-[`ZoomContext`](ZoomContext.md).[`zoomToAtWorld`](ZoomContext.md#zoomtoatworld)
 
 ## Methods
 
@@ -330,7 +341,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > **cleanup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L3)
+Defined in: [packages/being/src/interface.ts:31](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L31)
 
 #### Returns
 
@@ -338,7 +349,7 @@ Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too
 
 #### Inherited from
 
-[`PanContext`](PanContext.md).[`cleanup`](PanContext.md#cleanup)
+`BaseContext.cleanup`
 
 ***
 
@@ -346,13 +357,17 @@ Defined in: [packages/being/src/interface.ts:3](https://github.com/ue-too/ue-too
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:38](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/camera-rig.ts#L38)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:70](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L70)
+
+Updates the camera rig configuration.
 
 #### Parameters
 
 ##### config
 
 `Partial`\<[`CameraRigConfig`](../type-aliases/CameraRigConfig.md)\>
+
+Partial configuration to merge with current config
 
 #### Returns
 
@@ -364,7 +379,7 @@ Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:38](https://gith
 
 > **setup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L2)
+Defined in: [packages/being/src/interface.ts:30](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L30)
 
 #### Returns
 
@@ -372,7 +387,7 @@ Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too
 
 #### Inherited from
 
-[`PanContext`](PanContext.md).[`setup`](PanContext.md#setup)
+`BaseContext.setup`
 
 ***
 
@@ -380,7 +395,9 @@ Defined in: [packages/being/src/interface.ts:2](https://github.com/ue-too/ue-too
 
 > **update**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:39](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/camera-rig.ts#L39)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:75](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/camera-rig.ts#L75)
+
+Updates the camera rig state (called per frame if needed).
 
 #### Returns
 

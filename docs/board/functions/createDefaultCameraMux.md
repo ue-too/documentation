@@ -2,20 +2,33 @@
 
 # Function: createDefaultCameraMux()
 
-> **createDefaultCameraMux**(`camera`): [`CameraMux`](../interfaces/CameraMux.md)
+> **createDefaultCameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:40](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/relay.ts#L40)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:104](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L104)
 
-## Parameters
-
-### camera
-
-[`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
+Factory function to create a default camera input multiplexer.
+Returns a [Relay](../classes/Relay.md) instance that allows all inputs to pass through.
 
 ## Returns
 
 [`CameraMux`](../interfaces/CameraMux.md)
 
-## Description
+A new stateless relay multiplexer
 
-Create a default relay control center.
+## Remarks
+
+This is a convenience function for creating the simplest possible camera mux.
+The returned instance has no state and never blocks inputs.
+
+## Example
+
+```typescript
+const cameraMux = createDefaultCameraMux();
+
+// Use with camera rig or input handlers
+const cameraRig = new CameraRig(camera, cameraMux);
+```
+
+## See
+
+[Relay](../classes/Relay.md) for implementation details

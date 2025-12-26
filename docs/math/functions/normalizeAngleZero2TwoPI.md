@@ -4,7 +4,9 @@
 
 > **normalizeAngleZero2TwoPI**(`angle`): `number`
 
-Defined in: [index.ts:157](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L157)
+Defined in: [index.ts:671](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L671)
+
+Normalizes an angle to the range [0, 2π).
 
 ## Parameters
 
@@ -12,10 +14,23 @@ Defined in: [index.ts:157](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3
 
 `number`
 
+Angle in radians (can be any value)
+
 ## Returns
 
 `number`
 
-## Description
+Normalized angle between 0 and 2π
 
-Normalizes the angle to be between 0 and 2π.
+## Remarks
+
+This function wraps any angle to the range [0, 2π) by taking the modulo
+and ensuring the result is positive.
+
+## Example
+
+```typescript
+normalizeAngleZero2TwoPI(Math.PI * 3); // π (180 degrees)
+normalizeAngleZero2TwoPI(-Math.PI / 2); // 3π/2 (270 degrees)
+normalizeAngleZero2TwoPI(0); // 0
+```

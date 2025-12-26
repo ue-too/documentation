@@ -2,7 +2,29 @@
 
 # Class: RGBAnimationHelper
 
-Defined in: animatable-attribute.d.ts:36
+Defined in: [animatable-attribute.ts:242](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L242)
+
+Interface for type-specific interpolation helpers.
+
+## Remarks
+
+Animation helpers provide the `lerp` (linear interpolation) logic for specific types.
+Different types require different interpolation strategies:
+- Numbers: Simple linear interpolation
+- Points: Component-wise interpolation
+- Colors (RGB): Component-wise color interpolation
+- Strings: Step-based (threshold) interpolation
+
+## Example
+
+```typescript
+const myHelper: AnimatableAttributeHelper<number> = {
+  lerp: (ratio, start, end) => {
+    const t = (ratio - start.percentage) / (end.percentage - start.percentage);
+    return start.value + t * (end.value - start.value);
+  }
+};
+```
 
 ## Implements
 
@@ -14,7 +36,7 @@ Defined in: animatable-attribute.d.ts:36
 
 > **new RGBAnimationHelper**(): `RGBAnimationHelper`
 
-Defined in: animatable-attribute.d.ts:37
+Defined in: [animatable-attribute.ts:243](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L243)
 
 #### Returns
 
@@ -26,7 +48,9 @@ Defined in: animatable-attribute.d.ts:37
 
 > **lerp**(`ratio`, `start`, `end`): [`RGB`](../type-aliases/RGB.md)
 
-Defined in: animatable-attribute.d.ts:38
+Defined in: [animatable-attribute.ts:247](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L247)
+
+Interpolates between two keyframes at a given ratio.
 
 #### Parameters
 
@@ -34,17 +58,25 @@ Defined in: animatable-attribute.d.ts:38
 
 `number`
 
+Current animation progress (0.0 to 1.0)
+
 ##### start
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<[`RGB`](../type-aliases/RGB.md)\>
+
+Starting keyframe
 
 ##### end
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<[`RGB`](../type-aliases/RGB.md)\>
 
+Ending keyframe
+
 #### Returns
 
 [`RGB`](../type-aliases/RGB.md)
+
+Interpolated value at the given ratio
 
 #### Implementation of
 

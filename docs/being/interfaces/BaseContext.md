@@ -2,7 +2,34 @@
 
 # Interface: BaseContext
 
-Defined in: [interface.ts:1](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L1)
+Defined in: [interface.ts:29](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L29)
+
+Base context interface for state machines.
+
+## Remarks
+
+The context is shared across all states in a state machine and can be used to store data
+that persists between state transitions. All custom contexts must extend this interface.
+
+The setup and cleanup methods provide lifecycle hooks for resource management:
+- `setup()`: Called when the context is initialized
+- `cleanup()`: Called when the context is destroyed
+
+## Example
+
+```typescript
+interface MyContext extends BaseContext {
+  counter: number;
+  data: string[];
+  setup() {
+    this.counter = 0;
+    this.data = [];
+  }
+  cleanup() {
+    this.data = [];
+  }
+}
+```
 
 ## Methods
 
@@ -10,7 +37,7 @@ Defined in: [interface.ts:1](https://github.com/ue-too/ue-too/blob/c02efc01f7c19
 
 > **cleanup**(): `void`
 
-Defined in: [interface.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L3)
+Defined in: [interface.ts:31](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L31)
 
 #### Returns
 
@@ -22,7 +49,7 @@ Defined in: [interface.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19
 
 > **setup**(): `void`
 
-Defined in: [interface.ts:2](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L2)
+Defined in: [interface.ts:30](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L30)
 
 #### Returns
 

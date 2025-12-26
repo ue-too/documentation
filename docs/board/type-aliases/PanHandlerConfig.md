@@ -4,8 +4,21 @@
 
 > **PanHandlerConfig** = [`PanHandlerRestrictionConfig`](PanHandlerRestrictionConfig.md) & [`PanHandlerClampConfig`](PanHandlerClampConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L11)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:22](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L22)
 
-## Description
+Combined configuration for pan handler behavior, merging restriction and clamping settings.
 
-Configuration for the pan handler functions.
+## Remarks
+
+This type combines [PanHandlerRestrictionConfig](PanHandlerRestrictionConfig.md) and [PanHandlerClampConfig](PanHandlerClampConfig.md)
+to provide complete control over camera panning behavior.
+
+Pan handlers use this configuration to:
+- Restrict movement along specific axes (world or viewport-relative)
+- Clamp camera position to stay within boundaries
+- Control whether entire viewport or just center must stay in bounds
+
+## See
+
+ - [PanHandlerRestrictionConfig](PanHandlerRestrictionConfig.md) for movement restriction options
+ - [PanHandlerClampConfig](PanHandlerClampConfig.md) for boundary clamping options

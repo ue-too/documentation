@@ -4,7 +4,9 @@
 
 > **restrictPanToHandler**(`destination`, `camera`, `config`): `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:97](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L97)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:349](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L349)
+
+Handler pipeline step that applies axis restrictions to "pan to" destinations.
 
 ## Parameters
 
@@ -12,20 +14,57 @@ Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:97](https://git
 
 `Point`
 
+Target camera position in world space
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`PanHandlerRestrictionConfig`](../type-aliases/PanHandlerRestrictionConfig.md)
 
+Restriction configuration
+
 ## Returns
 
 `Point`
 
-## Description
+Restricted destination position
 
-Function that is part of the "pan to" handler pipeline. It restricts the "pan to" destination to within a single axis based on the config. (relative to the current camera position)
-You can use this function standalone to restrict the "pan to" destination to within a single axis based on the config. 
-But it is recommended to use this kind of function as part of the pan handler pipeline. (to include this function in your own custom pan handler pipeline)
+## Remarks
+
+This handler enforces axis-lock constraints on absolute camera positioning.
+It converts the destination to a delta, applies restrictions, then converts back.
+
+Algorithm:
+1. Calculate delta from current position to destination
+2. Apply restrictions using [convertDeltaToComplyWithRestriction](convertDeltaToComplyWithRestriction.md)
+3. If delta becomes zero, return original destination (already at target)
+4. Otherwise, return current position + restricted delta
+
+Can be used standalone, but typically composed into a handler pipeline via
+[createDefaultPanToHandler](createDefaultPanToHandler.md) or [createHandlerChain](createHandlerChain.md).
+
+## Example
+
+```typescript
+// Standalone usage
+const config: PanHandlerRestrictionConfig = {
+  restrictYTranslation: true,  // Lock Y axis
+  restrictXTranslation: false,
+  restrictRelativeXTranslation: false,
+  restrictRelativeYTranslation: false
+};
+
+const destination = { x: 1000, y: 500 };
+const restricted = restrictPanToHandler(destination, camera, config);
+// If camera is at { x: 0, y: 200 }, result is { x: 1000, y: 200 }
+```
+
+## See
+
+ - [convertDeltaToComplyWithRestriction](convertDeltaToComplyWithRestriction.md) for restriction logic
+ - [createDefaultPanToHandler](createDefaultPanToHandler.md) for default pipeline usage

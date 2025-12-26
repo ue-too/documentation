@@ -4,11 +4,15 @@
 
 > **RawUserInputEventMap** = `object`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:76](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L76)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L98)
 
-## Description
+Mapping of event names to their payload types.
 
-The raw user input event map.
+## Remarks
+
+This type enables type-safe event subscription:
+- Subscribe to specific events ("pan", "zoom", "rotate") to receive only those payloads
+- Subscribe to "all" to receive all events with discriminated type property
 
 ## Properties
 
@@ -16,7 +20,7 @@ The raw user input event map.
 
 > **all**: [`RawUserInputEvent`](RawUserInputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:80](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L80)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:102](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L102)
 
 ***
 
@@ -24,7 +28,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **pan**: [`RawUserPanInputEventPayload`](RawUserPanInputEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:77](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L77)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L99)
 
 ***
 
@@ -32,7 +36,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **rotate**: [`RawUserRotateInputEventPayload`](RawUserRotateInputEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:79](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L79)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:101](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L101)
 
 ***
 
@@ -40,4 +44,4 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **zoom**: [`RawUserZoomInputEventPayload`](RawUserZoomInputEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:78](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L78)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:100](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L100)

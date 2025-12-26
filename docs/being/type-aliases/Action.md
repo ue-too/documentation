@@ -1,10 +1,10 @@
 [@ue-too/being](../globals.md) / Action
 
-# Type Alias: Action\<Context, EventPayloadMapping, States\>
+# Type Alias: Action\<Context, EventPayloadMapping, States, EventOutputMapping, Output\>
 
-> **Action**\<`Context`, `EventPayloadMapping`, `States`\> = `object`
+> **Action**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`, `Output`\> = `object`
 
-Defined in: [interface.ts:150](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L150)
+Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L297)
 
 ## Type Parameters
 
@@ -20,13 +20,21 @@ Defined in: [interface.ts:150](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 `States` *extends* `string`
 
+### EventOutputMapping
+
+`EventOutputMapping` *extends* `Partial`\<`Record`\<keyof `EventPayloadMapping`, `unknown`\>\> = [`DefaultOutputMapping`](DefaultOutputMapping.md)\<`EventPayloadMapping`\>
+
+### Output
+
+`Output` = `void`
+
 ## Properties
 
 ### action()
 
-> **action**: (`context`, `event`, `stateMachine`) => `void`
+> **action**: (`context`, `event`, `stateMachine`) => `Output` \| `void`
 
-Defined in: [interface.ts:151](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L151)
+Defined in: [interface.ts:304](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L304)
 
 #### Parameters
 
@@ -40,11 +48,11 @@ Defined in: [interface.ts:151](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ##### stateMachine
 
-[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 #### Returns
 
-`void`
+`Output` \| `void`
 
 ***
 
@@ -52,4 +60,4 @@ Defined in: [interface.ts:151](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > `optional` **defaultTargetState**: `States`
 
-Defined in: [interface.ts:152](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L152)
+Defined in: [interface.ts:305](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L305)

@@ -2,7 +2,7 @@
 
 # Interface: PinJointConstraint
 
-Defined in: constraint.d.ts:23
+Defined in: [constraint.ts:212](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L212)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: constraint.d.ts:23
 
 > **anchorA**: `Point`
 
-Defined in: constraint.d.ts:26
+Defined in: [constraint.ts:215](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L215)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: constraint.d.ts:26
 
 > **anchorB**: `Point`
 
-Defined in: constraint.d.ts:27
+Defined in: [constraint.ts:216](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L216)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: constraint.d.ts:27
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-Defined in: constraint.d.ts:24
+Defined in: [constraint.ts:213](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L213)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: constraint.d.ts:24
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-Defined in: constraint.d.ts:25
+Defined in: [constraint.ts:214](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L214)

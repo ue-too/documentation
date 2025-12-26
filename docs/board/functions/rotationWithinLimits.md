@@ -4,7 +4,9 @@
 
 > **rotationWithinLimits**(`rotation`, `rotationLimits?`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:44](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L44)
+Defined in: [packages/board/src/camera/utils/rotation.ts:107](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L107)
+
+Checks if a rotation angle is within specified angular limits.
 
 ## Parameters
 
@@ -12,14 +14,36 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:44](https://github.com/
 
 `number`
 
+The rotation angle to check in radians
+
 ### rotationLimits?
 
 [`RotationLimits`](../type-aliases/RotationLimits.md)
+
+Optional rotation constraints with direction
 
 ## Returns
 
 `boolean`
 
-## Description
+True if rotation is within the allowed arc or no limits specified, false otherwise
 
-Checks if the rotation is within the limits.
+## Remarks
+
+Returns true if:
+- No limits are specified (undefined)
+- Start and end angles are effectively equal (full circle allowed)
+- Rotation falls within the arc from start to end in the specified direction
+
+The rotation is normalized to [0, 2π] before checking.
+
+## Example
+
+```typescript
+const limits = { start: 0, end: Math.PI/2, ccw: true, startAsTieBreaker: true };
+
+rotationWithinLimits(Math.PI/4, limits);   // true (within range)
+rotationWithinLimits(Math.PI, limits);     // false (outside range)
+rotationWithinLimits(0, limits);           // true (at start)
+rotationWithinLimits(Math.PI/2, limits);   // true (at end)
+```

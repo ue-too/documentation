@@ -4,11 +4,9 @@
 
 > **TouchEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:12](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L12)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:29](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L29)
 
-## Description
-
-The touch event payload.
+Payload for touch events containing active touch points.
 
 ## Properties
 
@@ -16,4 +14,6 @@ The touch event payload.
 
 > **points**: [`TouchPoints`](TouchPoints.md)[]
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L13)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:30](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L30)
+
+Array of touch points involved in this event

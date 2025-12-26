@@ -4,12 +4,10 @@
 
 > **UnSubscribe** = () => `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:111](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L111)
+Defined in: [packages/board/src/camera/update-publisher.ts:137](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L137)
+
+Function returned by event subscriptions that unsubscribes the callback when called.
 
 ## Returns
 
 `void`
-
-## Description
-
-The type of the unsubscribe function.

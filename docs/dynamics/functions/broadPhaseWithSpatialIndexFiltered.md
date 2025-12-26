@@ -4,7 +4,7 @@
 
 > **broadPhaseWithSpatialIndexFiltered**(`spatialIndex`, `bodies`): `object`[]
 
-Defined in: collision.d.ts:41
+Defined in: [collision.ts:382](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/collision.ts#L382)
 
 ## Parameters
 

@@ -4,8 +4,7 @@
 
 > **AllCameraEventPayload** = [`CameraRotateEvent`](CameraRotateEvent.md) \| [`CameraPanEvent`](CameraPanEvent.md) \| [`CameraZoomEvent`](CameraZoomEvent.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:90](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L90)
+Defined in: [packages/board/src/camera/update-publisher.ts:111](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L111)
 
-## Description
-
-The payload type of the "all" camera event payload.
+Union type of all camera event payloads with type discriminators.
+Used for the 'all' event which fires for any camera change.

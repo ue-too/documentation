@@ -4,18 +4,32 @@
 
 > **createDefaultRotateControlStateMachine**(`context`): [`RotateControlStateMachine`](../classes/RotateControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:235](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L235)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:313](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L313)
+
+Creates a rotation control state machine with default configuration.
 
 ## Parameters
 
 ### context
 
-[`RotateContext`](../interfaces/RotateContext.md)
+`BaseContext`
+
+Camera rig or context for rotation operations
 
 ## Returns
 
 [`RotateControlStateMachine`](../classes/RotateControlStateMachine.md)
 
-## Description
+Configured rotation control state machine starting in `ACCEPTING_USER_INPUT` state
 
-Create the default rotate control state machine.
+## Remarks
+
+Factory function for creating a rotation state machine with sensible defaults.
+The machine starts in `ACCEPTING_USER_INPUT` state, ready to accept user rotation gestures.
+
+## Example
+
+```typescript
+const cameraRig = createDefaultCameraRig(camera);
+const rotateSM = createDefaultRotateControlStateMachine(cameraRig);
+```

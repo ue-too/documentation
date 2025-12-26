@@ -4,7 +4,9 @@
 
 > **clampRotateToHandler**(`targetRotation`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:81](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/rotation-handler.ts#L81)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:303](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/rotation-handler.ts#L303)
+
+Handler pipeline step that clamps "rotate to" targets to camera rotation boundaries.
 
 ## Parameters
 
@@ -12,19 +14,54 @@ Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:81](https:
 
 `number`
 
+Target rotation angle in radians
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance (provides rotationBoundaries)
 
 ### config
 
 [`RotationHandlerClampConfig`](../type-aliases/RotationHandlerClampConfig.md)
 
+Clamping configuration
+
 ## Returns
 
 `number`
 
-## Description
+Clamped rotation angle
 
-This is the clamp handler for the "rotate to" handler pipeline.
-It clamps the target rotation to the range of the camera's rotation boundaries.
+## Remarks
+
+This handler enforces angular limits on absolute rotation requests.
+
+Behavior:
+- If `clampRotation` is false: Returns target unchanged
+- If `clampRotation` is true: Clamps target to [BoardCamera.rotationBoundaries](../interfaces/ObservableBoardCamera.md#rotationboundaries)
+
+The clamping handles:
+- Missing boundaries (undefined min/max)
+- One-sided constraints (only min or only max)
+- Full range constraints
+
+## Example
+
+```typescript
+camera.rotationBoundaries = { min: 0, max: Math.PI };  // [0°, 180°]
+
+const config: RotationHandlerClampConfig = {
+  clampRotation: true
+};
+
+const target = Math.PI * 1.5;  // 270 degrees (exceeds max)
+const clamped = clampRotateToHandler(target, camera, config);
+// clamped = π (180 degrees - clamped to max boundary)
+```
+
+## See
+
+ - [clampRotation](clampRotation.md) for clamping implementation
+ - [createDefaultRotateToHandler](createDefaultRotateToHandler.md) for default pipeline usage

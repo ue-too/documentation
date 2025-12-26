@@ -4,7 +4,9 @@
 
 > **restrictRotateToHandler**(`targetRotation`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:95](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/rotation-handler.ts#L95)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:342](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/rotation-handler.ts#L342)
+
+Handler pipeline step that prevents "rotate to" operations when rotation is locked.
 
 ## Parameters
 
@@ -12,19 +14,48 @@ Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:95](https:
 
 `number`
 
+Target rotation angle in radians
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`RotationHandlerRestrictConfig`](../type-aliases/RotationHandlerRestrictConfig.md)
 
+Restriction configuration
+
 ## Returns
 
 `number`
 
-## Description
+Current rotation (if locked) or target (if unlocked)
 
-This is the restrict handler for the "rotate to" handler pipeline.
-It restricts the target rotation to the range of the camera's rotation boundaries.
+## Remarks
+
+This handler implements a global rotation lock for absolute rotation operations.
+
+Behavior:
+- If `restrictRotation` is true: Returns current rotation (prevents any change)
+- If `restrictRotation` is false: Returns target unchanged
+
+## Example
+
+```typescript
+camera.rotation = Math.PI / 2;  // Currently at 90 degrees
+
+const config: RotationHandlerRestrictConfig = {
+  restrictRotation: true  // Lock rotation
+};
+
+const target = Math.PI;  // Try to rotate to 180 degrees
+const result = restrictRotateToHandler(target, camera, config);
+// result = π/2 (rotation locked, returns current angle)
+```
+
+## See
+
+[createDefaultRotateToHandler](createDefaultRotateToHandler.md) for default pipeline usage

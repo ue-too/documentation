@@ -4,7 +4,15 @@
 
 > **GeoCoord** = `object`
 
-Defined in: [projection.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L3)
+Defined in: [projection.ts:13](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L13)
+
+Geographic coordinate representing a location on Earth's surface.
+
+## Remarks
+
+Coordinates use the WGS84 standard:
+- Latitude: -90 to 90 degrees (negative = south, positive = north)
+- Longitude: -180 to 180 degrees (negative = west, positive = east)
 
 ## Properties
 
@@ -12,7 +20,9 @@ Defined in: [projection.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 > **latitude**: `number`
 
-Defined in: [projection.ts:5](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L5)
+Defined in: [projection.ts:17](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L17)
+
+Latitude in degrees (-90 to 90)
 
 ***
 
@@ -20,4 +30,6 @@ Defined in: [projection.ts:5](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 > **longitude**: `number`
 
-Defined in: [projection.ts:4](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L4)
+Defined in: [projection.ts:15](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L15)
+
+Longitude in degrees (-180 to 180)

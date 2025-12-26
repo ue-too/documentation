@@ -2,20 +2,19 @@
 
 # Function: createDefaultRawUserInputPublisher()
 
-> **createDefaultRawUserInputPublisher**(`camera`): [`RawUserInputPublisher`](../classes/RawUserInputPublisher.md)
+> **createDefaultRawUserInputPublisher**(): [`RawUserInputPublisher`](../classes/RawUserInputPublisher.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:175](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L175)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:261](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L261)
 
-## Parameters
-
-### camera
-
-[`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
+Creates a default raw user input publisher.
 
 ## Returns
 
 [`RawUserInputPublisher`](../classes/RawUserInputPublisher.md)
 
-## Description
+A new RawUserInputPublisher instance
 
-Creates a default raw user input publisher.
+## Remarks
+
+Factory function for creating a standard publisher. Useful for dependency injection
+and testing scenarios where you want to swap implementations.

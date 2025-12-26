@@ -4,7 +4,26 @@
 
 > **Keyframe**\<`T`\> = `object`
 
-Defined in: animatable-attribute.d.ts:2
+Defined in: [animatable-attribute.ts:25](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L25)
+
+Represents a keyframe in an animation timeline.
+
+## Remarks
+
+A keyframe defines a value at a specific point in the animation's progress.
+Keyframes are defined with a percentage from 0.0 (start) to 1.0 (end), along
+with the value at that point and an optional easing function for interpolation
+to the next keyframe.
+
+## Example
+
+```typescript
+const keyframe: Keyframe<number> = {
+  percentage: 0.5,
+  value: 50,
+  easingFn: (t) => t * t // Ease-in quadratic
+};
+```
 
 ## Type Parameters
 
@@ -12,13 +31,17 @@ Defined in: animatable-attribute.d.ts:2
 
 `T`
 
+The type of value being animated (number, Point, RGB, etc.)
+
 ## Properties
 
 ### easingFn()?
 
 > `optional` **easingFn**: (`percentage`) => `number`
 
-Defined in: animatable-attribute.d.ts:5
+Defined in: [animatable-attribute.ts:31](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L31)
+
+Optional easing function for interpolation to next keyframe
 
 #### Parameters
 
@@ -36,7 +59,9 @@ Defined in: animatable-attribute.d.ts:5
 
 > **percentage**: `number`
 
-Defined in: animatable-attribute.d.ts:3
+Defined in: [animatable-attribute.ts:27](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L27)
+
+Animation progress from 0.0 (start) to 1.0 (end)
 
 ***
 
@@ -44,4 +69,6 @@ Defined in: animatable-attribute.d.ts:3
 
 > **value**: `T`
 
-Defined in: animatable-attribute.d.ts:4
+Defined in: [animatable-attribute.ts:29](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L29)
+
+Value at this keyframe
