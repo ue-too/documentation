@@ -2,12 +2,25 @@
 
 # Interface: Canvas
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:17](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L17)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:53](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L53)
 
-## Description
+Abstraction interface for canvas element access and manipulation.
 
-A proxy for the canvas so that client code that needs to access 
-the canvas dimensions and position does not need to access the DOM directly.
+## Remarks
+
+This interface provides a decoupled way to access canvas properties without direct DOM access.
+Multiple implementations exist to support different use cases:
+- **CanvasProxy**: Full implementation for HTML canvas elements with dimension tracking
+- **SvgProxy**: Implementation for SVG elements
+- **DummyCanvas**: No-op implementation for web worker contexts
+- **WorkerRelayCanvas**: Relays canvas dimension updates to web workers
+- **CanvasCacheInWebWorker**: Caches canvas dimensions within a web worker
+
+The abstraction enables:
+- Coordinate system transformations (window → canvas → viewport)
+- Canvas dimension tracking without repeated DOM queries
+- Cursor style management
+- Support for both canvas and SVG rendering contexts
 
 ## Properties
 
@@ -15,7 +28,9 @@ the canvas dimensions and position does not need to access the DOM directly.
 
 > **detached**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:23](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L23)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:65](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L65)
+
+Whether the canvas is currently detached from the DOM
 
 ***
 
@@ -23,7 +38,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **dimensions**: [`CanvasDimensions`](../type-aliases/CanvasDimensions.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:22](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L22)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:63](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L63)
+
+Combined dimensions and position information
 
 ***
 
@@ -31,7 +48,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **height**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:19](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L19)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:57](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L57)
+
+The canvas height in CSS pixels
 
 ***
 
@@ -39,7 +58,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:20](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L20)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:59](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L59)
+
+The top-left position of the canvas in window coordinates
 
 ***
 
@@ -47,7 +68,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **setCursor**: (`style`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:21](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:61](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L61)
+
+Sets the CSS cursor style for visual feedback
 
 #### Parameters
 
@@ -65,7 +88,9 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **tearDown**: () => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L24)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:67](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L67)
+
+Cleanup method to dispose of resources and event listeners
 
 #### Returns
 
@@ -77,4 +102,6 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **width**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:18](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L18)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:55](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L55)
+
+The canvas width in CSS pixels

@@ -4,7 +4,48 @@
 
 > **PanHandlerRestrictionConfig** = `object`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L24)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:100](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L100)
+
+Configuration for restricting camera movement along specific axes.
+
+## Remarks
+
+Provides fine-grained control over which directions the camera can move.
+Supports both world-space restrictions (absolute X/Y) and viewport-relative
+restrictions (screen-space horizontal/vertical, accounting for rotation).
+
+**World-space restrictions:**
+- `restrictXTranslation`: Prevents movement along world X axis
+- `restrictYTranslation`: Prevents movement along world Y axis
+
+**Viewport-relative restrictions (rotation-aware):**
+- `restrictRelativeXTranslation`: Prevents horizontal movement (screen-space)
+- `restrictRelativeYTranslation`: Prevents vertical movement (screen-space)
+
+Use cases:
+- Side-scrolling games: `restrictYTranslation = true`
+- Locked vertical scrolling: `restrictRelativeYTranslation = true`
+- Fixed-axis pan tools in editors
+
+## Example
+
+```typescript
+// Side-scroller: only allow horizontal movement in world space
+const config: PanHandlerRestrictionConfig = {
+  restrictXTranslation: false,
+  restrictYTranslation: true,
+  restrictRelativeXTranslation: false,
+  restrictRelativeYTranslation: false
+};
+
+// Lock to vertical screen movement only (with camera rotation)
+const screenConfig: PanHandlerRestrictionConfig = {
+  restrictXTranslation: false,
+  restrictYTranslation: false,
+  restrictRelativeXTranslation: true,
+  restrictRelativeYTranslation: false
+};
+```
 
 ## Properties
 
@@ -12,11 +53,10 @@ Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:24](https://git
 
 > **restrictRelativeXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:36](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L36)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:113](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L113)
 
-#### Description
-
-Whether to restrict the relative x translation. (because the camera can be rotated, the relative x translation is the horizontal direction of what the user sees on the screen)
+Whether to prevent horizontal movement in viewport/screen space.
+Accounts for camera rotation - locks movement perpendicular to screen's vertical direction.
 
 ***
 
@@ -24,11 +64,10 @@ Whether to restrict the relative x translation. (because the camera can be rotat
 
 > **restrictRelativeYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:40](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L40)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:118](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L118)
 
-#### Description
-
-Whether to restrict the relative y translation. (because the camera can be rotated, the relative y translation is the vertical direction of what the user sees on the screen)
+Whether to prevent vertical movement in viewport/screen space.
+Accounts for camera rotation - locks movement perpendicular to screen's horizontal direction.
 
 ***
 
@@ -36,11 +75,9 @@ Whether to restrict the relative y translation. (because the camera can be rotat
 
 > **restrictXTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:28](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L28)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:104](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L104)
 
-#### Description
-
-Whether to restrict the x translation.
+Whether to prevent movement along the world X axis.
 
 ***
 
@@ -48,8 +85,6 @@ Whether to restrict the x translation.
 
 > **restrictYTranslation**: `boolean`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:32](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/pan-handler.ts#L32)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:108](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/pan-handler.ts#L108)
 
-#### Description
-
-Whether to restrict the y translation.
+Whether to prevent movement along the world Y axis.

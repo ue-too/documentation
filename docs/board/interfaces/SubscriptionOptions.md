@@ -2,7 +2,29 @@
 
 # Interface: SubscriptionOptions
 
-Defined in: [packages/board/src/utils/observable.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L3)
+Defined in: [packages/board/src/utils/observable.ts:52](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L52)
+
+Options for subscribing to an Observable.
+
+## Remarks
+
+Subscription options allow for automatic cleanup of subscriptions using
+the AbortController API. When the signal is aborted, the subscription
+is automatically removed.
+
+## Example
+
+```typescript
+const controller = new AbortController();
+
+observable.subscribe(
+  (data) => console.log(data),
+  { signal: controller.signal }
+);
+
+// Later, abort to unsubscribe
+controller.abort();
+```
 
 ## Properties
 
@@ -10,4 +32,6 @@ Defined in: [packages/board/src/utils/observable.ts:3](https://github.com/ue-too
 
 > `optional` **signal**: `AbortSignal`
 
-Defined in: [packages/board/src/utils/observable.ts:4](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L4)
+Defined in: [packages/board/src/utils/observable.ts:53](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L53)
+
+Optional AbortSignal for automatic unsubscription

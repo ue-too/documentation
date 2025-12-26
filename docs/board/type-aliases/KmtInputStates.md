@@ -4,8 +4,17 @@
 
 > **KmtInputStates** = `CreateStateType`\<*typeof* `KMT_INPUT_STATES`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:12](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L12)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:23](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L23)
 
-## Description
+Possible states of the Keyboard/Mouse/Trackpad input state machine.
 
-The possible states of the keyboard mouse and trackpad input state machine.
+## Remarks
+
+State transitions:
+- **IDLE**: Default state, waiting for user input
+- **READY_TO_PAN_VIA_SPACEBAR**: Spacebar pressed, ready to pan with left-click drag
+- **INITIAL_PAN**: First frame of pan via spacebar (detects accidental clicks)
+- **PAN**: Active panning via spacebar + left-click drag
+- **READY_TO_PAN_VIA_SCROLL_WHEEL**: Middle mouse button pressed, ready to pan
+- **PAN_VIA_SCROLL_WHEEL**: Active panning via middle-click drag
+- **DISABLED**: Input temporarily disabled (e.g., during UI interactions)

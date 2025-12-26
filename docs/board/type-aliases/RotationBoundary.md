@@ -4,11 +4,13 @@
 
 > **RotationBoundary** = `object`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L34)
 
-## Description
+Experimental rotation boundary type with positive/negative direction semantics.
 
-The boundary of the rotation. (experimental)
+## Remarks
+
+This is an experimental alternative to [RotationLimits](RotationLimits.md) with different direction semantics.
 
 ## Properties
 
@@ -16,7 +18,9 @@ The boundary of the rotation. (experimental)
 
 > **end**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L34)
+
+Ending angle of the boundary in radians
 
 ***
 
@@ -24,7 +28,9 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **positiveDirection**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L34)
+
+If true, range extends in positive angle direction. If false, negative direction
 
 ***
 
@@ -32,7 +38,9 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **start**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L34)
+
+Starting angle of the boundary in radians
 
 ***
 
@@ -40,4 +48,6 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/
 
 > **startAsTieBreaker**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:13](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L13)
+Defined in: [packages/board/src/camera/utils/rotation.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L34)
+
+When equidistant from start and end, prefer start if true, end if false

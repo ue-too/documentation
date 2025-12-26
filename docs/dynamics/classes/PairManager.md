@@ -2,7 +2,33 @@
 
 # Class: PairManager
 
-Defined in: pair-manager.d.ts:19
+Defined in: [pair-manager.ts:58](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L58)
+
+Manages collision pairs across frames.
+
+## Remarks
+
+Tracks which bodies are colliding and for how long, enabling
+collision lifecycle events (start, update, end). This is useful for
+game logic like damage on collision start or triggers.
+
+Automatically cleans up old inactive pairs to prevent memory leaks.
+
+## Example
+
+Using collision events
+```typescript
+const pairManager = world.getPairManager();
+
+world.step(dt);
+
+const events = pairManager.getActivePairs();
+events.forEach(pair => {
+  if (pair.frameCreated === world.currentFrame) {
+    console.log('Collision started!');
+  }
+});
+```
 
 ## Constructors
 
@@ -10,7 +36,7 @@ Defined in: pair-manager.d.ts:19
 
 > **new PairManager**(): `PairManager`
 
-Defined in: pair-manager.d.ts:23
+Defined in: [pair-manager.ts:63](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L63)
 
 #### Returns
 
@@ -22,7 +48,7 @@ Defined in: pair-manager.d.ts:23
 
 > **clear**(): `void`
 
-Defined in: pair-manager.d.ts:35
+Defined in: [pair-manager.ts:152](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L152)
 
 #### Returns
 
@@ -34,7 +60,7 @@ Defined in: pair-manager.d.ts:35
 
 > **getActivePairs**(): [`CollisionPair`](../interfaces/CollisionPair.md)[]
 
-Defined in: pair-manager.d.ts:33
+Defined in: [pair-manager.ts:141](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L141)
 
 #### Returns
 
@@ -44,9 +70,9 @@ Defined in: pair-manager.d.ts:33
 
 ### getPair()
 
-> **getPair**(`bodyA`, `bodyB`): [`CollisionPair`](../interfaces/CollisionPair.md)
+> **getPair**(`bodyA`, `bodyB`): [`CollisionPair`](../interfaces/CollisionPair.md) \| `undefined`
 
-Defined in: pair-manager.d.ts:34
+Defined in: [pair-manager.ts:146](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L146)
 
 #### Parameters
 
@@ -60,7 +86,7 @@ Defined in: pair-manager.d.ts:34
 
 #### Returns
 
-[`CollisionPair`](../interfaces/CollisionPair.md)
+[`CollisionPair`](../interfaces/CollisionPair.md) \| `undefined`
 
 ***
 
@@ -68,7 +94,7 @@ Defined in: pair-manager.d.ts:34
 
 > **getStats**(): `object`
 
-Defined in: pair-manager.d.ts:36
+Defined in: [pair-manager.ts:158](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L158)
 
 #### Returns
 
@@ -92,7 +118,7 @@ Defined in: pair-manager.d.ts:36
 
 > **updatePairs**(`newCollisions`): [`PairEvents`](../interfaces/PairEvents.md)
 
-Defined in: pair-manager.d.ts:26
+Defined in: [pair-manager.ts:79](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L79)
 
 #### Parameters
 

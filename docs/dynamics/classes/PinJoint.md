@@ -2,7 +2,35 @@
 
 # Class: PinJoint
 
-Defined in: constraint.d.ts:14
+Defined in: [constraint.ts:138](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L138)
+
+Pin joint connecting two bodies together.
+
+## Remarks
+
+Connects two bodies at specified anchor points. The bodies can rotate
+relative to each other around the joint.
+
+Useful for creating chains, ragdolls, and mechanical linkages.
+
+## Example
+
+Create a chain
+```typescript
+const link1 = new Circle({ x: 0, y: 0 }, 10);
+const link2 = new Circle({ x: 30, y: 0 }, 10);
+
+const joint = new PinJoint(
+  link1,
+  link2,
+  { x: 10, y: 0 },   // Right edge of link1
+  { x: -10, y: 0 }   // Left edge of link2
+);
+
+world.addRigidBody('link1', link1);
+world.addRigidBody('link2', link2);
+world.addConstraint(joint);
+```
 
 ## Implements
 
@@ -14,7 +42,7 @@ Defined in: constraint.d.ts:14
 
 > **new PinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `PinJoint`
 
-Defined in: constraint.d.ts:19
+Defined in: [constraint.ts:145](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L145)
 
 #### Parameters
 
@@ -44,13 +72,17 @@ Defined in: constraint.d.ts:19
 
 > **enforce**(`dt`): `void`
 
-Defined in: constraint.d.ts:20
+Defined in: [constraint.ts:152](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L152)
+
+Enforces the constraint for one timestep.
 
 #### Parameters
 
 ##### dt
 
 `number`
+
+Timestep in seconds
 
 #### Returns
 
@@ -66,7 +98,7 @@ Defined in: constraint.d.ts:20
 
 > **solvePinJointConstraint**(`dt`): `void`
 
-Defined in: constraint.d.ts:21
+Defined in: [constraint.ts:156](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L156)
 
 #### Parameters
 

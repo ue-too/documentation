@@ -4,11 +4,9 @@
 
 > **PointerEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:19](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L19)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:33](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L33)
 
-## Description
-
-The payload for the pointer event.
+Payload for pointer events (mouse button press/release/move).
 
 ## Properties
 
@@ -16,7 +14,9 @@ The payload for the pointer event.
 
 > **x**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:20](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L20)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:34](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L34)
+
+X coordinate in window space
 
 ***
 
@@ -24,4 +24,6 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **y**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:21](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:35](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L35)
+
+Y coordinate in window space

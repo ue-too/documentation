@@ -4,11 +4,15 @@
 
 > **minZoomLevelBaseOnWidth**(`boundaries`, `canvasWidth`, `canvasHeight`, `cameraRotation`): `number` \| `undefined`
 
-Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:73](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/zoomlevel-adjustment.ts#L73)
+Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:179](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/zoomlevel-adjustment.ts#L179)
+
+Calculates minimum zoom level based only on boundary width.
 
 ## Parameters
 
 ### boundaries
+
+The world-space boundaries
 
 [`Boundaries`](../type-aliases/Boundaries.md) | `undefined`
 
@@ -16,19 +20,51 @@ Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:73](https://github
 
 `number`
 
+Canvas width in pixels
+
 ### canvasHeight
 
 `number`
+
+Canvas height in pixels
 
 ### cameraRotation
 
 `number`
 
+Camera rotation angle in radians
+
 ## Returns
 
 `number` \| `undefined`
 
-## Description
+Minimum zoom level, or undefined if width is not defined
 
-Calculates the minimum zoom level based on the width of the boundaries.
-Used when the canvas on the html is resized.
+## Remarks
+
+Similar to [minZoomLevelBaseOnDimensions](minZoomLevelBaseOnDimensions.md) but only considers the
+width constraint. Useful when height is unbounded or not relevant.
+
+Calculates zoom needed to fit the boundary width within the canvas,
+accounting for rotation:
+- Width projection on canvas X-axis: `width * cos(rotation)`
+- Width projection on canvas Y-axis: `width * sin(rotation)`
+
+Takes the maximum of these to ensure the width fits regardless of
+how rotation distributes it across canvas axes.
+
+## Example
+
+```typescript
+const boundaries = {
+  min: { x: 0 },
+  max: { x: 1000 }
+};
+
+const zoom = minZoomLevelBaseOnWidth(boundaries, 800, 600, 0);
+// Result: 0.8 (800/1000)
+```
+
+## See
+
+[minZoomLevelBaseOnDimensions](minZoomLevelBaseOnDimensions.md) for full calculation

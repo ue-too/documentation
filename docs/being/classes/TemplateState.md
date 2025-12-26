@@ -1,17 +1,88 @@
 [@ue-too/being](../globals.md) / TemplateState
 
-# Abstract Class: TemplateState\<EventPayloadMapping, Context, States\>
+# Abstract Class: TemplateState\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [interface.ts:286](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L286)
+Defined in: [interface.ts:583](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L583)
 
-## Description
+Abstract base class for state machine states.
 
-This is the template for the state.
+## Remarks
 
-This is a base template that you can extend to create a state.
-Unlike the TemplateStateMachine, this class is abstract. You need to implement the specific methods that you need.
-The core part off the state is the event reactions in which you would define how to handle each event in a state.
-You can define an eventReactions object that maps only the events that you need. If this state does not need to handle a specific event, you can just not define it in the eventReactions object.
+This abstract class provides the foundation for implementing individual states in a state machine.
+Each state defines how it responds to events through the `eventReactions` object.
+
+## Key Concepts
+
+- **Event Reactions**: Define handlers for events this state cares about. Unhandled events are ignored.
+- **Guards**: Conditional logic that determines which state to transition to based on context
+- **Lifecycle Hooks**: `uponEnter` and `beforeExit` callbacks for state transition side effects
+- **Selective Handling**: Only define reactions for events relevant to this state
+
+## Implementation Pattern
+
+1. Extend this class for each state in your state machine
+2. Implement the `eventReactions` property with handlers for relevant events
+3. Optionally override `uponEnter` and `beforeExit` for lifecycle logic
+4. Optionally define `guards` and `eventGuards` for conditional transitions
+
+## Examples
+
+Simple state implementation
+```typescript
+class IdleState extends TemplateState<MyEvents, MyContext, MyStates> {
+  eventReactions = {
+    start: {
+      action: (context, event) => {
+        console.log('Starting...');
+        context.startTime = Date.now();
+      },
+      defaultTargetState: "ACTIVE"
+    },
+    reset: {
+      action: (context, event) => {
+        context.counter = 0;
+      }
+      // No state transition - stays in IDLE
+    }
+  };
+
+  uponEnter(context, stateMachine, fromState) {
+    console.log(`Entered IDLE from ${fromState}`);
+  }
+}
+```
+
+State with guards for conditional transitions
+```typescript
+class PaymentState extends TemplateState<Events, VendingContext, States> {
+  guards = {
+    hasEnoughMoney: (context) => context.balance >= context.itemPrice,
+    needsChange: (context) => context.balance > context.itemPrice
+  };
+
+  eventReactions = {
+    selectItem: {
+      action: (context, event) => {
+        context.selectedItem = event.itemId;
+        context.itemPrice = getPrice(event.itemId);
+      },
+      defaultTargetState: "IDLE" // Fallback if no guard matches
+    }
+  };
+
+  eventGuards = {
+    selectItem: [
+      { guard: 'hasEnoughMoney', target: 'DISPENSING' },
+      // If hasEnoughMoney is false, uses defaultTargetState (IDLE)
+    ]
+  };
+}
+```
+
+## See
+
+ - [TemplateStateMachine](TemplateStateMachine.md) for the state machine implementation
+ - [EventReactions](../type-aliases/EventReactions.md) for defining event handlers
 
 ## Type Parameters
 
@@ -19,35 +90,47 @@ You can define an eventReactions object that maps only the events that you need.
 
 `EventPayloadMapping`
 
+Object mapping event names to their payload types
+
 ### Context
 
 `Context` *extends* [`BaseContext`](../interfaces/BaseContext.md)
+
+Context type shared across all states
 
 ### States
 
 `States` *extends* `string` = `"IDLE"`
 
+Union of all possible state names (string literals)
+
+### EventOutputMapping
+
+`EventOutputMapping` *extends* `Partial`\<`Record`\<keyof `EventPayloadMapping`, `unknown`\>\> = [`DefaultOutputMapping`](../type-aliases/DefaultOutputMapping.md)\<`EventPayloadMapping`\>
+
+Optional mapping of events to their output types
+
 ## Implements
 
-- [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`\>
+- [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ## Constructors
 
 ### Constructor
 
-> **new TemplateState**\<`EventPayloadMapping`, `Context`, `States`\>(): `TemplateState`\<`EventPayloadMapping`, `Context`, `States`\>
+> **new TemplateState**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(): `TemplateState`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 #### Returns
 
-`TemplateState`\<`EventPayloadMapping`, `Context`, `States`\>
+`TemplateState`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ## Properties
 
 ### \_delay
 
-> `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined` = `undefined`
+> `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L291)
+Defined in: [interface.ts:593](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L593)
 
 ***
 
@@ -55,7 +138,7 @@ Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:290](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L290)
+Defined in: [interface.ts:592](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L592)
 
 ***
 
@@ -63,15 +146,15 @@ Defined in: [interface.ts:290](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:289](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L289)
+Defined in: [interface.ts:591](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L591)
 
 ***
 
 ### eventReactions
 
-> `abstract` **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`\>
+> `abstract` **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:288](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L288)
+Defined in: [interface.ts:590](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L590)
 
 #### Implementation of
 
@@ -83,13 +166,13 @@ Defined in: [interface.ts:288](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 #### Get Signature
 
-> **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+> **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:301](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L301)
+Defined in: [interface.ts:603](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L603)
 
 ##### Returns
 
-[`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+[`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
 #### Implementation of
 
@@ -103,7 +186,7 @@ Defined in: [interface.ts:301](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L297)
+Defined in: [interface.ts:599](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L599)
 
 ##### Returns
 
@@ -121,7 +204,7 @@ Defined in: [interface.ts:297](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:293](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L293)
+Defined in: [interface.ts:595](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L595)
 
 ##### Returns
 
@@ -137,7 +220,7 @@ Defined in: [interface.ts:293](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L309)
+Defined in: [interface.ts:611](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L611)
 
 #### Parameters
 
@@ -147,7 +230,7 @@ Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ##### stateMachine
 
-[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ##### to
 
@@ -165,9 +248,9 @@ Defined in: [interface.ts:309](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ### handles()
 
-> **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L313)
+Defined in: [interface.ts:615](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L615)
 
 #### Type Parameters
 
@@ -187,11 +270,11 @@ Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ##### stateMachine
 
-[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 #### Returns
 
-[`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
+[`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
 #### Implementation of
 
@@ -203,7 +286,7 @@ Defined in: [interface.ts:313](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [interface.ts:305](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L305)
+Defined in: [interface.ts:607](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L607)
 
 #### Parameters
 
@@ -213,7 +296,7 @@ Defined in: [interface.ts:305](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ##### stateMachine
 
-[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](../interfaces/StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ##### from
 

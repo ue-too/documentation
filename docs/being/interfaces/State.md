@@ -1,8 +1,8 @@
 [@ue-too/being](../globals.md) / State
 
-# Interface: State\<EventPayloadMapping, Context, States\>
+# Interface: State\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [interface.ts:97](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L97)
+Defined in: [interface.ts:227](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L227)
 
 ## Description
 
@@ -13,6 +13,7 @@ Generic parameters:
 - EventPayloadMapping: A mapping of events to their payloads.
 - Context: The context of the state machine. (which can be used by each state to do calculations that would persist across states)
 - States: All of the possible states that the state machine can be in. e.g. a string literal union like "IDLE" | "SELECTING" | "PAN" | "ZOOM"
+- EventOutputMapping: A mapping of events to their output types. Defaults to void for all events.
 
 A state's all possible states can be only a subset of the possible states of the state machine. (a state only needs to know what states it can transition to)
 This allows for a state to be reusable across different state machines.
@@ -35,13 +36,17 @@ This allows for a state to be reusable across different state machines.
 
 `States` *extends* `string` = `"IDLE"`
 
+### EventOutputMapping
+
+`EventOutputMapping` *extends* `Partial`\<`Record`\<keyof `EventPayloadMapping`, `unknown`\>\> = [`DefaultOutputMapping`](../type-aliases/DefaultOutputMapping.md)\<`EventPayloadMapping`\>
+
 ## Properties
 
 ### delay
 
-> **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`\> \| `undefined`
+> **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:104](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L104)
+Defined in: [interface.ts:239](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L239)
 
 ***
 
@@ -49,15 +54,15 @@ Defined in: [interface.ts:104](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:103](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L103)
+Defined in: [interface.ts:238](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L238)
 
 ***
 
 ### eventReactions
 
-> **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`\>
+> **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:101](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L101)
+Defined in: [interface.ts:236](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L236)
 
 ***
 
@@ -65,7 +70,7 @@ Defined in: [interface.ts:101](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:102](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L102)
+Defined in: [interface.ts:237](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L237)
 
 ## Methods
 
@@ -73,7 +78,7 @@ Defined in: [interface.ts:102](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L99)
+Defined in: [interface.ts:234](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L234)
 
 #### Parameters
 
@@ -83,7 +88,7 @@ Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 ##### stateMachine
 
-[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ##### to
 
@@ -97,9 +102,9 @@ Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 ### handles()
 
-> **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
+> **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:100](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L100)
+Defined in: [interface.ts:235](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L235)
 
 #### Type Parameters
 
@@ -119,11 +124,11 @@ Defined in: [interface.ts:100](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 ##### stateMachine
 
-[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 #### Returns
 
-[`EventHandledResult`](../type-aliases/EventHandledResult.md)\<`States`\>
+[`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
 ***
 
@@ -131,7 +136,7 @@ Defined in: [interface.ts:100](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [interface.ts:98](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L98)
+Defined in: [interface.ts:233](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L233)
 
 #### Parameters
 
@@ -141,7 +146,7 @@ Defined in: [interface.ts:98](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 ##### stateMachine
 
-[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`\>
+[`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
 ##### from
 

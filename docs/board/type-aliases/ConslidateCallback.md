@@ -4,7 +4,10 @@
 
 > **ConslidateCallback** = (`payload`, `cameraState`) => `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:104](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L104)
+Defined in: [packages/board/src/camera/update-publisher.ts:130](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L130)
+
+Callback function type specifically for the 'all' camera event.
+Receives a discriminated union of all camera events.
 
 ## Parameters
 
@@ -19,7 +22,3 @@ Defined in: [packages/board/src/camera/update-publisher.ts:104](https://github.c
 ## Returns
 
 `void`
-
-## Description
-
-The callback function type for the "all" camera event.

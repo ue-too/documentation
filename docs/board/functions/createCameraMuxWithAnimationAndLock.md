@@ -4,7 +4,9 @@
 
 > **createCameraMuxWithAnimationAndLock**(`camera`): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:96](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L96)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:395](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L395)
+
+Creates a camera mux with animation and locking capabilities from a camera instance.
 
 ## Parameters
 
@@ -12,10 +14,47 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-a
 
 [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
+Observable camera to control
+
 ## Returns
 
 [`CameraMux`](../interfaces/CameraMux.md)
 
-## Description
+Configured camera mux with animation support
 
-Create a flow control that allows animation and lock inputs.
+## Remarks
+
+This factory function creates a complete camera input flow control system with:
+1. A default [CameraRig](../interfaces/CameraRig.md) wrapping the provided camera
+2. Three state machines (pan, zoom, rotation) for animation control
+3. A [CameraMuxWithAnimationAndLock](../classes/CameraMuxWithAnimationAndLock.md) coordinating the state machines
+
+**What you get:**
+- Smooth camera animations (pan-to, zoom-to, rotate-to)
+- Automatic input blocking during animations
+- State-based input arbitration
+- All with sensible default configurations
+
+**Use this when:**
+- You have a camera and want animation support out-of-the-box
+- You don't need custom camera rig configuration
+- You want the simplest setup for animated camera control
+
+## Example
+
+```typescript
+const camera = new DefaultBoardCamera(1920, 1080);
+const mux = createCameraMuxWithAnimationAndLock(camera);
+
+// Start a pan animation
+mux.notifyPanToAnimationInput({ x: 1000, y: 500 });
+
+// User input is blocked during animation
+const result = mux.notifyPanInput({ x: 50, y: 30 });
+console.log(result.allowPassThrough); // false during animation
+```
+
+## See
+
+ - [CameraMuxWithAnimationAndLock](../classes/CameraMuxWithAnimationAndLock.md) for the implementation
+ - [createCameraMuxWithAnimationAndLockWithCameraRig](createCameraMuxWithAnimationAndLockWithCameraRig.md) for custom rig version

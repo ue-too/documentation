@@ -4,18 +4,32 @@
 
 > **createDefaultZoomControlStateMachine**(`context`): [`ZoomControlStateMachine`](../classes/ZoomControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:261](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L261)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:392](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L392)
+
+Creates a zoom control state machine with default configuration.
 
 ## Parameters
 
 ### context
 
-[`ZoomContext`](../interfaces/ZoomContext.md)
+`BaseContext`
+
+Camera rig or context for zoom operations
 
 ## Returns
 
 [`ZoomControlStateMachine`](../classes/ZoomControlStateMachine.md)
 
-## Description
+Configured zoom control state machine starting in `ACCEPTING_USER_INPUT` state
 
-Create the default zoom control state machine.
+## Remarks
+
+Factory function for creating a zoom state machine with sensible defaults.
+The machine starts in `ACCEPTING_USER_INPUT` state, ready to accept user zoom gestures.
+
+## Example
+
+```typescript
+const cameraRig = createDefaultCameraRig(camera);
+const zoomSM = createDefaultZoomControlStateMachine(cameraRig);
+```

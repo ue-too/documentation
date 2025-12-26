@@ -4,7 +4,9 @@
 
 > **CreateStateType**\<`ArrayLiteral`\> = `ArrayLiteral`\[`number`\]
 
-Defined in: [interface.ts:19](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L19)
+Defined in: [interface.ts:57](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L57)
+
+Utility type to derive a string literal union from a readonly array of string literals.
 
 ## Type Parameters
 
@@ -12,12 +14,14 @@ Defined in: [interface.ts:19](https://github.com/ue-too/ue-too/blob/c02efc01f7c1
 
 `ArrayLiteral` *extends* readonly `string`[]
 
-## Description
+## Remarks
 
-Utility type to derive a string literal union from a readonly array of string literals.
+This helper type extracts the element types from a readonly array to create a union type.
+Useful for defining state machine states from an array.
 
-Example:
-```ts
+## Example
+
+```typescript
 const TEST_STATES = ["one", "two", "three"] as const;
 type TestStates = CreateStateType<typeof TEST_STATES>; // "one" | "two" | "three"
 ```

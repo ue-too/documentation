@@ -2,7 +2,9 @@
 
 # Class: Path
 
-Defined in: [packages/curve/src/path.ts:23](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L23)
+Defined in: [packages/curve/src/path.ts:48](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L48)
+
+Path made of sequential line segments.
 
 ## Constructors
 
@@ -10,7 +12,7 @@ Defined in: [packages/curve/src/path.ts:23](https://github.com/ue-too/ue-too/blo
 
 > **new Path**(`lines`): `Path`
 
-Defined in: [packages/curve/src/path.ts:27](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L27)
+Defined in: [packages/curve/src/path.ts:52](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L52)
 
 #### Parameters
 
@@ -28,7 +30,7 @@ Defined in: [packages/curve/src/path.ts:27](https://github.com/ue-too/ue-too/blo
 
 > **append**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:31](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L31)
+Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L56)
 
 #### Parameters
 
@@ -46,7 +48,7 @@ Defined in: [packages/curve/src/path.ts:31](https://github.com/ue-too/ue-too/blo
 
 > **clear**(): `void`
 
-Defined in: [packages/curve/src/path.ts:35](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L35)
+Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L60)
 
 #### Returns
 
@@ -58,7 +60,7 @@ Defined in: [packages/curve/src/path.ts:35](https://github.com/ue-too/ue-too/blo
 
 > **getLength**(): `number`
 
-Defined in: [packages/curve/src/path.ts:47](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L47)
+Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L72)
 
 #### Returns
 
@@ -70,7 +72,7 @@ Defined in: [packages/curve/src/path.ts:47](https://github.com/ue-too/ue-too/blo
 
 > **getLines**(): [`Line`](Line.md)[]
 
-Defined in: [packages/curve/src/path.ts:43](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L43)
+Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L68)
 
 #### Returns
 
@@ -82,7 +84,7 @@ Defined in: [packages/curve/src/path.ts:43](https://github.com/ue-too/ue-too/blo
 
 > **getPercentages**(): `object`[]
 
-Defined in: [packages/curve/src/path.ts:57](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L57)
+Defined in: [packages/curve/src/path.ts:82](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L82)
 
 #### Returns
 
@@ -94,7 +96,7 @@ Defined in: [packages/curve/src/path.ts:57](https://github.com/ue-too/ue-too/blo
 
 > **getPointByPercentage**(`percentage`): `Point`
 
-Defined in: [packages/curve/src/path.ts:73](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L73)
+Defined in: [packages/curve/src/path.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L98)
 
 #### Parameters
 
@@ -112,7 +114,7 @@ Defined in: [packages/curve/src/path.ts:73](https://github.com/ue-too/ue-too/blo
 
 > **prepend**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:39](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/curve/src/path.ts#L39)
+Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L64)
 
 #### Parameters
 

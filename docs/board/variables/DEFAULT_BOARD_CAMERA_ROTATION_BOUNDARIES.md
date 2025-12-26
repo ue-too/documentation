@@ -4,4 +4,6 @@
 
 > `const` **DEFAULT\_BOARD\_CAMERA\_ROTATION\_BOUNDARIES**: [`RotationLimits`](../type-aliases/RotationLimits.md) \| `undefined` = `undefined`
 
-Defined in: [packages/board/src/camera/default-camera.ts:18](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/default-camera.ts#L18)
+Defined in: [packages/board/src/camera/default-camera.ts:26](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/default-camera.ts#L26)
+
+Default rotation boundaries (unrestricted)

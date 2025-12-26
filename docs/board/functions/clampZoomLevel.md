@@ -4,7 +4,9 @@
 
 > **clampZoomLevel**(`zoomLevel`, `zoomLevelLimits?`): `number`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:26](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L26)
+Defined in: [packages/board/src/camera/utils/zoom.ts:70](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L70)
+
+Clamps a zoom level to stay within specified limits.
 
 ## Parameters
 
@@ -12,14 +14,32 @@ Defined in: [packages/board/src/camera/utils/zoom.ts:26](https://github.com/ue-t
 
 `number`
 
+The zoom level to clamp
+
 ### zoomLevelLimits?
 
 [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md)
+
+Optional zoom constraints
 
 ## Returns
 
 `number`
 
-## Description
+The clamped zoom level, or original value if already within limits
 
-Clamps the zoom level within the limits.
+## Remarks
+
+If the zoom level is already within limits, returns it unchanged.
+If no limits are specified, returns the original value.
+
+## Example
+
+```typescript
+const limits = { min: 0.5, max: 4 };
+
+clampZoomLevel(2.0, limits);  // 2.0 (within bounds)
+clampZoomLevel(0.1, limits);  // 0.5 (clamped to min)
+clampZoomLevel(10, limits);   // 4.0 (clamped to max)
+clampZoomLevel(2.0);          // 2.0 (no limits)
+```

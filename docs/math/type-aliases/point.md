@@ -1,31 +1,48 @@
 [@ue-too/math](../globals.md) / point
 
-# Type Alias: point
+# ~~Type Alias: point~~
 
 > **point** = `object`
 
-Defined in: [index.ts:1](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L1)
+Defined in: [index.ts:60](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L60)
+
+Represents a 2D or 3D point with optional z-coordinate.
+
+## Remarks
+
+This is a lowercase variant maintained for backward compatibility.
+Use [Point](Point-1.md) for new code.
+
+## Deprecated
+
+Use [Point](Point-1.md) instead for better TypeScript conventions.
 
 ## Properties
 
-### x
+### ~~x~~
 
 > **x**: `number`
 
-Defined in: [index.ts:2](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L2)
+Defined in: [index.ts:62](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L62)
+
+X-coordinate
 
 ***
 
-### y
+### ~~y~~
 
 > **y**: `number`
 
-Defined in: [index.ts:3](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L3)
+Defined in: [index.ts:64](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L64)
+
+Y-coordinate
 
 ***
 
-### z?
+### ~~z?~~
 
 > `optional` **z**: `number`
 
-Defined in: [index.ts:4](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L4)
+Defined in: [index.ts:66](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L66)
+
+Optional Z-coordinate for 3D operations

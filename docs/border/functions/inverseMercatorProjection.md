@@ -4,7 +4,9 @@
 
 > **inverseMercatorProjection**(`point`, `centerLongitude`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [projection.ts:17](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L17)
+Defined in: [projection.ts:78](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L78)
+
+Converts a Mercator projection point back to geographic coordinates.
 
 ## Parameters
 
@@ -12,10 +14,29 @@ Defined in: [projection.ts:17](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 `Point`
 
+The point in Mercator projection (in meters)
+
 ### centerLongitude
 
 `number` = `0`
 
+The central meridian in degrees (must match the forward projection)
+
 ## Returns
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The geographic coordinate
+
+## Remarks
+
+This is the inverse of [mercatorProjection](mercatorProjection.md). Given a point in Mercator
+projection space (in meters), it returns the corresponding latitude/longitude.
+
+## Example
+
+```typescript
+const point = { x: -14232.4, y: 6711665.7 };
+const coord = inverseMercatorProjection(point);
+console.log(coord); // { latitude: ~51.5, longitude: ~-0.13 }
+```

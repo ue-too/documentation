@@ -4,11 +4,14 @@
 
 > **ZoomLevelLimits** = `object`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L13)
 
-## Description
+Constraints for camera zoom level with optional minimum and maximum bounds.
 
-The limits of the zoom level.
+## Remarks
+
+Zoom level of 1.0 represents 100% (no zoom), values >1 zoom in, values <1 zoom out.
+If both min and max are undefined, no constraints are applied.
 
 ## Properties
 
@@ -16,7 +19,9 @@ The limits of the zoom level.
 
 > `optional` **max**: `number`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L13)
+
+Maximum allowed zoom level (optional, e.g., 10 for 1000% zoom)
 
 ***
 
@@ -24,4 +29,6 @@ Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-to
 
 > `optional` **min**: `number`
 
-Defined in: [packages/board/src/camera/utils/zoom.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/zoom.ts#L6)
+Defined in: [packages/board/src/camera/utils/zoom.ts:13](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/zoom.ts#L13)
+
+Minimum allowed zoom level (optional, e.g., 0.1 for 10% zoom)

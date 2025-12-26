@@ -2,7 +2,29 @@
 
 # Class: PointAnimationHelper
 
-Defined in: animatable-attribute.d.ts:11
+Defined in: [animatable-attribute.ts:92](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L92)
+
+Interface for type-specific interpolation helpers.
+
+## Remarks
+
+Animation helpers provide the `lerp` (linear interpolation) logic for specific types.
+Different types require different interpolation strategies:
+- Numbers: Simple linear interpolation
+- Points: Component-wise interpolation
+- Colors (RGB): Component-wise color interpolation
+- Strings: Step-based (threshold) interpolation
+
+## Example
+
+```typescript
+const myHelper: AnimatableAttributeHelper<number> = {
+  lerp: (ratio, start, end) => {
+    const t = (ratio - start.percentage) / (end.percentage - start.percentage);
+    return start.value + t * (end.value - start.value);
+  }
+};
+```
 
 ## Implements
 
@@ -14,7 +36,7 @@ Defined in: animatable-attribute.d.ts:11
 
 > **new PointAnimationHelper**(): `PointAnimationHelper`
 
-Defined in: animatable-attribute.d.ts:12
+Defined in: [animatable-attribute.ts:94](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L94)
 
 #### Returns
 
@@ -26,7 +48,9 @@ Defined in: animatable-attribute.d.ts:12
 
 > **lerp**(`ratio`, `start`, `end`): `Point`
 
-Defined in: animatable-attribute.d.ts:13
+Defined in: [animatable-attribute.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/animatable-attribute.ts#L98)
+
+Interpolates between two keyframes at a given ratio.
 
 #### Parameters
 
@@ -34,17 +58,25 @@ Defined in: animatable-attribute.d.ts:13
 
 `number`
 
+Current animation progress (0.0 to 1.0)
+
 ##### start
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<`Point`\>
+
+Starting keyframe
 
 ##### end
 
 [`Keyframe`](../type-aliases/Keyframe.md)\<`Point`\>
 
+Ending keyframe
+
 #### Returns
 
 `Point`
+
+Interpolated value at the given ratio
 
 #### Implementation of
 

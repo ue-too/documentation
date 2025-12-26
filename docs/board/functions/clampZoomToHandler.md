@@ -4,7 +4,9 @@
 
 > **clampZoomToHandler**(`destination`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:47](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/zoom-handler.ts#L47)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:198](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/zoom-handler.ts#L198)
+
+Handler pipeline step that clamps "zoom to" targets to camera zoom boundaries.
 
 ## Parameters
 
@@ -12,23 +14,57 @@ Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:47](https://gi
 
 `number`
 
+Target zoom level
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance (provides zoomBoundaries)
 
 ### config
 
 [`ZoomHandlerClampConfig`](../type-aliases/ZoomHandlerClampConfig.md)
 
+Clamping configuration
+
 ## Returns
 
 `number`
 
-## Description
+Clamped zoom level
 
-The function that is part of the zoom to handler pipeline.
-Clamps the zoom level to the zoom boundaries.
+## Remarks
+
+This handler enforces zoom level limits on absolute zoom requests.
+
+Behavior:
+- If `clampZoom` is false: Returns destination unchanged
+- If `clampZoom` is true: Clamps destination to [BoardCamera.zoomBoundaries](../interfaces/ObservableBoardCamera.md#zoomboundaries) (min/max)
+
+The clamping is performed by [clampZoomLevel](clampZoomLevel.md), which handles:
+- Missing boundaries (undefined min/max)
+- One-sided constraints (only min or only max)
+- Full range constraints
+
+Can be used standalone, but typically composed into a handler pipeline via
+[createDefaultZoomToOnlyHandler](createDefaultZoomToOnlyHandler.md) or [createHandlerChain](createHandlerChain.md).
+
+## Example
+
+```typescript
+camera.zoomBoundaries = { min: 0.5, max: 3.0 };
+
+const config: ZoomHandlerClampConfig = {
+  clampZoom: true
+};
+
+const target = 5.0;  // Exceeds max
+const clamped = clampZoomToHandler(target, camera, config);
+// clamped = 3.0 (clamped to max boundary)
+```
 
 ## See
 
-[createHandlerChain](createHandlerChain.md)
+ - [clampZoomLevel](clampZoomLevel.md) for clamping implementation
+ - [createDefaultZoomToOnlyHandler](createDefaultZoomToOnlyHandler.md) for default pipeline usage

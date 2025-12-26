@@ -4,7 +4,9 @@
 
 > **intermediatePointOnGreatCircle**(`startCoord`, `endCoord`, `fraction`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [greateCircle.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/greateCircle.ts#L11)
+Defined in: [greateCircle.ts:39](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/greateCircle.ts#L39)
+
+Calculates an intermediate point along a great circle path.
 
 ## Parameters
 
@@ -12,14 +14,42 @@ Defined in: [greateCircle.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
 
+The starting geographic coordinate
+
 ### endCoord
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The ending geographic coordinate
 
 ### fraction
 
 `number`
 
+The fraction along the path (0 = start, 1 = end, 0.5 = midpoint)
+
 ## Returns
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The intermediate point at the specified fraction
+
+## Remarks
+
+Given two points on Earth's surface, this finds a point at a specified
+fraction along the great circle (shortest) path between them.
+
+Uses the spherical interpolation formula for accurate results on a sphere.
+
+## Example
+
+```typescript
+const nyc = { latitude: 40.7128, longitude: -74.0060 };
+const london = { latitude: 51.5074, longitude: -0.1278 };
+
+// Find point 25% of the way from NYC to London
+const quarter = intermediatePointOnGreatCircle(nyc, london, 0.25);
+
+// Find point 75% of the way
+const threeQuarters = intermediatePointOnGreatCircle(nyc, london, 0.75);
+```

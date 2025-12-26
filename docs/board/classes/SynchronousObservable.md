@@ -2,13 +2,53 @@
 
 # Class: SynchronousObservable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:46](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L46)
+Defined in: [packages/board/src/utils/observable.ts:205](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L205)
+
+Synchronous Observable implementation that notifies observers immediately.
+
+## Remarks
+
+This Observable calls all observers synchronously and immediately when
+`notify()` is called. The notify method doesn't return until all observers
+have executed.
+
+Use SynchronousObservable when:
+- You need immediate, guaranteed execution of observers
+- Observer execution order matters and must be predictable
+- You're in a performance-critical path (no async overhead)
+
+Caution: Can lead to recursion issues if observers trigger notifications.
+
+## Example
+
+```typescript
+const observable = new SynchronousObservable<[string]>();
+
+observable.subscribe((message) => {
+  console.log('Observer received:', message);
+});
+
+console.log('Before notify');
+observable.notify('Hello');
+console.log('After notify');
+
+// Output:
+// Before notify
+// Observer received: Hello
+// After notify
+```
+
+## See
+
+[AsyncObservable](AsyncObservable.md) for asynchronous notifications
 
 ## Type Parameters
 
 ### T
 
 `T` *extends* `any`[]
+
+Tuple type of data emitted to observers
 
 ## Implements
 
@@ -30,7 +70,9 @@ Defined in: [packages/board/src/utils/observable.ts:46](https://github.com/ue-to
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:75](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L75)
+Defined in: [packages/board/src/utils/observable.ts:254](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L254)
+
+Notifies all observers with the provided data synchronously.
 
 #### Parameters
 
@@ -38,9 +80,16 @@ Defined in: [packages/board/src/utils/observable.ts:75](https://github.com/ue-to
 
 ...`T`
 
+The data to pass to all observers
+
 #### Returns
 
 `void`
+
+#### Remarks
+
+Each observer is called immediately in order. This method blocks until
+all observers have completed execution.
 
 #### Implementation of
 
@@ -52,7 +101,9 @@ Defined in: [packages/board/src/utils/observable.ts:75](https://github.com/ue-to
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:49](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L49)
+Defined in: [packages/board/src/utils/observable.ts:219](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L219)
+
+Subscribes an observer to receive notifications.
 
 #### Parameters
 
@@ -60,17 +111,28 @@ Defined in: [packages/board/src/utils/observable.ts:49](https://github.com/ue-to
 
 [`Observer`](../type-aliases/Observer.md)\<`T`\>
 
+The callback function to be notified
+
 ##### options?
 
 [`SubscriptionOptions`](../interfaces/SubscriptionOptions.md)
 
+Optional subscription options including AbortSignal
+
 #### Returns
+
+Unsubscribe function to remove this observer
 
 > (): `void`
 
 ##### Returns
 
 `void`
+
+#### Remarks
+
+If an AbortSignal is provided and is already aborted, the observer
+is not added and the returned unsubscribe function is a no-op.
 
 #### Implementation of
 

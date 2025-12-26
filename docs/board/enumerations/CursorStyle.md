@@ -2,7 +2,16 @@
 
 # Enumeration: CursorStyle
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:7](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L7)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L16)
+
+Cursor styles used to provide visual feedback for different input states.
+
+## Remarks
+
+These cursor styles indicate the current interaction mode to users:
+- **GRAB**: Indicates the canvas is ready to be panned (spacebar pressed, no drag yet)
+- **GRABBING**: Indicates active panning is in progress
+- **DEFAULT**: Normal cursor state when no special interaction is active
 
 ## Enumeration Members
 
@@ -10,7 +19,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **DEFAULT**: `"default"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:9](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L9)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:18](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L18)
 
 ***
 
@@ -18,7 +27,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRAB**: `"grab"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:8](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L8)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:17](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L17)
 
 ***
 
@@ -26,4 +35,4 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **GRABBING**: `"grabbing"`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:10](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L10)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L19)

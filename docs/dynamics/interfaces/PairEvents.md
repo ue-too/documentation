@@ -2,7 +2,7 @@
 
 # Interface: PairEvents
 
-Defined in: pair-manager.d.ts:14
+Defined in: [pair-manager.ts:25](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L25)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: pair-manager.d.ts:14
 
 > **created**: [`CollisionPair`](CollisionPair.md)[]
 
-Defined in: pair-manager.d.ts:15
+Defined in: [pair-manager.ts:26](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L26)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: pair-manager.d.ts:15
 
 > **removed**: [`CollisionPair`](CollisionPair.md)[]
 
-Defined in: pair-manager.d.ts:17
+Defined in: [pair-manager.ts:28](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L28)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: pair-manager.d.ts:17
 
 > **updated**: [`CollisionPair`](CollisionPair.md)[]
 
-Defined in: pair-manager.d.ts:16
+Defined in: [pair-manager.ts:27](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/pair-manager.ts#L27)

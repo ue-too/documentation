@@ -4,8 +4,6 @@
 
 > **ZoomObserver** = [`Callback`](Callback.md)\<`"zoom"`\>
 
-Defined in: [packages/board/src/camera/update-publisher.ts:125](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L125)
+Defined in: [packages/board/src/camera/update-publisher.ts:151](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L151)
 
-## Description
-
-The observer type for the zoom event.
+Callback type for zoom (scale change) events.

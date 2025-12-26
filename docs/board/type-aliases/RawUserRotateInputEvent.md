@@ -4,7 +4,9 @@
 
 > **RawUserRotateInputEvent** = `object` & [`RawUserRotateInputEventPayload`](RawUserRotateInputEventPayload.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:67](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L67)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:84](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L84)
+
+Rotate input event with discriminated type.
 
 ## Type Declaration
 
@@ -12,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **type**: `"rotate"`
 
-## Description
+## Remarks
 
-The raw user rotate input event.
-Use type to discriminate between pan, zoom, and rotate events.
+The `type` property allows TypeScript discriminated unions to distinguish
+between different event types when subscribing to the "all" event stream.

@@ -4,7 +4,9 @@
 
 > **angleSpan**(`from`, `to`): `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:115](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L115)
+Defined in: [packages/board/src/camera/utils/rotation.ts:221](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L221)
+
+Calculates the signed angular distance between two angles, taking the shorter path.
 
 ## Parameters
 
@@ -12,14 +14,33 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:115](https://github.com
 
 `number`
 
+Starting angle in radians
+
 ### to
 
 `number`
+
+Target angle in radians
 
 ## Returns
 
 `number`
 
-## Description
+Signed angular difference in radians, in the range (-π, π]
 
-Gets the smaller angle span between two angles. (in radians)
+## Remarks
+
+Returns the shortest angular path from `from` to `to`:
+- Positive value: rotate counter-clockwise (positive direction)
+- Negative value: rotate clockwise (negative direction)
+- Always returns the smaller of the two possible paths
+
+## Example
+
+```typescript
+angleSpan(0, Math.PI/2);        // π/2 (90° ccw)
+angleSpan(Math.PI/2, 0);        // -π/2 (90° cw)
+angleSpan(0, 3*Math.PI/2);      // -π/2 (shorter to go cw)
+angleSpan(3*Math.PI/2, 0);      // π/2 (shorter to go ccw)
+angleSpan(0, Math.PI);          // π (180°, ambiguous)
+```

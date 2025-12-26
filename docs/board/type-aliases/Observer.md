@@ -4,13 +4,17 @@
 
 > **Observer**\<`T`\> = (...`data`) => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:1](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/observable.ts#L1)
+Defined in: [packages/board/src/utils/observable.ts:25](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/observable.ts#L25)
+
+Type definition for an observer callback function.
 
 ## Type Parameters
 
 ### T
 
 `T` *extends* `any`[]
+
+Tuple type of arguments passed to the observer
 
 ## Parameters
 
@@ -21,3 +25,22 @@ Defined in: [packages/board/src/utils/observable.ts:1](https://github.com/ue-too
 ## Returns
 
 `void`
+
+## Remarks
+
+Observers are callbacks that get notified when an Observable emits data.
+The generic type T is a tuple representing the arguments passed to the callback.
+
+## Example
+
+```typescript
+// Observer that receives a single string
+const stringObserver: Observer<[string]> = (message) => {
+  console.log(message);
+};
+
+// Observer that receives multiple arguments
+const multiObserver: Observer<[number, string, boolean]> = (num, str, flag) => {
+  console.log(num, str, flag);
+};
+```

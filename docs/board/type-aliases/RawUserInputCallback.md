@@ -4,13 +4,17 @@
 
 > **RawUserInputCallback**\<`K`\> = (`event`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:97](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L97)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:122](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L122)
+
+Callback function type for raw user input events.
 
 ## Type Parameters
 
 ### K
 
 `K` *extends* keyof [`RawUserInputEventMap`](RawUserInputEventMap.md)
+
+The event name key from RawUserInputEventMap
 
 ## Parameters
 
@@ -21,8 +25,3 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 ## Returns
 
 `void`
-
-## Description
-
-The raw user input callback.
-This is the function type of callbacks for raw user input events.

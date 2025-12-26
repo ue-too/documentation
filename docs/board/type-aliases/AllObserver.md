@@ -4,8 +4,6 @@
 
 > **AllObserver** = [`Callback`](Callback.md)\<`"all"`\>
 
-Defined in: [packages/board/src/camera/update-publisher.ts:139](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L139)
+Defined in: [packages/board/src/camera/update-publisher.ts:165](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L165)
 
-## Description
-
-The observer type for the "all" camera event.
+Callback type for the 'all' event that fires on any camera change.

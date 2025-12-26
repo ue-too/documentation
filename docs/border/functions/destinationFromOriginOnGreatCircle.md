@@ -4,7 +4,9 @@
 
 > **destinationFromOriginOnGreatCircle**(`startCoord`, `bearing`, `distance`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [greateCircle.ts:83](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/greateCircle.ts#L83)
+Defined in: [greateCircle.ts:184](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/greateCircle.ts#L184)
+
+Calculates the destination point given a start point, bearing, and distance on a great circle.
 
 ## Parameters
 
@@ -12,14 +14,40 @@ Defined in: [greateCircle.ts:83](https://github.com/ue-too/ue-too/blob/c02efc01f
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
 
+The starting geographic coordinate
+
 ### bearing
 
 `number`
+
+The initial bearing in degrees (0 = north, 90 = east, etc.)
 
 ### distance
 
 `number`
 
+The distance to travel in meters
+
 ## Returns
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The destination coordinate
+
+## Remarks
+
+Starting from a given point and traveling along a great circle at a specific
+initial bearing for a given distance, this calculates where you'll end up.
+
+Note: The bearing will change along the path (except when traveling due north/south
+or along the equator) because great circles are not straight lines on most map projections.
+
+## Example
+
+```typescript
+const start = { latitude: 40.7128, longitude: -74.0060 }; // NYC
+
+// Travel 1000km northeast from NYC
+const destination = destinationFromOriginOnGreatCircle(start, 45, 1000000);
+console.log('Destination:', destination);
+```

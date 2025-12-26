@@ -4,7 +4,9 @@
 
 > **clampPoint**(`point`, `boundaries`): `Point`
 
-Defined in: [packages/board/src/camera/utils/position.ts:90](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/position.ts#L90)
+Defined in: [packages/board/src/camera/utils/position.ts:218](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/position.ts#L218)
+
+Clamps a point to stay within specified boundaries.
 
 ## Parameters
 
@@ -12,7 +14,11 @@ Defined in: [packages/board/src/camera/utils/position.ts:90](https://github.com/
 
 `Point`
 
+Point to clamp in world coordinates
+
 ### boundaries
+
+Optional boundary constraints
 
 [`Boundaries`](../type-aliases/Boundaries.md) | `undefined`
 
@@ -20,6 +26,26 @@ Defined in: [packages/board/src/camera/utils/position.ts:90](https://github.com/
 
 `Point`
 
-## Description
+Clamped point, or original if already within bounds or no boundaries
 
-Clamps a point to the boundaries.
+## Remarks
+
+Each axis is clamped independently:
+- If a min constraint exists on an axis, ensures point >= min
+- If a max constraint exists on an axis, ensures point <= max
+- If no constraint exists on an axis, that axis is unchanged
+
+## Example
+
+```typescript
+const bounds: Boundaries = {
+  min: { x: -100, y: -50 },
+  max: { x: 100, y: 50 }
+};
+
+clampPoint({ x: 0, y: 0 }, bounds);       // { x: 0, y: 0 } (inside)
+clampPoint({ x: 150, y: 0 }, bounds);     // { x: 100, y: 0 } (clamped x)
+clampPoint({ x: 0, y: -100 }, bounds);    // { x: 0, y: -50 } (clamped y)
+clampPoint({ x: 200, y: -200 }, bounds);  // { x: 100, y: -50 } (both clamped)
+clampPoint({ x: 0, y: 0 }, undefined);    // { x: 0, y: 0 } (no bounds)
+```

@@ -4,9 +4,10 @@
 
 > **RawUserInputEvent** = [`RawUserPanInputEvent`](RawUserPanInputEvent.md) \| [`RawUserZoomInputEvent`](RawUserZoomInputEvent.md) \| [`RawUserRotateInputEvent`](RawUserRotateInputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:89](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L89)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:113](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L113)
 
-## Description
+Union type of all raw user input events.
 
-The raw user input event.
-Use type to discriminate between pan, zoom, and rotate events.
+## Remarks
+
+Use the `type` discriminator property to determine which event variant you have.

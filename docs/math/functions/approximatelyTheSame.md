@@ -4,7 +4,9 @@
 
 > **approximatelyTheSame**(`a`, `b`, `precision?`): `boolean`
 
-Defined in: [index.ts:187](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/math/src/index.ts#L187)
+Defined in: [index.ts:741](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/math/src/index.ts#L741)
+
+Checks if two numbers are approximately equal within a tolerance.
 
 ## Parameters
 
@@ -12,14 +14,34 @@ Defined in: [index.ts:187](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3
 
 `number`
 
+First number
+
 ### b
 
 `number`
+
+Second number
 
 ### precision?
 
 `number`
 
+Optional tolerance (defaults to 0.000001)
+
 ## Returns
 
 `boolean`
+
+True if the absolute difference is within the precision threshold
+
+## Remarks
+
+Useful for floating-point comparisons where exact equality is unreliable.
+
+## Example
+
+```typescript
+approximatelyTheSame(1.0, 1.0000001); // true (within default epsilon)
+approximatelyTheSame(1.0, 1.1); // false
+approximatelyTheSame(1.0, 1.01, 0.02); // true (within custom precision)
+```

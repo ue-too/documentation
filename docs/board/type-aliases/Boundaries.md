@@ -4,12 +4,43 @@
 
 > **Boundaries** = `object`
 
-Defined in: [packages/board/src/camera/utils/position.ts:10](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/position.ts#L10)
+Defined in: [packages/board/src/camera/utils/position.ts:44](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/position.ts#L44)
 
-## Description
+Position boundaries for camera movement in world space.
+Allows optional constraints on x and y axes independently.
 
-The boundaries of a camera.
-The x and y are in world space.
+## Remarks
+
+All coordinates are in world space. Each axis (x, y) can be:
+- Fully constrained: both min and max defined
+- Partially constrained: only min or max defined
+- Unconstrained: neither min nor max defined
+
+This allows for flexible boundary configurations like:
+- Horizontal-only boundaries (x constrained, y free)
+- Vertical-only boundaries (y constrained, x free)
+- One-sided boundaries (e.g., minimum x but no maximum)
+
+## Example
+
+```typescript
+// Fully constrained rectangular boundary
+const rect: Boundaries = {
+  min: { x: -1000, y: -1000 },
+  max: { x: 1000, y: 1000 }
+};
+
+// Horizontal constraints only
+const horizontal: Boundaries = {
+  min: { x: -500 },
+  max: { x: 500 }
+};
+
+// One-sided constraint (can't go below y=0)
+const floor: Boundaries = {
+  min: { y: 0 }
+};
+```
 
 ## Properties
 
@@ -17,7 +48,9 @@ The x and y are in world space.
 
 > `optional` **max**: `object`
 
-Defined in: [packages/board/src/camera/utils/position.ts:12](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/position.ts#L12)
+Defined in: [packages/board/src/camera/utils/position.ts:46](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/position.ts#L46)
+
+Maximum position constraints (both x and y are optional)
 
 #### x?
 
@@ -33,7 +66,9 @@ Defined in: [packages/board/src/camera/utils/position.ts:12](https://github.com/
 
 > `optional` **min**: `object`
 
-Defined in: [packages/board/src/camera/utils/position.ts:11](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/position.ts#L11)
+Defined in: [packages/board/src/camera/utils/position.ts:45](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/position.ts#L45)
+
+Minimum position constraints (both x and y are optional)
 
 #### x?
 

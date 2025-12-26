@@ -2,7 +2,7 @@
 
 # Class: RectangleBound
 
-Defined in: quadtree.d.ts:3
+Defined in: [quadtree.ts:5](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/quadtree.ts#L5)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: quadtree.d.ts:3
 
 > **new RectangleBound**(`bottomLeft`, `width`, `height`): `RectangleBound`
 
-Defined in: quadtree.d.ts:7
+Defined in: [quadtree.ts:10](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/quadtree.ts#L10)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: quadtree.d.ts:7
 
 > **getbottomLeft**(): `Point`
 
-Defined in: quadtree.d.ts:10
+Defined in: [quadtree.ts:24](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/quadtree.ts#L24)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: quadtree.d.ts:10
 
 > **getHeight**(): `number`
 
-Defined in: quadtree.d.ts:9
+Defined in: [quadtree.ts:20](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/quadtree.ts#L20)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: quadtree.d.ts:9
 
 > **getWidth**(): `number`
 
-Defined in: quadtree.d.ts:8
+Defined in: [quadtree.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/quadtree.ts#L16)
 
 #### Returns
 

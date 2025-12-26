@@ -2,7 +2,17 @@
 
 # Interface: RigidBody
 
-Defined in: rigidbody.d.ts:3
+Defined in: [rigidbody.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L16)
+
+Rigid body interface for 2D physics simulation.
+
+## Remarks
+
+Represents a physical object in the physics world with mass, velocity,
+rotation, and collision properties. Can be either static (immovable) or
+dynamic (responds to forces).
+
+Implemented by [Circle](../classes/Circle.md) and [Polygon](../classes/Polygon.md) classes.
 
 ## Properties
 
@@ -10,7 +20,9 @@ Defined in: rigidbody.d.ts:3
 
 > **AABB**: `object`
 
-Defined in: rigidbody.d.ts:8
+Defined in: [rigidbody.ts:26](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L26)
+
+Axis-Aligned Bounding Box for broad phase collision
 
 #### max
 
@@ -26,7 +38,9 @@ Defined in: rigidbody.d.ts:8
 
 > **angularVelocity**: `number`
 
-Defined in: rigidbody.d.ts:7
+Defined in: [rigidbody.ts:24](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L24)
+
+Angular velocity (radians/second)
 
 ***
 
@@ -34,7 +48,9 @@ Defined in: rigidbody.d.ts:7
 
 > **center**: `Point`
 
-Defined in: rigidbody.d.ts:4
+Defined in: [rigidbody.ts:18](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L18)
+
+Center position in world coordinates
 
 ***
 
@@ -42,7 +58,9 @@ Defined in: rigidbody.d.ts:4
 
 > **collisionFilter**: [`CollisionFilter`](CollisionFilter.md)
 
-Defined in: rigidbody.d.ts:15
+Defined in: [rigidbody.ts:35](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L35)
+
+Collision filtering configuration
 
 ***
 
@@ -50,7 +68,7 @@ Defined in: rigidbody.d.ts:15
 
 > **isSleeping**: `boolean`
 
-Defined in: rigidbody.d.ts:16
+Defined in: [rigidbody.ts:38](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L38)
 
 ***
 
@@ -58,7 +76,9 @@ Defined in: rigidbody.d.ts:16
 
 > **linearVelocity**: `Point`
 
-Defined in: rigidbody.d.ts:6
+Defined in: [rigidbody.ts:22](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L22)
+
+Linear velocity (pixels/second)
 
 ***
 
@@ -66,7 +86,9 @@ Defined in: rigidbody.d.ts:6
 
 > **mass**: `number`
 
-Defined in: rigidbody.d.ts:12
+Defined in: [rigidbody.ts:28](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L28)
+
+Mass in arbitrary units (affects force response)
 
 ***
 
@@ -74,7 +96,9 @@ Defined in: rigidbody.d.ts:12
 
 > **momentOfInertia**: `number`
 
-Defined in: rigidbody.d.ts:14
+Defined in: [rigidbody.ts:32](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L32)
+
+Moment of inertia (rotational mass)
 
 ***
 
@@ -82,7 +106,9 @@ Defined in: rigidbody.d.ts:14
 
 > **orientationAngle**: `number`
 
-Defined in: rigidbody.d.ts:5
+Defined in: [rigidbody.ts:20](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L20)
+
+Rotation angle in radians
 
 ***
 
@@ -90,7 +116,7 @@ Defined in: rigidbody.d.ts:5
 
 > **sleepThreshold**: `number`
 
-Defined in: rigidbody.d.ts:17
+Defined in: [rigidbody.ts:39](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L39)
 
 ***
 
@@ -98,7 +124,7 @@ Defined in: rigidbody.d.ts:17
 
 > **sleepTime**: `number`
 
-Defined in: rigidbody.d.ts:18
+Defined in: [rigidbody.ts:40](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L40)
 
 ***
 
@@ -106,7 +132,9 @@ Defined in: rigidbody.d.ts:18
 
 > **staticFrictionCoeff**: `number`
 
-Defined in: rigidbody.d.ts:13
+Defined in: [rigidbody.ts:30](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L30)
+
+Static friction coefficient (0-1)
 
 ***
 
@@ -114,7 +142,7 @@ Defined in: rigidbody.d.ts:13
 
 > **timeAtRest**: `number`
 
-Defined in: rigidbody.d.ts:19
+Defined in: [rigidbody.ts:41](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L41)
 
 ## Methods
 
@@ -122,7 +150,7 @@ Defined in: rigidbody.d.ts:19
 
 > **applyForce**(`force`): `void`
 
-Defined in: rigidbody.d.ts:28
+Defined in: [rigidbody.ts:48](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L48)
 
 #### Parameters
 
@@ -140,7 +168,7 @@ Defined in: rigidbody.d.ts:28
 
 > **applyForceInOrientation**(`force`): `void`
 
-Defined in: rigidbody.d.ts:29
+Defined in: [rigidbody.ts:49](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L49)
 
 #### Parameters
 
@@ -158,7 +186,7 @@ Defined in: rigidbody.d.ts:29
 
 > **getAdjacentFaces**(`collisionNormal`): `object`[]
 
-Defined in: rigidbody.d.ts:34
+Defined in: [rigidbody.ts:55](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L55)
 
 #### Parameters
 
@@ -176,7 +204,7 @@ Defined in: rigidbody.d.ts:34
 
 > **getCollisionAxes**(`relativeBody`): `Point`[]
 
-Defined in: rigidbody.d.ts:27
+Defined in: [rigidbody.ts:47](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L47)
 
 #### Parameters
 
@@ -194,7 +222,7 @@ Defined in: rigidbody.d.ts:27
 
 > **getMinMaxProjection**(`unitvector`): `object`
 
-Defined in: rigidbody.d.ts:23
+Defined in: [rigidbody.ts:46](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L46)
 
 #### Parameters
 
@@ -220,7 +248,7 @@ Defined in: rigidbody.d.ts:23
 
 > **getNormalOfSignificantFace**(`collisionNormal`): `Point`
 
-Defined in: rigidbody.d.ts:33
+Defined in: [rigidbody.ts:54](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L54)
 
 #### Parameters
 
@@ -238,7 +266,7 @@ Defined in: rigidbody.d.ts:33
 
 > **getSignificantVertices**(`collisionNormal`): `Point`[]
 
-Defined in: rigidbody.d.ts:32
+Defined in: [rigidbody.ts:53](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L53)
 
 #### Parameters
 
@@ -256,7 +284,7 @@ Defined in: rigidbody.d.ts:32
 
 > **isMovingStatic**(): `boolean`
 
-Defined in: rigidbody.d.ts:22
+Defined in: [rigidbody.ts:45](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L45)
 
 #### Returns
 
@@ -268,7 +296,7 @@ Defined in: rigidbody.d.ts:22
 
 > **isStatic**(): `boolean`
 
-Defined in: rigidbody.d.ts:21
+Defined in: [rigidbody.ts:44](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L44)
 
 #### Returns
 
@@ -280,7 +308,7 @@ Defined in: rigidbody.d.ts:21
 
 > **move**(`delta`): `void`
 
-Defined in: rigidbody.d.ts:30
+Defined in: [rigidbody.ts:51](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L51)
 
 #### Parameters
 
@@ -298,7 +326,7 @@ Defined in: rigidbody.d.ts:30
 
 > **setSleeping**(`sleeping`): `void`
 
-Defined in: rigidbody.d.ts:44
+Defined in: [rigidbody.ts:58](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L58)
 
 #### Parameters
 
@@ -316,7 +344,7 @@ Defined in: rigidbody.d.ts:44
 
 > **significantVertex**(`collisionNormal`): `Point`
 
-Defined in: rigidbody.d.ts:31
+Defined in: [rigidbody.ts:52](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L52)
 
 #### Parameters
 
@@ -334,7 +362,7 @@ Defined in: rigidbody.d.ts:31
 
 > **step**(`deltaTime`): `void`
 
-Defined in: rigidbody.d.ts:20
+Defined in: [rigidbody.ts:43](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L43)
 
 #### Parameters
 
@@ -352,7 +380,7 @@ Defined in: rigidbody.d.ts:20
 
 > **updateSleeping**(`deltaTime`): `void`
 
-Defined in: rigidbody.d.ts:45
+Defined in: [rigidbody.ts:59](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/rigidbody.ts#L59)
 
 #### Parameters
 

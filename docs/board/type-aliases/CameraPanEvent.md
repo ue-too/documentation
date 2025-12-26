@@ -4,7 +4,10 @@
 
 > **CameraPanEvent** = `object` & [`CameraPanEventPayload`](CameraPanEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:60](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/update-publisher.ts#L60)
+Defined in: [packages/board/src/camera/update-publisher.ts:74](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L74)
+
+Pan event with discriminated type field for 'all' event handling.
+Includes type discriminator and pan payload.
 
 ## Type Declaration
 
@@ -12,7 +15,4 @@ Defined in: [packages/board/src/camera/update-publisher.ts:60](https://github.co
 
 > **type**: `"pan"`
 
-## Description
-
-The type of the camera pan event.
-The type is for discriminating the event type when the all event is triggered.
+Event type discriminator

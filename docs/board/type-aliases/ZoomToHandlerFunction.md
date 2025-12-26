@@ -4,7 +4,9 @@
 
 > **ZoomToHandlerFunction** = (`destination`, `camera`, `config`) => `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:31](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/zoom-handler.ts#L31)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:117](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/zoom-handler.ts#L117)
+
+Handler function type for absolute "zoom to" camera operations.
 
 ## Parameters
 
@@ -12,18 +14,51 @@ Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:31](https://gi
 
 `number`
 
+Target zoom level
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`ZoomHandlerConfig`](ZoomHandlerConfig.md)
 
+Zoom behavior configuration
+
 ## Returns
 
 `number`
 
-## Description
+Transformed zoom level (after applying restrictions and clamping)
 
-The function signature for the zoom to handler.
+## Remarks
+
+Zoom-to handlers process absolute zoom level requests. They form a pipeline
+that can apply restrictions, clamping, and other transformations.
+
+Handler pipeline pattern:
+- Each handler receives the target zoom, camera state, and config
+- Returns a potentially modified zoom level
+- Handlers can be chained using [createHandlerChain](../functions/createHandlerChain.md)
+
+Common transformations:
+- Boundary clamping (enforce min/max zoom limits)
+- Zoom locking (prevent any zoom changes)
+- Custom zoom constraints or snapping
+
+## Example
+
+```typescript
+const myZoomToHandler: ZoomToHandlerFunction = (target, camera, config) => {
+  // Custom logic: snap to integer zoom levels
+  return Math.round(target);
+};
+```
+
+## See
+
+ - [createHandlerChain](../functions/createHandlerChain.md) for composing handler pipelines
+ - [createDefaultZoomToOnlyHandler](../functions/createDefaultZoomToOnlyHandler.md) for the default implementation

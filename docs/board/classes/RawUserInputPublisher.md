@@ -2,12 +2,66 @@
 
 # Class: RawUserInputPublisher
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:112](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L112)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:205](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L205)
 
-## Description
+Publisher for broadcasting raw user input events to observers.
 
-The raw user input publisher.
-Publishs raw user input events to the input flow control, and subscribers.
+## Remarks
+
+This class implements the observable pattern to distribute user input events
+to external subscribers. It operates in parallel to camera control - the
+orchestrator both sends events to this publisher AND controls the camera.
+
+**Architecture**:
+```
+Orchestrator → Publisher → Observers (UI, analytics, etc.)
+            ↓
+         CameraMux → CameraRig
+```
+
+**Event Streams**:
+- **Specific streams**: Subscribe to "pan", "zoom", or "rotate" for typed events
+- **Unified stream**: Subscribe to "all" for all events with type discriminator
+
+**Use Cases**:
+- Update UI elements based on user interactions
+- Log analytics about user gestures
+- Synchronize secondary views or previews
+- Implement custom gesture reactions independent of camera
+
+**Observable Implementation**:
+Uses AsyncObservable for asynchronous event delivery, preventing observers
+from blocking the input processing pipeline.
+
+## Example
+
+```typescript
+const publisher = new RawUserInputPublisher();
+
+// Subscribe to pan events
+const unsubscribe = publisher.on("pan", (event) => {
+  console.log("User panned by:", event.diff);
+  updateMinimap(event.diff);
+});
+
+// Subscribe to all events
+publisher.on("all", (event) => {
+  switch (event.type) {
+    case "pan":
+      analytics.log("pan", event.diff);
+      break;
+    case "zoom":
+      analytics.log("zoom", event.deltaZoomAmount, event.anchorPoint);
+      break;
+    case "rotate":
+      analytics.log("rotate", event.deltaRotation);
+      break;
+  }
+});
+
+// Later, unsubscribe
+unsubscribe();
+```
 
 ## Implements
 
@@ -17,49 +71,13 @@ Publishs raw user input events to the input flow control, and subscribers.
 
 ### Constructor
 
-> **new RawUserInputPublisher**(`cameraMux`): `RawUserInputPublisher`
+> **new RawUserInputPublisher**(): `RawUserInputPublisher`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:120](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L120)
-
-#### Parameters
-
-##### cameraMux
-
-[`CameraMux`](../interfaces/CameraMux.md)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:212](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L212)
 
 #### Returns
 
 `RawUserInputPublisher`
-
-## Accessors
-
-### cameraMux
-
-#### Get Signature
-
-> **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
-
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:161](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L161)
-
-##### Returns
-
-[`CameraMux`](../interfaces/CameraMux.md)
-
-#### Set Signature
-
-> **set** **cameraMux**(`cameraMux`): `void`
-
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:165](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L165)
-
-##### Parameters
-
-###### cameraMux
-
-[`CameraMux`](../interfaces/CameraMux.md)
-
-##### Returns
-
-`void`
 
 ## Methods
 
@@ -67,7 +85,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:128](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L128)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:219](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L219)
+
+Notifies subscribers of a pan gesture
 
 #### Parameters
 
@@ -89,7 +109,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:140](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L140)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:229](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L229)
+
+Notifies subscribers of a rotate gesture
 
 #### Parameters
 
@@ -111,7 +133,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:134](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L134)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:224](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L224)
+
+Notifies subscribers of a zoom gesture
 
 #### Parameters
 
@@ -137,7 +161,9 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:146](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L146)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:234](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L234)
+
+Subscribes to input events
 
 #### Type Parameters
 

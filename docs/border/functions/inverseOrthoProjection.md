@@ -4,7 +4,9 @@
 
 > **inverseOrthoProjection**(`interestPoint`, `origin`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [projection.ts:35](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L35)
+Defined in: [projection.ts:148](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L148)
+
+Converts an orthographic projection point back to geographic coordinates.
 
 ## Parameters
 
@@ -12,10 +14,30 @@ Defined in: [projection.ts:35](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 `Point`
 
+The point in orthographic projection (in meters)
+
 ### origin
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
 
+The center point of the hemisphere (must match the forward projection)
+
 ## Returns
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
+
+The geographic coordinate
+
+## Remarks
+
+This is the inverse of [orthoProjection](orthoProjection.md). Given a point in orthographic
+projection space (in meters), it returns the corresponding latitude/longitude.
+
+## Example
+
+```typescript
+const origin = { latitude: 45.0, longitude: 0.0 };
+const point = { x: 100000, y: 200000 }; // Some point in projection space
+const coord = inverseOrthoProjection(point, origin);
+console.log(coord); // { latitude: ..., longitude: ... }
+```

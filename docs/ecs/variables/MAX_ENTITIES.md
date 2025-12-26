@@ -4,6 +4,6 @@
 
 > `const` **MAX\_ENTITIES**: `10000` = `10000`
 
-Defined in: index.d.ts:2
+Defined in: [index.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L98)
 
-This is a direct port of the tutorial from https://austinmorlan.com/posts/entity_component_system/  with slight modifications
+Maximum number of entities that can exist simultaneously.

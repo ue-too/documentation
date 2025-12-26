@@ -4,23 +4,9 @@
 
 > **createStateGuard**\<`T`\>(`set`): (`s`) => `s is T`
 
-Defined in: [interface.ts:357](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/being/src/interface.ts#L357)
+Defined in: [interface.ts:676](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L676)
 
-Example usage
-```ts
-type TestSubStates = "subOne" | "subTwo" | "subThree";
-const TEST_STATES = ["one", "two", "three"] as const;
-type TestStates = CreateStateType<typeof TEST_STATES>;
-type AllStates = TestStates | TestSubStates;
-
-const isTestState = createStateGuard(TEST_STATES);
-
-function test(s: AllStates) {
-if (isTestState(s)) {
-	// s: TestStates
-   }
-}
-```
+Creates a type guard function for checking if a value belongs to a specific set of states.
 
 ## Type Parameters
 
@@ -28,13 +14,19 @@ if (isTestState(s)) {
 
 `T` *extends* `string`
 
+String literal type to guard for
+
 ## Parameters
 
 ### set
 
 readonly `T`[]
 
+Readonly array of string literals defining the valid states
+
 ## Returns
+
+A type guard function that checks if a string is in the set
 
 > (`s`): `s is T`
 
@@ -47,3 +39,31 @@ readonly `T`[]
 ### Returns
 
 `s is T`
+
+## Remarks
+
+This utility function generates a TypeScript type guard that narrows a string type
+to a specific union of string literals. Useful when you have multiple state types
+and need to distinguish between them at runtime.
+
+## Example
+
+Creating state guards for hierarchical state machines
+```typescript
+type MainStates = "idle" | "active" | "paused";
+type SubStates = "loading" | "processing" | "complete";
+type AllStates = MainStates | SubStates;
+
+const MAIN_STATES = ["idle", "active", "paused"] as const;
+const isMainState = createStateGuard(MAIN_STATES);
+
+function handleState(state: AllStates) {
+  if (isMainState(state)) {
+    // TypeScript knows state is MainStates here
+    console.log('Main state:', state);
+  } else {
+    // TypeScript knows state is SubStates here
+    console.log('Sub state:', state);
+  }
+}
+```

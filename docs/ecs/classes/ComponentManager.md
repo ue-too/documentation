@@ -2,7 +2,20 @@
 
 # Class: ComponentManager
 
-Defined in: index.d.ts:32
+Defined in: [index.ts:316](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L316)
+
+Manages component registration and component data storage.
+
+## Remarks
+
+The ComponentManager handles:
+- Registering new component types and assigning unique type IDs
+- Creating ComponentArray storage for each component type
+- Adding, removing, and querying component data for entities
+- Cleaning up component data when entities are destroyed
+
+Each component type gets a unique ID (0-31) and its own ComponentArray
+for efficient storage and retrieval.
 
 ## Constructors
 
@@ -20,7 +33,7 @@ Defined in: index.d.ts:32
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-Defined in: index.d.ts:37
+Defined in: [index.ts:334](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L334)
 
 #### Type Parameters
 
@@ -52,7 +65,7 @@ Defined in: index.d.ts:37
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: index.d.ts:40
+Defined in: [index.ts:358](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L358)
 
 #### Parameters
 
@@ -68,9 +81,9 @@ Defined in: index.d.ts:40
 
 ### getComponentFromEntity()
 
-> **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T`
+> **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-Defined in: index.d.ts:39
+Defined in: [index.ts:350](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L350)
 
 #### Type Parameters
 
@@ -90,15 +103,15 @@ Defined in: index.d.ts:39
 
 #### Returns
 
-`T`
+`T` \| `null`
 
 ***
 
 ### getComponentType()
 
-> **getComponentType**(`componentName`): `number`
+> **getComponentType**(`componentName`): `number` \| `null`
 
-Defined in: index.d.ts:36
+Defined in: [index.ts:330](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L330)
 
 #### Parameters
 
@@ -108,7 +121,7 @@ Defined in: index.d.ts:36
 
 #### Returns
 
-`number`
+`number` \| `null`
 
 ***
 
@@ -116,7 +129,7 @@ Defined in: index.d.ts:36
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-Defined in: index.d.ts:35
+Defined in: [index.ts:321](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L321)
 
 #### Type Parameters
 
@@ -140,7 +153,7 @@ Defined in: index.d.ts:35
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-Defined in: index.d.ts:38
+Defined in: [index.ts:342](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L342)
 
 #### Type Parameters
 

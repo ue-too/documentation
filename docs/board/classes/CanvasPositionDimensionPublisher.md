@@ -2,7 +2,46 @@
 
 # Class: CanvasPositionDimensionPublisher
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L6)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:263](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L263)
+
+Monitors and publishes position and dimension changes for HTML Canvas elements.
+
+## Remarks
+
+Similar to [SvgPositionDimensionPublisher](SvgPositionDimensionPublisher.md) but specifically for HTMLCanvasElement.
+Automatically handles device pixel ratio adjustments to maintain crisp rendering
+at different screen densities.
+
+Key differences from SVG version:
+- Automatically adjusts canvas.width/height attributes based on devicePixelRatio
+- Synchronizes CSS dimensions (style.width/height) with canvas buffer size
+- Ensures canvas maintains proper resolution on high-DPI displays
+
+The class uses multiple browser APIs for comprehensive change detection:
+- ResizeObserver: Detects size changes
+- IntersectionObserver: Detects visibility and position changes
+- MutationObserver: Detects attribute changes and synchronizes dimensions
+- Window scroll/resize events: Detects changes from page layout
+
+## Example
+
+```typescript
+const canvas = document.querySelector('canvas');
+const publisher = new CanvasPositionDimensionPublisher(canvas);
+
+// Subscribe to updates
+publisher.onPositionUpdate((rect) => {
+  // Canvas dimensions automatically adjusted for devicePixelRatio
+  console.log(`Canvas at (${rect.x}, ${rect.y})`);
+  console.log(`Display size: ${rect.width}x${rect.height}`);
+});
+
+publisher.dispose();
+```
+
+## See
+
+[SvgPositionDimensionPublisher](SvgPositionDimensionPublisher.md) for SVG elements
 
 ## Constructors
 
@@ -10,7 +49,9 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:6](https://gi
 
 > **new CanvasPositionDimensionPublisher**(`canvas?`): `CanvasPositionDimensionPublisher`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L16)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:282](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L282)
+
+Creates a new Canvas position/dimension publisher.
 
 #### Parameters
 
@@ -18,9 +59,16 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://g
 
 `HTMLCanvasElement`
 
+Optional canvas element to immediately attach to
+
 #### Returns
 
 `CanvasPositionDimensionPublisher`
+
+#### Remarks
+
+If a canvas is provided, observers are immediately attached and monitoring begins.
+The canvas dimensions are automatically adjusted for devicePixelRatio.
 
 ## Methods
 
@@ -28,7 +76,9 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:16](https://g
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L66)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:349](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L349)
+
+Attaches observers to a canvas element and begins monitoring.
 
 #### Parameters
 
@@ -36,9 +86,17 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://g
 
 `HTMLCanvasElement`
 
+The canvas element to monitor
+
 #### Returns
 
 `void`
+
+#### Remarks
+
+Automatically calls [dispose](#dispose) first to clean up any previous attachments.
+Sets up all observers, adjusts canvas dimensions for devicePixelRatio,
+and records the initial position/dimensions.
 
 ***
 
@@ -46,11 +104,18 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:66](https://g
 
 > **dispose**(): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:54](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L54)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:327](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L327)
+
+Cleans up all observers and event listeners.
 
 #### Returns
 
 `void`
+
+#### Remarks
+
+Disconnects all observers and removes window event listeners.
+Always call this method when the publisher is no longer needed to prevent memory leaks.
 
 ***
 
@@ -58,7 +123,9 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:54](https://g
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:108](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/utils/canvas-position-dimension.ts#L108)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:403](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/utils/canvas-position-dimension.ts#L403)
+
+Subscribes to position and dimension updates.
 
 #### Parameters
 
@@ -66,14 +133,26 @@ Defined in: [packages/board/src/utils/canvas-position-dimension.ts:108](https://
 
 [`Observer`](../type-aliases/Observer.md)\<\[`DOMRect`\]\>
 
+Callback function that receives the updated DOMRect
+
 ##### options?
 
 [`SubscriptionOptions`](../interfaces/SubscriptionOptions.md)
 
+Optional subscription options (e.g., AbortSignal for cleanup)
+
 #### Returns
+
+Unsubscribe function to remove this observer
 
 > (): `void`
 
 ##### Returns
 
 `void`
+
+#### Remarks
+
+The observer is called synchronously whenever the canvas position or dimensions change.
+The DOMRect represents the actual content area (excluding padding and borders).
+Canvas buffer dimensions are automatically adjusted for devicePixelRatio.

@@ -4,7 +4,9 @@
 
 > **orthoProjection**(`interestPoint`, `origin`): `object`
 
-Defined in: [projection.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/border/src/projection.ts#L24)
+Defined in: [projection.ts:116](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/projection.ts#L116)
+
+Projects a geographic coordinate to orthographic projection.
 
 ## Parameters
 
@@ -12,13 +14,19 @@ Defined in: [projection.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
 
+The geographic coordinate to project
+
 ### origin
 
 [`GeoCoord`](../type-aliases/GeoCoord.md)
 
+The center point of the hemisphere to view
+
 ## Returns
 
 `object`
+
+Object with clipped flag and projected coordinate
 
 ### clipped
 
@@ -27,3 +35,27 @@ Defined in: [projection.ts:24](https://github.com/ue-too/ue-too/blob/c02efc01f7c
 ### coord
 
 > **coord**: `Point`
+
+## Remarks
+
+The orthographic projection shows Earth as it would appear from space,
+displaying one hemisphere at a time. It's useful for globe-like visualizations.
+
+Points on the back hemisphere (not visible from the origin viewpoint) are
+marked as clipped.
+
+The projection uses Earth's mean radius of 6,371,000 meters.
+
+## Example
+
+```typescript
+const origin = { latitude: 45.0, longitude: 0.0 }; // View centered on France
+const coord = { latitude: 51.5, longitude: -0.1 }; // London
+
+const result = orthoProjection(coord, origin);
+if (!result.clipped) {
+  console.log('London is visible at:', result.coord);
+} else {
+  console.log('London is on the back of the globe');
+}
+```

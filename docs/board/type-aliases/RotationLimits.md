@@ -4,11 +4,18 @@
 
 > **RotationLimits** = `object`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L6)
+Defined in: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L19)
 
-## Description
+Constraints for camera rotation defining an angular range with direction.
 
-The limits of the rotation.
+## Remarks
+
+Rotation limits define an angular arc. The direction (ccw) determines which
+way around the circle the range extends from start to end.
+
+For example:
+- start=0, end=π/2, ccw=true: allows 0 to π/2 (0° to 90°)
+- start=0, end=π/2, ccw=false: allows 0 to -3π/2 going clockwise (0° to 270° the other way)
 
 ## Properties
 
@@ -16,7 +23,9 @@ The limits of the rotation.
 
 > **ccw**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L6)
+Defined in: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L19)
+
+If true, the range is measured counter-clockwise from start to end. If false, clockwise
 
 ***
 
@@ -24,7 +33,9 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/u
 
 > **end**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L6)
+Defined in: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L19)
+
+Ending angle of the allowed range in radians
 
 ***
 
@@ -32,7 +43,9 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/u
 
 > **start**: `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L6)
+Defined in: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L19)
+
+Starting angle of the allowed range in radians
 
 ***
 
@@ -40,4 +53,6 @@ Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/u
 
 > **startAsTieBreaker**: `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:6](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/rotation.ts#L6)
+Defined in: [packages/board/src/camera/utils/rotation.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L19)
+
+When clamping and distance to start equals distance to end, clamp to start if true, end if false

@@ -2,13 +2,60 @@
 
 # Class: Animation\<T\>
 
-Defined in: composite-animation.d.ts:105
+Defined in: [composite-animation.ts:656](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L656)
+
+Keyframe-based animation for a single value.
+
+## Remarks
+
+The Animation class interpolates a value through a series of keyframes over time.
+It handles:
+- Keyframe interpolation with binary search for efficiency
+- Easing functions for smooth motion curves
+- Reverse playback
+- Looping with optional max loop count
+- Delays before start and drag time after completion
+- Lifecycle callbacks
+
+## How It Works
+
+1. Define keyframes at percentages (0.0 to 1.0) along the timeline
+2. Provide a callback to apply the animated value
+3. Provide an interpolation helper for the value type
+4. Call `animate(deltaTime)` each frame to progress the animation
+
+## Example
+
+Animating a number with easing
+```typescript
+let opacity = 0;
+
+const fadeIn = new Animation(
+  [
+    { percentage: 0, value: 0 },
+    { percentage: 1, value: 1, easingFn: (t) => t * t } // Ease-in
+  ],
+  (value) => { opacity = value; },
+  numberHelperFunctions,
+  1000 // 1 second duration
+);
+
+fadeIn.start();
+
+// In animation loop
+function loop(deltaTime: number) {
+  fadeIn.animate(deltaTime);
+  element.style.opacity = opacity;
+}
+```
 
 ## Type Parameters
 
 ### T
 
 `T`
+
+The type of value being animated
 
 ## Implements
 
@@ -18,9 +65,9 @@ Defined in: composite-animation.d.ts:105
 
 ### Constructor
 
-> **new Animation**\<`T`\>(`keyFrames`, `applyAnimationValue`, `animatableAttributeHelper`, `duration?`, `loop?`, `parent?`, `setUpFn?`, `tearDownFn?`, `easeFn?`): `Animation`\<`T`\>
+> **new Animation**\<`T`\>(`keyFrames`, `applyAnimationValue`, `animatableAttributeHelper`, `duration`, `loop`, `parent`, `setUpFn`, `tearDownFn`, `easeFn`): `Animation`\<`T`\>
 
-Defined in: composite-animation.d.ts:128
+Defined in: [composite-animation.ts:683](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L683)
 
 #### Parameters
 
@@ -36,27 +83,27 @@ Defined in: composite-animation.d.ts:128
 
 [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<`T`\>
 
-##### duration?
+##### duration
 
-`number`
+`number` = `1000`
 
-##### loop?
+##### loop
 
-`boolean`
+`boolean` = `false`
 
-##### parent?
+##### parent
 
-[`AnimatorContainer`](../interfaces/AnimatorContainer.md)
+[`AnimatorContainer`](../interfaces/AnimatorContainer.md) | `undefined`
 
-##### setUpFn?
+##### setUpFn
 
-`Function`
+`Function` = `...`
 
-##### tearDownFn?
+##### tearDownFn
 
-`Function`
+`Function` = `...`
 
-##### easeFn?
+##### easeFn
 
 (`percentage`) => `number`
 
@@ -72,7 +119,7 @@ Defined in: composite-animation.d.ts:128
 
 > **get** **delay**(): `number`
 
-Defined in: composite-animation.d.ts:146
+Defined in: [composite-animation.ts:921](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L921)
 
 ##### Returns
 
@@ -82,7 +129,7 @@ Defined in: composite-animation.d.ts:146
 
 > **set** **delay**(`delayTime`): `void`
 
-Defined in: composite-animation.d.ts:147
+Defined in: [composite-animation.ts:925](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L925)
 
 ##### Parameters
 
@@ -106,7 +153,7 @@ Defined in: composite-animation.d.ts:147
 
 > **get** **drag**(): `number`
 
-Defined in: composite-animation.d.ts:148
+Defined in: [composite-animation.ts:932](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L932)
 
 ##### Returns
 
@@ -116,7 +163,7 @@ Defined in: composite-animation.d.ts:148
 
 > **set** **drag**(`dragTime`): `void`
 
-Defined in: composite-animation.d.ts:149
+Defined in: [composite-animation.ts:936](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L936)
 
 ##### Parameters
 
@@ -140,7 +187,7 @@ Defined in: composite-animation.d.ts:149
 
 > **get** **duration**(): `number`
 
-Defined in: composite-animation.d.ts:141
+Defined in: [composite-animation.ts:875](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L875)
 
 ##### Returns
 
@@ -150,7 +197,7 @@ Defined in: composite-animation.d.ts:141
 
 > **set** **duration**(`duration`): `void`
 
-Defined in: composite-animation.d.ts:142
+Defined in: [composite-animation.ts:879](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L879)
 
 ##### Parameters
 
@@ -174,7 +221,7 @@ Defined in: composite-animation.d.ts:142
 
 > **get** **easeFunction**(): (`percentage`) => `number`
 
-Defined in: composite-animation.d.ts:156
+Defined in: [composite-animation.ts:971](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L971)
 
 ##### Returns
 
@@ -194,7 +241,7 @@ Defined in: composite-animation.d.ts:156
 
 > **set** **easeFunction**(`easeFn`): `void`
 
-Defined in: composite-animation.d.ts:157
+Defined in: [composite-animation.ts:975](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L975)
 
 ##### Parameters
 
@@ -214,7 +261,7 @@ Defined in: composite-animation.d.ts:157
 
 > **get** **keyFrames**(): [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-Defined in: composite-animation.d.ts:155
+Defined in: [composite-animation.ts:967](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L967)
 
 ##### Returns
 
@@ -224,7 +271,7 @@ Defined in: composite-animation.d.ts:155
 
 > **set** **keyFrames**(`keyFrames`): `void`
 
-Defined in: composite-animation.d.ts:154
+Defined in: [composite-animation.ts:962](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L962)
 
 ##### Parameters
 
@@ -244,7 +291,7 @@ Defined in: composite-animation.d.ts:154
 
 > **get** **loops**(): `boolean`
 
-Defined in: composite-animation.d.ts:139
+Defined in: [composite-animation.ts:867](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L867)
 
 ##### Returns
 
@@ -254,7 +301,7 @@ Defined in: composite-animation.d.ts:139
 
 > **set** **loops**(`loop`): `void`
 
-Defined in: composite-animation.d.ts:140
+Defined in: [composite-animation.ts:871](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L871)
 
 ##### Parameters
 
@@ -276,25 +323,25 @@ Defined in: composite-animation.d.ts:140
 
 #### Get Signature
 
-> **get** **maxLoopCount**(): `number`
+> **get** **maxLoopCount**(): `number` \| `undefined`
 
-Defined in: composite-animation.d.ts:163
+Defined in: [composite-animation.ts:1008](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1008)
 
 ##### Returns
 
-`number`
+`number` \| `undefined`
 
 #### Set Signature
 
 > **set** **maxLoopCount**(`maxLoopCount`): `void`
 
-Defined in: composite-animation.d.ts:164
+Defined in: [composite-animation.ts:1012](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1012)
 
 ##### Parameters
 
 ###### maxLoopCount
 
-`number`
+`number` | `undefined`
 
 ##### Returns
 
@@ -312,7 +359,7 @@ Defined in: composite-animation.d.ts:164
 
 > **get** **playing**(): `boolean`
 
-Defined in: composite-animation.d.ts:134
+Defined in: [composite-animation.ts:727](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L727)
 
 ##### Returns
 
@@ -330,7 +377,7 @@ Defined in: composite-animation.d.ts:134
 
 > **get** **trueDuration**(): `number`
 
-Defined in: composite-animation.d.ts:150
+Defined in: [composite-animation.ts:943](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L943)
 
 ##### Returns
 
@@ -340,7 +387,7 @@ Defined in: composite-animation.d.ts:150
 
 > **set** **trueDuration**(`duration`): `void`
 
-Defined in: composite-animation.d.ts:151
+Defined in: [composite-animation.ts:947](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L947)
 
 ##### Parameters
 
@@ -358,7 +405,7 @@ Defined in: composite-animation.d.ts:151
 
 > **animate**(`deltaTime`): `void`
 
-Defined in: composite-animation.d.ts:135
+Defined in: [composite-animation.ts:731](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L731)
 
 #### Parameters
 
@@ -380,7 +427,7 @@ Defined in: composite-animation.d.ts:135
 
 > **clearOnEnd**(): `void`
 
-Defined in: composite-animation.d.ts:161
+Defined in: [composite-animation.ts:1000](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1000)
 
 #### Returns
 
@@ -396,7 +443,7 @@ Defined in: composite-animation.d.ts:161
 
 > **clearOnStart**(): `void`
 
-Defined in: composite-animation.d.ts:162
+Defined in: [composite-animation.ts:1004](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1004)
 
 #### Returns
 
@@ -412,7 +459,7 @@ Defined in: composite-animation.d.ts:162
 
 > **detachParent**(): `void`
 
-Defined in: composite-animation.d.ts:153
+Defined in: [composite-animation.ts:958](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L958)
 
 #### Returns
 
@@ -428,7 +475,7 @@ Defined in: composite-animation.d.ts:153
 
 > **findValue**(`valuePercentage`, `keyframes`, `animatableAttributeHelper`): `T`
 
-Defined in: composite-animation.d.ts:136
+Defined in: [composite-animation.ts:814](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L814)
 
 #### Parameters
 
@@ -454,7 +501,7 @@ Defined in: composite-animation.d.ts:136
 
 > **nonCascadingDuration**(`newDuration`): `void`
 
-Defined in: composite-animation.d.ts:143
+Defined in: [composite-animation.ts:895](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L895)
 
 #### Parameters
 
@@ -476,7 +523,7 @@ Defined in: composite-animation.d.ts:143
 
 > **onEnd**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: composite-animation.d.ts:158
+Defined in: [composite-animation.ts:979](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L979)
 
 #### Parameters
 
@@ -498,7 +545,7 @@ Defined in: composite-animation.d.ts:158
 
 > **onStart**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: composite-animation.d.ts:159
+Defined in: [composite-animation.ts:986](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L986)
 
 #### Parameters
 
@@ -520,7 +567,7 @@ Defined in: composite-animation.d.ts:159
 
 > **onStartAfterDelay**(`callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: composite-animation.d.ts:160
+Defined in: [composite-animation.ts:993](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L993)
 
 #### Parameters
 
@@ -538,7 +585,7 @@ Defined in: composite-animation.d.ts:160
 
 > **pause**(): `void`
 
-Defined in: composite-animation.d.ts:132
+Defined in: [composite-animation.ts:719](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L719)
 
 #### Returns
 
@@ -554,7 +601,7 @@ Defined in: composite-animation.d.ts:132
 
 > **resetAnimationState**(): `void`
 
-Defined in: composite-animation.d.ts:144
+Defined in: [composite-animation.ts:908](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L908)
 
 #### Returns
 
@@ -570,7 +617,7 @@ Defined in: composite-animation.d.ts:144
 
 > **resume**(): `void`
 
-Defined in: composite-animation.d.ts:133
+Defined in: [composite-animation.ts:723](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L723)
 
 #### Returns
 
@@ -586,7 +633,7 @@ Defined in: composite-animation.d.ts:133
 
 > **setParent**(`parent`): `void`
 
-Defined in: composite-animation.d.ts:152
+Defined in: [composite-animation.ts:954](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L954)
 
 #### Parameters
 
@@ -608,7 +655,7 @@ Defined in: composite-animation.d.ts:152
 
 > **setUp**(): `void`
 
-Defined in: composite-animation.d.ts:137
+Defined in: [composite-animation.ts:858](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L858)
 
 #### Returns
 
@@ -624,7 +671,7 @@ Defined in: composite-animation.d.ts:137
 
 > **start**(): `void`
 
-Defined in: composite-animation.d.ts:130
+Defined in: [composite-animation.ts:704](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L704)
 
 #### Returns
 
@@ -640,7 +687,7 @@ Defined in: composite-animation.d.ts:130
 
 > **stop**(): `void`
 
-Defined in: composite-animation.d.ts:131
+Defined in: [composite-animation.ts:712](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L712)
 
 #### Returns
 
@@ -656,7 +703,7 @@ Defined in: composite-animation.d.ts:131
 
 > **tearDown**(): `void`
 
-Defined in: composite-animation.d.ts:138
+Defined in: [composite-animation.ts:863](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L863)
 
 #### Returns
 
@@ -672,7 +719,7 @@ Defined in: composite-animation.d.ts:138
 
 > **toggleReverse**(`reverse`): `void`
 
-Defined in: composite-animation.d.ts:129
+Defined in: [composite-animation.ts:700](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L700)
 
 #### Parameters
 
@@ -694,7 +741,7 @@ Defined in: composite-animation.d.ts:129
 
 > **wrapUp**(): `void`
 
-Defined in: composite-animation.d.ts:145
+Defined in: [composite-animation.ts:915](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L915)
 
 #### Returns
 

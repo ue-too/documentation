@@ -2,7 +2,30 @@
 
 # Class: FixedPinJoint
 
-Defined in: constraint.d.ts:6
+Defined in: [constraint.ts:49](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L49)
+
+Pin joint connecting a body to a fixed world point.
+
+## Remarks
+
+Creates a pendulum-like constraint where a point on the body is pinned
+to a fixed location in world space. The body can rotate around this point.
+
+Uses Baumgarte stabilization to prevent drift.
+
+## Example
+
+Create a pendulum
+```typescript
+const bob = new Circle({ x: 0, y: 100 }, 20, 0, 10, false);
+const joint = new FixedPinJoint(
+  bob,
+  { x: 0, y: 0 },  // Anchor on bob (center)
+  { x: 0, y: 0 }   // World anchor (ceiling)
+);
+world.addRigidBody('bob', bob);
+world.addConstraint(joint);
+```
 
 ## Implements
 
@@ -14,7 +37,7 @@ Defined in: constraint.d.ts:6
 
 > **new FixedPinJoint**(`bodyA`, `anchorA`, `worldAnchorA`): `FixedPinJoint`
 
-Defined in: constraint.d.ts:10
+Defined in: [constraint.ts:55](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L55)
 
 #### Parameters
 
@@ -40,13 +63,17 @@ Defined in: constraint.d.ts:10
 
 > **enforce**(`dt`): `void`
 
-Defined in: constraint.d.ts:11
+Defined in: [constraint.ts:61](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L61)
+
+Enforces the constraint for one timestep.
 
 #### Parameters
 
 ##### dt
 
 `number`
+
+Timestep in seconds
 
 #### Returns
 
@@ -62,7 +89,7 @@ Defined in: constraint.d.ts:11
 
 > **solveWorldPinJointConstraint**(`dt`): `void`
 
-Defined in: constraint.d.ts:12
+Defined in: [constraint.ts:65](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L65)
 
 #### Parameters
 

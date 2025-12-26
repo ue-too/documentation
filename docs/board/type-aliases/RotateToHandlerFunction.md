@@ -4,7 +4,9 @@
 
 > **RotateToHandlerFunction** = (`targetRotation`, `camera`, `config`) => `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:44](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/camera-rig/rotation-handler.ts#L44)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:175](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-rig/rotation-handler.ts#L175)
+
+Handler function type for absolute "rotate to" camera operations.
 
 ## Parameters
 
@@ -12,24 +14,60 @@ Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:44](https:
 
 `number`
 
+Target rotation angle in radians
+
 ### camera
 
 [`BoardCamera`](../interfaces/BoardCamera.md)
+
+Current camera instance
 
 ### config
 
 [`RotationHandlerConfig`](RotationHandlerConfig.md)
 
+Rotation behavior configuration
+
 ## Returns
 
 `number`
 
-## Description
+Transformed rotation angle (after applying restrictions and clamping)
 
-The function that is used to rotate the camera to a specific target rotation.
-The target rotation is in radians.
-This is structured as a handler pipeline.
+## Remarks
+
+Rotate-to handlers process absolute rotation angle requests. They form a pipeline
+that can apply restrictions, clamping, and other transformations.
+
+Handler pipeline pattern:
+- Each handler receives the target angle, camera state, and config
+- Returns a potentially modified angle
+- Handlers can be chained using [createHandlerChain](../functions/createHandlerChain.md)
+
+Common transformations:
+- Angular boundary clamping (enforce min/max angles)
+- Rotation locking (return current angle)
+- Angle snapping or normalization
+
+Rotation angles are in radians where:
+- 0 = North (no rotation)
+- π/2 = West (90° counter-clockwise)
+- π = South (180°)
+- 3π/2 = East (270° counter-clockwise)
+
+## Example
+
+```typescript
+const myRotateToHandler: RotateToHandlerFunction = (target, camera, config) => {
+  // Custom logic: snap to cardinal directions
+  const cardinals = [0, Math.PI/2, Math.PI, 3*Math.PI/2];
+  return cardinals.reduce((prev, curr) =>
+    Math.abs(curr - target) < Math.abs(prev - target) ? curr : prev
+  );
+};
+```
 
 ## See
 
-[createHandlerChain](../functions/createHandlerChain.md)
+ - [createHandlerChain](../functions/createHandlerChain.md) for composing handler pipelines
+ - [createDefaultRotateToHandler](../functions/createDefaultRotateToHandler.md) for the default implementation

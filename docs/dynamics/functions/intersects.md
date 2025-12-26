@@ -4,7 +4,7 @@
 
 > **intersects**(`bodyA`, `bodyB`): `object`
 
-Defined in: collision.d.ts:16
+Defined in: [collision.ts:99](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/collision.ts#L99)
 
 ## Parameters
 

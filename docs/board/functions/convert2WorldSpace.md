@@ -4,7 +4,9 @@
 
 > **convert2WorldSpace**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:26](https://github.com/ue-too/ue-too/blob/c02efc01f7c19f3efc21823d0489e987a3e92427/packages/board/src/camera/utils/coordinate-conversion.ts#L26)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:78](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/coordinate-conversion.ts#L78)
+
+Converts a canvas point to world space using current camera state.
 
 ## Parameters
 
@@ -12,32 +14,61 @@ Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:26](https:
 
 `Point`
 
+Point in canvas coordinates (origin at bottom-left)
+
 ### viewPortWidth
 
 `number`
+
+Viewport width in CSS pixels
 
 ### viewPortHeight
 
 `number`
 
+Viewport height in CSS pixels
+
 ### cameraPosition
 
 `Point`
+
+Current camera position in world coordinates
 
 ### cameraZoomLevel
 
 `number`
 
+Current camera zoom level
+
 ### cameraRotation
 
 `number`
+
+Current camera rotation in radians
 
 ## Returns
 
 `Point`
 
-## Description
+World space coordinates of the point
 
-Converts the point to world space.
-The point is in the viewport space where the "bottom left" corner is the origin.
-Camera position is the position of the camera in world space.
+## Remarks
+
+Input coordinates use canvas space with origin at bottom-left.
+This is useful when working with canvas element coordinates directly.
+
+For points already in viewport space (origin at center), use
+[convert2WorldSpaceAnchorAtCenter](convert2WorldSpaceAnchorAtCenter.md) instead.
+
+## Example
+
+```typescript
+// Convert bottom-left corner of canvas to world coords
+const worldPos = convert2WorldSpace(
+  { x: 0, y: 0 },
+  1920, 1080,
+  { x: 100, y: 200 },  // camera position
+  1.5,                  // zoom
+  0                     // rotation
+);
+```

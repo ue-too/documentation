@@ -2,7 +2,9 @@
 
 # Class: SweepAndPrune\<T\>
 
-Defined in: dynamic-tree.d.ts:14
+Defined in: [dynamic-tree.ts:110](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L110)
+
+Sweep and Prune (SAP) spatial indexing algorithm.
 
 ## Type Parameters
 
@@ -30,7 +32,7 @@ Defined in: dynamic-tree.d.ts:14
 
 > **clear**(): `void`
 
-Defined in: dynamic-tree.d.ts:18
+Defined in: [dynamic-tree.ts:115](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L115)
 
 #### Returns
 
@@ -46,7 +48,7 @@ Defined in: dynamic-tree.d.ts:18
 
 > `optional` **draw**(`context`): `void`
 
-Defined in: dynamic-tree.d.ts:30
+Defined in: [dynamic-tree.ts:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L244)
 
 #### Parameters
 
@@ -68,7 +70,7 @@ Defined in: dynamic-tree.d.ts:30
 
 > **findAllOverlaps**(): `object`[]
 
-Defined in: dynamic-tree.d.ts:23
+Defined in: [dynamic-tree.ts:189](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L189)
 
 #### Returns
 
@@ -80,7 +82,7 @@ Defined in: dynamic-tree.d.ts:23
 
 > **getStats**(): `object`
 
-Defined in: dynamic-tree.d.ts:31
+Defined in: [dynamic-tree.ts:265](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L265)
 
 #### Returns
 
@@ -100,7 +102,7 @@ Defined in: dynamic-tree.d.ts:31
 
 > **insert**(`object`): `void`
 
-Defined in: dynamic-tree.d.ts:19
+Defined in: [dynamic-tree.ts:121](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L121)
 
 #### Parameters
 
@@ -122,7 +124,7 @@ Defined in: dynamic-tree.d.ts:19
 
 > **remove**(`object`): `void`
 
-Defined in: dynamic-tree.d.ts:21
+Defined in: [dynamic-tree.ts:155](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L155)
 
 #### Parameters
 
@@ -140,7 +142,7 @@ Defined in: dynamic-tree.d.ts:21
 
 > **retrieve**(`queryObject`): `T`[]
 
-Defined in: dynamic-tree.d.ts:22
+Defined in: [dynamic-tree.ts:164](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L164)
 
 #### Parameters
 
@@ -162,7 +164,7 @@ Defined in: dynamic-tree.d.ts:22
 
 > **update**(`object`): `void`
 
-Defined in: dynamic-tree.d.ts:20
+Defined in: [dynamic-tree.ts:134](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L134)
 
 #### Parameters
 
