@@ -2,7 +2,7 @@
 
 # Class: ComponentArray\<T\>
 
-Defined in: [index.ts:230](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L230)
+Defined in: [index.ts:230](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L230)
 
 Efficient sparse-set data structure for storing component data.
 
@@ -37,7 +37,7 @@ The component data type
 
 > **new ComponentArray**\<`T`\>(`maxEntities`): `ComponentArray`\<`T`\>
 
-Defined in: [index.ts:237](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L237)
+Defined in: [index.ts:237](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L237)
 
 #### Parameters
 
@@ -55,7 +55,7 @@ Defined in: [index.ts:237](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:296](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L296)
+Defined in: [index.ts:296](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L296)
 
 #### Parameters
 
@@ -77,7 +77,7 @@ Defined in: [index.ts:296](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **getData**(`entity`): `T` \| `null`
 
-Defined in: [index.ts:259](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L259)
+Defined in: [index.ts:259](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L259)
 
 #### Parameters
 
@@ -95,7 +95,7 @@ Defined in: [index.ts:259](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **insertData**(`entity`, `data`): `void`
 
-Defined in: [index.ts:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L244)
+Defined in: [index.ts:244](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L244)
 
 #### Parameters
 
@@ -117,7 +117,7 @@ Defined in: [index.ts:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **removeData**(`entity`): `void`
 
-Defined in: [index.ts:276](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L276)
+Defined in: [index.ts:276](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L276)
 
 #### Parameters
 

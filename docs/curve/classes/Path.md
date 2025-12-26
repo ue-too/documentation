@@ -2,7 +2,7 @@
 
 # Class: Path
 
-Defined in: [packages/curve/src/path.ts:48](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L48)
+Defined in: [packages/curve/src/path.ts:48](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L48)
 
 Path made of sequential line segments.
 
@@ -12,7 +12,7 @@ Path made of sequential line segments.
 
 > **new Path**(`lines`): `Path`
 
-Defined in: [packages/curve/src/path.ts:52](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L52)
+Defined in: [packages/curve/src/path.ts:52](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L52)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [packages/curve/src/path.ts:52](https://github.com/ue-too/ue-too/blo
 
 > **append**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L56)
+Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L56)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blo
 
 > **clear**(): `void`
 
-Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L60)
+Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L60)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blo
 
 > **getLength**(): `number`
 
-Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L72)
+Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L72)
 
 #### Returns
 
@@ -72,7 +72,7 @@ Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blo
 
 > **getLines**(): [`Line`](Line.md)[]
 
-Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L68)
+Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L68)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blo
 
 > **getPercentages**(): `object`[]
 
-Defined in: [packages/curve/src/path.ts:82](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L82)
+Defined in: [packages/curve/src/path.ts:82](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L82)
 
 #### Returns
 
@@ -96,7 +96,7 @@ Defined in: [packages/curve/src/path.ts:82](https://github.com/ue-too/ue-too/blo
 
 > **getPointByPercentage**(`percentage`): `Point`
 
-Defined in: [packages/curve/src/path.ts:98](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L98)
+Defined in: [packages/curve/src/path.ts:98](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L98)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [packages/curve/src/path.ts:98](https://github.com/ue-too/ue-too/blo
 
 > **prepend**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/curve/src/path.ts#L64)
+Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/path.ts#L64)
 
 #### Parameters
 

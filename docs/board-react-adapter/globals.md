@@ -1,4 +1,4 @@
-# @ue-too/board-react-adapter v0.12.0
+# @ue-too/board-react-adapter v0.11.0
 
 React adapter for the @ue-too/board infinite canvas library.
 
@@ -92,19 +92,12 @@ function App() {
 
 Board for the main component
 
-## Type Aliases
-
-### Components
+## Components
 
 - [BoardProps](type-aliases/BoardProps.md)
-
-## Functions
-
-### Components
-
 - [BoardProvider](functions/BoardProvider.md)
 
-### Hooks
+## Hooks
 
 - [useAllBoardCameraState](functions/useAllBoardCameraState.md)
 - [useAnimationFrame](functions/useAnimationFrame.md)

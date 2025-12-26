@@ -4,6 +4,6 @@
 
 > `const` **MAX\_COMPONENTS**: `32` = `32`
 
-Defined in: [index.ts:104](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L104)
+Defined in: [index.ts:104](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L104)
 
 Maximum number of component types that can be registered.

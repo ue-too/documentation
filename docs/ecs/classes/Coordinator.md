@@ -2,7 +2,7 @@
 
 # Class: Coordinator
 
-Defined in: [index.ts:512](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L512)
+Defined in: [index.ts:512](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L512)
 
 Main ECS coordinator that manages entities, components, and systems.
 
@@ -51,7 +51,7 @@ ecs.destroyEntity(entity);
 
 > **new Coordinator**(): `Coordinator`
 
-Defined in: [index.ts:517](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L517)
+Defined in: [index.ts:517](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L517)
 
 #### Returns
 
@@ -63,7 +63,7 @@ Defined in: [index.ts:517](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-Defined in: [index.ts:537](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L537)
+Defined in: [index.ts:537](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L537)
 
 #### Type Parameters
 
@@ -95,7 +95,7 @@ Defined in: [index.ts:537](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **createEntity**(): `number`
 
-Defined in: [index.ts:523](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L523)
+Defined in: [index.ts:523](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L523)
 
 #### Returns
 
@@ -107,7 +107,7 @@ Defined in: [index.ts:523](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **destroyEntity**(`entity`): `void`
 
-Defined in: [index.ts:527](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L527)
+Defined in: [index.ts:527](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L527)
 
 #### Parameters
 
@@ -125,7 +125,7 @@ Defined in: [index.ts:527](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-Defined in: [index.ts:568](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L568)
+Defined in: [index.ts:568](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L568)
 
 #### Type Parameters
 
@@ -153,7 +153,7 @@ Defined in: [index.ts:568](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-Defined in: [index.ts:572](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L572)
+Defined in: [index.ts:572](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L572)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [index.ts:572](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-Defined in: [index.ts:533](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L533)
+Defined in: [index.ts:533](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L533)
 
 #### Type Parameters
 
@@ -195,7 +195,7 @@ Defined in: [index.ts:533](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-Defined in: [index.ts:576](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L576)
+Defined in: [index.ts:576](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L576)
 
 #### Parameters
 
@@ -217,7 +217,7 @@ Defined in: [index.ts:576](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-Defined in: [index.ts:553](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L553)
+Defined in: [index.ts:553](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L553)
 
 #### Type Parameters
 
@@ -245,7 +245,7 @@ Defined in: [index.ts:553](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **setSystemSignature**(`systemName`, `signature`): `void`
 
-Defined in: [index.ts:580](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L580)
+Defined in: [index.ts:580](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L580)
 
 #### Parameters
 

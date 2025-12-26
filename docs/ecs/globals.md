@@ -1,4 +1,4 @@
-# @ue-too/ecs v0.12.0
+# @ue-too/ecs v0.11.0
 
 Entity Component System (ECS) implementation for TypeScript.
 
@@ -93,43 +93,32 @@ function update(deltaTime: number) {
 
 [Coordinator](classes/Coordinator.md) for the main ECS API
 
-## Classes
-
-### Core
+## Core
 
 - [Coordinator](classes/Coordinator.md)
 
-### Managers
+## Managers
 
 - [ComponentManager](classes/ComponentManager.md)
 - [EntityManager](classes/EntityManager.md)
 - [SystemManager](classes/SystemManager.md)
 
-### Data Structures
+## Data Structures
 
 - [ComponentArray](classes/ComponentArray.md)
 
-## Interfaces
-
-### Types
+## Types
 
 - [System](interfaces/System.md)
-
-### Other
-
-- [CArray](interfaces/CArray.md)
-
-## Type Aliases
-
-### Types
-
 - [ComponentSignature](type-aliases/ComponentSignature.md)
 - [ComponentType](type-aliases/ComponentType.md)
 - [Entity](type-aliases/Entity.md)
 
-## Variables
-
-### Configuration
+## Configuration
 
 - [MAX\_COMPONENTS](variables/MAX_COMPONENTS.md)
 - [MAX\_ENTITIES](variables/MAX_ENTITIES.md)
+
+## Other
+
+- [CArray](interfaces/CArray.md)

@@ -4,7 +4,7 @@
 
 > **createCameraMuxWithAnimationAndLockWithCameraRig**(`cameraRig`): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:448](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L448)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:448](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L448)
 
 Creates a camera mux with animation and locking capabilities from a camera rig.
 

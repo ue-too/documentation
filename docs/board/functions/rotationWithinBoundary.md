@@ -4,7 +4,7 @@
 
 > **rotationWithinBoundary**(`rotation`, `rotationBoundary`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:139](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/utils/rotation.ts#L139)
+Defined in: [packages/board/src/camera/utils/rotation.ts:139](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/utils/rotation.ts#L139)
 
 Checks if a rotation angle is within an experimental rotation boundary.
 

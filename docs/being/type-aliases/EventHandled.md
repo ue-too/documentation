@@ -4,7 +4,7 @@
 
 > **EventHandled**\<`States`, `Output`\> = `object`
 
-Defined in: [interface.ts:131](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L131)
+Defined in: [interface.ts:131](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L131)
 
 Result type when an event is successfully handled by a state.
 
@@ -51,7 +51,7 @@ The output type for this event (defaults to void)
 
 > **handled**: `true`
 
-Defined in: [interface.ts:132](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L132)
+Defined in: [interface.ts:132](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L132)
 
 ***
 
@@ -59,7 +59,7 @@ Defined in: [interface.ts:132](https://github.com/ue-too/ue-too/blob/e468a9961da
 
 > `optional` **nextState**: `States`
 
-Defined in: [interface.ts:133](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L133)
+Defined in: [interface.ts:133](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L133)
 
 ***
 
@@ -67,4 +67,4 @@ Defined in: [interface.ts:133](https://github.com/ue-too/ue-too/blob/e468a9961da
 
 > `optional` **output**: `Output`
 
-Defined in: [interface.ts:134](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L134)
+Defined in: [interface.ts:134](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L134)

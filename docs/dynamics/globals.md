@@ -1,4 +1,4 @@
-# @ue-too/dynamics v0.12.0
+# @ue-too/dynamics v0.11.0
 
 2D physics engine with rigid body dynamics and collision detection.
 
@@ -188,9 +188,7 @@ console.log('Spatial index:', spatialStats);
  - [RigidBody](interfaces/RigidBody.md) for physics objects
  - [Constraint](interfaces/Constraint.md) for joints and constraints
 
-## Classes
-
-### Core
+## Core
 
 - [BaseRigidBody](classes/BaseRigidBody.md)
 - [Circle](classes/Circle.md)
@@ -198,78 +196,43 @@ console.log('Spatial index:', spatialStats);
 - [VisaulCircleBody](classes/VisaulCircleBody.md)
 - [VisualPolygonBody](classes/VisualPolygonBody.md)
 - [World](classes/World.md)
+- [RigidBody](interfaces/RigidBody.md)
+- [SpatialIndexType](type-aliases/SpatialIndexType.md)
 
-### Collision
+## Collision
 
 - [PairManager](classes/PairManager.md)
+- [CollisionPair](interfaces/CollisionPair.md)
+- [CollisionCategory](variables/CollisionCategory.md)
+- [DEFAULT\_COLLISION\_FILTER](variables/DEFAULT_COLLISION_FILTER.md)
+- [canCollide](functions/canCollide.md)
 
-### Spatial Indexing
+## Spatial Indexing
 
 - [DynamicTree](classes/DynamicTree.md)
 - [QuadTree](classes/QuadTree.md)
 - [SweepAndPrune](classes/SweepAndPrune.md)
 
-### Constraints
+## Constraints
 
 - [FixedPinJoint](classes/FixedPinJoint.md)
 - [PinJoint](classes/PinJoint.md)
-
-### Other
-
-- [RectangleBound](classes/RectangleBound.md)
-
-## Interfaces
-
-### Core
-
-- [RigidBody](interfaces/RigidBody.md)
-
-### Collision
-
-- [CollisionPair](interfaces/CollisionPair.md)
-
-### Constraints
-
 - [Constraint](interfaces/Constraint.md)
 
-### Types
+## Types
 
 - [CollisionFilter](interfaces/CollisionFilter.md)
 - [SpatialIndex](interfaces/SpatialIndex.md)
 - [SpatialIndexObject](interfaces/SpatialIndexObject.md)
 
-### Other
+## Other
 
+- [RectangleBound](classes/RectangleBound.md)
 - [PairEvents](interfaces/PairEvents.md)
 - [PinJointConstraint](interfaces/PinJointConstraint.md)
 - [VisualComponent](interfaces/VisualComponent.md)
 - [WorldPinJointConstraint](interfaces/WorldPinJointConstraint.md)
-
-## Type Aliases
-
-### Core
-
-- [SpatialIndexType](type-aliases/SpatialIndexType.md)
-
-### Other
-
 - [QuadTreeObject](type-aliases/QuadTreeObject.md)
-
-## Variables
-
-### Collision
-
-- [CollisionCategory](variables/CollisionCategory.md)
-- [DEFAULT\_COLLISION\_FILTER](variables/DEFAULT_COLLISION_FILTER.md)
-
-## Functions
-
-### Collision
-
-- [canCollide](functions/canCollide.md)
-
-### Other
-
 - [aabbIntersects](functions/aabbIntersects.md)
 - [broadPhase](functions/broadPhase.md)
 - [broadPhaseWithRigidBodyReturned](functions/broadPhaseWithRigidBodyReturned.md)

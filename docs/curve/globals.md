@@ -1,4 +1,4 @@
-# @ue-too/curve v0.12.0
+# @ue-too/curve v0.11.0
 
 Bezier curve and geometric path library for TypeScript.
 
@@ -97,9 +97,7 @@ intersections.forEach(({selfT, otherT}) => {
  - [BCurve](classes/BCurve.md) for the main Bezier curve class
  - [Line](classes/Line.md) for line segment utilities
 
-## Classes
-
-### Core
+## Core
 
 - [BCurve](classes/BCurve.md)
 - [CompositeBCurve](classes/CompositeBCurve.md)
@@ -107,21 +105,7 @@ intersections.forEach(({selfT, otherT}) => {
 - [Line](classes/Line.md)
 - [Path](classes/Path.md)
 
-### Types
-
-- [TValOutofBoundError](classes/TValOutofBoundError.md)
-
-## Type Aliases
-
-### Types
-
-- [HandlePoint](type-aliases/HandlePoint.md)
-- [HandleType](type-aliases/HandleType.md)
-- [Point](type-aliases/Point.md)
-
-## Functions
-
-### Utilities
+## Utilities
 
 - [AABBIntersects](functions/AABBIntersects.md)
 - [approximately](functions/approximately.md)
@@ -132,7 +116,14 @@ intersections.forEach(({selfT, otherT}) => {
 - [reduce](functions/reduce.md)
 - [solveCubic](functions/solveCubic.md)
 
-### Other
+## Types
+
+- [TValOutofBoundError](classes/TValOutofBoundError.md)
+- [HandlePoint](type-aliases/HandlePoint.md)
+- [HandleType](type-aliases/HandleType.md)
+- [Point](type-aliases/Point.md)
+
+## Other
 
 - [accept](functions/accept.md)
 - [cuberoot](functions/cuberoot.md)

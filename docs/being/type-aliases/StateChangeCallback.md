@@ -4,7 +4,7 @@
 
 > **StateChangeCallback**\<`States`\> = (`currentState`, `nextState`) => `void`
 
-Defined in: [interface.ts:208](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/being/src/interface.ts#L208)
+Defined in: [interface.ts:208](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L208)
 
 ## Type Parameters
 

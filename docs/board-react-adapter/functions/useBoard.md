@@ -4,7 +4,7 @@
 
 > **useBoard**(): `Board`
 
-Defined in: [hooks/useBoardify.tsx:388](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board-react-adapter/src/hooks/useBoardify.tsx#L388)
+Defined in: [hooks/useBoardify.tsx:388](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board-react-adapter/src/hooks/useBoardify.tsx#L388)
 
 Hook to access the Board instance from context.
 

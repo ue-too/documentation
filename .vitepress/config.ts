@@ -13,8 +13,27 @@ function loadSidebar(packageName: string): any[] {
 function fixSidebarLinks(sidebar: any[]): any[] {
   return sidebar.map(item => {
     if (item.link) {
-      // Remove /docs prefix if present, VitePress handles paths relative to srcDir
-      item.link = item.link.replace(/^\/docs\//, '/')
+      let link = item.link
+      
+      // Handle paths like /../../docs/board/classes/DefaultCameraRig.md
+      // Extract the path after /docs/ and remove .md extension
+      const docsMatch = link.match(/\/docs\/(.+)$/)
+      if (docsMatch) {
+        link = '/' + docsMatch[1]
+      }
+      
+      // Remove /docs prefix if present (for paths like /docs/board/...)
+      link = link.replace(/^\/docs\//, '/')
+      
+      // Remove .md extension (VitePress handles this automatically)
+      link = link.replace(/\.md$/, '')
+      
+      // Ensure path starts with /
+      if (!link.startsWith('/')) {
+        link = '/' + link
+      }
+      
+      item.link = link
     }
     if (item.items) {
       item.items = fixSidebarLinks(item.items)

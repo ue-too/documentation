@@ -2,7 +2,7 @@
 
 # Interface: SpatialIndex\<T\>
 
-Defined in: [dynamic-tree.ts:15](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L15)
+Defined in: [dynamic-tree.ts:15](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/dynamic-tree.ts#L15)
 
 Interface for spatial indexing data structures.
 
@@ -18,7 +18,7 @@ Interface for spatial indexing data structures.
 
 > **clear**(): `void`
 
-Defined in: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L16)
+Defined in: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/dynamic-tree.ts#L16)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/e468a9961
 
 > `optional` **draw**(`context`): `void`
 
-Defined in: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L19)
+Defined in: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/dynamic-tree.ts#L19)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/e468a9961
 
 > **insert**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L17)
+Defined in: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/dynamic-tree.ts#L17)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/e468a9961
 
 > **retrieve**(`object`): `T`[]
 
-Defined in: [dynamic-tree.ts:18](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/dynamic-tree.ts#L18)
+Defined in: [dynamic-tree.ts:18](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/dynamic-tree.ts#L18)
 
 #### Parameters
 

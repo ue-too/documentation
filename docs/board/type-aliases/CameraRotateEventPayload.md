@@ -4,7 +4,7 @@
 
 > **CameraRotateEventPayload** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:35](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L35)
+Defined in: [packages/board/src/camera/update-publisher.ts:35](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/update-publisher.ts#L35)
 
 Payload for camera rotation events.
 
@@ -14,6 +14,6 @@ Payload for camera rotation events.
 
 > **deltaRotation**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:37](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/update-publisher.ts#L37)
+Defined in: [packages/board/src/camera/update-publisher.ts:37](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/update-publisher.ts#L37)
 
 Change in rotation angle in radians

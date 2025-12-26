@@ -2,7 +2,7 @@
 
 # Class: SystemManager
 
-Defined in: [index.ts:428](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L428)
+Defined in: [index.ts:428](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L428)
 
 Manages system registration and entity-system matching.
 
@@ -35,7 +35,7 @@ required by the system's signature.
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:452](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L452)
+Defined in: [index.ts:452](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L452)
 
 #### Parameters
 
@@ -53,7 +53,7 @@ Defined in: [index.ts:452](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **entitySignatureChanged**(`entity`, `signature`): `void`
 
-Defined in: [index.ts:458](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L458)
+Defined in: [index.ts:458](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L458)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [index.ts:458](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **registerSystem**(`systemName`, `system`): `void`
 
-Defined in: [index.ts:431](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L431)
+Defined in: [index.ts:431](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L431)
 
 #### Parameters
 
@@ -97,7 +97,7 @@ Defined in: [index.ts:431](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **setSignature**(`systemName`, `signature`): `void`
 
-Defined in: [index.ts:439](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L439)
+Defined in: [index.ts:439](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L439)
 
 #### Parameters
 

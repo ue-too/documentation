@@ -2,7 +2,7 @@
 
 # Class: Relay
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:42](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L42)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:42](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/relay.ts#L42)
 
 Stateless camera input multiplexer that always allows inputs to pass through.
 This is the simplest [CameraMux](../interfaces/CameraMux.md) implementation with no filtering or state management.
@@ -54,7 +54,7 @@ const rotateResult = relay.notifyRotationInput(0.1);
 
 > **new Relay**(): `Relay`
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:47](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L47)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:47](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/relay.ts#L47)
 
 Creates a new stateless relay multiplexer.
 
@@ -68,7 +68,7 @@ Creates a new stateless relay multiplexer.
 
 > **notifyPanInput**(`diff`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:56](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L56)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:56](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/relay.ts#L56)
 
 Processes pan input by always allowing it through unchanged.
 
@@ -96,7 +96,7 @@ Output allowing passthrough with the original delta
 
 > **notifyRotationInput**(`deltaRotation`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:77](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L77)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:77](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/relay.ts#L77)
 
 Processes rotation input by always allowing it through unchanged.
 
@@ -124,7 +124,7 @@ Output allowing passthrough with the original delta
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/relay.ts:67](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/relay.ts#L67)
+Defined in: [packages/board/src/camera/camera-mux/relay.ts:67](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/relay.ts#L67)
 
 Processes zoom input by always allowing it through unchanged.
 

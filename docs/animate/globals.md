@@ -1,4 +1,4 @@
-# @ue-too/animate v0.12.0
+# @ue-too/animate v0.11.0
 
 Keyframe-based animation library for TypeScript.
 
@@ -101,63 +101,38 @@ function loop(deltaTime: number) {
  - [Animation](classes/Animation.md) for single value animations
  - [CompositeAnimation](classes/CompositeAnimation.md) for animation sequencing
 
-## Classes
-
-### Core
+## Core
 
 - [Animation](classes/Animation.md)
-- [CompositeAnimation](classes/CompositeAnimation.md)
-
-### Helpers
-
-- [IntegerAnimationHelper](classes/IntegerAnimationHelper.md)
-- [NumberAnimationHelper](classes/NumberAnimationHelper.md)
-- [PointAnimationHelper](classes/PointAnimationHelper.md)
-- [RGBAnimationHelper](classes/RGBAnimationHelper.md)
-- [StringAnimationHelper](classes/StringAnimationHelper.md)
-
-### Other
-
-- [KeyFramesContiner](classes/KeyFramesContiner.md)
-
-## Interfaces
-
-### Core
-
 - [Animator](interfaces/Animator.md)
 - [AnimatorContainer](interfaces/AnimatorContainer.md)
-
-### Helpers
-
-- [AnimatableAttributeHelper](interfaces/AnimatableAttributeHelper.md)
-
-### Other
-
-- [Keyframes](interfaces/Keyframes.md)
-
-## Type Aliases
-
-### Core
-
+- [CompositeAnimation](classes/CompositeAnimation.md)
 - [UnSubscribe](type-aliases/UnSubscribe.md)
 
-### Types
+## Helpers
+
+- [AnimatableAttributeHelper](interfaces/AnimatableAttributeHelper.md)
+- [IntegerAnimationHelper](classes/IntegerAnimationHelper.md)
+- [integerHelperFunctions](variables/integerHelperFunctions.md)
+- [NumberAnimationHelper](classes/NumberAnimationHelper.md)
+- [numberHelperFunctions](variables/numberHelperFunctions.md)
+- [PointAnimationHelper](classes/PointAnimationHelper.md)
+- [pointHelperFunctions](variables/pointHelperFunctions.md)
+- [RGBAnimationHelper](classes/RGBAnimationHelper.md)
+- [rgbHelperFunctions](variables/rgbHelperFunctions.md)
+- [StringAnimationHelper](classes/StringAnimationHelper.md)
+- [stringHelperFunctions](variables/stringHelperFunctions.md)
+
+## Types
 
 - [Keyframe](type-aliases/Keyframe.md)
 - [RGB](type-aliases/RGB.md)
 
-## Variables
-
-### Helpers
-
-- [integerHelperFunctions](variables/integerHelperFunctions.md)
-- [numberHelperFunctions](variables/numberHelperFunctions.md)
-- [pointHelperFunctions](variables/pointHelperFunctions.md)
-- [rgbHelperFunctions](variables/rgbHelperFunctions.md)
-- [stringHelperFunctions](variables/stringHelperFunctions.md)
-
-## Functions
-
-### Easing
+## Easing
 
 - [linear](functions/linear.md)
+
+## Other
+
+- [Keyframes](interfaces/Keyframes.md)
+- [KeyFramesContiner](classes/KeyFramesContiner.md)

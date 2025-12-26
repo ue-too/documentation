@@ -1,4 +1,4 @@
-# @ue-too/math v0.12.0
+# @ue-too/math v0.11.0
 
 Mathematical utilities for 2D and 3D point operations, vector calculations, and transformations.
 
@@ -48,25 +48,20 @@ const anchor: Point = { x: 5, y: 5 };
 const rotatedAroundAnchor = PointCal.transformPointWRTAnchor(point, anchor, angle);
 ```
 
-## Classes
-
-- [PointCal](classes/PointCal.md)
-
-## Type Aliases
-
-- [~~point~~](type-aliases/point.md)
-- [Point](type-aliases/Point-1.md)
-
-## Functions
-
-### Comparison
+## Comparison
 
 - [approximatelyTheSame](functions/approximatelyTheSame.md)
 - [directionAlignedToTangent](functions/directionAlignedToTangent.md)
 - [sameDirection](functions/sameDirection.md)
 - [samePoint](functions/samePoint.md)
 
-### Angle
+## Angle
 
 - [angleSpan](functions/angleSpan.md)
 - [normalizeAngleZero2TwoPI](functions/normalizeAngleZero2TwoPI.md)
+
+## Other
+
+- [PointCal](classes/PointCal.md)
+- [~~point~~](type-aliases/point.md)
+- [Point](type-aliases/Point-1.md)

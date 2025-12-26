@@ -2,7 +2,7 @@
 
 # Class: KeyFramesContiner\<T\>
 
-Defined in: [composite-animation.ts:1025](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1025)
+Defined in: [composite-animation.ts:1025](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1025)
 
 ## Type Parameters
 
@@ -16,7 +16,7 @@ Defined in: [composite-animation.ts:1025](https://github.com/ue-too/ue-too/blob/
 
 > **new KeyFramesContiner**\<`T`\>(): `KeyFramesContiner`\<`T`\>
 
-Defined in: [composite-animation.ts:1029](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1029)
+Defined in: [composite-animation.ts:1029](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1029)
 
 #### Returns
 
@@ -30,7 +30,7 @@ Defined in: [composite-animation.ts:1029](https://github.com/ue-too/ue-too/blob/
 
 > **get** **keyframes**(): [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-Defined in: [composite-animation.ts:1033](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1033)
+Defined in: [composite-animation.ts:1033](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1033)
 
 ##### Returns
 
@@ -42,7 +42,7 @@ Defined in: [composite-animation.ts:1033](https://github.com/ue-too/ue-too/blob/
 
 > **clearFrames**(): `void`
 
-Defined in: [composite-animation.ts:1067](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1067)
+Defined in: [composite-animation.ts:1067](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1067)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [composite-animation.ts:1067](https://github.com/ue-too/ue-too/blob/
 
 > **from**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-Defined in: [composite-animation.ts:1037](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1037)
+Defined in: [composite-animation.ts:1037](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1037)
 
 #### Parameters
 
@@ -72,7 +72,7 @@ Defined in: [composite-animation.ts:1037](https://github.com/ue-too/ue-too/blob/
 
 > **insertAt**(`percentage`, `value`): `void`
 
-Defined in: [composite-animation.ts:1063](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1063)
+Defined in: [composite-animation.ts:1063](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1063)
 
 #### Parameters
 
@@ -94,7 +94,7 @@ Defined in: [composite-animation.ts:1063](https://github.com/ue-too/ue-too/blob/
 
 > **to**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-Defined in: [composite-animation.ts:1050](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/animate/src/composite-animation.ts#L1050)
+Defined in: [composite-animation.ts:1050](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/animate/src/composite-animation.ts#L1050)
 
 #### Parameters
 

@@ -4,7 +4,7 @@
 
 > **initialBearingOfGreatCircle**(`startCoord`, `endCoord`): `number`
 
-Defined in: [greateCircle.ts:103](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/border/src/greateCircle.ts#L103)
+Defined in: [greateCircle.ts:103](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/border/src/greateCircle.ts#L103)
 
 Calculate the initial bearing between two points on the Earth's surface. 
 (traveling along the great circle would result in different bearing from the start point to the end point)

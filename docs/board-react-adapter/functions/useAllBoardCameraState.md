@@ -4,7 +4,7 @@
 
 > **useAllBoardCameraState**(): `object`
 
-Defined in: [hooks/useBoardify.tsx:244](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board-react-adapter/src/hooks/useBoardify.tsx#L244)
+Defined in: [hooks/useBoardify.tsx:244](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board-react-adapter/src/hooks/useBoardify.tsx#L244)
 
 Hook to subscribe to all camera state properties with automatic re-rendering.
 

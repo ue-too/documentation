@@ -2,7 +2,7 @@
 
 # Class: EntityManager
 
-Defined in: [index.ts:138](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L138)
+Defined in: [index.ts:138](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L138)
 
 Manages entity lifecycle and signatures.
 
@@ -22,7 +22,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **new EntityManager**(`maxEntities`): `EntityManager`
 
-Defined in: [index.ts:146](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L146)
+Defined in: [index.ts:146](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L146)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [index.ts:146](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **createEntity**(): `number`
 
-Defined in: [index.ts:154](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L154)
+Defined in: [index.ts:154](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L154)
 
 #### Returns
 
@@ -52,7 +52,7 @@ Defined in: [index.ts:154](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **destroyEntity**(`entity`): `void`
 
-Defined in: [index.ts:167](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L167)
+Defined in: [index.ts:167](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L167)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [index.ts:167](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **getSignature**(`entity`): `number` \| `null`
 
-Defined in: [index.ts:183](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L183)
+Defined in: [index.ts:183](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L183)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [index.ts:183](https://github.com/ue-too/ue-too/blob/e468a9961da59c8
 
 > **setSignature**(`entity`, `signature`): `void`
 
-Defined in: [index.ts:176](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/ecs/src/index.ts#L176)
+Defined in: [index.ts:176](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L176)
 
 #### Parameters
 

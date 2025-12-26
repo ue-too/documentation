@@ -4,7 +4,7 @@
 
 > **solvePinJointConstraint**(`constraint`, `dt`): `void`
 
-Defined in: [constraint.ts:219](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/dynamics/src/constraint.ts#L219)
+Defined in: [constraint.ts:219](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/constraint.ts#L219)
 
 ## Parameters
 

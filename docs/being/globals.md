@@ -1,4 +1,4 @@
-# @ue-too/being v0.12.0
+# @ue-too/being v0.11.0
 
 State machine library for TypeScript.
 
@@ -112,34 +112,18 @@ timer.happens("stop");
  - [TemplateStateMachine](classes/TemplateStateMachine.md) for the main state machine class
  - [TemplateState](classes/TemplateState.md) for creating state implementations
 
-## Classes
-
-### State Machine Core
-
-- [TemplateState](classes/TemplateState.md)
-- [TemplateStateMachine](classes/TemplateStateMachine.md)
-
-## Interfaces
-
-### Core
+## Core
 
 - [BaseContext](interfaces/BaseContext.md)
-
-### Types
-
-- [State](interfaces/State.md)
-- [StateMachine](interfaces/StateMachine.md)
-
-## Type Aliases
-
-### Core
-
 - [EventHandled](type-aliases/EventHandled.md)
 - [EventNotHandled](type-aliases/EventNotHandled.md)
 - [EventResult](type-aliases/EventResult.md)
+- [NO\_OP](variables/NO_OP.md)
 
-### Types
+## Types
 
+- [State](interfaces/State.md)
+- [StateMachine](interfaces/StateMachine.md)
 - [DefaultOutputMapping](type-aliases/DefaultOutputMapping.md)
 - [EventGuards](type-aliases/EventGuards.md)
 - [EventReactions](type-aliases/EventReactions.md)
@@ -148,24 +132,18 @@ timer.happens("stop");
 - [GuardMapping](type-aliases/GuardMapping.md)
 - [StateChangeCallback](type-aliases/StateChangeCallback.md)
 
-### Utilities
+## Utilities
 
 - [CreateStateType](type-aliases/CreateStateType.md)
 - [EventArgs](type-aliases/EventArgs.md)
+- [createStateGuard](functions/createStateGuard.md)
 
-### Other
+## Other
 
 - [Action](type-aliases/Action.md)
 - [Delay](type-aliases/Delay.md)
 
-## Variables
+## State Machine Core
 
-### Core
-
-- [NO\_OP](variables/NO_OP.md)
-
-## Functions
-
-### Utilities
-
-- [createStateGuard](functions/createStateGuard.md)
+- [TemplateState](classes/TemplateState.md)
+- [TemplateStateMachine](classes/TemplateStateMachine.md)

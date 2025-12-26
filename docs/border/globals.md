@@ -1,4 +1,4 @@
-# @ue-too/border v0.12.0
+# @ue-too/border v0.11.0
 
 Geodesy and map projection library for TypeScript.
 
@@ -117,35 +117,31 @@ if (!result.clipped) {
  - greateCircle for great circle navigation
  - rhumbLine for rhumb line navigation
 
-## Type Aliases
-
-### Types
+## Types
 
 - [GeoCoord](type-aliases/GeoCoord.md)
 
-## Functions
-
-### Great Circle
+## Great Circle
 
 - [destinationFromOriginOnGreatCircle](functions/destinationFromOriginOnGreatCircle.md)
 - [greatCircleDistance](functions/greatCircleDistance.md)
 - [intermediatePointOnGreatCircle](functions/intermediatePointOnGreatCircle.md)
 - [midPointOnGreatCircle](functions/midPointOnGreatCircle.md)
 
-### Rhumb Line
+## Rhumb Line
 
 - [destinationFromOriginOnRhumbLine](functions/destinationFromOriginOnRhumbLine.md)
 - [midPointOnRhumbLine](functions/midPointOnRhumbLine.md)
 - [rhumbBearing](functions/rhumbBearing.md)
 - [rhumbDistance](functions/rhumbDistance.md)
 
-### Projections
+## Projections
 
 - [inverseMercatorProjection](functions/inverseMercatorProjection.md)
 - [inverseOrthoProjection](functions/inverseOrthoProjection.md)
 - [mercatorProjection](functions/mercatorProjection.md)
 - [orthoProjection](functions/orthoProjection.md)
 
-### Other
+## Other
 
 - [initialBearingOfGreatCircle](functions/initialBearingOfGreatCircle.md)

@@ -2,7 +2,7 @@
 
 # Class: CameraMuxWithAnimationAndLock
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:62](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L62)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:62](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L62)
 
 Advanced camera input multiplexer with animation support and input locking via state machines.
 
@@ -67,7 +67,7 @@ const result = mux.notifyPanInput({ x: 50, y: 30 });
 
 > **new CameraMuxWithAnimationAndLock**(`panStateMachine`, `zoomStateMachine`, `rotateStateMachine`): `CameraMuxWithAnimationAndLock`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:79](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L79)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:79](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L79)
 
 Creates a new camera mux with animation and locking capabilities.
 
@@ -108,7 +108,7 @@ rather than direct instantiation.
 
 > **get** **panStateMachine**(): [`PanControlStateMachine`](PanControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:337](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L337)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:337](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L337)
 
 Gets the pan state machine.
 
@@ -131,7 +131,7 @@ The pan state machine instance
 
 > **get** **rotateStateMachine**(): [`RotateControlStateMachine`](RotateControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:324](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L324)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:324](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L324)
 
 Gets the rotation state machine.
 
@@ -154,7 +154,7 @@ The rotation state machine instance
 
 > **get** **zoomStateMachine**(): [`ZoomControlStateMachine`](ZoomControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:350](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L350)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:350](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L350)
 
 Gets the zoom state machine.
 
@@ -175,7 +175,7 @@ The zoom state machine instance
 
 > **initatePanTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:289](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L289)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:289](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L289)
 
 Initiates a transition in the pan state machine.
 
@@ -194,7 +194,7 @@ Can be used to interrupt animations or force state changes.
 
 > **initateRotateTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:311](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L311)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:311](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L311)
 
 Initiates a transition in the rotation state machine.
 
@@ -213,7 +213,7 @@ Can be used to interrupt animations or force state changes.
 
 > **initateZoomTransition**(): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:300](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L300)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:300](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L300)
 
 Initiates a transition in the zoom state machine.
 
@@ -232,7 +232,7 @@ Can be used to interrupt animations or force state changes.
 
 > **notifyPanInput**(`delta`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:148](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L148)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:148](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L148)
 
 Processes user pan input (implements [CameraMux.notifyPanInput](../interfaces/CameraMux.md#notifypaninput)).
 
@@ -278,7 +278,7 @@ if (result.allowPassThrough) {
 
 > **notifyPanToAnimationInput**(`target`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:106](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L106)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:106](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L106)
 
 Initiates a pan animation to a target position.
 
@@ -319,7 +319,7 @@ mux.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **notifyRotateByInput**(`delta`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:203](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L203)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:203](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L203)
 
 Processes user rotation input (rotate-by variant).
 
@@ -348,7 +348,7 @@ The state machine determines whether to allow rotation based on current state.
 
 > **notifyRotateToAnimationInput**(`target`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:217](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L217)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:217](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L217)
 
 Initiates a rotation animation to a target angle.
 
@@ -377,7 +377,7 @@ User input will be blocked during the animation.
 
 > **notifyRotationInput**(`delta`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:271](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L271)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:271](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L271)
 
 Processes user rotation input (implements [CameraMux.notifyRotationInput](../interfaces/CameraMux.md#notifyrotationinput)).
 
@@ -422,7 +422,7 @@ if (result.allowPassThrough) {
 
 > **notifyZoomInput**(`delta`, `at`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:182](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L182)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:182](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L182)
 
 Processes user zoom input (implements [CameraMux.notifyZoomInput](../interfaces/CameraMux.md#notifyzoominput)).
 
@@ -474,7 +474,7 @@ if (result.allowPassThrough) {
 
 > **notifyZoomInputAnimation**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:232](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L232)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:232](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L232)
 
 Initiates a zoom animation to a target level at a viewport position.
 
@@ -508,7 +508,7 @@ User input will be blocked during the animation.
 
 > **notifyZoomInputAnimationWorld**(`targetZoom`, `at`): `void`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:246](https://github.com/ue-too/ue-too/blob/e468a9961da59c81663192ec8df16ebc8e17abac/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L246)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts:246](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/animation-and-lock.ts#L246)
 
 Initiates a zoom animation to a target level at a world position.
 
