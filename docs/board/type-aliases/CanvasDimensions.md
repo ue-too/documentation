@@ -4,7 +4,7 @@
 
 > **CanvasDimensions** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
 
 Canvas dimension and position information.
 
@@ -14,7 +14,7 @@ Canvas dimension and position information.
 
 > **height**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
 
 The canvas height in CSS pixels
 
@@ -24,7 +24,7 @@ The canvas height in CSS pixels
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
 
 The top-left position of the canvas in window coordinates
 
@@ -34,6 +34,6 @@ The top-left position of the canvas in window coordinates
 
 > **width**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts:31](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-state-machine/kmt-input-context.ts#L31)
 
 The canvas width in CSS pixels

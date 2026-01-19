@@ -2,7 +2,7 @@
 
 # Class: ZoomControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:287](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L287)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:275](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L275)
 
 State machine controlling zoom input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyZoomToAtWorldInput(2.0, { x: 1000, y: 500 });
 
 > **new ZoomControlStateMachine**(`states`, `initialState`, `context`): `ZoomControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:289](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L289)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:277](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L277)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-contro
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: [packages/being/src/interface.ts:436](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L436)
+Defined in: packages/being/dist/interface.d.ts:378
 
 #### Inherited from
 
@@ -89,9 +89,9 @@ Defined in: [packages/being/src/interface.ts:436](https://github.com/ue-too/ue-t
 
 ### \_currentState
 
-> `protected` **\_currentState**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)
+> `protected` **\_currentState**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: [packages/being/src/interface.ts:434](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L434)
+Defined in: packages/being/dist/interface.d.ts:376
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: [packages/being/src/interface.ts:434](https://github.com/ue-too/ue-t
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: [packages/being/src/interface.ts:439](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L439)
+Defined in: packages/being/dist/interface.d.ts:381
 
 #### Parameters
 
@@ -125,11 +125,23 @@ Defined in: [packages/being/src/interface.ts:439](https://github.com/ue-too/ue-t
 
 ***
 
+### \_initialState
+
+> `protected` **\_initialState**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)
+
+Defined in: packages/being/dist/interface.d.ts:383
+
+#### Inherited from
+
+`TemplateStateMachine._initialState`
+
+***
+
 ### \_stateChangeCallbacks
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)\>[]
 
-Defined in: [packages/being/src/interface.ts:438](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L438)
+Defined in: packages/being/dist/interface.d.ts:380
 
 #### Inherited from
 
@@ -141,7 +153,7 @@ Defined in: [packages/being/src/interface.ts:438](https://github.com/ue-too/ue-t
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [packages/being/src/interface.ts:435](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L435)
+Defined in: packages/being/dist/interface.d.ts:377
 
 #### Inherited from
 
@@ -153,7 +165,7 @@ Defined in: [packages/being/src/interface.ts:435](https://github.com/ue-too/ue-t
 
 > `protected` **\_statesArray**: [`ZoomControlStates`](../type-aliases/ZoomControlStates.md)[]
 
-Defined in: [packages/being/src/interface.ts:437](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L437)
+Defined in: packages/being/dist/interface.d.ts:379
 
 #### Inherited from
 
@@ -163,9 +175,9 @@ Defined in: [packages/being/src/interface.ts:437](https://github.com/ue-too/ue-t
 
 ### \_timeouts
 
-> `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
+> `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:440](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L440)
+Defined in: packages/being/dist/interface.d.ts:382
 
 #### Inherited from
 
@@ -177,13 +189,13 @@ Defined in: [packages/being/src/interface.ts:440](https://github.com/ue-too/ue-t
 
 #### Get Signature
 
-> **get** **currentState**(): `States`
+> **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: [packages/being/src/interface.ts:483](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L483)
+Defined in: packages/being/dist/interface.d.ts:393
 
 ##### Returns
 
-`States`
+`States` \| `"INITIAL"` \| `"TERMINAL"`
 
 #### Inherited from
 
@@ -197,7 +209,7 @@ Defined in: [packages/being/src/interface.ts:483](https://github.com/ue-too/ue-t
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: [packages/being/src/interface.ts:491](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L491)
+Defined in: packages/being/dist/interface.d.ts:395
 
 ##### Returns
 
@@ -215,7 +227,7 @@ Defined in: [packages/being/src/interface.ts:491](https://github.com/ue-too/ue-t
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [packages/being/src/interface.ts:495](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L495)
+Defined in: packages/being/dist/interface.d.ts:396
 
 ##### Returns
 
@@ -233,7 +245,7 @@ Defined in: [packages/being/src/interface.ts:495](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `K` *extends* keyof [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md) ? [`ZoomControlOutputMapping`](../type-aliases/ZoomControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [packages/being/src/interface.ts:457](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L457)
+Defined in: packages/being/dist/interface.d.ts:389
 
 ##### Type Parameters
 
@@ -259,7 +271,7 @@ Defined in: [packages/being/src/interface.ts:457](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `unknown`\>
 
-Defined in: [packages/being/src/interface.ts:458](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L458)
+Defined in: packages/being/dist/interface.d.ts:390
 
 ##### Type Parameters
 
@@ -287,7 +299,7 @@ Defined in: [packages/being/src/interface.ts:458](https://github.com/ue-too/ue-t
 
 > **initateTransition**(): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), `void`\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:356](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L356)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:344](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L344)
 
 Initiates transition to `TRANSITION` state.
 
@@ -306,7 +318,7 @@ Called when starting programmatic camera movements.
 
 > **notifyZoomByAtInput**(`delta`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:303](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L303)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:291](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L291)
 
 Notifies the state machine of user zoom input around an anchor point.
 
@@ -340,7 +352,7 @@ Dispatches `userZoomByAtInput` event. Accepted in `ACCEPTING_USER_INPUT` and `TR
 
 > **notifyZoomByAtInputAnimation**(`delta`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:317](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L317)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:305](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L305)
 
 Initiates a zoom animation around an anchor point.
 
@@ -374,7 +386,7 @@ Dispatches `transitionZoomByAtInput` event, starting a zoom animation.
 
 > **notifyZoomToAtCenterInput**(`targetZoom`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:331](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L331)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:319](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L319)
 
 Initiates a zoom animation to target level around center anchor.
 
@@ -408,7 +420,7 @@ Dispatches `transitionZoomToAtCenterInput` event for center-anchored zoom animat
 
 > **notifyZoomToAtWorldInput**(`targetZoom`, `at`): `EventResult`\<[`ZoomControlStates`](../type-aliases/ZoomControlStates.md), [`ZoomControlOutputEvent`](../type-aliases/ZoomControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:345](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L345)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:333](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L333)
 
 Initiates a zoom animation to target level around world anchor.
 
@@ -442,7 +454,7 @@ Dispatches `transitionZoomToAtWorldInput` event for world-anchored zoom animatio
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:479](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L479)
+Defined in: packages/being/dist/interface.d.ts:392
 
 #### Parameters
 
@@ -464,7 +476,7 @@ Defined in: [packages/being/src/interface.ts:479](https://github.com/ue-too/ue-t
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:475](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L475)
+Defined in: packages/being/dist/interface.d.ts:391
 
 #### Parameters
 
@@ -482,11 +494,27 @@ Defined in: [packages/being/src/interface.ts:475](https://github.com/ue-too/ue-t
 
 ***
 
+### reset()
+
+> **reset**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:385
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.reset`
+
+***
+
 ### setContext()
 
 > **setContext**(`context`): `void`
 
-Defined in: [packages/being/src/interface.ts:487](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L487)
+Defined in: packages/being/dist/interface.d.ts:394
 
 #### Parameters
 
@@ -504,17 +532,33 @@ Defined in: [packages/being/src/interface.ts:487](https://github.com/ue-too/ue-t
 
 ***
 
+### start()
+
+> **start**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:386
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.start`
+
+***
+
 ### switchTo()
 
 > **switchTo**(`state`): `void`
 
-Defined in: [packages/being/src/interface.ts:452](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L452)
+Defined in: packages/being/dist/interface.d.ts:388
 
 #### Parameters
 
 ##### state
 
-[`ZoomControlStates`](../type-aliases/ZoomControlStates.md)
+[`ZoomControlStates`](../type-aliases/ZoomControlStates.md) | `"INITIAL"` | `"TERMINAL"`
 
 #### Returns
 
@@ -523,3 +567,19 @@ Defined in: [packages/being/src/interface.ts:452](https://github.com/ue-too/ue-t
 #### Inherited from
 
 `TemplateStateMachine.switchTo`
+
+***
+
+### wrapup()
+
+> **wrapup**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:387
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.wrapup`

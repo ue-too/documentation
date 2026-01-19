@@ -223,7 +223,6 @@ requestAnimationFrame(draw);
 - [ZoomToAtInputPayload](type-aliases/ZoomToAtInputPayload.md)
 - [ZoomToPayload](type-aliases/ZoomToPayload.md)
 - [createCameraMuxWithAnimationAndLock](functions/createCameraMuxWithAnimationAndLock.md)
-- [createCameraMuxWithAnimationAndLockWithCameraRig](functions/createCameraMuxWithAnimationAndLockWithCameraRig.md)
 - [createDefaultCameraMux](functions/createDefaultCameraMux.md)
 - [createDefaultPanControlStateMachine](functions/createDefaultPanControlStateMachine.md)
 - [createDefaultPanControlStates](functions/createDefaultPanControlStates.md)
@@ -311,6 +310,7 @@ requestAnimationFrame(draw);
 - [DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_HEIGHT](variables/DEFAULT_BOARD_CAMERA_VIEWPORT_HEIGHT.md)
 - [DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH](variables/DEFAULT_BOARD_CAMERA_VIEWPORT_WIDTH.md)
 - [DEFAULT\_BOARD\_CAMERA\_ZOOM\_BOUNDARIES](variables/DEFAULT_BOARD_CAMERA_ZOOM_BOUNDARIES.md)
+- [createKmtInputStateMachineWithCanvas](functions/createKmtInputStateMachineWithCanvas.md)
 
 ## Raw Input Parser
 

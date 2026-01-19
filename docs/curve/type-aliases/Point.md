@@ -4,7 +4,7 @@
 
 > **Point** = `object`
 
-Defined in: [packages/curve/src/b-curve.ts:1303](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/b-curve.ts#L1303)
+Defined in: [packages/curve/src/b-curve.ts:1303](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/curve/src/b-curve.ts#L1303)
 
 2D/3D point type.
 
@@ -14,7 +14,7 @@ Defined in: [packages/curve/src/b-curve.ts:1303](https://github.com/ue-too/ue-to
 
 > **x**: `number`
 
-Defined in: [packages/curve/src/b-curve.ts:1304](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/b-curve.ts#L1304)
+Defined in: [packages/curve/src/b-curve.ts:1304](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/curve/src/b-curve.ts#L1304)
 
 ***
 
@@ -22,7 +22,7 @@ Defined in: [packages/curve/src/b-curve.ts:1304](https://github.com/ue-too/ue-to
 
 > **y**: `number`
 
-Defined in: [packages/curve/src/b-curve.ts:1305](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/b-curve.ts#L1305)
+Defined in: [packages/curve/src/b-curve.ts:1305](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/curve/src/b-curve.ts#L1305)
 
 ***
 
@@ -30,4 +30,4 @@ Defined in: [packages/curve/src/b-curve.ts:1305](https://github.com/ue-too/ue-to
 
 > `optional` **z**: `number`
 
-Defined in: [packages/curve/src/b-curve.ts:1306](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/curve/src/b-curve.ts#L1306)
+Defined in: [packages/curve/src/b-curve.ts:1306](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/curve/src/b-curve.ts#L1306)

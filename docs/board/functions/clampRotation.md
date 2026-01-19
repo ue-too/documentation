@@ -4,7 +4,7 @@
 
 > **clampRotation**(`rotation`, `rotationLimits?`): `number`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:61](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/utils/rotation.ts#L61)
+Defined in: [packages/board/src/camera/utils/rotation.ts:61](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/utils/rotation.ts#L61)
 
 Clamps a rotation angle to stay within specified angular limits.
 

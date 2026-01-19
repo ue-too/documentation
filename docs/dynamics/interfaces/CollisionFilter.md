@@ -2,7 +2,7 @@
 
 # Interface: CollisionFilter
 
-Defined in: [collision-filter.ts:18](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/collision-filter.ts#L18)
+Defined in: [collision-filter.ts:18](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/collision-filter.ts#L18)
 
 Collision filtering configuration for rigid bodies.
 
@@ -25,7 +25,7 @@ Two bodies A and B can collide if ALL of these conditions are met:
 
 > **category**: `number`
 
-Defined in: [collision-filter.ts:27](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/collision-filter.ts#L27)
+Defined in: [collision-filter.ts:27](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/collision-filter.ts#L27)
 
 What category this body belongs to (bitmask).
 
@@ -41,7 +41,7 @@ category: CollisionCategory.PLAYER  // 0x0004
 
 > **group**: `number`
 
-Defined in: [collision-filter.ts:55](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/collision-filter.ts#L55)
+Defined in: [collision-filter.ts:55](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/collision-filter.ts#L55)
 
 Collision group for special rules.
 - 0: No group (use category/mask rules)
@@ -64,7 +64,7 @@ group: 1
 
 > **mask**: `number`
 
-Defined in: [collision-filter.ts:38](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/collision-filter.ts#L38)
+Defined in: [collision-filter.ts:38](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/collision-filter.ts#L38)
 
 What categories this body can collide with (bitmask).
 

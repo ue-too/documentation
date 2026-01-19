@@ -2,7 +2,7 @@
 
 # Interface: CameraMux
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:139](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/interface.ts#L139)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:139](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/interface.ts#L139)
 
 Input multiplexer interface for camera control flow management.
 Acts as a gatekeeper that can allow or block camera inputs based on state.
@@ -60,7 +60,7 @@ class AnimatedMux implements CameraMux {
 
 > **notifyPanInput**(`diff`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:146](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/interface.ts#L146)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:146](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/interface.ts#L146)
 
 Processes a pan input request.
 
@@ -84,7 +84,7 @@ Output indicating if pan is allowed and the delta to apply
 
 > **notifyRotationInput**(`deltaRotation`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:163](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/interface.ts#L163)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:163](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/interface.ts#L163)
 
 Processes a rotation input request.
 
@@ -108,7 +108,7 @@ Output indicating if rotation is allowed and the delta to apply
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-Defined in: [packages/board/src/camera/camera-mux/interface.ts:155](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/interface.ts#L155)
+Defined in: [packages/board/src/camera/camera-mux/interface.ts:155](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/interface.ts#L155)
 
 Processes a zoom input request.
 

@@ -4,7 +4,7 @@
 
 > **canCollide**(`filterA`, `filterB`): `boolean`
 
-Defined in: [collision-filter.ts:103](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/collision-filter.ts#L103)
+Defined in: [collision-filter.ts:103](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/collision-filter.ts#L103)
 
 Determines if two bodies can collide based on their collision filters.
 

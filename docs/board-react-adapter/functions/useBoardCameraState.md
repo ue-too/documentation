@@ -4,7 +4,7 @@
 
 > **useBoardCameraState**\<`K`\>(`state`): `CameraState`\[`K`\]
 
-Defined in: [hooks/useBoardify.tsx:105](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board-react-adapter/src/hooks/useBoardify.tsx#L105)
+Defined in: [hooks/useBoardify.tsx:50](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/hooks/useBoardify.tsx#L50)
 
 Hook to subscribe to a specific camera state property with automatic re-rendering.
 

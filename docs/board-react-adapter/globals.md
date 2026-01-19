@@ -1,4 +1,4 @@
-# @ue-too/board-react-adapter v0.11.0
+# @ue-too/board-react-adapter v0.14.0
 
 React adapter for the @ue-too/board infinite canvas library.
 
@@ -24,7 +24,7 @@ synchronization, and provides idiomatic React patterns for working with the boar
 
 - **[useCameraInput](functions/useCameraInput.md)**: Get camera control functions (pan, zoom, rotate)
 - **[useCustomCameraMux](functions/useCustomCameraMux.md)**: Set a custom camera multiplexer
-- **[useBoardify](functions/useBoardify.md)**: Create a standalone board instance (alternative to provider)
+- **useBoardify**: Create a standalone board instance (alternative to provider)
 
 ## Animation Hooks
 
@@ -105,6 +105,15 @@ Board for the main component
 - [useBoard](functions/useBoard.md)
 - [useBoardCamera](functions/useBoardCamera.md)
 - [useBoardCameraState](functions/useBoardCameraState.md)
-- [useBoardify](functions/useBoardify.md)
 - [useCameraInput](functions/useCameraInput.md)
 - [useCustomCameraMux](functions/useCustomCameraMux.md)
+
+## Other
+
+- [useCanvasDimension](functions/useCanvasDimension.md)
+- [useCanvasProxy](functions/useCanvasProxy.md)
+- [useCanvasProxyWithRef](functions/useCanvasProxyWithRef.md)
+- [useCoordinateConversion](functions/useCoordinateConversion.md)
+- [useCustomInputHandling](functions/useCustomInputHandling.md)
+- [useCustomKMTEventParser](functions/useCustomKMTEventParser.md)
+- [useCustomTouchEventParser](functions/useCustomTouchEventParser.md)

@@ -2,34 +2,21 @@
 
 # Type Alias: EventHandled\<States, Output\>
 
-> **EventHandled**\<`States`, `Output`\> = `object`
+> **EventHandled**\<`States`, `Output`\> = `object` & `WithOutput`\<`Output`\>
 
-Defined in: [interface.ts:131](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L131)
+Defined in: [interface.ts:138](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L138)
 
 Result type when an event is successfully handled by a state.
 
-## Remarks
+## Type Declaration
 
-This type represents a successful event handling result. It can optionally include:
-- `nextState`: The state to transition to (if different from current)
-- `output`: A return value from the event handler
+### handled
 
-## Example
+> **handled**: `true`
 
-```typescript
-// Simple transition without output
-const result: EventHandled<"IDLE" | "ACTIVE"> = {
-  handled: true,
-  nextState: "ACTIVE"
-};
+### nextState?
 
-// With output value
-const resultWithOutput: EventHandled<"IDLE" | "ACTIVE", number> = {
-  handled: true,
-  nextState: "IDLE",
-  output: 42
-};
-```
+> `optional` **nextState**: `States`
 
 ## Type Parameters
 
@@ -45,26 +32,26 @@ Union of all possible state names in the state machine
 
 The output type for this event (defaults to void)
 
-## Properties
+## Remarks
 
-### handled
+This type represents a successful event handling result. It can optionally include:
+- `nextState`: The state to transition to (if different from current)
+- `output`: A return value from the event handler (only present when Output is not void)
 
-> **handled**: `true`
+## Example
 
-Defined in: [interface.ts:132](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L132)
+```typescript
+// Simple transition without output
+const result: EventHandled<"IDLE" | "ACTIVE"> = {
+  handled: true,
+  nextState: "ACTIVE"
+  // output property does not exist when Output is void
+};
 
-***
-
-### nextState?
-
-> `optional` **nextState**: `States`
-
-Defined in: [interface.ts:133](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L133)
-
-***
-
-### output?
-
-> `optional` **output**: `Output`
-
-Defined in: [interface.ts:134](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L134)
+// With output value
+const resultWithOutput: EventHandled<"IDLE" | "ACTIVE", number> = {
+  handled: true,
+  nextState: "IDLE",
+  output: 42
+};
+```

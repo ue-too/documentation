@@ -1,4 +1,4 @@
-# @ue-too/being v0.11.0
+# @ue-too/being v0.14.0
 
 State machine library for TypeScript.
 
@@ -140,8 +140,25 @@ timer.happens("stop");
 
 ## Other
 
+- [CompositeState](classes/CompositeState.md)
+- [HierarchicalStateMachine](classes/HierarchicalStateMachine.md)
+- [ChildStateMachineConfig](interfaces/ChildStateMachineConfig.md)
+- [StateDefinition](interfaces/StateDefinition.md)
+- [StateMachineSchema](interfaces/StateMachineSchema.md)
+- [TransitionDefinition](interfaces/TransitionDefinition.md)
 - [Action](type-aliases/Action.md)
+- [ActionFunction](type-aliases/ActionFunction.md)
 - [Delay](type-aliases/Delay.md)
+- [EventPayloadSchema](type-aliases/EventPayloadSchema.md)
+- [ExtractStateNames](type-aliases/ExtractStateNames.md)
+- [GuardFunction](type-aliases/GuardFunction.md)
+- [HierarchicalStatePath](type-aliases/HierarchicalStatePath.md)
+- [TransitionDefinitionUnion](type-aliases/TransitionDefinitionUnion.md)
+- [createStateMachineSchemaWithInferredStates](functions/createStateMachineSchemaWithInferredStates.md)
+
+## Runtime Factory
+
+- [createStateMachineFromSchema](functions/createStateMachineFromSchema.md)
 
 ## State Machine Core
 

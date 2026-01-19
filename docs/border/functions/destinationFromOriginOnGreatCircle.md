@@ -4,7 +4,7 @@
 
 > **destinationFromOriginOnGreatCircle**(`startCoord`, `bearing`, `distance`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [greateCircle.ts:184](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/border/src/greateCircle.ts#L184)
+Defined in: [greateCircle.ts:184](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/border/src/greateCircle.ts#L184)
 
 Calculates the destination point given a start point, bearing, and distance on a great circle.
 

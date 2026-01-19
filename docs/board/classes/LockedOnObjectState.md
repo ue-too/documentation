@@ -2,7 +2,7 @@
 
 # Class: LockedOnObjectState
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:261](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L261)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:261](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L261)
 
 State implementation for camera locked to follow an object.
 Only accepts locked object pan events until unlocked.
@@ -17,7 +17,7 @@ Only accepts locked object pan events until unlocked.
 
 > **new LockedOnObjectState**(): `LockedOnObjectState`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:263](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L263)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:263](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L263)
 
 #### Returns
 
@@ -31,9 +31,9 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 ### \_delay
 
-> `protected` **\_delay**: `Delay`\<`BaseContext`, [`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\> \| `undefined` = `undefined`
+> `protected` **\_delay**: `Delay`\<`BaseContext`, [`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:593](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L593)
+Defined in: packages/being/dist/interface.d.ts:486
 
 #### Inherited from
 
@@ -45,7 +45,7 @@ Defined in: [packages/being/src/interface.ts:593](https://github.com/ue-too/ue-t
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:592](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L592)
+Defined in: packages/being/dist/interface.d.ts:485
 
 #### Inherited from
 
@@ -53,27 +53,27 @@ Defined in: [packages/being/src/interface.ts:592](https://github.com/ue-too/ue-t
 
 ***
 
+### \_eventReactions
+
+> `protected` **\_eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
+
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:267](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L267)
+
+#### Overrides
+
+`TemplateState._eventReactions`
+
+***
+
 ### \_guards
 
 > `protected` **\_guards**: `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:591](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L591)
+Defined in: packages/being/dist/interface.d.ts:484
 
 #### Inherited from
 
 `TemplateState._guards`
-
-***
-
-### eventReactions
-
-> **eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
-
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:267](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L267)
-
-#### Overrides
-
-`TemplateState.eventReactions`
 
 ## Accessors
 
@@ -83,7 +83,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **get** **delay**(): `Delay`\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:603](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L603)
+Defined in: packages/being/dist/interface.d.ts:490
 
 ##### Returns
 
@@ -101,7 +101,7 @@ Defined in: [packages/being/src/interface.ts:603](https://github.com/ue-too/ue-t
 
 > **get** **eventGuards**(): `Partial`\<`EventGuards`\<`EventPayloadMapping`, `States`, `Context`, `Guard`\<`Context`\>\>\>
 
-Defined in: [packages/being/src/interface.ts:599](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L599)
+Defined in: packages/being/dist/interface.d.ts:489
 
 ##### Returns
 
@@ -119,7 +119,7 @@ Defined in: [packages/being/src/interface.ts:599](https://github.com/ue-too/ue-t
 
 > **get** **guards**(): `Guard`\<`Context`\>
 
-Defined in: [packages/being/src/interface.ts:595](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L595)
+Defined in: packages/being/dist/interface.d.ts:488
 
 ##### Returns
 
@@ -129,13 +129,31 @@ Defined in: [packages/being/src/interface.ts:595](https://github.com/ue-too/ue-t
 
 `TemplateState.guards`
 
+***
+
+### handlingEvents
+
+#### Get Signature
+
+> **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
+
+Defined in: packages/being/dist/interface.d.ts:487
+
+##### Returns
+
+keyof `EventPayloadMapping`[]
+
+#### Inherited from
+
+`TemplateState.handlingEvents`
+
 ## Methods
 
 ### beforeExit()
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [packages/being/src/interface.ts:611](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L611)
+Defined in: packages/being/dist/interface.d.ts:492
 
 #### Parameters
 
@@ -149,7 +167,7 @@ Defined in: [packages/being/src/interface.ts:611](https://github.com/ue-too/ue-t
 
 ##### to
 
-[`PanControlStates`](../type-aliases/PanControlStates.md)
+[`PanControlStates`](../type-aliases/PanControlStates.md) | `"TERMINAL"`
 
 #### Returns
 
@@ -165,7 +183,7 @@ Defined in: [packages/being/src/interface.ts:611](https://github.com/ue-too/ue-t
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [packages/being/src/interface.ts:615](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L615)
+Defined in: packages/being/dist/interface.d.ts:493
 
 #### Type Parameters
 
@@ -201,7 +219,7 @@ Defined in: [packages/being/src/interface.ts:615](https://github.com/ue-too/ue-t
 
 > **lockedOnObjectPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:273](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L273)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:273](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L273)
 
 #### Parameters
 
@@ -223,7 +241,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **lockedOnObjectPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:277](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L277)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:277](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L277)
 
 #### Parameters
 
@@ -245,7 +263,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [packages/being/src/interface.ts:607](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L607)
+Defined in: packages/being/dist/interface.d.ts:491
 
 #### Parameters
 
@@ -259,7 +277,7 @@ Defined in: [packages/being/src/interface.ts:607](https://github.com/ue-too/ue-t
 
 ##### from
 
-[`PanControlStates`](../type-aliases/PanControlStates.md)
+[`PanControlStates`](../type-aliases/PanControlStates.md) | `"INITIAL"`
 
 #### Returns
 

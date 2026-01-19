@@ -2,7 +2,7 @@
 
 # Class: World
 
-Defined in: [world.ts:64](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L64)
+Defined in: [world.ts:64](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L64)
 
 Main physics world managing rigid body simulation.
 
@@ -49,7 +49,7 @@ function update(dt: number) {
 
 > **new World**(`maxTransWidth`, `maxTransHeight`, `spatialIndexType`): `World`
 
-Defined in: [world.ts:79](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L79)
+Defined in: [world.ts:79](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L79)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [world.ts:79](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141
 
 > **\_context**: `CanvasRenderingContext2D` \| `null` = `null`
 
-Defined in: [world.ts:77](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L77)
+Defined in: [world.ts:77](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L77)
 
 ## Accessors
 
@@ -85,7 +85,7 @@ Defined in: [world.ts:77](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141
 
 > **get** **currentSpatialIndexType**(): [`SpatialIndexType`](../type-aliases/SpatialIndexType.md)
 
-Defined in: [world.ts:244](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L244)
+Defined in: [world.ts:244](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L244)
 
 ##### Returns
 
@@ -99,7 +99,7 @@ Defined in: [world.ts:244](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **get** **resolveCollision**(): `boolean`
 
-Defined in: [world.ts:204](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L204)
+Defined in: [world.ts:204](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L204)
 
 ##### Returns
 
@@ -109,7 +109,7 @@ Defined in: [world.ts:204](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **set** **resolveCollision**(`resolveCollision`): `void`
 
-Defined in: [world.ts:208](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L208)
+Defined in: [world.ts:208](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L208)
 
 ##### Parameters
 
@@ -129,7 +129,7 @@ Defined in: [world.ts:208](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **get** **sleepingEnabled**(): `boolean`
 
-Defined in: [world.ts:274](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L274)
+Defined in: [world.ts:274](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L274)
 
 ##### Returns
 
@@ -139,7 +139,7 @@ Defined in: [world.ts:274](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **set** **sleepingEnabled**(`enabled`): `void`
 
-Defined in: [world.ts:278](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L278)
+Defined in: [world.ts:278](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L278)
 
 ##### Parameters
 
@@ -157,7 +157,7 @@ Defined in: [world.ts:278](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **addConstraint**(`constraint`): `void`
 
-Defined in: [world.ts:232](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L232)
+Defined in: [world.ts:232](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L232)
 
 #### Parameters
 
@@ -175,7 +175,7 @@ Defined in: [world.ts:232](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **addPinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `void`
 
-Defined in: [world.ts:240](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L240)
+Defined in: [world.ts:240](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L240)
 
 #### Parameters
 
@@ -205,7 +205,7 @@ Defined in: [world.ts:240](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **addRigidBody**(`ident`, `body`): `void`
 
-Defined in: [world.ts:101](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L101)
+Defined in: [world.ts:101](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L101)
 
 #### Parameters
 
@@ -227,7 +227,7 @@ Defined in: [world.ts:101](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getCollisionStats**(): `object`
 
-Defined in: [world.ts:296](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L296)
+Defined in: [world.ts:296](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L296)
 
 #### Returns
 
@@ -259,7 +259,7 @@ Defined in: [world.ts:296](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getConstraints**(): [`Constraint`](../interfaces/Constraint.md)[]
 
-Defined in: [world.ts:236](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L236)
+Defined in: [world.ts:236](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L236)
 
 #### Returns
 
@@ -271,7 +271,7 @@ Defined in: [world.ts:236](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getPairManager**(): [`PairManager`](PairManager.md)
 
-Defined in: [world.ts:291](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L291)
+Defined in: [world.ts:291](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L291)
 
 #### Returns
 
@@ -283,7 +283,7 @@ Defined in: [world.ts:291](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getRigidBodyList**(): [`RigidBody`](../interfaces/RigidBody.md)[]
 
-Defined in: [world.ts:212](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L212)
+Defined in: [world.ts:212](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L212)
 
 #### Returns
 
@@ -295,7 +295,7 @@ Defined in: [world.ts:212](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getRigidBodyMap**(): `Map`\<`string`, [`RigidBody`](../interfaces/RigidBody.md)\>
 
-Defined in: [world.ts:220](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L220)
+Defined in: [world.ts:220](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L220)
 
 #### Returns
 
@@ -307,7 +307,7 @@ Defined in: [world.ts:220](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **getSpatialIndexStats**(): `any`
 
-Defined in: [world.ts:261](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L261)
+Defined in: [world.ts:261](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L261)
 
 #### Returns
 
@@ -319,7 +319,7 @@ Defined in: [world.ts:261](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **removeRigidBody**(`ident`): `void`
 
-Defined in: [world.ts:111](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L111)
+Defined in: [world.ts:111](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L111)
 
 #### Parameters
 
@@ -337,7 +337,7 @@ Defined in: [world.ts:111](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **resolveCollisionPhase**(): `Point`[]
 
-Defined in: [world.ts:160](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L160)
+Defined in: [world.ts:160](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L160)
 
 #### Returns
 
@@ -349,7 +349,7 @@ Defined in: [world.ts:160](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **setMaxTransHeight**(`height`): `void`
 
-Defined in: [world.ts:224](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L224)
+Defined in: [world.ts:224](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L224)
 
 #### Parameters
 
@@ -367,7 +367,7 @@ Defined in: [world.ts:224](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **setMaxTransWidth**(`width`): `void`
 
-Defined in: [world.ts:228](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L228)
+Defined in: [world.ts:228](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L228)
 
 #### Parameters
 
@@ -385,7 +385,7 @@ Defined in: [world.ts:228](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **setSpatialIndexType**(`type`): `void`
 
-Defined in: [world.ts:248](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L248)
+Defined in: [world.ts:248](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L248)
 
 #### Parameters
 
@@ -403,7 +403,7 @@ Defined in: [world.ts:248](https://github.com/ue-too/ue-too/blob/aabc0f56e9e8314
 
 > **step**(`deltaTime`): `void`
 
-Defined in: [world.ts:129](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/dynamics/src/world.ts#L129)
+Defined in: [world.ts:129](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/world.ts#L129)
 
 #### Parameters
 

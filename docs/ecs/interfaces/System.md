@@ -2,7 +2,7 @@
 
 # Interface: System
 
-Defined in: [index.ts:407](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L407)
+Defined in: [index.ts:1047](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L1047)
 
 System interface for processing entities with specific component combinations.
 
@@ -18,6 +18,8 @@ is automatically managed by the SystemManager.
 ## Example
 
 ```typescript
+const Position = createComponentName('Position');
+const Velocity = createComponentName('Velocity');
 const movementSystem: System = {
   entities: new Set()
 };
@@ -25,8 +27,8 @@ const movementSystem: System = {
 // System logic (called in game loop)
 function updateMovement(deltaTime: number) {
   movementSystem.entities.forEach(entity => {
-    const pos = ecs.getComponentFromEntity<Position>('Position', entity);
-    const vel = ecs.getComponentFromEntity<Velocity>('Velocity', entity);
+    const pos = ecs.getComponentFromEntity<Position>(Position, entity);
+    const vel = ecs.getComponentFromEntity<Velocity>(Velocity, entity);
     if (pos && vel) {
       pos.x += vel.x * deltaTime;
       pos.y += vel.y * deltaTime;
@@ -41,4 +43,4 @@ function updateMovement(deltaTime: number) {
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [index.ts:408](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L408)
+Defined in: [index.ts:1048](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L1048)
