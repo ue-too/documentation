@@ -2,7 +2,7 @@
 
 # Class: Board
 
-Defined in: [packages/board/src/boardify/index.ts:170](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L170)
+Defined in: [packages/board/src/boardify/index.ts:170](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L170)
 
 Main user-facing API class that provides an infinite canvas with pan, zoom, and rotate capabilities.
 
@@ -161,7 +161,7 @@ board.attach(canvasElement);
 
 > **get** **alignCoordinateSystem**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:445](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L445)
+Defined in: [packages/board/src/boardify/index.ts:465](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L465)
 
 ##### Returns
 
@@ -171,7 +171,7 @@ Defined in: [packages/board/src/boardify/index.ts:445](https://github.com/ue-too
 
 > **set** **alignCoordinateSystem**(`align`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:439](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L439)
+Defined in: [packages/board/src/boardify/index.ts:459](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L459)
 
 ##### Description
 
@@ -197,7 +197,7 @@ If you change this value during runtime, you should update the context to be ali
 
 > **get** **camera**(): [`ObservableBoardCamera`](../interfaces/ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/boardify/index.ts:526](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L526)
+Defined in: [packages/board/src/boardify/index.ts:554](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L554)
 
 ##### Description
 
@@ -212,7 +212,7 @@ The boundaries are based on camera meaning you can have cameras with different b
 
 > **set** **camera**(`camera`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:530](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L530)
+Defined in: [packages/board/src/boardify/index.ts:558](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L558)
 
 ##### Parameters
 
@@ -232,7 +232,7 @@ Defined in: [packages/board/src/boardify/index.ts:530](https://github.com/ue-too
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/boardify/index.ts:538](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L538)
+Defined in: [packages/board/src/boardify/index.ts:566](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L566)
 
 ##### Returns
 
@@ -242,7 +242,7 @@ Defined in: [packages/board/src/boardify/index.ts:538](https://github.com/ue-too
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:542](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L542)
+Defined in: [packages/board/src/boardify/index.ts:570](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L570)
 
 ##### Parameters
 
@@ -256,13 +256,27 @@ Defined in: [packages/board/src/boardify/index.ts:542](https://github.com/ue-too
 
 ***
 
+### canvasDimensions
+
+#### Get Signature
+
+> **get** **canvasDimensions**(): [`CanvasDimensions`](../type-aliases/CanvasDimensions.md)
+
+Defined in: [packages/board/src/boardify/index.ts:805](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L805)
+
+##### Returns
+
+[`CanvasDimensions`](../type-aliases/CanvasDimensions.md)
+
+***
+
 ### clampRotation
 
 #### Get Signature
 
 > **get** **clampRotation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:746](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L746)
+Defined in: [packages/board/src/boardify/index.ts:785](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L785)
 
 ##### Returns
 
@@ -272,7 +286,7 @@ Defined in: [packages/board/src/boardify/index.ts:746](https://github.com/ue-too
 
 > **set** **clampRotation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:750](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L750)
+Defined in: [packages/board/src/boardify/index.ts:789](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L789)
 
 ##### Parameters
 
@@ -292,7 +306,7 @@ Defined in: [packages/board/src/boardify/index.ts:750](https://github.com/ue-too
 
 > **get** **clampTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:730](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L730)
+Defined in: [packages/board/src/boardify/index.ts:769](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L769)
 
 ##### Returns
 
@@ -302,7 +316,7 @@ Defined in: [packages/board/src/boardify/index.ts:730](https://github.com/ue-too
 
 > **set** **clampTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:734](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L734)
+Defined in: [packages/board/src/boardify/index.ts:773](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L773)
 
 ##### Parameters
 
@@ -322,7 +336,7 @@ Defined in: [packages/board/src/boardify/index.ts:734](https://github.com/ue-too
 
 > **get** **clampZoom**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:738](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L738)
+Defined in: [packages/board/src/boardify/index.ts:777](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L777)
 
 ##### Returns
 
@@ -332,7 +346,7 @@ Defined in: [packages/board/src/boardify/index.ts:738](https://github.com/ue-too
 
 > **set** **clampZoom**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:742](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L742)
+Defined in: [packages/board/src/boardify/index.ts:781](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L781)
 
 ##### Parameters
 
@@ -352,7 +366,7 @@ Defined in: [packages/board/src/boardify/index.ts:742](https://github.com/ue-too
 
 > **get** **context**(): `CanvasRenderingContext2D` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:469](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L469)
+Defined in: [packages/board/src/boardify/index.ts:489](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L489)
 
 ##### Description
 
@@ -371,7 +385,7 @@ If alignCoordinateSystem is false, this returns a proxy that automatically negat
 
 > **get** **fullScreen**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:453](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L453)
+Defined in: [packages/board/src/boardify/index.ts:473](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L473)
 
 ##### Description
 
@@ -386,7 +400,7 @@ and the width and height of the board will resize with the window.
 
 > **set** **fullScreen**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:457](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L457)
+Defined in: [packages/board/src/boardify/index.ts:477](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L477)
 
 ##### Parameters
 
@@ -406,11 +420,25 @@ Defined in: [packages/board/src/boardify/index.ts:457](https://github.com/ue-too
 
 > **get** **height**(): `number`
 
-Defined in: [packages/board/src/boardify/index.ts:430](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L430)
+Defined in: [packages/board/src/boardify/index.ts:450](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L450)
 
 ##### Returns
 
 `number`
+
+***
+
+### inputOrchestrator
+
+#### Get Signature
+
+> **get** **inputOrchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
+
+Defined in: [packages/board/src/boardify/index.ts:428](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L428)
+
+##### Returns
+
+[`InputOrchestrator`](InputOrchestrator.md)
 
 ***
 
@@ -420,7 +448,7 @@ Defined in: [packages/board/src/boardify/index.ts:430](https://github.com/ue-too
 
 > **get** **kmtParser**(): [`KMTEventParser`](../interfaces/KMTEventParser.md)
 
-Defined in: [packages/board/src/boardify/index.ts:504](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L504)
+Defined in: [packages/board/src/boardify/index.ts:528](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L528)
 
 ##### Returns
 
@@ -430,7 +458,7 @@ Defined in: [packages/board/src/boardify/index.ts:504](https://github.com/ue-too
 
 > **set** **kmtParser**(`parser`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:498](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L498)
+Defined in: [packages/board/src/boardify/index.ts:518](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L518)
 
 ##### Description
 
@@ -455,7 +483,7 @@ You can implement your own strategy by implementing the BoardKMTStrategy interfa
 
 > **get** **limitEntireViewPort**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:490](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L490)
+Defined in: [packages/board/src/boardify/index.ts:510](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L510)
 
 ##### Returns
 
@@ -465,7 +493,7 @@ Defined in: [packages/board/src/boardify/index.ts:490](https://github.com/ue-too
 
 > **set** **limitEntireViewPort**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:480](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L480)
+Defined in: [packages/board/src/boardify/index.ts:500](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L500)
 
 ##### Description
 
@@ -490,7 +518,7 @@ If set to false, only the center of the camera is bounded by the boundaries.
 
 > **get** **maxHalfTransHeight**(): `number` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:619](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L619)
+Defined in: [packages/board/src/boardify/index.ts:658](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L658)
 
 ##### Description
 
@@ -508,7 +536,7 @@ The max translation height of the camera. This is the maximum distance the camer
 
 > **get** **maxHalfTransWidth**(): `number` \| `undefined`
 
-Defined in: [packages/board/src/boardify/index.ts:626](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L626)
+Defined in: [packages/board/src/boardify/index.ts:665](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L665)
 
 ##### Description
 
@@ -526,7 +554,7 @@ The max translation width of the camera. This is the maximum distance the camera
 
 > **get** **restrictRelativeXTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:682](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L682)
+Defined in: [packages/board/src/boardify/index.ts:721](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L721)
 
 ##### Returns
 
@@ -536,7 +564,7 @@ Defined in: [packages/board/src/boardify/index.ts:682](https://github.com/ue-too
 
 > **set** **restrictRelativeXTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:698](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L698)
+Defined in: [packages/board/src/boardify/index.ts:737](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L737)
 
 ##### Parameters
 
@@ -556,7 +584,7 @@ Defined in: [packages/board/src/boardify/index.ts:698](https://github.com/ue-too
 
 > **get** **restrictRelativeYTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:686](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L686)
+Defined in: [packages/board/src/boardify/index.ts:725](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L725)
 
 ##### Returns
 
@@ -566,7 +594,7 @@ Defined in: [packages/board/src/boardify/index.ts:686](https://github.com/ue-too
 
 > **set** **restrictRelativeYTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:702](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L702)
+Defined in: [packages/board/src/boardify/index.ts:741](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L741)
 
 ##### Parameters
 
@@ -586,7 +614,7 @@ Defined in: [packages/board/src/boardify/index.ts:702](https://github.com/ue-too
 
 > **get** **restrictRotation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:722](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L722)
+Defined in: [packages/board/src/boardify/index.ts:761](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L761)
 
 ##### Returns
 
@@ -596,7 +624,7 @@ Defined in: [packages/board/src/boardify/index.ts:722](https://github.com/ue-too
 
 > **set** **restrictRotation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:726](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L726)
+Defined in: [packages/board/src/boardify/index.ts:765](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L765)
 
 ##### Parameters
 
@@ -616,7 +644,7 @@ Defined in: [packages/board/src/boardify/index.ts:726](https://github.com/ue-too
 
 > **get** **restrictXTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:690](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L690)
+Defined in: [packages/board/src/boardify/index.ts:729](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L729)
 
 ##### Returns
 
@@ -626,7 +654,7 @@ Defined in: [packages/board/src/boardify/index.ts:690](https://github.com/ue-too
 
 > **set** **restrictXTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:706](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L706)
+Defined in: [packages/board/src/boardify/index.ts:745](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L745)
 
 ##### Parameters
 
@@ -646,7 +674,7 @@ Defined in: [packages/board/src/boardify/index.ts:706](https://github.com/ue-too
 
 > **get** **restrictYTranslation**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:694](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L694)
+Defined in: [packages/board/src/boardify/index.ts:733](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L733)
 
 ##### Returns
 
@@ -656,7 +684,7 @@ Defined in: [packages/board/src/boardify/index.ts:694](https://github.com/ue-too
 
 > **set** **restrictYTranslation**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:710](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L710)
+Defined in: [packages/board/src/boardify/index.ts:749](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L749)
 
 ##### Parameters
 
@@ -676,7 +704,7 @@ Defined in: [packages/board/src/boardify/index.ts:710](https://github.com/ue-too
 
 > **get** **restrictZoom**(): `boolean`
 
-Defined in: [packages/board/src/boardify/index.ts:714](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L714)
+Defined in: [packages/board/src/boardify/index.ts:753](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L753)
 
 ##### Returns
 
@@ -686,7 +714,7 @@ Defined in: [packages/board/src/boardify/index.ts:714](https://github.com/ue-too
 
 > **set** **restrictZoom**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:718](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L718)
+Defined in: [packages/board/src/boardify/index.ts:757](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L757)
 
 ##### Parameters
 
@@ -706,7 +734,7 @@ Defined in: [packages/board/src/boardify/index.ts:718](https://github.com/ue-too
 
 > **get** **touchParser**(): [`TouchEventParser`](../interfaces/TouchEventParser.md)
 
-Defined in: [packages/board/src/boardify/index.ts:518](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L518)
+Defined in: [packages/board/src/boardify/index.ts:546](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L546)
 
 ##### Returns
 
@@ -716,7 +744,7 @@ Defined in: [packages/board/src/boardify/index.ts:518](https://github.com/ue-too
 
 > **set** **touchParser**(`parser`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:512](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L512)
+Defined in: [packages/board/src/boardify/index.ts:536](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L536)
 
 ##### Description
 
@@ -741,7 +769,7 @@ You can have your own parser by implementing the BoardTouchParser interface.
 
 > **get** **width**(): `number`
 
-Defined in: [packages/board/src/boardify/index.ts:426](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L426)
+Defined in: [packages/board/src/boardify/index.ts:446](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L446)
 
 ##### Returns
 
@@ -753,7 +781,7 @@ Defined in: [packages/board/src/boardify/index.ts:426](https://github.com/ue-too
 
 > **convertWindowPoint2WorldCoord**(`clickPointInWindow`): `Point`
 
-Defined in: [packages/board/src/boardify/index.ts:583](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L583)
+Defined in: [packages/board/src/boardify/index.ts:622](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L622)
 
 TODO add the option to make the camera position to be at the top left corner of the canvas; or better yet any point in the viewport (within the viewport boundaries)
 
@@ -777,11 +805,35 @@ Converts a point from window coordinates to world coordinates.
 
 ***
 
+### disableEventListeners()
+
+> **disableEventListeners**(): `void`
+
+Defined in: [packages/board/src/boardify/index.ts:418](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L418)
+
+#### Returns
+
+`void`
+
+***
+
+### enableEventListeners()
+
+> **enableEventListeners**(): `void`
+
+Defined in: [packages/board/src/boardify/index.ts:423](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L423)
+
+#### Returns
+
+`void`
+
+***
+
 ### getCameraRig()
 
 > **getCameraRig**(): [`CameraRig`](../interfaces/CameraRig.md)
 
-Defined in: [packages/board/src/boardify/index.ts:754](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L754)
+Defined in: [packages/board/src/boardify/index.ts:793](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L793)
 
 #### Returns
 
@@ -793,7 +845,7 @@ Defined in: [packages/board/src/boardify/index.ts:754](https://github.com/ue-too
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/boardify/index.ts:600](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L600)
+Defined in: [packages/board/src/boardify/index.ts:639](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L639)
 
 #### Type Parameters
 
@@ -828,11 +880,33 @@ There's also an "all" event that will be triggered when any of the above events 
 
 ***
 
+### onCanvasDimensionChange()
+
+> **onCanvasDimensionChange**(`callback`): () => `void`
+
+Defined in: [packages/board/src/boardify/index.ts:801](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L801)
+
+#### Parameters
+
+##### callback
+
+(`dimensions`) => `void`
+
+#### Returns
+
+> (): `void`
+
+##### Returns
+
+`void`
+
+***
+
 ### onInput()
 
 > **onInput**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/boardify/index.ts:612](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L612)
+Defined in: [packages/board/src/boardify/index.ts:651](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L651)
 
 #### Type Parameters
 
@@ -866,7 +940,7 @@ Input event does not necesarily mean that the camera will move. The input events
 
 > **setInputMode**(`mode`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:758](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L758)
+Defined in: [packages/board/src/boardify/index.ts:797](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L797)
 
 #### Parameters
 
@@ -884,7 +958,7 @@ Defined in: [packages/board/src/boardify/index.ts:758](https://github.com/ue-too
 
 > **step**(`timestamp`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:555](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L555)
+Defined in: [packages/board/src/boardify/index.ts:583](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L583)
 
 #### Parameters
 
@@ -906,7 +980,7 @@ This is the step function that is called in the animation frame. This function i
 
 > **setMaxTransWidthWithFixedMaxBoundary**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:665](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L665)
+Defined in: [packages/board/src/boardify/index.ts:704](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L704)
 
 #### Parameters
 
@@ -928,7 +1002,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **setMaxTransWidthWithFixedMinBoundary**(`value`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:644](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L644)
+Defined in: [packages/board/src/boardify/index.ts:683](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L683)
 
 #### Parameters
 
@@ -950,7 +1024,7 @@ This function sets the max translation width of the camera while fixing the mini
 
 > **new Board**(`canvas?`, `debug?`): `Board`
 
-Defined in: [packages/board/src/boardify/index.ts:269](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L269)
+Defined in: [packages/board/src/boardify/index.ts:275](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L275)
 
 Creates a new Board instance with an optional canvas element.
 
@@ -1051,7 +1125,7 @@ const board = new Board(canvas, true);
 
 > **attach**(`canvas`, `debug`): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:394](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L394)
+Defined in: [packages/board/src/boardify/index.ts:399](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L399)
 
 Attaches a canvas element to the board, enabling rendering and input handling.
 
@@ -1143,7 +1217,7 @@ board.attach(canvas2);
 
 > **tearDown**(): `void`
 
-Defined in: [packages/board/src/boardify/index.ts:416](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/boardify/index.ts#L416)
+Defined in: [packages/board/src/boardify/index.ts:436](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/boardify/index.ts#L436)
 
 #### Returns
 

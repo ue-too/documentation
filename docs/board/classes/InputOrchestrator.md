@@ -2,7 +2,7 @@
 
 # Class: InputOrchestrator
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:69](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L69)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:69](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L69)
 
 Central orchestrator that coordinates input interpretation and camera control for the infinite canvas.
 
@@ -59,7 +59,7 @@ publisher.on("pan", (event) => {
 
 > **new InputOrchestrator**(`cameraMux`, `cameraRig`, `publisher?`): `InputOrchestrator`
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:85](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L85)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:85](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L85)
 
 Creates a new InputOrchestrator instance.
 
@@ -100,7 +100,7 @@ When provided, all input events are broadcast in parallel to camera control exec
 
 > **get** **cameraMux**(): [`CameraMux`](../interfaces/CameraMux.md)
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:262](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L262)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:266](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L266)
 
 Gets the CameraMux instance for direct access to permission control.
 
@@ -114,7 +114,7 @@ The camera multiplexer instance
 
 > **set** **cameraMux**(`cameraMux`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:274](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L274)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:278](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L278)
 
 Sets a new CameraMux instance.
 
@@ -142,7 +142,7 @@ The new camera multiplexer to use for permission control
 
 > **get** **publisher**(): [`UserInputPublisher`](../interfaces/UserInputPublisher.md) \| `undefined`
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:253](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L253)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:257](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L257)
 
 Gets the UserInputPublisher for direct access to event subscription.
 
@@ -158,11 +158,29 @@ The publisher instance, or undefined if not configured
 
 ## Methods
 
+### processInputEvent()
+
+> **processInputEvent**(`input`): `void`
+
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:126](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L126)
+
+#### Parameters
+
+##### input
+
+[`OutputEvent`](../type-aliases/OutputEvent.md)
+
+#### Returns
+
+`void`
+
+***
+
 ### processInputEventOutput()
 
 > **processInputEventOutput**(`output`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:112](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/input-orchestrator.ts#L112)
+Defined in: [packages/board/src/input-interpretation/input-orchestrator.ts:112](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/input-orchestrator.ts#L112)
 
 Processes output events from state machines and routes them to camera control and observers.
 

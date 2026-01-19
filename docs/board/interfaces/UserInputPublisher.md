@@ -2,7 +2,7 @@
 
 # Interface: UserInputPublisher
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:134](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L134)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:134](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L134)
 
 Interface for publishing raw user input events to observers.
 
@@ -18,7 +18,7 @@ for input event distribution.
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:136](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L136)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:136](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L136)
 
 Notifies subscribers of a pan gesture
 
@@ -38,7 +38,7 @@ Notifies subscribers of a pan gesture
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:140](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L140)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:140](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L140)
 
 Notifies subscribers of a rotate gesture
 
@@ -58,7 +58,7 @@ Notifies subscribers of a rotate gesture
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:138](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L138)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:138](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L138)
 
 Notifies subscribers of a zoom gesture
 
@@ -82,7 +82,7 @@ Notifies subscribers of a zoom gesture
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:142](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L142)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:142](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L142)
 
 Subscribes to input events
 

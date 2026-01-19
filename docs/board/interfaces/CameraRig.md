@@ -2,7 +2,7 @@
 
 # Interface: CameraRig
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:59](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L59)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:59](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L59)
 
 High-level camera control interface providing intuitive methods for pan, zoom, and rotation.
 The camera rig acts as a facade over the camera, handling coordinate conversions and constraints.
@@ -33,7 +33,7 @@ The rig ensures correct transformation order when combining operations
 
 > **camera**: [`ObservableBoardCamera`](ObservableBoardCamera.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:61](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L61)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:61](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L61)
 
 The underlying observable camera being controlled
 
@@ -43,7 +43,7 @@ The underlying observable camera being controlled
 
 > **config**: [`CameraRigConfig`](../type-aliases/CameraRigConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L64)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:64](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L64)
 
 Current configuration for all camera operations
 
@@ -53,7 +53,7 @@ Current configuration for all camera operations
 
 > **panByViewPort**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:81](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L81)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:81](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L81)
 
 Pans the camera by a delta in viewport coordinates.
 
@@ -75,7 +75,7 @@ Movement delta in viewport space (CSS pixels, origin at center)
 
 > **panByWorld**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:93](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L93)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:93](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L93)
 
 Pans the camera by a delta in world coordinates.
 
@@ -97,7 +97,7 @@ Movement delta in world space
 
 > **panToViewPort**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:87](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L87)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:87](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L87)
 
 Pans the camera to a target position in viewport coordinates.
 
@@ -119,7 +119,7 @@ Target position in viewport space
 
 > **panToWorld**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:99](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L99)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:99](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L99)
 
 Pans the camera to a target position in world coordinates.
 
@@ -141,7 +141,7 @@ Target position in world space
 
 > **rotateBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:105](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L105)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:105](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L105)
 
 Rotates the camera by a delta angle.
 
@@ -163,7 +163,7 @@ Rotation delta in radians
 
 > **rotateTo**: (`target`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:111](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L111)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:111](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L111)
 
 Rotates the camera to a target angle.
 
@@ -185,7 +185,7 @@ Target rotation in radians
 
 > **zoomBy**: (`delta`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L137)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:137](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L137)
 
 Zooms by a delta at viewport center.
 
@@ -207,7 +207,7 @@ Zoom delta
 
 > **zoomByAt**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:125](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L125)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:125](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L125)
 
 Zooms by a delta, keeping a viewport point stationary.
 
@@ -235,7 +235,7 @@ Anchor point in viewport coordinates
 
 > **zoomByAtWorld**: (`delta`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:151](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L151)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:151](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L151)
 
 Zooms by a delta, keeping a world point stationary.
 
@@ -263,7 +263,7 @@ Anchor point in world coordinates
 
 > **zoomTo**: (`targetZoom`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:131](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L131)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:131](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L131)
 
 Zooms to a target level at viewport center.
 
@@ -285,7 +285,7 @@ Target zoom level
 
 > **zoomToAt**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:118](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L118)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:118](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L118)
 
 Zooms to a target level, keeping a viewport point stationary.
 
@@ -313,7 +313,7 @@ Anchor point in viewport coordinates
 
 > **zoomToAtWorld**: (`targetZoom`, `at`) => `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:144](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L144)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:144](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L144)
 
 Zooms to a target level, keeping a world point stationary.
 
@@ -341,7 +341,7 @@ Anchor point in world coordinates
 
 > **cleanup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:31](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L31)
+Defined in: packages/being/dist/interface.d.ts:31
 
 #### Returns
 
@@ -357,7 +357,7 @@ Defined in: [packages/being/src/interface.ts:31](https://github.com/ue-too/ue-to
 
 > **configure**(`config`): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:70](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L70)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:70](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L70)
 
 Updates the camera rig configuration.
 
@@ -379,7 +379,7 @@ Partial configuration to merge with current config
 
 > **setup**(): `void`
 
-Defined in: [packages/being/src/interface.ts:30](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L30)
+Defined in: packages/being/dist/interface.d.ts:30
 
 #### Returns
 
@@ -395,7 +395,7 @@ Defined in: [packages/being/src/interface.ts:30](https://github.com/ue-too/ue-to
 
 > **update**(): `void`
 
-Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:75](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-rig/camera-rig.ts#L75)
+Defined in: [packages/board/src/camera/camera-rig/camera-rig.ts:75](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/camera-rig.ts#L75)
 
 Updates the camera rig state (called per frame if needed).
 

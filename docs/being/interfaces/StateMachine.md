@@ -2,7 +2,7 @@
 
 # Interface: StateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [interface.ts:181](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L181)
+Defined in: [interface.ts:187](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L187)
 
 ## Description
 
@@ -46,7 +46,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **possibleStates**: `States`[]
 
-Defined in: [interface.ts:199](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L199)
+Defined in: [interface.ts:205](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L205)
 
 ***
 
@@ -54,7 +54,7 @@ Defined in: [interface.ts:199](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **states**: `Record`\<`States`, [`State`](State.md)\<`EventPayloadMapping`, `Context`, `string` *extends* `States` ? `string` : `States`, `EventOutputMapping`\>\>
 
-Defined in: [interface.ts:197](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L197)
+Defined in: [interface.ts:203](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L203)
 
 ## Methods
 
@@ -64,7 +64,7 @@ Defined in: [interface.ts:197](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:189](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L189)
+Defined in: [interface.ts:195](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L195)
 
 ##### Type Parameters
 
@@ -86,7 +86,7 @@ Defined in: [interface.ts:189](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-Defined in: [interface.ts:193](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L193)
+Defined in: [interface.ts:199](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L199)
 
 ##### Type Parameters
 
@@ -110,7 +110,7 @@ Defined in: [interface.ts:193](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [interface.ts:200](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L200)
+Defined in: [interface.ts:206](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L206)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [interface.ts:200](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [interface.ts:198](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L198)
+Defined in: [interface.ts:204](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L204)
 
 #### Parameters
 
@@ -142,11 +142,23 @@ Defined in: [interface.ts:198](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 ***
 
+### reset()
+
+> **reset**(): `void`
+
+Defined in: [interface.ts:207](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L207)
+
+#### Returns
+
+`void`
+
+***
+
 ### setContext()
 
 > **setContext**(`context`): `void`
 
-Defined in: [interface.ts:196](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L196)
+Defined in: [interface.ts:202](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L202)
 
 #### Parameters
 
@@ -160,17 +172,41 @@ Defined in: [interface.ts:196](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 ***
 
+### start()
+
+> **start**(): `void`
+
+Defined in: [interface.ts:208](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L208)
+
+#### Returns
+
+`void`
+
+***
+
 ### switchTo()
 
 > **switchTo**(`state`): `void`
 
-Defined in: [interface.ts:187](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L187)
+Defined in: [interface.ts:193](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L193)
 
 #### Parameters
 
 ##### state
 
 `States`
+
+#### Returns
+
+`void`
+
+***
+
+### wrapup()
+
+> **wrapup**(): `void`
+
+Defined in: [interface.ts:209](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L209)
 
 #### Returns
 

@@ -4,6 +4,6 @@
 
 > **ComponentType** = `number`
 
-Defined in: [index.ts:116](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L116)
+Defined in: [index.ts:119](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L119)
 
 Component type identifier.

@@ -1,4 +1,4 @@
-# @ue-too/border v0.11.0
+# @ue-too/border v0.14.0
 
 Geodesy and map projection library for TypeScript.
 

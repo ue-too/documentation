@@ -4,7 +4,7 @@
 
 > **createDefaultZoomControlStateMachine**(`context`): [`ZoomControlStateMachine`](../classes/ZoomControlStateMachine.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:392](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L392)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:380](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L380)
 
 Creates a zoom control state machine with default configuration.
 
@@ -12,7 +12,7 @@ Creates a zoom control state machine with default configuration.
 
 ### context
 
-`BaseContext`
+`BaseContext` = `...`
 
 Camera rig or context for zoom operations
 

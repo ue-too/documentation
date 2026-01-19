@@ -2,7 +2,7 @@
 
 # Class: PointCal
 
-Defined in: [index.ts:113](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L113)
+Defined in: [index.ts:113](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L113)
 
 Utility class for point and vector calculations.
 
@@ -39,7 +39,7 @@ const dot = PointCal.dotProduct(v1, v2);
 
 > `static` **angleFromA2B**(`a`, `b`): `number`
 
-Defined in: [index.ts:441](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L441)
+Defined in: [index.ts:441](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L441)
 
 Calculates the signed angle from vector a to vector b.
 
@@ -86,7 +86,7 @@ const angleDown = PointCal.angleFromA2B(right, down); // -π/2 (90 degrees CW)
 
 > `static` **distanceBetweenPoints**(`a`, `b`): `number`
 
-Defined in: [index.ts:495](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L495)
+Defined in: [index.ts:495](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L495)
 
 Calculates the Euclidean distance between two points.
 
@@ -128,7 +128,7 @@ const distance = PointCal.distanceBetweenPoints(a, b); // 5
 
 > `static` **getLineIntersection**(`startPoint`, `endPoint`, `startPoint2`, `endPoint2`): `object`
 
-Defined in: [index.ts:624](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L624)
+Defined in: [index.ts:624](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L624)
 
 Calculates the intersection point of two line segments.
 
@@ -208,7 +208,7 @@ const result = PointCal.getLineIntersection(line1Start, line1End, line2Start, li
 
 > `static` **isEqual**(`a`, `b`): `boolean`
 
-Defined in: [index.ts:579](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L579)
+Defined in: [index.ts:579](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L579)
 
 Checks if two points are exactly equal.
 
@@ -255,7 +255,7 @@ PointCal.isEqual(a, c); // false (use samePoint for tolerance)
 
 > `static` **linearInterpolation**(`a`, `b`, `t`): [`point`](../type-aliases/point.md)
 
-Defined in: [index.ts:547](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L547)
+Defined in: [index.ts:547](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L547)
 
 Performs linear interpolation between two points.
 
@@ -309,7 +309,7 @@ const quarter = PointCal.linearInterpolation(a, b, 0.25); // { x: 2.5, y: 5 }
 
 > `static` **unitVectorFromA2B**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:361](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L361)
+Defined in: [index.ts:361](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L361)
 
 Calculates the unit vector pointing from point a to point b.
 
@@ -351,7 +351,7 @@ const direction = PointCal.unitVectorFromA2B(a, b); // { x: 0.6, y: 0.8 }
 
 > `static` **flipYAxis**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:517](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L517)
+Defined in: [index.ts:517](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L517)
 
 Flips a point's y-coordinate (mirrors across the x-axis).
 
@@ -387,7 +387,7 @@ const flipped = PointCal.flipYAxis(point); // { x: 10, y: -20 }
 
 > `static` **rotatePoint**(`point`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:388](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L388)
+Defined in: [index.ts:388](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L388)
 
 Rotates a point around the origin.
 
@@ -433,7 +433,7 @@ const rotated = PointCal.rotatePoint(point, Math.PI / 2); // { x: 0, y: 1 }
 
 > `static` **transform2NewAxis**(`point`, `angleFromOriginalAxis2DestAxis`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:412](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L412)
+Defined in: [index.ts:412](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L412)
 
 Transforms a point's coordinates to a new rotated axis system.
 
@@ -476,7 +476,7 @@ const transformed = PointCal.transform2NewAxis(point, angle);
 
 > `static` **transformPointWRTAnchor**(`point`, `anchor`, `angle`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:470](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L470)
+Defined in: [index.ts:470](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L470)
 
 Rotates a point around a custom anchor point.
 
@@ -529,7 +529,7 @@ const rotated = PointCal.transformPointWRTAnchor(point, anchor, angle);
 
 > `static` **addVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:140](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L140)
+Defined in: [index.ts:140](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L140)
 
 Adds two vectors together.
 
@@ -577,7 +577,7 @@ const sum3d = PointCal.addVector(a3d, b3d); // { x: 5, y: 7, z: 9 }
 
 > `static` **divideVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:215](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L215)
+Defined in: [index.ts:215](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L215)
 
 Divides a vector by a scalar value.
 
@@ -618,7 +618,7 @@ const divided = PointCal.divideVectorByScalar(v, 2); // { x: 5, y: 10 }
 
 > `static` **multiplyVectorByScalar**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:192](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L192)
+Defined in: [index.ts:192](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L192)
 
 Multiplies a vector by a scalar value.
 
@@ -655,7 +655,7 @@ const scaled = PointCal.multiplyVectorByScalar(v, 2.5); // { x: 5, y: 7.5 }
 
 > `static` **subVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:168](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L168)
+Defined in: [index.ts:168](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L168)
 
 Subtracts vector b from vector a.
 
@@ -697,7 +697,7 @@ const diff = PointCal.subVector(a, b); // { x: 3, y: 4 }
 
 > `static` **crossProduct**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:334](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L334)
+Defined in: [index.ts:334](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L334)
 
 Calculates the cross product of two vectors.
 
@@ -745,7 +745,7 @@ const cross = PointCal.crossProduct(a, b); // { x: 0, y: 0, z: 1 }
 
 > `static` **dotProduct**(`a`, `b`): `number`
 
-Defined in: [index.ts:300](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L300)
+Defined in: [index.ts:300](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L300)
 
 Calculates the dot product of two vectors.
 
@@ -796,7 +796,7 @@ const dot2 = PointCal.dotProduct(c, d); // 23
 
 > `static` **magnitude**(`a`): `number`
 
-Defined in: [index.ts:241](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L241)
+Defined in: [index.ts:241](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L241)
 
 Calculates the magnitude (length) of a vector.
 
@@ -834,7 +834,7 @@ const mag3d = PointCal.magnitude(v3d); // 3
 
 > `static` **unitVector**(`a`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [index.ts:267](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/math/src/index.ts#L267)
+Defined in: [index.ts:267](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L267)
 
 Converts a vector to its unit vector (normalized to length 1).
 

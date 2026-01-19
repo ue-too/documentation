@@ -2,7 +2,7 @@
 
 # Class: PanControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:127](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L127)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:127](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L127)
 
 State machine controlling pan input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **new PanControlStateMachine**(`states`, `initialState`, `context`): `PanControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
 
 #### Parameters
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: [packages/being/src/interface.ts:436](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L436)
+Defined in: packages/being/dist/interface.d.ts:378
 
 #### Inherited from
 
@@ -89,9 +89,9 @@ Defined in: [packages/being/src/interface.ts:436](https://github.com/ue-too/ue-t
 
 ### \_currentState
 
-> `protected` **\_currentState**: [`PanControlStates`](../type-aliases/PanControlStates.md)
+> `protected` **\_currentState**: [`PanControlStates`](../type-aliases/PanControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: [packages/being/src/interface.ts:434](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L434)
+Defined in: packages/being/dist/interface.d.ts:376
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: [packages/being/src/interface.ts:434](https://github.com/ue-too/ue-t
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: [packages/being/src/interface.ts:439](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L439)
+Defined in: packages/being/dist/interface.d.ts:381
 
 #### Parameters
 
@@ -125,11 +125,23 @@ Defined in: [packages/being/src/interface.ts:439](https://github.com/ue-too/ue-t
 
 ***
 
+### \_initialState
+
+> `protected` **\_initialState**: [`PanControlStates`](../type-aliases/PanControlStates.md)
+
+Defined in: packages/being/dist/interface.d.ts:383
+
+#### Inherited from
+
+`TemplateStateMachine._initialState`
+
+***
+
 ### \_stateChangeCallbacks
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
 
-Defined in: [packages/being/src/interface.ts:438](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L438)
+Defined in: packages/being/dist/interface.d.ts:380
 
 #### Inherited from
 
@@ -141,7 +153,7 @@ Defined in: [packages/being/src/interface.ts:438](https://github.com/ue-too/ue-t
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [packages/being/src/interface.ts:435](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L435)
+Defined in: packages/being/dist/interface.d.ts:377
 
 #### Inherited from
 
@@ -153,7 +165,7 @@ Defined in: [packages/being/src/interface.ts:435](https://github.com/ue-too/ue-t
 
 > `protected` **\_statesArray**: [`PanControlStates`](../type-aliases/PanControlStates.md)[]
 
-Defined in: [packages/being/src/interface.ts:437](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L437)
+Defined in: packages/being/dist/interface.d.ts:379
 
 #### Inherited from
 
@@ -163,9 +175,9 @@ Defined in: [packages/being/src/interface.ts:437](https://github.com/ue-too/ue-t
 
 ### \_timeouts
 
-> `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
+> `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: [packages/being/src/interface.ts:440](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L440)
+Defined in: packages/being/dist/interface.d.ts:382
 
 #### Inherited from
 
@@ -177,13 +189,13 @@ Defined in: [packages/being/src/interface.ts:440](https://github.com/ue-too/ue-t
 
 #### Get Signature
 
-> **get** **currentState**(): `States`
+> **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: [packages/being/src/interface.ts:483](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L483)
+Defined in: packages/being/dist/interface.d.ts:393
 
 ##### Returns
 
-`States`
+`States` \| `"INITIAL"` \| `"TERMINAL"`
 
 #### Inherited from
 
@@ -197,7 +209,7 @@ Defined in: [packages/being/src/interface.ts:483](https://github.com/ue-too/ue-t
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: [packages/being/src/interface.ts:491](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L491)
+Defined in: packages/being/dist/interface.d.ts:395
 
 ##### Returns
 
@@ -215,7 +227,7 @@ Defined in: [packages/being/src/interface.ts:491](https://github.com/ue-too/ue-t
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [packages/being/src/interface.ts:495](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L495)
+Defined in: packages/being/dist/interface.d.ts:396
 
 ##### Returns
 
@@ -233,7 +245,7 @@ Defined in: [packages/being/src/interface.ts:495](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [packages/being/src/interface.ts:457](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L457)
+Defined in: packages/being/dist/interface.d.ts:389
 
 ##### Type Parameters
 
@@ -259,7 +271,7 @@ Defined in: [packages/being/src/interface.ts:457](https://github.com/ue-too/ue-t
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `unknown`\>
 
-Defined in: [packages/being/src/interface.ts:458](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L458)
+Defined in: packages/being/dist/interface.d.ts:390
 
 ##### Type Parameters
 
@@ -285,15 +297,15 @@ Defined in: [packages/being/src/interface.ts:458](https://github.com/ue-too/ue-t
 
 ### initateTransition()
 
-> **initateTransition**(): `void`
+> **initateTransition**(): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:168](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L168)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:168](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L168)
 
 Initiates transition to `TRANSITION` state.
 
 #### Returns
 
-`void`
+`EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
 #### Remarks
 
@@ -306,7 +318,7 @@ Called when starting programmatic camera movements.
 
 > **notifyPanInput**(`diff`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:143](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L143)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:143](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L143)
 
 Notifies the state machine of user pan input.
 
@@ -335,7 +347,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyPanToAnimationInput**(`target`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:157](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L157)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:157](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L157)
 
 Initiates a pan animation to a target position.
 
@@ -364,7 +376,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:479](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L479)
+Defined in: packages/being/dist/interface.d.ts:392
 
 #### Parameters
 
@@ -386,7 +398,7 @@ Defined in: [packages/being/src/interface.ts:479](https://github.com/ue-too/ue-t
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [packages/being/src/interface.ts:475](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L475)
+Defined in: packages/being/dist/interface.d.ts:391
 
 #### Parameters
 
@@ -404,11 +416,27 @@ Defined in: [packages/being/src/interface.ts:475](https://github.com/ue-too/ue-t
 
 ***
 
+### reset()
+
+> **reset**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:385
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.reset`
+
+***
+
 ### setContext()
 
 > **setContext**(`context`): `void`
 
-Defined in: [packages/being/src/interface.ts:487](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L487)
+Defined in: packages/being/dist/interface.d.ts:394
 
 #### Parameters
 
@@ -426,17 +454,33 @@ Defined in: [packages/being/src/interface.ts:487](https://github.com/ue-too/ue-t
 
 ***
 
+### start()
+
+> **start**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:386
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.start`
+
+***
+
 ### switchTo()
 
 > **switchTo**(`state`): `void`
 
-Defined in: [packages/being/src/interface.ts:452](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L452)
+Defined in: packages/being/dist/interface.d.ts:388
 
 #### Parameters
 
 ##### state
 
-[`PanControlStates`](../type-aliases/PanControlStates.md)
+[`PanControlStates`](../type-aliases/PanControlStates.md) | `"INITIAL"` | `"TERMINAL"`
 
 #### Returns
 
@@ -445,3 +489,19 @@ Defined in: [packages/being/src/interface.ts:452](https://github.com/ue-too/ue-t
 #### Inherited from
 
 `TemplateStateMachine.switchTo`
+
+***
+
+### wrapup()
+
+> **wrapup**(): `void`
+
+Defined in: packages/being/dist/interface.d.ts:387
+
+#### Returns
+
+`void`
+
+#### Inherited from
+
+`TemplateStateMachine.wrapup`

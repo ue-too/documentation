@@ -4,6 +4,6 @@
 
 > `const` **MAX\_ENTITIES**: `10000` = `10000`
 
-Defined in: [index.ts:98](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L98)
+Defined in: [index.ts:101](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L101)
 
 Maximum number of entities that can exist simultaneously.

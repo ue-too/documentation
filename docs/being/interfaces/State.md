@@ -2,7 +2,7 @@
 
 # Interface: State\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [interface.ts:227](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L227)
+Defined in: [interface.ts:236](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L236)
 
 ## Description
 
@@ -46,7 +46,7 @@ This allows for a state to be reusable across different state machines.
 
 > **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-Defined in: [interface.ts:239](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L239)
+Defined in: [interface.ts:248](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L248)
 
 ***
 
@@ -54,15 +54,7 @@ Defined in: [interface.ts:239](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-Defined in: [interface.ts:238](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L238)
-
-***
-
-### eventReactions
-
-> **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
-
-Defined in: [interface.ts:236](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L236)
+Defined in: [interface.ts:247](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L247)
 
 ***
 
@@ -70,7 +62,7 @@ Defined in: [interface.ts:236](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-Defined in: [interface.ts:237](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L237)
+Defined in: [interface.ts:246](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L246)
 
 ## Methods
 
@@ -78,7 +70,7 @@ Defined in: [interface.ts:237](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-Defined in: [interface.ts:234](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L234)
+Defined in: [interface.ts:243](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L243)
 
 #### Parameters
 
@@ -92,7 +84,7 @@ Defined in: [interface.ts:234](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 ##### to
 
-`States`
+`States` | `"TERMINAL"`
 
 #### Returns
 
@@ -104,7 +96,7 @@ Defined in: [interface.ts:234](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:235](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L235)
+Defined in: [interface.ts:244](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L244)
 
 #### Type Parameters
 
@@ -136,7 +128,7 @@ Defined in: [interface.ts:235](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-Defined in: [interface.ts:233](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L233)
+Defined in: [interface.ts:242](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L242)
 
 #### Parameters
 
@@ -150,7 +142,7 @@ Defined in: [interface.ts:233](https://github.com/ue-too/ue-too/blob/aabc0f56e9e
 
 ##### from
 
-`States`
+`States` | `"INITIAL"`
 
 #### Returns
 

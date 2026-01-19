@@ -4,6 +4,6 @@
 
 > **Entity** = `number`
 
-Defined in: [index.ts:122](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/ecs/src/index.ts#L122)
+Defined in: [index.ts:125](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L125)
 
 Entity identifier (unique number).

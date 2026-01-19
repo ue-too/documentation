@@ -2,7 +2,7 @@
 
 # Class: RawUserInputPublisherWithWebWorkerRelay
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:265](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L265)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:265](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L265)
 
 Interface for publishing raw user input events to observers.
 
@@ -22,7 +22,7 @@ for input event distribution.
 
 > **new RawUserInputPublisherWithWebWorkerRelay**(`webWorker`): `RawUserInputPublisherWithWebWorkerRelay`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:273](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L273)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:273](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L273)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-inp
 
 > **notifyPan**(`diff`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:281](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L281)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:281](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L281)
 
 Notifies subscribers of a pan gesture
 
@@ -64,7 +64,7 @@ Notifies subscribers of a pan gesture
 
 > **notifyRotate**(`deltaRotation`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:293](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L293)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:293](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L293)
 
 Notifies subscribers of a rotate gesture
 
@@ -88,7 +88,7 @@ Notifies subscribers of a rotate gesture
 
 > **notifyZoom**(`deltaZoomAmount`, `anchorPoint`): `void`
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:287](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L287)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:287](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L287)
 
 Notifies subscribers of a zoom gesture
 
@@ -116,7 +116,7 @@ Notifies subscribers of a zoom gesture
 
 > **on**\<`K`\>(`eventName`, `callback`): [`UnsubscribeToUserRawInput`](../type-aliases/UnsubscribeToUserRawInput.md)
 
-Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:299](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L299)
+Defined in: [packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts:299](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/input-interpretation/raw-input-publisher/raw-input-publisher.ts#L299)
 
 Subscribes to input events
 

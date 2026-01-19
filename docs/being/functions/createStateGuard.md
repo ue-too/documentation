@@ -4,7 +4,7 @@
 
 > **createStateGuard**\<`T`\>(`set`): (`s`) => `s is T`
 
-Defined in: [interface.ts:676](https://github.com/ue-too/ue-too/blob/aabc0f56e9e83141d0fd935ef6ac3e5fe0af0a61/packages/being/src/interface.ts#L676)
+Defined in: [interface.ts:731](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/interface.ts#L731)
 
 Creates a type guard function for checking if a value belongs to a specific set of states.
 
