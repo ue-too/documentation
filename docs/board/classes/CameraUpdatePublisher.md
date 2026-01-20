@@ -2,7 +2,7 @@
 
 # Class: CameraUpdatePublisher
 
-Defined in: [packages/board/src/camera/update-publisher.ts:197](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L197)
+Defined in: [packages/board/src/camera/update-publisher.ts:197](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L197)
 
 Event publisher for camera state changes using the Observable pattern.
 Manages subscriptions and notifications for pan, zoom, and rotate events.
@@ -42,7 +42,7 @@ publisher.notifyPan(
 
 > **new CameraUpdatePublisher**(): `CameraUpdatePublisher`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:207](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L207)
+Defined in: [packages/board/src/camera/update-publisher.ts:207](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L207)
 
 Creates a new camera event publisher with async observables for each event type.
 
@@ -56,7 +56,7 @@ Creates a new camera event publisher with async observables for each event type.
 
 > **notifyPan**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L221)
+Defined in: [packages/board/src/camera/update-publisher.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L221)
 
 Notifies all pan event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -85,7 +85,7 @@ Current camera state snapshot
 
 > **notifyRotate**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:245](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L245)
+Defined in: [packages/board/src/camera/update-publisher.ts:245](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L245)
 
 Notifies all rotation event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -114,7 +114,7 @@ Current camera state snapshot
 
 > **notifyZoom**(`event`, `cameraState`): `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:233](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L233)
+Defined in: [packages/board/src/camera/update-publisher.ts:233](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L233)
 
 Notifies all zoom event subscribers.
 Also triggers the 'all' event with type discrimination.
@@ -143,7 +143,7 @@ Current camera state snapshot
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:298](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L298)
+Defined in: [packages/board/src/camera/update-publisher.ts:298](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L298)
 
 Subscribes to camera events with type-safe callbacks and optional AbortController support.
 

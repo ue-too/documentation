@@ -2,7 +2,7 @@
 
 # Interface: TransitionDefinition\<Context, EventPayloadMapping, EventName, StateNames, EventOutputMapping\>
 
-Defined in: [schema-factory.ts:66](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L66)
+Defined in: [schema-factory.ts:66](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L66)
 
 Definition of a single state transition.
 
@@ -44,7 +44,7 @@ Optional mapping of events to their output types
 
 > `optional` **action**: [`ActionFunction`](../type-aliases/ActionFunction.md)\<`Context`, `EventPayloadMapping`, `EventName`, `EventOutputMapping`\>
 
-Defined in: [schema-factory.ts:78](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L78)
+Defined in: [schema-factory.ts:78](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L78)
 
 Optional action to execute when this transition occurs. Can return a value that will be included in the event result.
 
@@ -54,7 +54,7 @@ Optional action to execute when this transition occurs. Can return a value that 
 
 > **event**: `EventName`
 
-Defined in: [schema-factory.ts:74](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L74)
+Defined in: [schema-factory.ts:74](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L74)
 
 The event that triggers this transition
 
@@ -64,7 +64,7 @@ The event that triggers this transition
 
 > `optional` **guards**: `object`[]
 
-Defined in: [schema-factory.ts:85](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L85)
+Defined in: [schema-factory.ts:85](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L85)
 
 Optional guard conditions (evaluated in order, first true guard wins).
 Guards can be either:
@@ -89,6 +89,6 @@ Target state if this guard evaluates to true
 
 > **targetState**: `StateNames`
 
-Defined in: [schema-factory.ts:76](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L76)
+Defined in: [schema-factory.ts:76](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L76)
 
 The target state after this transition

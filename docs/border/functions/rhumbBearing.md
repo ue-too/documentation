@@ -4,7 +4,7 @@
 
 > **rhumbBearing**(`startCoord`, `endCoord`): `number`
 
-Defined in: [rhumbLine.ts:83](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/border/src/rhumbLine.ts#L83)
+Defined in: [rhumbLine.ts:83](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/border/src/rhumbLine.ts#L83)
 
 Calculates the constant bearing along a rhumb line.
 

@@ -1,4 +1,4 @@
-# @ue-too/being v0.14.0
+# @ue-too/being v0.14.1
 
 State machine library for TypeScript.
 

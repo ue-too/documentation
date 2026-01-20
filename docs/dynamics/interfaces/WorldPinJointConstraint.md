@@ -2,7 +2,7 @@
 
 # Interface: WorldPinJointConstraint
 
-Defined in: [constraint.ts:270](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/constraint.ts#L270)
+Defined in: [constraint.ts:270](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/constraint.ts#L270)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [constraint.ts:270](https://github.com/ue-too/ue-too/blob/1055c6abca
 
 > **body**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:271](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/constraint.ts#L271)
+Defined in: [constraint.ts:271](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/constraint.ts#L271)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [constraint.ts:271](https://github.com/ue-too/ue-too/blob/1055c6abca
 
 > **localAnchor**: `Point`
 
-Defined in: [constraint.ts:272](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/constraint.ts#L272)
+Defined in: [constraint.ts:272](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/constraint.ts#L272)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [constraint.ts:272](https://github.com/ue-too/ue-too/blob/1055c6abca
 
 > **worldAnchor**: `Point`
 
-Defined in: [constraint.ts:273](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/dynamics/src/constraint.ts#L273)
+Defined in: [constraint.ts:273](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/constraint.ts#L273)

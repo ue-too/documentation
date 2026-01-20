@@ -4,7 +4,7 @@
 
 > **serializeComponentSchema**(`schema`): [`SerializedComponentSchema`](../interfaces/SerializedComponentSchema.md)
 
-Defined in: [index.ts:381](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L381)
+Defined in: [index.ts:381](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L381)
 
 Serialize a component schema to a JSON-compatible format.
 Note: Only works with global symbols (created via Symbol.for).

@@ -1,4 +1,4 @@
-# @ue-too/board-react-adapter v0.14.0
+# @ue-too/board-react-adapter v0.14.1
 
 React adapter for the @ue-too/board infinite canvas library.
 

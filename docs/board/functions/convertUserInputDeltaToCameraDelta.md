@@ -4,7 +4,7 @@
 
 > **convertUserInputDeltaToCameraDelta**(`delta`, `camera`): `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:652](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/pan-handler.ts#L652)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:652](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/pan-handler.ts#L652)
 
 Converts a user input delta (viewport space) to camera movement delta (world space).
 

@@ -2,7 +2,7 @@
 
 # Interface: StateDefinition\<Context, EventPayloadMapping, StateNames, EventOutputMapping\>
 
-Defined in: [schema-factory.ts:140](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L140)
+Defined in: [schema-factory.ts:140](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L140)
 
 Definition of a single state in the state machine.
 
@@ -60,7 +60,7 @@ Optional mapping of events to their output types
 
 > `optional` **guards**: `Record`\<`string`, [`GuardFunction`](../type-aliases/GuardFunction.md)\<`Context`\>\>
 
-Defined in: [schema-factory.ts:158](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L158)
+Defined in: [schema-factory.ts:158](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L158)
 
 Optional mapping of guard names to guard functions.
 Guards defined here can be reused across multiple transitions within this state
@@ -75,7 +75,7 @@ not BaseContext, so you get full type safety for your context properties.
 
 > **name**: `StateNames`
 
-Defined in: [schema-factory.ts:147](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L147)
+Defined in: [schema-factory.ts:147](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L147)
 
 Name of this state
 
@@ -85,7 +85,7 @@ Name of this state
 
 > `optional` **onEnter**: (`context`, `fromState`) => `void`
 
-Defined in: [schema-factory.ts:160](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L160)
+Defined in: [schema-factory.ts:160](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L160)
 
 Optional callback when entering this state
 
@@ -109,7 +109,7 @@ Optional callback when entering this state
 
 > `optional` **onExit**: (`context`, `toState`) => `void`
 
-Defined in: [schema-factory.ts:162](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L162)
+Defined in: [schema-factory.ts:162](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L162)
 
 Optional callback when exiting this state
 
@@ -133,6 +133,6 @@ Optional callback when exiting this state
 
 > **transitions**: [`TransitionDefinitionUnion`](../type-aliases/TransitionDefinitionUnion.md)\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\>[]
 
-Defined in: [schema-factory.ts:149](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/schema-factory.ts#L149)
+Defined in: [schema-factory.ts:149](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L149)
 
 Transitions available from this state

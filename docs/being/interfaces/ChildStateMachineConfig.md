@@ -2,7 +2,7 @@
 
 # Interface: ChildStateMachineConfig\<EventPayloadMapping, Context, ChildStates, EventOutputMapping\>
 
-Defined in: [hierarchical.ts:47](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/hierarchical.ts#L47)
+Defined in: [hierarchical.ts:47](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L47)
 
 Configuration for a composite state's child state machine.
 
@@ -38,7 +38,7 @@ Event output mapping
 
 > **defaultChildState**: `ChildStates`
 
-Defined in: [hierarchical.ts:56](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/hierarchical.ts#L56)
+Defined in: [hierarchical.ts:56](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L56)
 
 Default child state to enter when parent state is entered
 
@@ -48,7 +48,7 @@ Default child state to enter when parent state is entered
 
 > `optional` **rememberHistory**: `boolean`
 
-Defined in: [hierarchical.ts:58](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/hierarchical.ts#L58)
+Defined in: [hierarchical.ts:58](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L58)
 
 Whether to remember the last active child state (history state)
 
@@ -58,6 +58,6 @@ Whether to remember the last active child state (history state)
 
 > **stateMachine**: [`StateMachine`](StateMachine.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\>
 
-Defined in: [hierarchical.ts:54](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/being/src/hierarchical.ts#L54)
+Defined in: [hierarchical.ts:54](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L54)
 
 The child state machine instance

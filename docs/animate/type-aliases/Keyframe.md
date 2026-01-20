@@ -4,7 +4,7 @@
 
 > **Keyframe**\<`T`\> = `object`
 
-Defined in: [animatable-attribute.ts:25](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L25)
+Defined in: [animatable-attribute.ts:25](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L25)
 
 Represents a keyframe in an animation timeline.
 
@@ -39,7 +39,7 @@ The type of value being animated (number, Point, RGB, etc.)
 
 > `optional` **easingFn**: (`percentage`) => `number`
 
-Defined in: [animatable-attribute.ts:31](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L31)
+Defined in: [animatable-attribute.ts:31](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L31)
 
 Optional easing function for interpolation to next keyframe
 
@@ -59,7 +59,7 @@ Optional easing function for interpolation to next keyframe
 
 > **percentage**: `number`
 
-Defined in: [animatable-attribute.ts:27](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L27)
+Defined in: [animatable-attribute.ts:27](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L27)
 
 Animation progress from 0.0 (start) to 1.0 (end)
 
@@ -69,6 +69,6 @@ Animation progress from 0.0 (start) to 1.0 (end)
 
 > **value**: `T`
 
-Defined in: [animatable-attribute.ts:29](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L29)
+Defined in: [animatable-attribute.ts:29](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L29)
 
 Value at this keyframe

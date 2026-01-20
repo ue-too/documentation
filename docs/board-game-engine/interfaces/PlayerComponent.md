@@ -2,7 +2,7 @@
 
 # Interface: PlayerComponent
 
-Defined in: [player-system/player-component.ts:7](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/player-system/player-component.ts#L7)
+Defined in: [player-system/player-component.ts:7](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/player-system/player-component.ts#L7)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [player-system/player-component.ts:7](https://github.com/ue-too/ue-t
 
 > **inPlay**: `boolean`
 
-Defined in: [player-system/player-component.ts:10](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/player-system/player-component.ts#L10)
+Defined in: [player-system/player-component.ts:10](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/player-system/player-component.ts#L10)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [player-system/player-component.ts:10](https://github.com/ue-too/ue-
 
 > **name**: `string`
 
-Defined in: [player-system/player-component.ts:8](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/player-system/player-component.ts#L8)
+Defined in: [player-system/player-component.ts:8](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/player-system/player-component.ts#L8)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [player-system/player-component.ts:8](https://github.com/ue-too/ue-t
 
 > **playerNumber**: `number`
 
-Defined in: [player-system/player-component.ts:9](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/player-system/player-component.ts#L9)
+Defined in: [player-system/player-component.ts:9](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/player-system/player-component.ts#L9)

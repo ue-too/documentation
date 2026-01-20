@@ -4,7 +4,7 @@
 
 > **BoardProps** = `object`
 
-Defined in: [components/Board.tsx:14](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L14)
+Defined in: [components/Board.tsx:14](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L14)
 
 Props for the Board component.
 
@@ -14,7 +14,7 @@ Props for the Board component.
 
 > `optional` **animationCallback**: (`timestamp`, `ctx`) => `void`
 
-Defined in: [components/Board.tsx:22](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L22)
+Defined in: [components/Board.tsx:22](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L22)
 
 Callback function for drawing on each animation frame
 
@@ -38,7 +38,7 @@ Callback function for drawing on each animation frame
 
 > `optional` **children**: `React.ReactNode`
 
-Defined in: [components/Board.tsx:24](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L24)
+Defined in: [components/Board.tsx:24](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L24)
 
 Child components that can access the board via hooks
 
@@ -48,7 +48,7 @@ Child components that can access the board via hooks
 
 > `optional` **fullScreen**: `boolean`
 
-Defined in: [components/Board.tsx:16](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L16)
+Defined in: [components/Board.tsx:16](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L16)
 
 Enable fullscreen mode (canvas resizes with window)
 
@@ -58,7 +58,7 @@ Enable fullscreen mode (canvas resizes with window)
 
 > `optional` **height**: `number`
 
-Defined in: [components/Board.tsx:20](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L20)
+Defined in: [components/Board.tsx:20](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L20)
 
 Canvas height in pixels
 
@@ -68,6 +68,6 @@ Canvas height in pixels
 
 > `optional` **width**: `number`
 
-Defined in: [components/Board.tsx:18](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-react-adapter/src/components/Board.tsx#L18)
+Defined in: [components/Board.tsx:18](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/components/Board.tsx#L18)
 
 Canvas width in pixels

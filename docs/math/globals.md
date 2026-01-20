@@ -1,4 +1,4 @@
-# @ue-too/math v0.14.0
+# @ue-too/math v0.14.1
 
 Mathematical utilities for 2D and 3D point operations, vector calculations, and transformations.
 

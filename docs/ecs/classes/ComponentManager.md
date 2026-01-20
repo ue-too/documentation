@@ -2,7 +2,7 @@
 
 # Class: ComponentManager
 
-Defined in: [index.ts:693](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L693)
+Defined in: [index.ts:693](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L693)
 
 Manages component registration and component data storage.
 
@@ -33,7 +33,7 @@ for efficient storage and retrieval.
 
 > **addComponentToEntity**\<`T`\>(`componentName`, `entity`, `component`): `void`
 
-Defined in: [index.ts:747](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L747)
+Defined in: [index.ts:747](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L747)
 
 #### Type Parameters
 
@@ -65,7 +65,7 @@ Defined in: [index.ts:747](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **addComponentToEntityWithSchema**(`componentName`, `entity`, `component`, `validate`): `void`
 
-Defined in: [index.ts:1004](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L1004)
+Defined in: [index.ts:1004](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L1004)
 
 Add a component to an entity with schema validation.
 
@@ -109,7 +109,7 @@ Error if validation fails
 
 > **componentIsCustomSchema**(`componentName`): `boolean`
 
-Defined in: [index.ts:786](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L786)
+Defined in: [index.ts:786](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L786)
 
 #### Parameters
 
@@ -127,7 +127,7 @@ Defined in: [index.ts:786](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **createComponentFromSchema**(`componentName`, `overrides`): `Record`\<`string`, `unknown`\>
 
-Defined in: [index.ts:848](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L848)
+Defined in: [index.ts:848](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L848)
 
 Create a component instance from a schema with default values.
 
@@ -161,7 +161,7 @@ Error if component is not registered with a schema
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:771](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L771)
+Defined in: [index.ts:771](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L771)
 
 #### Parameters
 
@@ -179,7 +179,7 @@ Defined in: [index.ts:771](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **getAllComponentSchemas**(): [`ComponentSchema`](../interfaces/ComponentSchema.md)[]
 
-Defined in: [index.ts:729](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L729)
+Defined in: [index.ts:729](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L729)
 
 Get all registered component schemas.
 
@@ -195,7 +195,7 @@ Array of all component schemas
 
 > **getAllEntitiesWithComponent**(`componentName`): `number`[]
 
-Defined in: [index.ts:708](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L708)
+Defined in: [index.ts:708](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L708)
 
 Get all entities that have a specific component.
 
@@ -219,7 +219,7 @@ Array of entity IDs that have this component, or empty array if component not re
 
 > **getComponentFromEntity**\<`T`\>(`componentName`, `entity`): `T` \| `null`
 
-Defined in: [index.ts:763](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L763)
+Defined in: [index.ts:763](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L763)
 
 #### Type Parameters
 
@@ -247,7 +247,7 @@ Defined in: [index.ts:763](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **getComponentSchema**(`componentName`): [`ComponentSchema`](../interfaces/ComponentSchema.md) \| `null`
 
-Defined in: [index.ts:721](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L721)
+Defined in: [index.ts:721](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L721)
 
 Get the schema for a component type, if it was registered with a schema.
 
@@ -271,7 +271,7 @@ The component schema or null if not found
 
 > **getComponentType**(`componentName`): `number` \| `null`
 
-Defined in: [index.ts:743](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L743)
+Defined in: [index.ts:743](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L743)
 
 #### Parameters
 
@@ -289,7 +289,7 @@ Defined in: [index.ts:743](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **getRegisteredComponentNames**(): `symbol`[]
 
-Defined in: [index.ts:699](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L699)
+Defined in: [index.ts:699](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L699)
 
 #### Returns
 
@@ -301,7 +301,7 @@ Defined in: [index.ts:699](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **registerComponent**\<`T`\>(`componentName`): `void`
 
-Defined in: [index.ts:733](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L733)
+Defined in: [index.ts:733](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L733)
 
 #### Type Parameters
 
@@ -325,7 +325,7 @@ Defined in: [index.ts:733](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **registerComponentWithSchema**(`schema`): `void`
 
-Defined in: [index.ts:797](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L797)
+Defined in: [index.ts:797](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L797)
 
 Register a component with a runtime-defined schema.
 This allows components to be defined dynamically (e.g., through a GUI).
@@ -352,7 +352,7 @@ Error if schema validation fails
 
 > **removeComponentFromEntity**\<`T`\>(`componentName`, `entity`): `void`
 
-Defined in: [index.ts:755](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L755)
+Defined in: [index.ts:755](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L755)
 
 #### Type Parameters
 
@@ -380,7 +380,7 @@ Defined in: [index.ts:755](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **validateComponentData**(`componentName`, `data`): `boolean`
 
-Defined in: [index.ts:882](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L882)
+Defined in: [index.ts:882](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L882)
 
 Validate component data against its schema.
 
