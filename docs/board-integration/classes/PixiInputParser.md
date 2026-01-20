@@ -2,7 +2,7 @@
 
 # Class: PixiInputParser
 
-Defined in: [pixi-input-event-parser.ts:5](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L5)
+Defined in: [pixi-input-event-parser.ts:5](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L5)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [pixi-input-event-parser.ts:5](https://github.com/ue-too/ue-too/blob
 
 > **new PixiInputParser**(`app`, `kmtInputStateMachine`, `inputOrchestrator`, `camera`): `PixiInputParser`
 
-Defined in: [pixi-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
+Defined in: [pixi-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L17)
 
 #### Parameters
 
@@ -42,7 +42,7 @@ Defined in: [pixi-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blo
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [pixi-input-event-parser.ts:254](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L254)
+Defined in: [pixi-input-event-parser.ts:254](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L254)
 
 ##### Returns
 
@@ -54,7 +54,7 @@ Defined in: [pixi-input-event-parser.ts:254](https://github.com/ue-too/ue-too/bl
 
 > **bindFunctions**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L30)
+Defined in: [pixi-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L30)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [pixi-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blo
 
 > **disable**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:246](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L246)
+Defined in: [pixi-input-event-parser.ts:246](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L246)
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: [pixi-input-event-parser.ts:246](https://github.com/ue-too/ue-too/bl
 
 > **enable**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:250](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L250)
+Defined in: [pixi-input-event-parser.ts:250](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L250)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [pixi-input-event-parser.ts:250](https://github.com/ue-too/ue-too/bl
 
 > **hideHitAreaDebug**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:140](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L140)
+Defined in: [pixi-input-event-parser.ts:140](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L140)
 
 Hides the hitArea debug visualization.
 
@@ -104,7 +104,7 @@ Hides the hitArea debug visualization.
 
 > **keydownHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L221)
+Defined in: [pixi-input-event-parser.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L221)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [pixi-input-event-parser.ts:221](https://github.com/ue-too/ue-too/bl
 
 > **keyupHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:234](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L234)
+Defined in: [pixi-input-event-parser.ts:234](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L234)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: [pixi-input-event-parser.ts:234](https://github.com/ue-too/ue-too/bl
 
 > **pointerDownHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:167](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L167)
+Defined in: [pixi-input-event-parser.ts:167](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L167)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [pixi-input-event-parser.ts:167](https://github.com/ue-too/ue-too/bl
 
 > **pointerMoveHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:195](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L195)
+Defined in: [pixi-input-event-parser.ts:195](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L195)
 
 #### Parameters
 
@@ -176,7 +176,7 @@ Defined in: [pixi-input-event-parser.ts:195](https://github.com/ue-too/ue-too/bl
 
 > **pointerUpHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:181](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L181)
+Defined in: [pixi-input-event-parser.ts:181](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L181)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Defined in: [pixi-input-event-parser.ts:181](https://github.com/ue-too/ue-too/bl
 
 > **scrollHandler**(`event`): `void`
 
-Defined in: [pixi-input-event-parser.ts:210](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L210)
+Defined in: [pixi-input-event-parser.ts:210](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L210)
 
 #### Parameters
 
@@ -212,7 +212,7 @@ Defined in: [pixi-input-event-parser.ts:210](https://github.com/ue-too/ue-too/bl
 
 > **setUp**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L39)
+Defined in: [pixi-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L39)
 
 #### Returns
 
@@ -224,7 +224,7 @@ Defined in: [pixi-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blo
 
 > **showHitAreaDebug**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:127](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L127)
+Defined in: [pixi-input-event-parser.ts:127](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L127)
 
 Shows a visual debug overlay of the hitArea.
 
@@ -244,7 +244,7 @@ automatically updated when `updateHitArea()` is called.
 
 > **tearDown**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:148](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L148)
+Defined in: [pixi-input-event-parser.ts:148](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L148)
 
 #### Returns
 
@@ -256,7 +256,7 @@ Defined in: [pixi-input-event-parser.ts:148](https://github.com/ue-too/ue-too/bl
 
 > **updateHitArea**(): `void`
 
-Defined in: [pixi-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L70)
+Defined in: [pixi-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-pixi-integration/src/pixi-input-event-parser.ts#L70)
 
 Updates the stage's hitArea to cover the entire viewport in stage local coordinates.
 

@@ -2,7 +2,7 @@
 
 # Class: EntityManager
 
-Defined in: [index.ts:462](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L462)
+Defined in: [index.ts:462](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L462)
 
 Manages entity lifecycle and signatures.
 
@@ -22,7 +22,7 @@ a signature (bit field) for each entity indicating which components it has.
 
 > **new EntityManager**(`maxEntities`): `EntityManager`
 
-Defined in: [index.ts:470](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L470)
+Defined in: [index.ts:470](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L470)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [index.ts:470](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **createEntity**(): `number`
 
-Defined in: [index.ts:478](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L478)
+Defined in: [index.ts:478](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L478)
 
 #### Returns
 
@@ -52,7 +52,7 @@ Defined in: [index.ts:478](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **destroyEntity**(`entity`): `void`
 
-Defined in: [index.ts:491](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L491)
+Defined in: [index.ts:491](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L491)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [index.ts:491](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **entityExists**(`entity`): `boolean`
 
-Defined in: [index.ts:536](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L536)
+Defined in: [index.ts:536](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L536)
 
 Check if an entity exists (is currently active, not in the available pool).
 
@@ -94,7 +94,7 @@ true if the entity exists, false otherwise
 
 > **getAllLivingEntities**(): `number`[]
 
-Defined in: [index.ts:518](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L518)
+Defined in: [index.ts:518](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L518)
 
 Get all living entities (entities that are currently active, not in the available pool).
 
@@ -110,7 +110,7 @@ Array of all living entity IDs
 
 > **getSignature**(`entity`): `number` \| `null`
 
-Defined in: [index.ts:507](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L507)
+Defined in: [index.ts:507](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L507)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [index.ts:507](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a
 
 > **setSignature**(`entity`, `signature`): `void`
 
-Defined in: [index.ts:500](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L500)
+Defined in: [index.ts:500](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L500)
 
 #### Parameters
 

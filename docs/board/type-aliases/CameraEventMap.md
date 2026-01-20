@@ -4,7 +4,7 @@
 
 > **CameraEventMap** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:46](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L46)
+Defined in: [packages/board/src/camera/update-publisher.ts:46](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L46)
 
 Mapping of camera event names to their payload types.
 Used for type-safe event subscription.
@@ -15,7 +15,7 @@ Used for type-safe event subscription.
 
 > **all**: [`AllCameraEventPayload`](AllCameraEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:54](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L54)
+Defined in: [packages/board/src/camera/update-publisher.ts:54](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L54)
 
 Any camera change event (union of pan, zoom, rotate)
 
@@ -25,7 +25,7 @@ Any camera change event (union of pan, zoom, rotate)
 
 > **pan**: [`CameraPanEventPayload`](CameraPanEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:48](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L48)
+Defined in: [packages/board/src/camera/update-publisher.ts:48](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L48)
 
 Position change event
 
@@ -35,7 +35,7 @@ Position change event
 
 > **rotate**: [`CameraRotateEventPayload`](CameraRotateEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:52](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L52)
+Defined in: [packages/board/src/camera/update-publisher.ts:52](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L52)
 
 Rotation change event
 
@@ -45,6 +45,6 @@ Rotation change event
 
 > **zoom**: [`CameraZoomEventPayload`](CameraZoomEventPayload.md)
 
-Defined in: [packages/board/src/camera/update-publisher.ts:50](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/update-publisher.ts#L50)
+Defined in: [packages/board/src/camera/update-publisher.ts:50](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L50)
 
 Zoom level change event

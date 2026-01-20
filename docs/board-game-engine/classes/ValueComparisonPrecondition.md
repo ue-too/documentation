@@ -2,7 +2,7 @@
 
 # Class: ValueComparisonPrecondition\<T\>
 
-Defined in: [action-system/precondition.ts:26](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/precondition.ts#L26)
+Defined in: [action-system/precondition.ts:26](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/precondition.ts#L26)
 
 Unified value comparison precondition that works with both custom schema components
 and typed components. Automatically detects which approach to use based on whether
@@ -39,7 +39,7 @@ const precondition2 = new ValueComparisonPrecondition<HealthComponent>(
 
 > **new ValueComparisonPrecondition**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `value`, `operator`): `ValueComparisonPrecondition`\<`T`\>
 
-Defined in: [action-system/precondition.ts:35](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/precondition.ts#L35)
+Defined in: [action-system/precondition.ts:35](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/precondition.ts#L35)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ keyof `T`
 
 > **new ValueComparisonPrecondition**\<`T`\>(`value`, `operator`, `coordinator`, `componentName`, `entity`, `valuePath`): `ValueComparisonPrecondition`\<`T`\>
 
-Defined in: [action-system/precondition.ts:37](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/precondition.ts#L37)
+Defined in: [action-system/precondition.ts:37](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/precondition.ts#L37)
 
 #### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [action-system/precondition.ts:37](https://github.com/ue-too/ue-too/
 
 > **check**(): `boolean`
 
-Defined in: [action-system/precondition.ts:67](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/precondition.ts#L67)
+Defined in: [action-system/precondition.ts:67](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/precondition.ts#L67)
 
 #### Returns
 

@@ -4,7 +4,7 @@
 
 > **halfTranslationHeightOf**(`boundaries`): `number` \| `undefined`
 
-Defined in: [packages/board/src/camera/utils/position.ts:349](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/utils/position.ts#L349)
+Defined in: [packages/board/src/camera/utils/position.ts:349](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/utils/position.ts#L349)
 
 Calculates half the height (y-axis half-span) of the boundaries.
 

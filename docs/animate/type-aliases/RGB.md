@@ -4,7 +4,7 @@
 
 > **RGB** = `object`
 
-Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L221)
+Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L221)
 
 RGB color type for color animations.
 
@@ -18,7 +18,7 @@ Represents a color with red, green, and blue components (0-255).
 
 > **b**: `number`
 
-Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L221)
+Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L221)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/
 
 > **g**: `number`
 
-Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L221)
+Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L221)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/
 
 > **r**: `number`
 
-Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L221)
+Defined in: [animatable-attribute.ts:221](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L221)

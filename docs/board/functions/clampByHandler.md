@@ -4,7 +4,7 @@
 
 > **clampByHandler**(`delta`, `camera`, `config`): `Point`
 
-Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:507](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/camera-rig/pan-handler.ts#L507)
+Defined in: [packages/board/src/camera/camera-rig/pan-handler.ts:507](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/pan-handler.ts#L507)
 
 Handler pipeline step that clamps "pan by" deltas to prevent boundary violations.
 

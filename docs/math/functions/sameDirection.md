@@ -4,7 +4,7 @@
 
 > **sameDirection**(`a`, `b`, `precision`): `boolean`
 
-Defined in: [index.ts:770](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/math/src/index.ts#L770)
+Defined in: [index.ts:770](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/math/src/index.ts#L770)
 
 Checks if two vectors point in the same direction.
 

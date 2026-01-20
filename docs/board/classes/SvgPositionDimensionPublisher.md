@@ -2,7 +2,7 @@
 
 # Class: SvgPositionDimensionPublisher
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:36](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/utils/canvas-position-dimension.ts#L36)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:36](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L36)
 
 Monitors and publishes position and dimension changes for SVG elements.
 
@@ -42,7 +42,7 @@ publisher.dispose();
 
 > **new SvgPositionDimensionPublisher**(`canvas?`): `SvgPositionDimensionPublisher`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:55](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/utils/canvas-position-dimension.ts#L55)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:55](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L55)
 
 Creates a new SVG position/dimension publisher.
 
@@ -69,7 +69,7 @@ Otherwise, call [attach](#attach) later to begin monitoring.
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:125](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/utils/canvas-position-dimension.ts#L125)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:125](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L125)
 
 Attaches observers to an SVG element and begins monitoring.
 
@@ -99,7 +99,7 @@ is sent to observers for this initial state.
 
 > **dispose**(): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:101](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/utils/canvas-position-dimension.ts#L101)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:101](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L101)
 
 Cleans up all observers and event listeners.
 
@@ -119,7 +119,7 @@ when the publisher is no longer needed to prevent memory leaks.
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:189](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/utils/canvas-position-dimension.ts#L189)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:189](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L189)
 
 Subscribes to position and dimension updates.
 

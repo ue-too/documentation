@@ -2,7 +2,7 @@
 
 # Interface: AnimatableAttributeHelper\<T\>
 
-Defined in: [animatable-attribute.ts:59](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L59)
+Defined in: [animatable-attribute.ts:59](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L59)
 
 Interface for type-specific interpolation helpers.
 
@@ -40,7 +40,7 @@ The type of value being interpolated
 
 > **lerp**(`ratio`, `start`, `end`): `T`
 
-Defined in: [animatable-attribute.ts:68](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/animate/src/animatable-attribute.ts#L68)
+Defined in: [animatable-attribute.ts:68](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L68)
 
 Interpolates between two keyframes at a given ratio.
 

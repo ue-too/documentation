@@ -4,7 +4,7 @@
 
 > **LocationComponent** = `object`
 
-Defined in: [zone-system/zone-component.ts:8](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/zone-system/zone-component.ts#L8)
+Defined in: [zone-system/zone-component.ts:8](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/zone-component.ts#L8)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [zone-system/zone-component.ts:8](https://github.com/ue-too/ue-too/b
 
 > **location**: `Entity`
 
-Defined in: [zone-system/zone-component.ts:9](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/zone-system/zone-component.ts#L9)
+Defined in: [zone-system/zone-component.ts:9](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/zone-component.ts#L9)
 
 ***
 
@@ -20,4 +20,4 @@ Defined in: [zone-system/zone-component.ts:9](https://github.com/ue-too/ue-too/b
 
 > **sortIndex**: `number`
 
-Defined in: [zone-system/zone-component.ts:10](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/zone-system/zone-component.ts#L10)
+Defined in: [zone-system/zone-component.ts:10](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/zone-component.ts#L10)

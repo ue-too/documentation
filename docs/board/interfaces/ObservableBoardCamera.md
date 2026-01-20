@@ -2,7 +2,7 @@
 
 # Interface: ObservableBoardCamera
 
-Defined in: [packages/board/src/camera/interface.ts:29](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L29)
+Defined in: [packages/board/src/camera/interface.ts:29](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L29)
 
 Observable camera interface that extends [BoardCamera](BoardCamera.md) with event subscription capabilities.
 Allows observers to subscribe to camera state changes such as pan, zoom, and rotation events.
@@ -31,7 +31,7 @@ unsubscribe();
 
 > `optional` **boundaries**: [`Boundaries`](../type-aliases/Boundaries.md)
 
-Defined in: [packages/board/src/camera/interface.ts:98](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L98)
+Defined in: [packages/board/src/camera/interface.ts:98](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L98)
 
 Optional position boundaries for the camera in world coordinates
 
@@ -45,7 +45,7 @@ Optional position boundaries for the camera in world coordinates
 
 > **position**: `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:83](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L83)
+Defined in: [packages/board/src/camera/interface.ts:83](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L83)
 
 Current camera position in world coordinates (center of viewport)
 
@@ -59,7 +59,7 @@ Current camera position in world coordinates (center of viewport)
 
 > **rotation**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:86](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L86)
+Defined in: [packages/board/src/camera/interface.ts:86](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L86)
 
 Current rotation in radians (0 to 2π), normalized
 
@@ -73,7 +73,7 @@ Current rotation in radians (0 to 2π), normalized
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](../type-aliases/RotationLimits.md)
 
-Defined in: [packages/board/src/camera/interface.ts:104](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L104)
+Defined in: [packages/board/src/camera/interface.ts:104](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L104)
 
 Optional rotation constraints (start and end angles)
 
@@ -87,7 +87,7 @@ Optional rotation constraints (start and end angles)
 
 > **viewPortHeight**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:95](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L95)
+Defined in: [packages/board/src/camera/interface.ts:95](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L95)
 
 Height of the viewport in CSS pixels
 
@@ -101,7 +101,7 @@ Height of the viewport in CSS pixels
 
 > **viewPortWidth**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:92](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L92)
+Defined in: [packages/board/src/camera/interface.ts:92](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L92)
 
 Width of the viewport in CSS pixels
 
@@ -115,7 +115,7 @@ Width of the viewport in CSS pixels
 
 > `optional` **zoomBoundaries**: [`ZoomLevelLimits`](../type-aliases/ZoomLevelLimits.md)
 
-Defined in: [packages/board/src/camera/interface.ts:101](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L101)
+Defined in: [packages/board/src/camera/interface.ts:101](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L101)
 
 Optional zoom level constraints (min and max zoom)
 
@@ -129,7 +129,7 @@ Optional zoom level constraints (min and max zoom)
 
 > **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/interface.ts:89](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L89)
+Defined in: [packages/board/src/camera/interface.ts:89](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L89)
 
 Current zoom level (1.0 = 100%, 2.0 = 200%, etc.)
 
@@ -143,7 +143,7 @@ Current zoom level (1.0 = 100%, 2.0 = 200%, etc.)
 
 > **convertFromViewPort2WorldSpace**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:223](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L223)
+Defined in: [packages/board/src/camera/interface.ts:223](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L223)
 
 Converts a point from viewport coordinates to world coordinates.
 
@@ -179,7 +179,7 @@ const worldPos = camera.convertFromViewPort2WorldSpace(mouseViewport);
 
 > **convertFromWorld2ViewPort**(`point`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:237](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L237)
+Defined in: [packages/board/src/camera/interface.ts:237](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L237)
 
 Converts a point from world coordinates to viewport coordinates.
 
@@ -214,7 +214,7 @@ const viewportPos = camera.convertFromWorld2ViewPort(objectWorldPos);
 
 > **getCameraOriginInWindow**(`centerInWindow`): `Point`
 
-Defined in: [packages/board/src/camera/interface.ts:208](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L208)
+Defined in: [packages/board/src/camera/interface.ts:208](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L208)
 
 Gets the camera origin position in window coordinates.
 
@@ -246,7 +246,7 @@ This method is deprecated and will be removed in a future version
 
 > **getTransform**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:267](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L267)
+Defined in: [packages/board/src/camera/interface.ts:267](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L267)
 
 Calculates the complete transformation matrix for rendering.
 This matrix transforms from world space to canvas pixel space.
@@ -318,7 +318,7 @@ ctx.setTransform(transform.a, transform.b, transform.c, transform.d, transform.e
 
 > **getTRS**(`devicePixelRatio`, `alignCoordinateSystem`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:246](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L246)
+Defined in: [packages/board/src/camera/interface.ts:246](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L246)
 
 Decomposes the camera transformation into Translation, Rotation, and Scale components.
 
@@ -380,7 +380,7 @@ Object containing separate scale, rotation, and translation values
 
 > **on**\<`K`\>(`eventName`, `callback`, `options?`): [`UnSubscribe`](../type-aliases/UnSubscribe.md)
 
-Defined in: [packages/board/src/camera/interface.ts:55](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L55)
+Defined in: [packages/board/src/camera/interface.ts:55](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L55)
 
 Subscribes to camera events with an optional AbortController for cancellation.
 
@@ -441,7 +441,7 @@ controller.abort();
 
 > **setHorizontalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:188](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L188)
+Defined in: [packages/board/src/camera/interface.ts:188](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L188)
 
 Sets horizontal (x-axis) movement boundaries for the camera.
 
@@ -477,7 +477,7 @@ If min > max, values are automatically swapped.
 
 > **setMaxZoomLevel**(`maxZoomLevel`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:177](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L177)
+Defined in: [packages/board/src/camera/interface.ts:177](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L177)
 
 Updates the maximum allowed zoom level.
 
@@ -503,7 +503,7 @@ Maximum zoom level constraint
 
 > **setMinZoomLevel**(`minZoomLevel`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:170](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L170)
+Defined in: [packages/board/src/camera/interface.ts:170](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L170)
 
 Updates the minimum allowed zoom level.
 
@@ -533,7 +533,7 @@ If current zoom is below the new minimum, camera will zoom in to match the minim
 
 > **setPosition**(`destination`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:138](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L138)
+Defined in: [packages/board/src/camera/interface.ts:138](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L138)
 
 Sets the camera position in world coordinates.
 
@@ -566,7 +566,7 @@ Position is clamped to boundaries if set.
 
 > **setRotation**(`rotation`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:160](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L160)
+Defined in: [packages/board/src/camera/interface.ts:160](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L160)
 
 Sets the camera rotation in radians.
 
@@ -598,7 +598,7 @@ Rotation is automatically normalized to 0-2π range. Clamped to rotationBoundari
 
 > **setVerticalBoundaries**(`min`, `max`): `void`
 
-Defined in: [packages/board/src/camera/interface.ts:199](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L199)
+Defined in: [packages/board/src/camera/interface.ts:199](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L199)
 
 Sets vertical (y-axis) movement boundaries for the camera.
 
@@ -634,7 +634,7 @@ If min > max, values are automatically swapped.
 
 > **setZoomLevel**(`zoomLevel`): `boolean`
 
-Defined in: [packages/board/src/camera/interface.ts:149](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L149)
+Defined in: [packages/board/src/camera/interface.ts:149](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L149)
 
 Sets the camera zoom level.
 
@@ -666,7 +666,7 @@ Zoom is clamped to zoomBoundaries if set. Values are clamped, not rejected.
 
 > **viewPortAABB**(`alignCoordinate?`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:115](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L115)
+Defined in: [packages/board/src/camera/interface.ts:115](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L115)
 
 Calculates the axis-aligned bounding box (AABB) of the viewport in world space.
 
@@ -706,7 +706,7 @@ Useful for culling and determining which objects are visible in the current view
 
 > **viewPortInWorldSpace**(`alignCoordinate?`): `object`
 
-Defined in: [packages/board/src/camera/interface.ts:126](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board/src/camera/interface.ts#L126)
+Defined in: [packages/board/src/camera/interface.ts:126](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/interface.ts#L126)
 
 Calculates the four corners of the viewport in world space, accounting for rotation.
 

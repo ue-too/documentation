@@ -2,7 +2,7 @@
 
 # Class: NumberModificationEffect\<T\>
 
-Defined in: [action-system/effect.ts:26](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/effect.ts#L26)
+Defined in: [action-system/effect.ts:26](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L26)
 
 Unified number modification effect that works with both custom schema components
 and typed components. Automatically detects which approach to use based on whether
@@ -39,7 +39,7 @@ const effect2 = new NumberModificationEffect<HealthComponent>(
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `amount`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:36](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/effect.ts#L36)
+Defined in: [action-system/effect.ts:36](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L36)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ keyof `T`
 
 > **new NumberModificationEffect**\<`T`\>(`coordinator`, `amount`, `componentName`, `entity`, `valuePath`, `operation?`): `NumberModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:38](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/effect.ts#L38)
+Defined in: [action-system/effect.ts:38](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L38)
 
 #### Parameters
 
@@ -113,7 +113,7 @@ Defined in: [action-system/effect.ts:38](https://github.com/ue-too/ue-too/blob/1
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:71](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/board-game-engine/src/action-system/effect.ts#L71)
+Defined in: [action-system/effect.ts:71](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L71)
 
 #### Returns
 

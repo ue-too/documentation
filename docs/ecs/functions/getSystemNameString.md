@@ -4,7 +4,7 @@
 
 > **getSystemNameString**(`systemName`): `string`
 
-Defined in: [index.ts:298](https://github.com/ue-too/ue-too/blob/1055c6abca1ea3a0e952b0825f36e0ca2527df85/packages/ecs/src/index.ts#L298)
+Defined in: [index.ts:298](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L298)
 
 Helper function to get the string description from a system name symbol.
 Useful for debugging and serialization.
