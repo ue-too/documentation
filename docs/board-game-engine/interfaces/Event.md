@@ -2,7 +2,7 @@
 
 # Interface: Event
 
-Defined in: [event-system/event.ts:2](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/event-system/event.ts#L2)
+Defined in: [event-system/event.ts:1](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/event-system/event.ts#L1)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [event-system/event.ts:2](https://github.com/ue-too/ue-too/blob/fa2a
 
 > **data**: `Record`\<`string`, `unknown`\>
 
-Defined in: [event-system/event.ts:4](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/event-system/event.ts#L4)
+Defined in: [event-system/event.ts:3](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/event-system/event.ts#L3)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [event-system/event.ts:4](https://github.com/ue-too/ue-too/blob/fa2a
 
 > **timestamp**: `number`
 
-Defined in: [event-system/event.ts:5](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/event-system/event.ts#L5)
+Defined in: [event-system/event.ts:4](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/event-system/event.ts#L4)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [event-system/event.ts:5](https://github.com/ue-too/ue-too/blob/fa2a
 
 > **type**: `string`
 
-Defined in: [event-system/event.ts:3](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/event-system/event.ts#L3)
+Defined in: [event-system/event.ts:2](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/event-system/event.ts#L2)

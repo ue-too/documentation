@@ -4,7 +4,7 @@
 
 > **drawArrow**(`context`, `cameraZoomLevel`, `startPoint`, `endPoint`, `width`, `arrowRatio`): `void`
 
-Defined in: [packages/board/src/utils/drawing.ts:43](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/drawing.ts#L43)
+Defined in: [packages/board/src/utils/drawing.ts:44](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/drawing.ts#L44)
 
 Draws an arrow from start to end point with an arrowhead.
 

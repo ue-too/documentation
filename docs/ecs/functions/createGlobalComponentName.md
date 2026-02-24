@@ -4,7 +4,7 @@
 
 > **createGlobalComponentName**(`key`): `symbol`
 
-Defined in: [index.ts:266](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L266)
+Defined in: [index.ts:268](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L268)
 
 Helper function to create a component name using Symbol.for().
 This creates a global symbol that can be looked up by string key,

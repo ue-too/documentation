@@ -4,6 +4,6 @@
 
 > `const` **TEXT\_MAJOR\_TICK\_OFFSET**: `10` = `10`
 
-Defined in: [packages/board/src/utils/drawing.ts:86](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/drawing.ts#L86)
+Defined in: [packages/board/src/utils/drawing.ts:110](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/drawing.ts#L110)
 
 Offset for major tick labels in pixels (viewport space).

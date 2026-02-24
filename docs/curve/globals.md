@@ -1,4 +1,4 @@
-# @ue-too/curve v0.14.1
+# @ue-too/curve v0.15.0
 
 Bezier curve and geometric path library for TypeScript.
 

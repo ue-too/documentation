@@ -6,7 +6,7 @@
 
 > **offset**(`curve`, `t`): [`BCurve`](../classes/BCurve.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:1080](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L1080)
+Defined in: [packages/curve/src/b-curve.ts:1564](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1564)
 
 Creates offset curves at a specified distance from the original curve.
 
@@ -28,7 +28,7 @@ Creates offset curves at a specified distance from the original curve.
 
 > **offset**(`curve`, `t`, `d`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:1081](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L1081)
+Defined in: [packages/curve/src/b-curve.ts:1565](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1565)
 
 Creates offset curves at a specified distance from the original curve.
 

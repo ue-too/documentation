@@ -4,7 +4,7 @@
 
 > **convertFromWindow2ViewPortWithCanvasOperator**(`point`, `canvas`, `viewportOriginInCanvasSpace`, `viewportHasFlippedYAxis`): `Point`
 
-Defined in: [packages/board/src/utils/coorindate-conversion.ts:105](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/coorindate-conversion.ts#L105)
+Defined in: [packages/board/src/utils/coorindate-conversion.ts:106](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/coorindate-conversion.ts#L106)
 
 Converts a point from window coordinates to viewport coordinates in one step.
 
@@ -43,8 +43,8 @@ The point in viewport coordinates
 ## Remarks
 
 This is a convenience function that combines two conversions:
-1. Window to Canvas: convertFromWindow2Canvas
-2. Canvas to Viewport: convertFromCanvas2ViewPort
+1. Window to Canvas: [convertFromWindow2Canvas](convertFromWindow2Canvas.md)
+2. Canvas to Viewport: [convertFromCanvas2ViewPort](convertFromCanvas2ViewPort.md)
 
 It's particularly useful for processing input events (mouse clicks, touches)
 that need to be converted directly to viewport space for interaction handling.
@@ -77,5 +77,5 @@ const viewportPos = convertFromWindow2ViewPortWithCanvasOperator(
 
 ## See
 
- - convertFromWindow2Canvas for window to canvas conversion
- - convertFromCanvas2ViewPort for canvas to viewport conversion
+ - [convertFromWindow2Canvas](convertFromWindow2Canvas.md) for window to canvas conversion
+ - [convertFromCanvas2ViewPort](convertFromCanvas2ViewPort.md) for canvas to viewport conversion

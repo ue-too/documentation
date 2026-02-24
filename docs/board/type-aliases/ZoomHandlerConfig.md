@@ -4,7 +4,7 @@
 
 > **ZoomHandlerConfig** = [`ZoomHandlerClampConfig`](ZoomHandlerClampConfig.md) & [`ZoomHandlerRestrictConfig`](ZoomHandlerRestrictConfig.md)
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:20](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/zoom-handler.ts#L20)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:20](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-rig/zoom-handler.ts#L20)
 
 Combined configuration for zoom handler behavior, merging restriction and clamping settings.
 

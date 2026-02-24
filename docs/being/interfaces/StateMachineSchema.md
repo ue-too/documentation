@@ -2,7 +2,7 @@
 
 # Interface: StateMachineSchema\<Context, EventPayloadMapping, StateNames, EventOutputMapping\>
 
-Defined in: [schema-factory.ts:240](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L240)
+Defined in: [schema-factory.ts:290](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/schema-factory.ts#L290)
 
 Complete schema definition for a state machine.
 
@@ -38,7 +38,7 @@ Optional mapping of events to their output types
 
 > **events**: `EventPayloadMapping`
 
-Defined in: [schema-factory.ts:249](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L249)
+Defined in: [schema-factory.ts:301](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/schema-factory.ts#L301)
 
 Mapping of event names to their payload types
 
@@ -48,7 +48,7 @@ Mapping of event names to their payload types
 
 > **initialState**: `StateNames`
 
-Defined in: [schema-factory.ts:253](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L253)
+Defined in: [schema-factory.ts:310](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/schema-factory.ts#L310)
 
 Initial state name
 
@@ -58,7 +58,7 @@ Initial state name
 
 > **stateDefinitions**: [`StateDefinition`](StateDefinition.md)\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\>[]
 
-Defined in: [schema-factory.ts:251](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L251)
+Defined in: [schema-factory.ts:303](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/schema-factory.ts#L303)
 
 Array of state definitions
 
@@ -68,6 +68,6 @@ Array of state definitions
 
 > **states**: readonly `StateNames`[] \| `StateNames`[]
 
-Defined in: [schema-factory.ts:247](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/schema-factory.ts#L247)
+Defined in: [schema-factory.ts:299](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/schema-factory.ts#L299)
 
 Array of all possible state names

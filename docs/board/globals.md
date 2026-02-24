@@ -165,7 +165,13 @@ requestAnimationFrame(draw);
 
 ## Coordinate Conversion
 
+- [convertFromCanvas2ViewPort](functions/convertFromCanvas2ViewPort.md)
+- [convertFromCanvas2Window](functions/convertFromCanvas2Window.md)
+- [convertFromViewPort2Canvas](functions/convertFromViewPort2Canvas.md)
+- [convertFromViewport2World](functions/convertFromViewport2World.md)
+- [convertFromWindow2Canvas](functions/convertFromWindow2Canvas.md)
 - [convertFromWindow2ViewPortWithCanvasOperator](functions/convertFromWindow2ViewPortWithCanvasOperator.md)
+- [convertFromWorld2Viewport](functions/convertFromWorld2Viewport.md)
 - [pointConversion](functions/pointConversion.md)
 
 ## Drawing Utilities
@@ -304,19 +310,26 @@ requestAnimationFrame(draw);
 - [KmtEmptyState](classes/KmtEmptyState.md)
 - [KmtInputStateMachineWebWorkerProxy](classes/KmtInputStateMachineWebWorkerProxy.md)
 - [WorkerRelayCanvas](classes/WorkerRelayCanvas.md)
+- [CameraOptions](type-aliases/CameraOptions.md)
 - [KmtIdleStatePossibleTargetStates](type-aliases/KmtIdleStatePossibleTargetStates.md)
+- [RotateToWithAnchorPointHandlerFunction](type-aliases/RotateToWithAnchorPointHandlerFunction.md)
 - [DEFAULT\_BOARD\_CAMERA\_BOUNDARIES](variables/DEFAULT_BOARD_CAMERA_BOUNDARIES.md)
+- [DEFAULT\_BOARD\_CAMERA\_OPTIONS](variables/DEFAULT_BOARD_CAMERA_OPTIONS.md)
 - [DEFAULT\_BOARD\_CAMERA\_ROTATION\_BOUNDARIES](variables/DEFAULT_BOARD_CAMERA_ROTATION_BOUNDARIES.md)
 - [DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_HEIGHT](variables/DEFAULT_BOARD_CAMERA_VIEWPORT_HEIGHT.md)
 - [DEFAULT\_BOARD\_CAMERA\_VIEWPORT\_WIDTH](variables/DEFAULT_BOARD_CAMERA_VIEWPORT_WIDTH.md)
 - [DEFAULT\_BOARD\_CAMERA\_ZOOM\_BOUNDARIES](variables/DEFAULT_BOARD_CAMERA_ZOOM_BOUNDARIES.md)
 - [createKmtInputStateMachineWithCanvas](functions/createKmtInputStateMachineWithCanvas.md)
+- [getScrollBar](functions/getScrollBar.md)
+- [getScrollBarDimension](functions/getScrollBarDimension.md)
+- [getScrollBarPosition](functions/getScrollBarPosition.md)
 
 ## Raw Input Parser
 
 - [VanillaKMTEventParser](classes/VanillaKMTEventParser.md)
 - [VanillaTouchEventParser](classes/VanillaTouchEventParser.md)
 - [KMTEventParser](interfaces/KMTEventParser.md)
+- [StateMachine](interfaces/StateMachine.md)
 - [TouchEventParser](interfaces/TouchEventParser.md)
 - [EventTargetWithPointerEvents](type-aliases/EventTargetWithPointerEvents.md)
 - [MinimumKeyboardEvent](type-aliases/MinimumKeyboardEvent.md)

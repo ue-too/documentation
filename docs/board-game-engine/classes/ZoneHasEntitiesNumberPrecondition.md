@@ -2,7 +2,7 @@
 
 # Class: ZoneHasEntitiesNumberPrecondition
 
-Defined in: [zone-system/precondition.ts:18](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/precondition.ts#L18)
+Defined in: [zone-system/precondition.ts:31](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/zone-system/precondition.ts#L31)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/precondition.ts:18](https://github.com/ue-too/ue-too/bl
 
 > **new ZoneHasEntitiesNumberPrecondition**(`_coordinator`, `_zoneEntity`, `_minCount`): `ZoneHasEntitiesNumberPrecondition`
 
-Defined in: [zone-system/precondition.ts:20](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/precondition.ts#L20)
+Defined in: [zone-system/precondition.ts:32](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/zone-system/precondition.ts#L32)
 
 #### Parameters
 
@@ -40,7 +40,7 @@ Defined in: [zone-system/precondition.ts:20](https://github.com/ue-too/ue-too/bl
 
 > **check**(): `boolean`
 
-Defined in: [zone-system/precondition.ts:22](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/zone-system/precondition.ts#L22)
+Defined in: [zone-system/precondition.ts:38](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/zone-system/precondition.ts#L38)
 
 #### Returns
 

@@ -2,7 +2,7 @@
 
 # Class: CanvasPositionDimensionPublisher
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:263](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L263)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:304](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/canvas-position-dimension.ts#L304)
 
 Monitors and publishes position and dimension changes for HTML Canvas elements.
 
@@ -49,7 +49,7 @@ publisher.dispose();
 
 > **new CanvasPositionDimensionPublisher**(`canvas?`): `CanvasPositionDimensionPublisher`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:284](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L284)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:326](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/canvas-position-dimension.ts#L326)
 
 Creates a new Canvas position/dimension publisher.
 
@@ -76,7 +76,7 @@ The canvas dimensions are automatically adjusted for devicePixelRatio.
 
 > **attach**(`canvas`): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:349](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L349)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:401](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/canvas-position-dimension.ts#L401)
 
 Attaches observers to a canvas element and begins monitoring.
 
@@ -104,7 +104,7 @@ and records the initial position/dimensions.
 
 > **dispose**(): `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:331](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L331)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:383](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/canvas-position-dimension.ts#L383)
 
 Cleans up all observers and event listeners.
 
@@ -123,7 +123,7 @@ Always call this method when the publisher is no longer needed to prevent memory
 
 > **onPositionUpdate**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/canvas-position-dimension.ts:422](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/canvas-position-dimension.ts#L422)
+Defined in: [packages/board/src/utils/canvas-position-dimension.ts:493](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/canvas-position-dimension.ts#L493)
 
 Subscribes to position and dimension updates.
 

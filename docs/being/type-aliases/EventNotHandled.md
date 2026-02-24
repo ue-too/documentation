@@ -4,7 +4,7 @@
 
 > **EventNotHandled** = `object`
 
-Defined in: [interface.ts:98](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L98)
+Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L99)
 
 Result type indicating an event was not handled by the current state.
 
@@ -19,4 +19,4 @@ The state machine will not transition and the event is effectively ignored.
 
 > **handled**: `false`
 
-Defined in: [interface.ts:99](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L99)
+Defined in: [interface.ts:100](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L100)

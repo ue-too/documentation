@@ -2,7 +2,7 @@
 
 # Class: DynamicTree\<T\>
 
-Defined in: [dynamic-tree.ts:277](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L277)
+Defined in: [dynamic-tree.ts:318](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L318)
 
 Dynamic AABB tree for efficient spatial queries.
 
@@ -32,7 +32,7 @@ Dynamic AABB tree for efficient spatial queries.
 
 > **clear**(): `void`
 
-Defined in: [dynamic-tree.ts:282](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L282)
+Defined in: [dynamic-tree.ts:325](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L325)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [dynamic-tree.ts:282](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **draw**(`context`): `void`
 
-Defined in: [dynamic-tree.ts:514](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L514)
+Defined in: [dynamic-tree.ts:567](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L567)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [dynamic-tree.ts:514](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **getStats**(): `object`
 
-Defined in: [dynamic-tree.ts:562](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L562)
+Defined in: [dynamic-tree.ts:623](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L623)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [dynamic-tree.ts:562](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **insert**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:287](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L287)
+Defined in: [dynamic-tree.ts:330](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L330)
 
 #### Parameters
 
@@ -112,7 +112,7 @@ Defined in: [dynamic-tree.ts:287](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **retrieve**(`object`): `T`[]
 
-Defined in: [dynamic-tree.ts:490](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L490)
+Defined in: [dynamic-tree.ts:543](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L543)
 
 #### Parameters
 

@@ -4,7 +4,7 @@
 
 > `const` **stringHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<`string`\>
 
-Defined in: [animatable-attribute.ts:156](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L156)
+Defined in: [animatable-attribute.ts:177](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/animate/src/animatable-attribute.ts#L177)
 
 Built-in interpolation helper for animating string values.
 

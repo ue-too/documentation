@@ -2,7 +2,7 @@
 
 # Class: KonvaInputParser
 
-Defined in: [konva-input-event-parser.ts:6](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L6)
+Defined in: [konva-input-event-parser.ts:10](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L10)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [konva-input-event-parser.ts:6](https://github.com/ue-too/ue-too/blo
 
 > **new KonvaInputParser**(`stage`, `kmtInputStateMachine`, `inputOrchestrator`): `KonvaInputParser`
 
-Defined in: [konva-input-event-parser.ts:13](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L13)
+Defined in: [konva-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L17)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [konva-input-event-parser.ts:13](https://github.com/ue-too/ue-too/bl
 
 > **bindFunctions**(): `void`
 
-Defined in: [konva-input-event-parser.ts:22](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L22)
+Defined in: [konva-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L30)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [konva-input-event-parser.ts:22](https://github.com/ue-too/ue-too/bl
 
 > **keydownHandler**(`event`): `void`
 
-Defined in: [konva-input-event-parser.ts:104](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L104)
+Defined in: [konva-input-event-parser.ts:141](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L141)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [konva-input-event-parser.ts:104](https://github.com/ue-too/ue-too/b
 
 > **keyupHandler**(`event`): `void`
 
-Defined in: [konva-input-event-parser.ts:114](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L114)
+Defined in: [konva-input-event-parser.ts:151](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L151)
 
 #### Parameters
 
@@ -84,7 +84,7 @@ Defined in: [konva-input-event-parser.ts:114](https://github.com/ue-too/ue-too/b
 
 > **pointerDownHandler**(`eventObject`): `void`
 
-Defined in: [konva-input-event-parser.ts:58](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L58)
+Defined in: [konva-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L70)
 
 #### Parameters
 
@@ -102,7 +102,7 @@ Defined in: [konva-input-event-parser.ts:58](https://github.com/ue-too/ue-too/bl
 
 > **pointerMoveHandler**(`eventObject`): `void`
 
-Defined in: [konva-input-event-parser.ts:82](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L82)
+Defined in: [konva-input-event-parser.ts:103](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L103)
 
 #### Parameters
 
@@ -120,7 +120,7 @@ Defined in: [konva-input-event-parser.ts:82](https://github.com/ue-too/ue-too/bl
 
 > **pointerUpHandler**(`eventObject`): `void`
 
-Defined in: [konva-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L70)
+Defined in: [konva-input-event-parser.ts:88](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L88)
 
 #### Parameters
 
@@ -138,7 +138,7 @@ Defined in: [konva-input-event-parser.ts:70](https://github.com/ue-too/ue-too/bl
 
 > **scrollHandler**(`eventObject`): `void`
 
-Defined in: [konva-input-event-parser.ts:95](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L95)
+Defined in: [konva-input-event-parser.ts:122](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L122)
 
 #### Parameters
 
@@ -156,7 +156,7 @@ Defined in: [konva-input-event-parser.ts:95](https://github.com/ue-too/ue-too/bl
 
 > **setUp**(): `void`
 
-Defined in: [konva-input-event-parser.ts:31](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L31)
+Defined in: [konva-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L39)
 
 #### Returns
 
@@ -168,7 +168,7 @@ Defined in: [konva-input-event-parser.ts:31](https://github.com/ue-too/ue-too/bl
 
 > **tearDown**(): `void`
 
-Defined in: [konva-input-event-parser.ts:40](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-konva-integration/src/konva-input-event-parser.ts#L40)
+Defined in: [konva-input-event-parser.ts:52](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-konva-integration/src/konva-input-event-parser.ts#L52)
 
 #### Returns
 

@@ -4,7 +4,7 @@
 
 > **midPointOnRhumbLine**(`startCoord`, `endCoord`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [rhumbLine.ts:164](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/border/src/rhumbLine.ts#L164)
+Defined in: [rhumbLine.ts:179](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/border/src/rhumbLine.ts#L179)
 
 Calculates the midpoint along a rhumb line.
 

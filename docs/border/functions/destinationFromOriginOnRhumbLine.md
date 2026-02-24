@@ -4,7 +4,7 @@
 
 > **destinationFromOriginOnRhumbLine**(`startCoord`, `bearing`, `distance`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [rhumbLine.ts:122](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/border/src/rhumbLine.ts#L122)
+Defined in: [rhumbLine.ts:131](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/border/src/rhumbLine.ts#L131)
 
 Calculates the destination point given a start point, constant bearing, and distance on a rhumb line.
 

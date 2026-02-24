@@ -4,7 +4,7 @@
 
 > **GuardEvaluation**\<`Context`\> = (`context`) => `boolean`
 
-Defined in: [interface.ts:291](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L291)
+Defined in: [interface.ts:391](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L391)
 
 ## Type Parameters
 

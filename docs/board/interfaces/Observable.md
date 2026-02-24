@@ -2,7 +2,7 @@
 
 # Interface: Observable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:71](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/observable.ts#L71)
+Defined in: [packages/board/src/utils/observable.ts:71](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/observable.ts#L71)
 
 Interface for the Observable pattern implementation.
 
@@ -29,7 +29,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/observable.ts#L73)
+Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/observable.ts#L73)
 
 #### Parameters
 
@@ -47,7 +47,7 @@ Defined in: [packages/board/src/utils/observable.ts:73](https://github.com/ue-to
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:72](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/observable.ts#L72)
+Defined in: [packages/board/src/utils/observable.ts:72](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/observable.ts#L72)
 
 #### Parameters
 

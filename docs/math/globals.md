@@ -1,52 +1,4 @@
-# @ue-too/math v0.14.1
-
-Mathematical utilities for 2D and 3D point operations, vector calculations, and transformations.
-
-## Remarks
-
-This package provides essential mathematical operations for canvas applications including:
-- Vector arithmetic (add, subtract, multiply, divide)
-- Vector operations (dot product, cross product, magnitude, unit vectors)
-- Geometric transformations (rotation, axis transformation)
-- Angle calculations and normalization
-- Point comparisons and interpolation
-- Line intersection detection
-
-All operations support both 2D and 3D coordinates, with the z-axis being optional.
-
-## Examples
-
-Basic vector operations
-```typescript
-import { PointCal, Point } from '@ue-too/math';
-
-const a: Point = { x: 1, y: 2 };
-const b: Point = { x: 3, y: 4 };
-
-// Add vectors
-const sum = PointCal.addVector(a, b); // { x: 4, y: 6 }
-
-// Calculate magnitude
-const mag = PointCal.magnitude(a); // 2.236...
-
-// Get unit vector
-const unit = PointCal.unitVector(a); // { x: 0.447..., y: 0.894... }
-```
-
-Rotation and transformation
-```typescript
-import { PointCal, Point } from '@ue-too/math';
-
-const point: Point = { x: 10, y: 0 };
-const angle = Math.PI / 2; // 90 degrees
-
-// Rotate point around origin
-const rotated = PointCal.rotatePoint(point, angle); // { x: 0, y: 10 }
-
-// Rotate around a custom anchor
-const anchor: Point = { x: 5, y: 5 };
-const rotatedAroundAnchor = PointCal.transformPointWRTAnchor(point, anchor, angle);
-```
+# @ue-too/math v0.15.0
 
 ## Comparison
 
@@ -62,6 +14,27 @@ const rotatedAroundAnchor = PointCal.transformPointWRTAnchor(point, anchor, angl
 
 ## Other
 
+- [Matrix](classes/Matrix.md)
 - [PointCal](classes/PointCal.md)
+- [Matrix3x3](interfaces/Matrix3x3.md)
 - [~~point~~](type-aliases/point.md)
 - [Point](type-aliases/Point-1.md)
+- [addVector](functions/addVector.md)
+- [angleFromA2B](functions/angleFromA2B.md)
+- [crossProduct](functions/crossProduct.md)
+- [distanceBetweenPoints](functions/distanceBetweenPoints.md)
+- [divideVectorByScalar](functions/divideVectorByScalar.md)
+- [dotProduct](functions/dotProduct.md)
+- [flipYAxis](functions/flipYAxis.md)
+- [getLineIntersection](functions/getLineIntersection.md)
+- [inverseMatrix3x3](functions/inverseMatrix3x3.md)
+- [isEqual](functions/isEqual.md)
+- [linearInterpolation](functions/linearInterpolation.md)
+- [magnitude](functions/magnitude.md)
+- [multiplyVectorByScalar](functions/multiplyVectorByScalar.md)
+- [rotatePoint](functions/rotatePoint.md)
+- [subVector](functions/subVector.md)
+- [transform2NewAxis](functions/transform2NewAxis.md)
+- [transformPointWRTAnchor](functions/transformPointWRTAnchor.md)
+- [unitVector](functions/unitVector.md)
+- [unitVectorFromA2B](functions/unitVectorFromA2B.md)

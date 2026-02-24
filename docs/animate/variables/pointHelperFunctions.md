@@ -4,7 +4,7 @@
 
 > `const` **pointHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<`Point`\>
 
-Defined in: [animatable-attribute.ts:80](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/animate/src/animatable-attribute.ts#L80)
+Defined in: [animatable-attribute.ts:80](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/animate/src/animatable-attribute.ts#L80)
 
 Built-in interpolation helper for animating Point values.
 

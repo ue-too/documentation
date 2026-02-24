@@ -1,4 +1,4 @@
-# @ue-too/ecs v0.14.1
+# @ue-too/ecs v0.15.0
 
 Entity Component System (ECS) implementation for TypeScript.
 

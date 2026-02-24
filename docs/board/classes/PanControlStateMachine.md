@@ -2,7 +2,7 @@
 
 # Class: PanControlStateMachine
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:127](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L127)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
 
 State machine controlling pan input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyPanToAnimationInput({ x: 1000, y: 500 });
 
 > **new PanControlStateMachine**(`states`, `initialState`, `context`): `PanControlStateMachine`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:129](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L129)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:135](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L135)
 
 #### Parameters
 
@@ -71,7 +71,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 #### Overrides
 
-`TemplateStateMachine<PanEventPayloadMapping, BaseContext, PanControlStates, PanControlOutputMapping>.constructor`
+`TemplateStateMachine< PanEventPayloadMapping, BaseContext, PanControlStates, PanControlOutputMapping >.constructor`
 
 ## Properties
 
@@ -79,7 +79,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > `protected` **\_context**: `BaseContext`
 
-Defined in: packages/being/dist/interface.d.ts:378
+Defined in: packages/being/dist/interface.d.ts:383
 
 #### Inherited from
 
@@ -91,7 +91,7 @@ Defined in: packages/being/dist/interface.d.ts:378
 
 > `protected` **\_currentState**: [`PanControlStates`](../type-aliases/PanControlStates.md) \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:376
+Defined in: packages/being/dist/interface.d.ts:381
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ Defined in: packages/being/dist/interface.d.ts:376
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:381
+Defined in: packages/being/dist/interface.d.ts:386
 
 #### Parameters
 
@@ -129,7 +129,7 @@ Defined in: packages/being/dist/interface.d.ts:381
 
 > `protected` **\_initialState**: [`PanControlStates`](../type-aliases/PanControlStates.md)
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:388
 
 #### Inherited from
 
@@ -141,7 +141,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<[`PanControlStates`](../type-aliases/PanControlStates.md)\>[]
 
-Defined in: packages/being/dist/interface.d.ts:380
+Defined in: packages/being/dist/interface.d.ts:385
 
 #### Inherited from
 
@@ -153,7 +153,7 @@ Defined in: packages/being/dist/interface.d.ts:380
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:377
+Defined in: packages/being/dist/interface.d.ts:382
 
 #### Inherited from
 
@@ -165,7 +165,7 @@ Defined in: packages/being/dist/interface.d.ts:377
 
 > `protected` **\_statesArray**: [`PanControlStates`](../type-aliases/PanControlStates.md)[]
 
-Defined in: packages/being/dist/interface.d.ts:379
+Defined in: packages/being/dist/interface.d.ts:384
 
 #### Inherited from
 
@@ -177,7 +177,7 @@ Defined in: packages/being/dist/interface.d.ts:379
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:387
 
 #### Inherited from
 
@@ -191,7 +191,7 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:398
 
 ##### Returns
 
@@ -209,7 +209,7 @@ Defined in: packages/being/dist/interface.d.ts:393
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:395
+Defined in: packages/being/dist/interface.d.ts:400
 
 ##### Returns
 
@@ -227,7 +227,7 @@ Defined in: packages/being/dist/interface.d.ts:395
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:396
+Defined in: packages/being/dist/interface.d.ts:401
 
 ##### Returns
 
@@ -245,7 +245,7 @@ Defined in: packages/being/dist/interface.d.ts:396
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `K` *extends* keyof [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md) ? [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\[`K`\<`K`\>\] : `void`\>
 
-Defined in: packages/being/dist/interface.d.ts:389
+Defined in: packages/being/dist/interface.d.ts:394
 
 ##### Type Parameters
 
@@ -271,7 +271,7 @@ Defined in: packages/being/dist/interface.d.ts:389
 
 > **happens**\<`K`\>(...`args`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `unknown`\>
 
-Defined in: packages/being/dist/interface.d.ts:390
+Defined in: packages/being/dist/interface.d.ts:395
 
 ##### Type Parameters
 
@@ -299,7 +299,7 @@ Defined in: packages/being/dist/interface.d.ts:390
 
 > **initateTransition**(): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), `void`\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:168](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L168)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:186](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L186)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +318,7 @@ Called when starting programmatic camera movements.
 
 > **notifyPanInput**(`diff`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:143](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L143)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:161](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L161)
 
 Notifies the state machine of user pan input.
 
@@ -347,7 +347,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyPanToAnimationInput**(`target`): `EventResult`\<[`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:157](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L157)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:175](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L175)
 
 Initiates a pan animation to a target position.
 
@@ -376,7 +376,7 @@ Transitions to `TRANSITION` state where animation updates occur.
 
 > **onHappens**(`callback`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:397
 
 #### Parameters
 
@@ -398,7 +398,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:396
 
 #### Parameters
 
@@ -420,7 +420,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:390
 
 #### Returns
 
@@ -436,7 +436,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:399
 
 #### Parameters
 
@@ -458,7 +458,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:391
 
 #### Returns
 
@@ -474,7 +474,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:393
 
 #### Parameters
 
@@ -496,7 +496,7 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:392
 
 #### Returns
 

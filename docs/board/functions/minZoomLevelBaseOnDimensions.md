@@ -4,7 +4,7 @@
 
 > **minZoomLevelBaseOnDimensions**(`boundaries`, `canvasWidth`, `canvasHeight`, `cameraRotation`): `number` \| `undefined`
 
-Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:53](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/zoomlevel-adjustment.ts#L53)
+Defined in: [packages/board/src/utils/zoomlevel-adjustment.ts:57](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/zoomlevel-adjustment.ts#L57)
 
 Calculates minimum zoom level to fit boundaries within canvas at any rotation.
 

@@ -2,7 +2,7 @@
 
 # Class: KmtInputStateMachineWebWorkerProxy
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:605](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L605)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:755](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L755)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:609](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L609)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:763](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L763)
 
 #### Parameters
 
@@ -28,7 +28,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 #### Overrides
 
-`TemplateStateMachine<KmtInputEventMapping, KmtInputContext, KmtInputStates, KmtInputEventOutputMapping>.constructor`
+`TemplateStateMachine< KmtInputEventMapping, KmtInputContext, KmtInputStates, KmtInputEventOutputMapping >.constructor`
 
 ## Properties
 
@@ -36,7 +36,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_context**: [`KmtInputContext`](../interfaces/KmtInputContext.md)
 
-Defined in: packages/being/dist/interface.d.ts:378
+Defined in: packages/being/dist/interface.d.ts:383
 
 #### Inherited from
 
@@ -48,7 +48,7 @@ Defined in: packages/being/dist/interface.d.ts:378
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-Defined in: packages/being/dist/interface.d.ts:376
+Defined in: packages/being/dist/interface.d.ts:381
 
 #### Inherited from
 
@@ -60,7 +60,7 @@ Defined in: packages/being/dist/interface.d.ts:376
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: packages/being/dist/interface.d.ts:381
+Defined in: packages/being/dist/interface.d.ts:386
 
 #### Parameters
 
@@ -86,7 +86,7 @@ Defined in: packages/being/dist/interface.d.ts:381
 
 > `protected` **\_initialState**: `"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`
 
-Defined in: packages/being/dist/interface.d.ts:383
+Defined in: packages/being/dist/interface.d.ts:388
 
 #### Inherited from
 
@@ -98,7 +98,7 @@ Defined in: packages/being/dist/interface.d.ts:383
 
 > `protected` **\_stateChangeCallbacks**: `StateChangeCallback`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>[]
 
-Defined in: packages/being/dist/interface.d.ts:380
+Defined in: packages/being/dist/interface.d.ts:385
 
 #### Inherited from
 
@@ -110,7 +110,7 @@ Defined in: packages/being/dist/interface.d.ts:380
 
 > `protected` **\_states**: `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:377
+Defined in: packages/being/dist/interface.d.ts:382
 
 #### Inherited from
 
@@ -122,7 +122,7 @@ Defined in: packages/being/dist/interface.d.ts:377
 
 > `protected` **\_statesArray**: (`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`)[]
 
-Defined in: packages/being/dist/interface.d.ts:379
+Defined in: packages/being/dist/interface.d.ts:384
 
 #### Inherited from
 
@@ -134,7 +134,7 @@ Defined in: packages/being/dist/interface.d.ts:379
 
 > `protected` **\_timeouts**: `number` \| `undefined`
 
-Defined in: packages/being/dist/interface.d.ts:382
+Defined in: packages/being/dist/interface.d.ts:387
 
 #### Inherited from
 
@@ -148,7 +148,7 @@ Defined in: packages/being/dist/interface.d.ts:382
 
 > **get** **currentState**(): `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-Defined in: packages/being/dist/interface.d.ts:393
+Defined in: packages/being/dist/interface.d.ts:398
 
 ##### Returns
 
@@ -166,7 +166,7 @@ Defined in: packages/being/dist/interface.d.ts:393
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: packages/being/dist/interface.d.ts:395
+Defined in: packages/being/dist/interface.d.ts:400
 
 ##### Returns
 
@@ -184,7 +184,7 @@ Defined in: packages/being/dist/interface.d.ts:395
 
 > **get** **states**(): `Record`\<`States`, `State`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: packages/being/dist/interface.d.ts:396
+Defined in: packages/being/dist/interface.d.ts:401
 
 ##### Returns
 
@@ -200,7 +200,7 @@ Defined in: packages/being/dist/interface.d.ts:396
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:622](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L622)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:780](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L780)
 
 #### Parameters
 
@@ -222,7 +222,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **onHappens**(`callback`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:392
+Defined in: packages/being/dist/interface.d.ts:397
 
 #### Parameters
 
@@ -244,7 +244,7 @@ Defined in: packages/being/dist/interface.d.ts:392
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:391
+Defined in: packages/being/dist/interface.d.ts:396
 
 #### Parameters
 
@@ -266,7 +266,7 @@ Defined in: packages/being/dist/interface.d.ts:391
 
 > **reset**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:385
+Defined in: packages/being/dist/interface.d.ts:390
 
 #### Returns
 
@@ -282,7 +282,7 @@ Defined in: packages/being/dist/interface.d.ts:385
 
 > **setContext**(`context`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:394
+Defined in: packages/being/dist/interface.d.ts:399
 
 #### Parameters
 
@@ -304,7 +304,7 @@ Defined in: packages/being/dist/interface.d.ts:394
 
 > **start**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:386
+Defined in: packages/being/dist/interface.d.ts:391
 
 #### Returns
 
@@ -320,7 +320,7 @@ Defined in: packages/being/dist/interface.d.ts:386
 
 > **switchTo**(`state`): `void`
 
-Defined in: packages/being/dist/interface.d.ts:388
+Defined in: packages/being/dist/interface.d.ts:393
 
 #### Parameters
 
@@ -342,7 +342,7 @@ Defined in: packages/being/dist/interface.d.ts:388
 
 > **wrapup**(): `void`
 
-Defined in: packages/being/dist/interface.d.ts:387
+Defined in: packages/being/dist/interface.d.ts:392
 
 #### Returns
 

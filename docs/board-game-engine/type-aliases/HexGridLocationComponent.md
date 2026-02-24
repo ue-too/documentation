@@ -4,7 +4,7 @@
 
 > **HexGridLocationComponent** = `object`
 
-Defined in: [grid-system/hex-grid.ts:14](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L14)
+Defined in: [grid-system/hex-grid.ts:27](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L27)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/hex-grid.ts:14](https://github.com/ue-too/ue-too/blob/f
 
 > **grid**: `Entity`
 
-Defined in: [grid-system/hex-grid.ts:15](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L15)
+Defined in: [grid-system/hex-grid.ts:28](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L28)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/hex-grid.ts:15](https://github.com/ue-too/ue-too/blob/f
 
 > **q**: `number`
 
-Defined in: [grid-system/hex-grid.ts:16](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L16)
+Defined in: [grid-system/hex-grid.ts:29](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L29)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [grid-system/hex-grid.ts:16](https://github.com/ue-too/ue-too/blob/f
 
 > **r**: `number`
 
-Defined in: [grid-system/hex-grid.ts:17](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L17)
+Defined in: [grid-system/hex-grid.ts:30](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L30)

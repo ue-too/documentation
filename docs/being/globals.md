@@ -1,4 +1,4 @@
-# @ue-too/being v0.14.1
+# @ue-too/being v0.15.0
 
 State machine library for TypeScript.
 
@@ -148,6 +148,7 @@ timer.happens("stop");
 - [TransitionDefinition](interfaces/TransitionDefinition.md)
 - [Action](type-aliases/Action.md)
 - [ActionFunction](type-aliases/ActionFunction.md)
+- [Defer](type-aliases/Defer.md)
 - [Delay](type-aliases/Delay.md)
 - [EventPayloadSchema](type-aliases/EventPayloadSchema.md)
 - [ExtractStateNames](type-aliases/ExtractStateNames.md)

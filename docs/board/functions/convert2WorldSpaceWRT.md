@@ -4,7 +4,7 @@
 
 > **convert2WorldSpaceWRT**(`targetPosition`, `interestPoint`, `viewPortWidth`, `viewPortHeight`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:41](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/utils/coordinate-conversion.ts#L41)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:48](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/utils/coordinate-conversion.ts#L48)
 
 Converts a viewport point to world space with respect to a hypothetical camera position.
 "WRT" = "With Respect To" - calculates where a viewport point would be in world space
@@ -22,7 +22,7 @@ Hypothetical camera position in world coordinates
 
 `Point`
 
-Point in canvas coordinates (origin at bottom-left)
+Point in canvas coordinates (origin at top-left corner of the canvas element in browser)
 
 ### viewPortWidth
 
@@ -69,7 +69,7 @@ The interest point uses canvas coordinates (bottom-left origin), not viewport co
 // if camera moved to (100, 100)?
 const worldCorner = convert2WorldSpaceWRT(
   { x: 100, y: 100 },  // target camera position
-  { x: 0, y: 1080 },    // top-left in canvas coords
+  { x: 0, y: 0 },    // top-left in canvas coords
   1920, 1080,           // viewport size
   1.0,                  // zoom
   0                     // rotation

@@ -2,7 +2,7 @@
 
 # Class: HierarchicalStateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-Defined in: [hierarchical.ts:233](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L233)
+Defined in: [hierarchical.ts:306](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/hierarchical.ts#L306)
 
 Extended state machine that supports hierarchical state paths.
 
@@ -47,7 +47,7 @@ Event output mapping
 
 > **new HierarchicalStateMachine**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(`states`, `initialState`, `context`, `autoStart`): `HierarchicalStateMachine`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:452](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L452)
+Defined in: [interface.ts:591](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L591)
 
 #### Parameters
 
@@ -81,7 +81,7 @@ Defined in: [interface.ts:452](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_context**: `Context`
 
-Defined in: [interface.ts:445](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L445)
+Defined in: [interface.ts:578](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L578)
 
 #### Inherited from
 
@@ -93,7 +93,7 @@ Defined in: [interface.ts:445](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-Defined in: [interface.ts:443](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L443)
+Defined in: [interface.ts:573](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L573)
 
 #### Inherited from
 
@@ -105,7 +105,7 @@ Defined in: [interface.ts:443](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-Defined in: [interface.ts:448](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L448)
+Defined in: [interface.ts:581](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L581)
 
 #### Parameters
 
@@ -131,7 +131,7 @@ Defined in: [interface.ts:448](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_initialState**: `States`
 
-Defined in: [interface.ts:450](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L450)
+Defined in: [interface.ts:589](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L589)
 
 #### Inherited from
 
@@ -143,7 +143,7 @@ Defined in: [interface.ts:450](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_stateChangeCallbacks**: [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>[]
 
-Defined in: [interface.ts:447](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L447)
+Defined in: [interface.ts:580](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L580)
 
 #### Inherited from
 
@@ -155,7 +155,7 @@ Defined in: [interface.ts:447](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_states**: `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [interface.ts:444](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L444)
+Defined in: [interface.ts:574](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L574)
 
 #### Inherited from
 
@@ -167,7 +167,7 @@ Defined in: [interface.ts:444](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_statesArray**: `States`[]
 
-Defined in: [interface.ts:446](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L446)
+Defined in: [interface.ts:579](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L579)
 
 #### Inherited from
 
@@ -179,7 +179,7 @@ Defined in: [interface.ts:446](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-Defined in: [interface.ts:449](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L449)
+Defined in: [interface.ts:588](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L588)
 
 #### Inherited from
 
@@ -193,7 +193,7 @@ Defined in: [interface.ts:449](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **get** **currentState**(): `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-Defined in: [interface.ts:528](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L528)
+Defined in: [interface.ts:722](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L722)
 
 ##### Returns
 
@@ -211,7 +211,7 @@ Defined in: [interface.ts:528](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **get** **possibleStates**(): `States`[]
 
-Defined in: [interface.ts:536](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L536)
+Defined in: [interface.ts:730](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L730)
 
 ##### Returns
 
@@ -229,7 +229,7 @@ Defined in: [interface.ts:536](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **get** **states**(): `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-Defined in: [interface.ts:540](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L540)
+Defined in: [interface.ts:734](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L734)
 
 ##### Returns
 
@@ -245,7 +245,7 @@ Defined in: [interface.ts:540](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **getActiveStatePath**(): `string`[]
 
-Defined in: [hierarchical.ts:263](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L263)
+Defined in: [hierarchical.ts:343](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/hierarchical.ts#L343)
 
 Gets all active states in the hierarchy.
 Returns an array where the first element is the top-level state,
@@ -261,7 +261,7 @@ and subsequent elements are nested child states.
 
 > **getCurrentStatePath**(): `string`
 
-Defined in: [hierarchical.ts:244](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L244)
+Defined in: [hierarchical.ts:324](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/hierarchical.ts#L324)
 
 Gets the current hierarchical state path.
 Returns a simple state name for non-composite states,
@@ -279,7 +279,7 @@ or a dot-notation path for composite states (e.g., "PARENT.CHILD").
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-Defined in: [interface.ts:497](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L497)
+Defined in: [interface.ts:652](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L652)
 
 ##### Type Parameters
 
@@ -305,7 +305,7 @@ Defined in: [interface.ts:497](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-Defined in: [interface.ts:498](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L498)
+Defined in: [interface.ts:658](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L658)
 
 ##### Type Parameters
 
@@ -333,7 +333,7 @@ Defined in: [interface.ts:498](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **isInStatePath**(`path`): `boolean`
 
-Defined in: [hierarchical.ts:288](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/hierarchical.ts#L288)
+Defined in: [hierarchical.ts:368](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/hierarchical.ts#L368)
 
 Checks if the state machine is currently in a specific hierarchical path.
 Supports both simple state names and dot-notation paths.
@@ -356,7 +356,7 @@ State path to check (e.g., "PARENT" or "PARENT.CHILD")
 
 > **onHappens**(`callback`): `void`
 
-Defined in: [interface.ts:524](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L524)
+Defined in: [interface.ts:710](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L710)
 
 #### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [interface.ts:524](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **onStateChange**(`callback`): `void`
 
-Defined in: [interface.ts:520](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L520)
+Defined in: [interface.ts:706](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L706)
 
 #### Parameters
 
@@ -400,7 +400,7 @@ Defined in: [interface.ts:520](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **reset**(): `void`
 
-Defined in: [interface.ts:465](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L465)
+Defined in: [interface.ts:612](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L612)
 
 #### Returns
 
@@ -416,7 +416,7 @@ Defined in: [interface.ts:465](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **setContext**(`context`): `void`
 
-Defined in: [interface.ts:532](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L532)
+Defined in: [interface.ts:726](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L726)
 
 #### Parameters
 
@@ -438,7 +438,7 @@ Defined in: [interface.ts:532](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **start**(): `void`
 
-Defined in: [interface.ts:471](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L471)
+Defined in: [interface.ts:618](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L618)
 
 #### Returns
 
@@ -454,7 +454,7 @@ Defined in: [interface.ts:471](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **switchTo**(`state`): `void`
 
-Defined in: [interface.ts:492](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L492)
+Defined in: [interface.ts:647](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L647)
 
 #### Parameters
 
@@ -476,7 +476,7 @@ Defined in: [interface.ts:492](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **wrapup**(): `void`
 
-Defined in: [interface.ts:480](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L480)
+Defined in: [interface.ts:631](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L631)
 
 #### Returns
 

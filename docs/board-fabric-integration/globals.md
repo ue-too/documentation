@@ -1,4 +1,4 @@
-# @ue-too/board-fabric-integration v0.14.1
+# @ue-too/board-fabric-integration v0.15.0
 
 Board fabric integration package for uē-tôo.
 

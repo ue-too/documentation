@@ -4,7 +4,7 @@
 
 > **aabbIntersects**(`aabbA`, `aabbB`): `boolean`
 
-Defined in: [collision.ts:92](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/collision.ts#L92)
+Defined in: [collision.ts:172](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/collision.ts#L172)
 
 ## Parameters
 

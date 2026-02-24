@@ -2,7 +2,7 @@
 
 # Interface: SerializedECSState
 
-Defined in: [index.ts:364](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L364)
+Defined in: [index.ts:370](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L370)
 
 Serialized representation of the entire ECS state.
 
@@ -12,7 +12,7 @@ Serialized representation of the entire ECS state.
 
 > **entities**: [`SerializedEntity`](SerializedEntity.md)[]
 
-Defined in: [index.ts:366](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L366)
+Defined in: [index.ts:372](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L372)
 
 Array of all entities with their component data
 
@@ -22,6 +22,6 @@ Array of all entities with their component data
 
 > `optional` **schemas**: [`SerializedComponentSchema`](SerializedComponentSchema.md)[]
 
-Defined in: [index.ts:368](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L368)
+Defined in: [index.ts:374](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L374)
 
 Optional: Array of component schemas (if using schema-based components)

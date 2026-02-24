@@ -2,7 +2,7 @@
 
 # Interface: BaseContext
 
-Defined in: [interface.ts:29](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L29)
+Defined in: [interface.ts:29](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L29)
 
 Base context interface for state machines.
 
@@ -37,7 +37,7 @@ interface MyContext extends BaseContext {
 
 > **cleanup**(): `void`
 
-Defined in: [interface.ts:31](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L31)
+Defined in: [interface.ts:31](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L31)
 
 #### Returns
 
@@ -49,7 +49,7 @@ Defined in: [interface.ts:31](https://github.com/ue-too/ue-too/blob/fa2a5e592e08
 
 > **setup**(): `void`
 
-Defined in: [interface.ts:30](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L30)
+Defined in: [interface.ts:30](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L30)
 
 #### Returns
 

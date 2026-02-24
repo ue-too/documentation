@@ -4,7 +4,7 @@
 
 > **ScrollWithCtrlEventPayload** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:66](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L66)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:91](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L91)
 
 Payload for scroll events combined with ctrl key (zoom gesture).
 
@@ -14,7 +14,7 @@ Payload for scroll events combined with ctrl key (zoom gesture).
 
 > **deltaX**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:67](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L67)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:92](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L92)
 
 Horizontal scroll delta
 
@@ -24,7 +24,7 @@ Horizontal scroll delta
 
 > **deltaY**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:68](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L68)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:93](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L93)
 
 Vertical scroll delta
 
@@ -34,7 +34,7 @@ Vertical scroll delta
 
 > **x**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:69](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L69)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:94](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L94)
 
 Cursor X coordinate in window space (zoom anchor point)
 
@@ -44,6 +44,6 @@ Cursor X coordinate in window space (zoom anchor point)
 
 > **y**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:70](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L70)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:95](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L95)
 
 Cursor Y coordinate in window space (zoom anchor point)

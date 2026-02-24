@@ -2,7 +2,7 @@
 
 # Class: BCurve
 
-Defined in: [packages/curve/src/b-curve.ts:129](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L129)
+Defined in: [packages/curve/src/b-curve.ts:134](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L134)
 
 Bezier curve class supporting quadratic (3 points) and cubic (4 points) curves.
 
@@ -55,7 +55,7 @@ const tangent = curve.derivative(0.5);
 
 > **new BCurve**(`controlPoints`): `BCurve`
 
-Defined in: [packages/curve/src/b-curve.ts:163](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L163)
+Defined in: [packages/curve/src/b-curve.ts:170](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L170)
 
 #### Parameters
 
@@ -75,7 +75,7 @@ Defined in: [packages/curve/src/b-curve.ts:163](https://github.com/ue-too/ue-too
 
 > **get** **AABB**(): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:970](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L970)
+Defined in: [packages/curve/src/b-curve.ts:1454](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1454)
 
 ##### Returns
 
@@ -97,7 +97,7 @@ Defined in: [packages/curve/src/b-curve.ts:970](https://github.com/ue-too/ue-too
 
 > **get** **fullLength**(): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:305](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L305)
+Defined in: [packages/curve/src/b-curve.ts:422](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L422)
 
 ##### Returns
 
@@ -109,7 +109,7 @@ Defined in: [packages/curve/src/b-curve.ts:305](https://github.com/ue-too/ue-too
 
 > **advanceAtTWithLength**(`tVal`, `length`): `AdvanceAtTWithLengthRes`
 
-Defined in: [packages/curve/src/b-curve.ts:776](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L776)
+Defined in: [packages/curve/src/b-curve.ts:1203](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1203)
 
 #### Parameters
 
@@ -131,7 +131,7 @@ Defined in: [packages/curve/src/b-curve.ts:776](https://github.com/ue-too/ue-too
 
 > **advanceByDistance**(`startT`, `distance`): `AdvanceAtTWithLengthRes`
 
-Defined in: [packages/curve/src/b-curve.ts:858](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L858)
+Defined in: [packages/curve/src/b-curve.ts:1291](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1291)
 
 #### Parameters
 
@@ -153,7 +153,7 @@ Defined in: [packages/curve/src/b-curve.ts:858](https://github.com/ue-too/ue-too
 
 > **compute**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:239](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L239)
+Defined in: [packages/curve/src/b-curve.ts:326](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L326)
 
 #### Parameters
 
@@ -171,7 +171,7 @@ Defined in: [packages/curve/src/b-curve.ts:239](https://github.com/ue-too/ue-too
 
 > **curvature**(`tVal`): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:592](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L592)
+Defined in: [packages/curve/src/b-curve.ts:922](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L922)
 
 #### Parameters
 
@@ -189,7 +189,7 @@ Defined in: [packages/curve/src/b-curve.ts:592](https://github.com/ue-too/ue-too
 
 > **derivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:336](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L336)
+Defined in: [packages/curve/src/b-curve.ts:454](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L454)
 
 #### Parameters
 
@@ -203,11 +203,49 @@ Defined in: [packages/curve/src/b-curve.ts:336](https://github.com/ue-too/ue-too
 
 ***
 
+### derivativeByPercentage()
+
+> **derivativeByPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
+
+Defined in: [packages/curve/src/b-curve.ts:235](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L235)
+
+Gets the derivative (tangent vector) at a given percentage of the curve length.
+
+#### Parameters
+
+##### percentage
+
+`number`
+
+Percentage of the curve length (0 to 1), where 0 is the start and 1 is the end
+
+#### Returns
+
+[`Point`](../type-aliases/Point.md)
+
+The derivative vector at the specified percentage along the curve
+
+#### Remarks
+
+This method calculates the derivative at a point specified by percentage of arc length,
+not by the parameter t. This is useful when you want to sample the curve uniformly
+by distance rather than by parameter value.
+
+#### Example
+
+```typescript
+const curve = new BCurve([...]);
+const tangent = curve.derivativeByPercentage(0.5); // Derivative at midpoint
+const normalized = PointCal.unitVector(tangent); // Normalize for direction
+```
+
+***
+
 ### derivativeNormalized()
 
 > **derivativeNormalized**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:340](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L340)
+Defined in: [packages/curve/src/b-curve.ts:458](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L458)
 
 #### Parameters
 
@@ -225,7 +263,7 @@ Defined in: [packages/curve/src/b-curve.ts:340](https://github.com/ue-too/ue-too
 
 > **determinant3by3**(`matrix`): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:579](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L579)
+Defined in: [packages/curve/src/b-curve.ts:909](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L909)
 
 #### Parameters
 
@@ -243,7 +281,7 @@ Defined in: [packages/curve/src/b-curve.ts:579](https://github.com/ue-too/ue-too
 
 > **findArcs**(`errorThreshold`): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:493](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L493)
+Defined in: [packages/curve/src/b-curve.ts:732](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L732)
 
 #### Parameters
 
@@ -261,7 +299,7 @@ Defined in: [packages/curve/src/b-curve.ts:493](https://github.com/ue-too/ue-too
 
 > **findArcStartingAt**(`errorThreshold`, `low`): \{ `arc?`: \{ `center`: [`Point`](../type-aliases/Point.md); `endPoint`: [`Point`](../type-aliases/Point.md); `endT`: `number`; `radius`: `number`; `startPoint`: [`Point`](../type-aliases/Point.md); `startT`: `number`; \}; `good`: `boolean`; \} \| `null`
 
-Defined in: [packages/curve/src/b-curve.ts:511](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L511)
+Defined in: [packages/curve/src/b-curve.ts:757](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L757)
 
 #### Parameters
 
@@ -283,7 +321,7 @@ Defined in: [packages/curve/src/b-curve.ts:511](https://github.com/ue-too/ue-too
 
 > **findClosest**(`x`, `y`, `LUT`, `circleRadius`, `distanceEpsilon`, `pd2?`, `pd1?`): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:937](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L937)
+Defined in: [packages/curve/src/b-curve.ts:1400](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1400)
 
 #### Parameters
 
@@ -325,7 +363,7 @@ Defined in: [packages/curve/src/b-curve.ts:937](https://github.com/ue-too/ue-too
 
 > **fitArc**(`startPoint`, `endPoint`, `midPoint`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:558](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L558)
+Defined in: [packages/curve/src/b-curve.ts:836](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L836)
 
 #### Parameters
 
@@ -371,7 +409,7 @@ Defined in: [packages/curve/src/b-curve.ts:558](https://github.com/ue-too/ue-too
 
 > **get**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:252](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L252)
+Defined in: [packages/curve/src/b-curve.ts:342](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L342)
 
 #### Parameters
 
@@ -389,7 +427,7 @@ Defined in: [packages/curve/src/b-curve.ts:252](https://github.com/ue-too/ue-too
 
 > **getArcLengthLUT**(`steps`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:344](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L344)
+Defined in: [packages/curve/src/b-curve.ts:464](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L464)
 
 #### Parameters
 
@@ -415,7 +453,7 @@ Defined in: [packages/curve/src/b-curve.ts:344](https://github.com/ue-too/ue-too
 
 > **getCacheStats**(): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:141](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L141)
+Defined in: [packages/curve/src/b-curve.ts:148](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L148)
 
 Gets cache statistics for performance monitoring
 
@@ -439,7 +477,7 @@ Object containing cache size and hit rate information
 
 > **getCircleIntersections**(`circleCenter`, `circleRadius`): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:739](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L739)
+Defined in: [packages/curve/src/b-curve.ts:1146](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1146)
 
 #### Parameters
 
@@ -461,7 +499,7 @@ Defined in: [packages/curve/src/b-curve.ts:739](https://github.com/ue-too/ue-too
 
 > **getCoefficientOfTTerms**(): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:605](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L605)
+Defined in: [packages/curve/src/b-curve.ts:946](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L946)
 
 #### Returns
 
@@ -473,7 +511,7 @@ Defined in: [packages/curve/src/b-curve.ts:605](https://github.com/ue-too/ue-too
 
 > **getCoefficientOfTTermsWithControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:613](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L613)
+Defined in: [packages/curve/src/b-curve.ts:956](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L956)
 
 #### Parameters
 
@@ -491,7 +529,7 @@ Defined in: [packages/curve/src/b-curve.ts:613](https://github.com/ue-too/ue-too
 
 > **getControlPoints**(): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:213](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L213)
+Defined in: [packages/curve/src/b-curve.ts:296](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L296)
 
 #### Returns
 
@@ -503,7 +541,7 @@ Defined in: [packages/curve/src/b-curve.ts:213](https://github.com/ue-too/ue-too
 
 > **getControlPointsAlignedWithXAxis**(): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:634](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L634)
+Defined in: [packages/curve/src/b-curve.ts:998](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L998)
 
 #### Returns
 
@@ -515,7 +553,7 @@ Defined in: [packages/curve/src/b-curve.ts:634](https://github.com/ue-too/ue-too
 
 > **getCurveIntersections**(`curve`, `deduplicationTolerance?`): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:966](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L966)
+Defined in: [packages/curve/src/b-curve.ts:1443](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1443)
 
 #### Parameters
 
@@ -537,7 +575,7 @@ Defined in: [packages/curve/src/b-curve.ts:966](https://github.com/ue-too/ue-too
 
 > **getDerivativeCoefficients**(): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:609](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L609)
+Defined in: [packages/curve/src/b-curve.ts:950](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L950)
 
 #### Returns
 
@@ -549,7 +587,7 @@ Defined in: [packages/curve/src/b-curve.ts:609](https://github.com/ue-too/ue-too
 
 > **getDerivativeControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:199](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L199)
+Defined in: [packages/curve/src/b-curve.ts:272](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L272)
 
 #### Parameters
 
@@ -567,7 +605,7 @@ Defined in: [packages/curve/src/b-curve.ts:199](https://github.com/ue-too/ue-too
 
 > **getExtrema**(): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:647](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L647)
+Defined in: [packages/curve/src/b-curve.ts:1017](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1017)
 
 #### Returns
 
@@ -587,7 +625,7 @@ Defined in: [packages/curve/src/b-curve.ts:647](https://github.com/ue-too/ue-too
 
 > **getLineIntersections**(`line`): `number`[]
 
-Defined in: [packages/curve/src/b-curve.ts:704](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L704)
+Defined in: [packages/curve/src/b-curve.ts:1101](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1101)
 
 #### Parameters
 
@@ -605,7 +643,7 @@ Defined in: [packages/curve/src/b-curve.ts:704](https://github.com/ue-too/ue-too
 
 > **getLUT**(`steps`): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:272](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L272)
+Defined in: [packages/curve/src/b-curve.ts:389](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L389)
 
 #### Parameters
 
@@ -623,7 +661,7 @@ Defined in: [packages/curve/src/b-curve.ts:272](https://github.com/ue-too/ue-too
 
 > **getLUTWithTVal**(`steps?`): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:287](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L287)
+Defined in: [packages/curve/src/b-curve.ts:404](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L404)
 
 #### Parameters
 
@@ -641,7 +679,7 @@ Defined in: [packages/curve/src/b-curve.ts:287](https://github.com/ue-too/ue-too
 
 > **getPointbyPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:172](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L172)
+Defined in: [packages/curve/src/b-curve.ts:181](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L181)
 
 #### Parameters
 
@@ -659,7 +697,7 @@ Defined in: [packages/curve/src/b-curve.ts:172](https://github.com/ue-too/ue-too
 
 > **getProjection**(`point`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:433](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L433)
+Defined in: [packages/curve/src/b-curve.ts:661](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L661)
 
 #### Parameters
 
@@ -685,7 +723,7 @@ Defined in: [packages/curve/src/b-curve.ts:433](https://github.com/ue-too/ue-too
 
 > **getSelfIntersections**(): `object`[]
 
-Defined in: [packages/curve/src/b-curve.ts:726](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L726)
+Defined in: [packages/curve/src/b-curve.ts:1132](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1132)
 
 #### Returns
 
@@ -697,7 +735,7 @@ Defined in: [packages/curve/src/b-curve.ts:726](https://github.com/ue-too/ue-too
 
 > **lengthAtT**(`tVal`): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:313](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L313)
+Defined in: [packages/curve/src/b-curve.ts:430](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L430)
 
 #### Parameters
 
@@ -715,7 +753,7 @@ Defined in: [packages/curve/src/b-curve.ts:313](https://github.com/ue-too/ue-too
 
 > **normal**(`tVal`): `object`
 
-Defined in: [packages/curve/src/b-curve.ts:992](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L992)
+Defined in: [packages/curve/src/b-curve.ts:1476](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1476)
 
 #### Parameters
 
@@ -741,7 +779,7 @@ Defined in: [packages/curve/src/b-curve.ts:992](https://github.com/ue-too/ue-too
 
 > **preWarmCache**(`steps`): `void`
 
-Defined in: [packages/curve/src/b-curve.ts:152](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L152)
+Defined in: [packages/curve/src/b-curve.ts:159](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L159)
 
 Pre-warms the cache with commonly used t values for better performance
 
@@ -763,7 +801,7 @@ Number of steps to pre-cache (default: 100)
 
 > **refineBinary**(`curve`, `x`, `y`, `LUT`, `i`, `targetDistance`, `epsilon`): \{ `distance`: `number`; `point`: [`Point`](../type-aliases/Point.md); `tVal`: `number`; \} \| `undefined`
 
-Defined in: [packages/curve/src/b-curve.ts:892](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L892)
+Defined in: [packages/curve/src/b-curve.ts:1339](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1339)
 
 #### Parameters
 
@@ -805,7 +843,7 @@ Defined in: [packages/curve/src/b-curve.ts:892](https://github.com/ue-too/ue-too
 
 > **secondDerivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-Defined in: [packages/curve/src/b-curve.ts:601](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L601)
+Defined in: [packages/curve/src/b-curve.ts:939](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L939)
 
 #### Parameters
 
@@ -823,7 +861,7 @@ Defined in: [packages/curve/src/b-curve.ts:601](https://github.com/ue-too/ue-too
 
 > **setControlPointAtIndex**(`index`, `newPoint`): `boolean`
 
-Defined in: [packages/curve/src/b-curve.ts:226](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L226)
+Defined in: [packages/curve/src/b-curve.ts:311](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L311)
 
 #### Parameters
 
@@ -845,7 +883,7 @@ Defined in: [packages/curve/src/b-curve.ts:226](https://github.com/ue-too/ue-too
 
 > **setControlPoints**(`controlPoints`): `void`
 
-Defined in: [packages/curve/src/b-curve.ts:217](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L217)
+Defined in: [packages/curve/src/b-curve.ts:300](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L300)
 
 #### Parameters
 
@@ -863,7 +901,7 @@ Defined in: [packages/curve/src/b-curve.ts:217](https://github.com/ue-too/ue-too
 
 > **split**(`tVal`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-Defined in: [packages/curve/src/b-curve.ts:369](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L369)
+Defined in: [packages/curve/src/b-curve.ts:502](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L502)
 
 #### Parameters
 
@@ -881,7 +919,7 @@ Defined in: [packages/curve/src/b-curve.ts:369](https://github.com/ue-too/ue-too
 
 > **splitAndTakeMidCurve**(`tVal`, `tVal2`): `BCurve`
 
-Defined in: [packages/curve/src/b-curve.ts:428](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L428)
+Defined in: [packages/curve/src/b-curve.ts:653](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L653)
 
 #### Parameters
 
@@ -903,7 +941,7 @@ Defined in: [packages/curve/src/b-curve.ts:428](https://github.com/ue-too/ue-too
 
 > **splitIn3Curves**(`tVal`, `tVal2`): \[`BCurve`, `BCurve`, `BCurve`\]
 
-Defined in: [packages/curve/src/b-curve.ts:412](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L412)
+Defined in: [packages/curve/src/b-curve.ts:633](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L633)
 
 #### Parameters
 
@@ -925,7 +963,7 @@ Defined in: [packages/curve/src/b-curve.ts:412](https://github.com/ue-too/ue-too
 
 > **splitIn3WithControlPoints**(`tVal`, `tVal2`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-Defined in: [packages/curve/src/b-curve.ts:395](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L395)
+Defined in: [packages/curve/src/b-curve.ts:613](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L613)
 
 #### Parameters
 
@@ -947,7 +985,7 @@ Defined in: [packages/curve/src/b-curve.ts:395](https://github.com/ue-too/ue-too
 
 > **splitIntoCurves**(`tVal`): \[`BCurve`, `BCurve`\]
 
-Defined in: [packages/curve/src/b-curve.ts:364](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L364)
+Defined in: [packages/curve/src/b-curve.ts:497](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L497)
 
 #### Parameters
 
@@ -965,7 +1003,7 @@ Defined in: [packages/curve/src/b-curve.ts:364](https://github.com/ue-too/ue-too
 
 > **translateRotateControlPoints**(`translation`, `rotationAngle`): [`Point`](../type-aliases/Point.md)[]
 
-Defined in: [packages/curve/src/b-curve.ts:695](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/curve/src/b-curve.ts#L695)
+Defined in: [packages/curve/src/b-curve.ts:1087](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/curve/src/b-curve.ts#L1087)
 
 #### Parameters
 

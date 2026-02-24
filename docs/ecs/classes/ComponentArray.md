@@ -2,7 +2,7 @@
 
 # Class: ComponentArray\<T\>
 
-Defined in: [index.ts:584](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L584)
+Defined in: [index.ts:601](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L601)
 
 Efficient sparse-set data structure for storing component data.
 
@@ -37,7 +37,7 @@ The component data type
 
 > **new ComponentArray**\<`T`\>(`maxEntities`): `ComponentArray`\<`T`\>
 
-Defined in: [index.ts:591](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L591)
+Defined in: [index.ts:607](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L607)
 
 #### Parameters
 
@@ -55,7 +55,7 @@ Defined in: [index.ts:591](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb
 
 > **entityDestroyed**(`entity`): `void`
 
-Defined in: [index.ts:650](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L650)
+Defined in: [index.ts:677](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L677)
 
 #### Parameters
 
@@ -77,7 +77,7 @@ Defined in: [index.ts:650](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb
 
 > **getAllEntities**(): `number`[]
 
-Defined in: [index.ts:658](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L658)
+Defined in: [index.ts:685](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L685)
 
 Get all entities that have this component.
 
@@ -93,7 +93,7 @@ Array of entity IDs that have this component
 
 > **getCount**(): `number`
 
-Defined in: [index.ts:673](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L673)
+Defined in: [index.ts:700](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L700)
 
 Get the count of entities with this component.
 
@@ -109,7 +109,7 @@ Number of entities with this component
 
 > **getData**(`entity`): `T` \| `null`
 
-Defined in: [index.ts:613](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L613)
+Defined in: [index.ts:632](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L632)
 
 #### Parameters
 
@@ -127,7 +127,7 @@ Defined in: [index.ts:613](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb
 
 > **insertData**(`entity`, `data`): `void`
 
-Defined in: [index.ts:598](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L598)
+Defined in: [index.ts:614](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L614)
 
 #### Parameters
 
@@ -149,7 +149,7 @@ Defined in: [index.ts:598](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb
 
 > **removeData**(`entity`): `void`
 
-Defined in: [index.ts:630](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L630)
+Defined in: [index.ts:653](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L653)
 
 #### Parameters
 

@@ -4,7 +4,7 @@
 
 > **BoardProvider**(`props`): `Element`
 
-Defined in: [hooks/useBoardify.tsx:356](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/hooks/useBoardify.tsx#L356)
+Defined in: [hooks/useBoardify.tsx:383](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-react-adapter/src/hooks/useBoardify.tsx#L383)
 
 Provider component for sharing a Board instance across the component tree.
 
