@@ -2,7 +2,7 @@
 
 # Class: TypeModificationEffect\<T\>
 
-Defined in: [action-system/effect.ts:123](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L123)
+Defined in: [action-system/effect.ts:156](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/action-system/effect.ts#L156)
 
 ## Type Parameters
 
@@ -20,7 +20,7 @@ Defined in: [action-system/effect.ts:123](https://github.com/ue-too/ue-too/blob/
 
 > **new TypeModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `newType`, `allowedValues?`): `TypeModificationEffect`\<`T`\>
 
-Defined in: [action-system/effect.ts:131](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L131)
+Defined in: [action-system/effect.ts:164](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/action-system/effect.ts#L164)
 
 #### Parameters
 
@@ -58,7 +58,7 @@ readonly `T`[]
 
 > **apply**(): `void`
 
-Defined in: [action-system/effect.ts:140](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/action-system/effect.ts#L140)
+Defined in: [action-system/effect.ts:180](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/action-system/effect.ts#L180)
 
 #### Returns
 

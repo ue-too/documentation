@@ -4,7 +4,7 @@
 
 > **createDefaultRotateToHandler**(): [`RotateToHandlerFunction`](../type-aliases/RotateToHandlerFunction.md)
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:442](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/rotation-handler.ts#L442)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:486](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-rig/rotation-handler.ts#L486)
 
 Creates a default "rotate to" handler pipeline for absolute rotation operations.
 

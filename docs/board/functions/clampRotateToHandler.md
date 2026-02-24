@@ -4,7 +4,7 @@
 
 > **clampRotateToHandler**(`targetRotation`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:303](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/rotation-handler.ts#L303)
+Defined in: [packages/board/src/camera/camera-rig/rotation-handler.ts:336](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-rig/rotation-handler.ts#L336)
 
 Handler pipeline step that clamps "rotate to" targets to camera rotation boundaries.
 

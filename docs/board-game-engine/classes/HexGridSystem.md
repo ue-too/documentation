@@ -2,7 +2,7 @@
 
 # Class: HexGridSystem
 
-Defined in: [grid-system/hex-grid.ts:69](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L69)
+Defined in: [grid-system/hex-grid.ts:100](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L100)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [grid-system/hex-grid.ts:69](https://github.com/ue-too/ue-too/blob/f
 
 > **new HexGridSystem**(`coordinator`): `HexGridSystem`
 
-Defined in: [grid-system/hex-grid.ts:73](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L73)
+Defined in: [grid-system/hex-grid.ts:104](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L104)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [grid-system/hex-grid.ts:73](https://github.com/ue-too/ue-too/blob/f
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [grid-system/hex-grid.ts:70](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L70)
+Defined in: [grid-system/hex-grid.ts:101](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L101)
 
 #### Implementation of
 
@@ -44,7 +44,7 @@ Defined in: [grid-system/hex-grid.ts:70](https://github.com/ue-too/ue-too/blob/f
 
 > **addEntityToGridCell**(`grid`, `q`, `r`, `entity`, `direction`, `displace`): `void`
 
-Defined in: [grid-system/hex-grid.ts:96](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L96)
+Defined in: [grid-system/hex-grid.ts:138](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L138)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [grid-system/hex-grid.ts:96](https://github.com/ue-too/ue-too/blob/f
 
 > **getCellEntityAt**(`grid`, `q`, `r`): `number` \| `null`
 
-Defined in: [grid-system/hex-grid.ts:155](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L155)
+Defined in: [grid-system/hex-grid.ts:240](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L240)
 
 #### Parameters
 
@@ -108,7 +108,7 @@ Defined in: [grid-system/hex-grid.ts:155](https://github.com/ue-too/ue-too/blob/
 
 > **getEntireGridEntities**(`grid`): \{ `entities`: (`number` \| `null`)[][]; `hasHole`: `boolean`; \} \| `null`
 
-Defined in: [grid-system/hex-grid.ts:125](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L125)
+Defined in: [grid-system/hex-grid.ts:192](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L192)
 
 #### Parameters
 

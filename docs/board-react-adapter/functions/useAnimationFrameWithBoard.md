@@ -4,7 +4,7 @@
 
 > **useAnimationFrameWithBoard**(`callback?`): `void`
 
-Defined in: [hooks/useAnimationFrame.ts:102](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-react-adapter/src/hooks/useAnimationFrame.ts#L102)
+Defined in: [hooks/useAnimationFrame.ts:103](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-react-adapter/src/hooks/useAnimationFrame.ts#L103)
 
 Hook to run an animation loop integrated with the Board's step function.
 

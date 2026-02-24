@@ -1,4 +1,4 @@
-# @ue-too/board-konva-integration v0.14.1
+# @ue-too/board-konva-integration v0.15.0
 
 Board konva integration package for uē-tôo.
 

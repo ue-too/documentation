@@ -2,7 +2,7 @@
 
 # Class: SweepAndPrune\<T\>
 
-Defined in: [dynamic-tree.ts:110](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L110)
+Defined in: [dynamic-tree.ts:112](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L112)
 
 Sweep and Prune (SAP) spatial indexing algorithm.
 
@@ -32,7 +32,7 @@ Sweep and Prune (SAP) spatial indexing algorithm.
 
 > **clear**(): `void`
 
-Defined in: [dynamic-tree.ts:115](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L115)
+Defined in: [dynamic-tree.ts:122](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L122)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [dynamic-tree.ts:115](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > `optional` **draw**(`context`): `void`
 
-Defined in: [dynamic-tree.ts:244](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L244)
+Defined in: [dynamic-tree.ts:281](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L281)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [dynamic-tree.ts:244](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **findAllOverlaps**(): `object`[]
 
-Defined in: [dynamic-tree.ts:189](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L189)
+Defined in: [dynamic-tree.ts:212](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L212)
 
 #### Returns
 
@@ -82,7 +82,7 @@ Defined in: [dynamic-tree.ts:189](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **getStats**(): `object`
 
-Defined in: [dynamic-tree.ts:265](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L265)
+Defined in: [dynamic-tree.ts:306](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L306)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [dynamic-tree.ts:265](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **insert**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:121](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L121)
+Defined in: [dynamic-tree.ts:128](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L128)
 
 #### Parameters
 
@@ -124,7 +124,7 @@ Defined in: [dynamic-tree.ts:121](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **remove**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:155](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L155)
+Defined in: [dynamic-tree.ts:172](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L172)
 
 #### Parameters
 
@@ -142,7 +142,7 @@ Defined in: [dynamic-tree.ts:155](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **retrieve**(`queryObject`): `T`[]
 
-Defined in: [dynamic-tree.ts:164](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L164)
+Defined in: [dynamic-tree.ts:181](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L181)
 
 #### Parameters
 
@@ -164,7 +164,7 @@ Defined in: [dynamic-tree.ts:164](https://github.com/ue-too/ue-too/blob/fa2a5e59
 
 > **update**(`object`): `void`
 
-Defined in: [dynamic-tree.ts:134](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/dynamics/src/dynamic-tree.ts#L134)
+Defined in: [dynamic-tree.ts:151](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/dynamics/src/dynamic-tree.ts#L151)
 
 #### Parameters
 

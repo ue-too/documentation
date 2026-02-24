@@ -4,7 +4,7 @@
 
 > **Delay**\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> = `object`
 
-Defined in: [interface.ts:317](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L317)
+Defined in: [interface.ts:430](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L430)
 
 ## Type Parameters
 
@@ -30,7 +30,7 @@ Defined in: [interface.ts:317](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **action**: [`Action`](Action.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\>
 
-Defined in: [interface.ts:324](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L324)
+Defined in: [interface.ts:439](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L439)
 
 ***
 
@@ -38,4 +38,4 @@ Defined in: [interface.ts:324](https://github.com/ue-too/ue-too/blob/fa2a5e592e0
 
 > **time**: `number`
 
-Defined in: [interface.ts:323](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/being/src/interface.ts#L323)
+Defined in: [interface.ts:438](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/being/src/interface.ts#L438)

@@ -4,7 +4,7 @@
 
 > **createComponentName**(`name`): `symbol`
 
-Defined in: [index.ts:232](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/ecs/src/index.ts#L232)
+Defined in: [index.ts:234](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/ecs/src/index.ts#L234)
 
 Helper function to create a component name from a string.
 This creates a unique symbol for the component name.

@@ -1,4 +1,4 @@
-# @ue-too/animate v0.14.1
+# @ue-too/animate v0.15.0
 
 Keyframe-based animation library for TypeScript.
 

@@ -1,4 +1,4 @@
-# @ue-too/board-vue-adapter v0.14.1
+# @ue-too/board-vue-adapter v0.15.0
 
 Board vue adapter package for uē-tôo.
 

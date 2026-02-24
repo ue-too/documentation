@@ -4,7 +4,7 @@
 
 > **Callback**\<`K`\> = (`event`, `cameraState`) => `void`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:122](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/update-publisher.ts#L122)
+Defined in: [packages/board/src/camera/update-publisher.ts:131](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/update-publisher.ts#L131)
 
 Generic callback function type for camera events.
 

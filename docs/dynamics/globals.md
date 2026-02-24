@@ -1,4 +1,4 @@
-# @ue-too/dynamics v0.14.1
+# @ue-too/dynamics v0.15.0
 
 2D physics engine with rigid body dynamics and collision detection.
 

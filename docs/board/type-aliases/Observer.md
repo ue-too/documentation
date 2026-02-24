@@ -4,7 +4,7 @@
 
 > **Observer**\<`T`\> = (...`data`) => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:25](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/utils/observable.ts#L25)
+Defined in: [packages/board/src/utils/observable.ts:25](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/utils/observable.ts#L25)
 
 Type definition for an observer callback function.
 

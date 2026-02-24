@@ -2,7 +2,7 @@
 
 # Class: OrthoGridSystem
 
-Defined in: [grid-system/ortho-grid.ts:55](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L55)
+Defined in: [grid-system/ortho-grid.ts:86](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L86)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [grid-system/ortho-grid.ts:55](https://github.com/ue-too/ue-too/blob
 
 > **new OrthoGridSystem**(`coordinator`): `OrthoGridSystem`
 
-Defined in: [grid-system/ortho-grid.ts:59](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L59)
+Defined in: [grid-system/ortho-grid.ts:90](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L90)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [grid-system/ortho-grid.ts:59](https://github.com/ue-too/ue-too/blob
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [grid-system/ortho-grid.ts:56](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L56)
+Defined in: [grid-system/ortho-grid.ts:87](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L87)
 
 #### Implementation of
 
@@ -44,7 +44,7 @@ Defined in: [grid-system/ortho-grid.ts:56](https://github.com/ue-too/ue-too/blob
 
 > **addEntityToGridCell**(`grid`, `row`, `column`, `entity`, `direction`, `displace`): `void`
 
-Defined in: [grid-system/ortho-grid.ts:82](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L82)
+Defined in: [grid-system/ortho-grid.ts:124](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L124)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [grid-system/ortho-grid.ts:82](https://github.com/ue-too/ue-too/blob
 
 > **getCellEntityAt**(`grid`, `row`, `column`): `number` \| `null`
 
-Defined in: [grid-system/ortho-grid.ts:137](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L137)
+Defined in: [grid-system/ortho-grid.ts:218](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L218)
 
 #### Parameters
 
@@ -108,7 +108,7 @@ Defined in: [grid-system/ortho-grid.ts:137](https://github.com/ue-too/ue-too/blo
 
 > **getEntireGridEntities**(`grid`): \{ `entities`: (`number` \| `null`)[][]; `hasHole`: `boolean`; \} \| `null`
 
-Defined in: [grid-system/ortho-grid.ts:111](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L111)
+Defined in: [grid-system/ortho-grid.ts:178](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L178)
 
 #### Parameters
 

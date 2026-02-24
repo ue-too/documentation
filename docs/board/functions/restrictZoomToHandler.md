@@ -4,7 +4,7 @@
 
 > **restrictZoomToHandler**(`destination`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:297](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/zoom-handler.ts#L297)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:314](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-rig/zoom-handler.ts#L314)
 
 Handler pipeline step that prevents "zoom to" operations when zoom is locked.
 

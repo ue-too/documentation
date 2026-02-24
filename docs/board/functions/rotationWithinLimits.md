@@ -4,7 +4,7 @@
 
 > **rotationWithinLimits**(`rotation`, `rotationLimits?`): `boolean`
 
-Defined in: [packages/board/src/camera/utils/rotation.ts:107](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/utils/rotation.ts#L107)
+Defined in: [packages/board/src/camera/utils/rotation.ts:131](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/utils/rotation.ts#L131)
 
 Checks if a rotation angle is within specified angular limits.
 

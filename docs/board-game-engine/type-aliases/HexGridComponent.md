@@ -4,7 +4,7 @@
 
 > **HexGridComponent** = `object`
 
-Defined in: [grid-system/hex-grid.ts:6](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L6)
+Defined in: [grid-system/hex-grid.ts:19](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L19)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/hex-grid.ts:6](https://github.com/ue-too/ue-too/blob/fa
 
 > **height**: `number`
 
-Defined in: [grid-system/hex-grid.ts:9](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L9)
+Defined in: [grid-system/hex-grid.ts:22](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L22)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/hex-grid.ts:9](https://github.com/ue-too/ue-too/blob/fa
 
 > **name**: `string`
 
-Defined in: [grid-system/hex-grid.ts:7](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L7)
+Defined in: [grid-system/hex-grid.ts:20](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L20)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [grid-system/hex-grid.ts:7](https://github.com/ue-too/ue-too/blob/fa
 
 > **variant**: [`HexGridVariant`](HexGridVariant.md)
 
-Defined in: [grid-system/hex-grid.ts:10](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L10)
+Defined in: [grid-system/hex-grid.ts:23](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L23)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [grid-system/hex-grid.ts:10](https://github.com/ue-too/ue-too/blob/f
 
 > **width**: `number`
 
-Defined in: [grid-system/hex-grid.ts:8](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/hex-grid.ts#L8)
+Defined in: [grid-system/hex-grid.ts:21](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/hex-grid.ts#L21)

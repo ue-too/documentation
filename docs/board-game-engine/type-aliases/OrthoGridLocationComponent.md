@@ -4,7 +4,7 @@
 
 > **OrthoGridLocationComponent** = `object`
 
-Defined in: [grid-system/ortho-grid.ts:11](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L11)
+Defined in: [grid-system/ortho-grid.ts:24](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L24)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [grid-system/ortho-grid.ts:11](https://github.com/ue-too/ue-too/blob
 
 > **column**: `number`
 
-Defined in: [grid-system/ortho-grid.ts:14](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L14)
+Defined in: [grid-system/ortho-grid.ts:27](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L27)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [grid-system/ortho-grid.ts:14](https://github.com/ue-too/ue-too/blob
 
 > **grid**: `Entity`
 
-Defined in: [grid-system/ortho-grid.ts:12](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L12)
+Defined in: [grid-system/ortho-grid.ts:25](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L25)
 
 ***
 
@@ -28,4 +28,4 @@ Defined in: [grid-system/ortho-grid.ts:12](https://github.com/ue-too/ue-too/blob
 
 > **row**: `number`
 
-Defined in: [grid-system/ortho-grid.ts:13](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-game-engine/src/grid-system/ortho-grid.ts#L13)
+Defined in: [grid-system/ortho-grid.ts:26](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-game-engine/src/grid-system/ortho-grid.ts#L26)

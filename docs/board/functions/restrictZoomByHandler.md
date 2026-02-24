@@ -4,7 +4,7 @@
 
 > **restrictZoomByHandler**(`delta`, `camera`, `config`): `number`
 
-Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:341](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/camera/camera-rig/zoom-handler.ts#L341)
+Defined in: [packages/board/src/camera/camera-rig/zoom-handler.ts:362](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/camera/camera-rig/zoom-handler.ts#L362)
 
 Handler pipeline step that prevents "zoom by" operations when zoom is locked.
 

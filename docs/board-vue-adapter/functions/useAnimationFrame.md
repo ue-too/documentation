@@ -4,7 +4,7 @@
 
 > **useAnimationFrame**(`callback?`): `void`
 
-Defined in: [useBoard.ts:48](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board-vue-adapter/src/useBoard.ts#L48)
+Defined in: [useBoard.ts:65](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board-vue-adapter/src/useBoard.ts#L65)
 
 Hook to run a callback on every animation frame.
 

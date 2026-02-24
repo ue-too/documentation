@@ -2,7 +2,7 @@
 
 # Interface: TouchContext
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:46](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L46)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:47](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L47)
 
 Context interface for the touch input state machine.
 
@@ -35,7 +35,7 @@ This interface extends BaseContext from the @ue-too/being state machine library.
 
 > **addTouchPoints**: (`points`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:48](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L48)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:49](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L49)
 
 Adds new touch points to tracking
 
@@ -55,7 +55,7 @@ Adds new touch points to tracking
 
 > **alignCoordinateSystem**: `boolean`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:58](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L58)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:59](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L59)
 
 Whether to use standard screen coordinate system (vs inverted Y-axis)
 
@@ -65,7 +65,7 @@ Whether to use standard screen coordinate system (vs inverted Y-axis)
 
 > **canvas**: [`Canvas`](Canvas.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:60](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L60)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:61](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L61)
 
 Canvas accessor for dimensions and coordinate transformations
 
@@ -75,7 +75,7 @@ Canvas accessor for dimensions and coordinate transformations
 
 > **getCurrentTouchPointsCount**: () => `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:52](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L52)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:53](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L53)
 
 Returns the current number of active touch points
 
@@ -89,7 +89,7 @@ Returns the current number of active touch points
 
 > **getInitialTouchPointsPositions**: (`idents`) => [`TouchPoints`](../type-aliases/TouchPoints.md)[]
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:54](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L54)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:55](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L55)
 
 Retrieves the initial positions of specific touch points
 
@@ -109,7 +109,7 @@ Retrieves the initial positions of specific touch points
 
 > **removeTouchPoints**: (`idents`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:50](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L50)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:51](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L51)
 
 Removes touch points from tracking by identifier
 
@@ -129,7 +129,7 @@ Removes touch points from tracking by identifier
 
 > **updateTouchPoints**: (`pointsMoved`) => `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:56](https://github.com/ue-too/ue-too/blob/fa2a5e592e085bb95164400745ceeb08136af6cf/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L56)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:57](https://github.com/ue-too/ue-too/blob/07fe90dac52658f644c26853a3d345b17ce08df7/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L57)
 
 Updates the current positions of touch points
 
