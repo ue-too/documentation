@@ -1,0 +1,17 @@
+[@ue-too/board-react-adapter](../../modules.md) / [index](../index.md) / useCustomTouchEventParser
+
+# 函式: useCustomTouchEventParser()
+
+> **useCustomTouchEventParser**(`eventParser`): `void`
+
+定義於: [hooks/useBoardify.tsx:487](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-react-adapter/src/hooks/useBoardify.tsx#L487)
+
+## 參數
+
+### eventParser
+
+`TouchEventParser`
+
+## 回傳
+
+`void`
