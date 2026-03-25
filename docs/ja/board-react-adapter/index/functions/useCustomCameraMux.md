@@ -1,0 +1,46 @@
+[@ue-too/board-react-adapter](../../modules.md) / [index](../index.md) / useCustomCameraMux
+
+# 関数: useCustomCameraMux()
+
+> **useCustomCameraMux**(`cameraMux`): `void`
+
+定義: [hooks/useBoardify.tsx:294](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-react-adapter/src/hooks/useBoardify.tsx#L294)
+
+Hook to set a custom camera multiplexer on the board.
+
+## パラメータ
+
+### cameraMux
+
+`CameraMux`
+
+Custom camera mux implementation to use
+
+## 戻り値
+
+`void`
+
+## Remarks
+
+This hook allows you to replace the board's default camera mux with a custom implementation.
+Useful when you need custom input coordination, animation control, or state-based input blocking.
+
+The camera mux is updated whenever the provided `cameraMux` instance changes.
+
+## 例
+
+```tsx
+function CustomMuxBoard() {
+  const myCustomMux = useMemo(() => {
+    return createCameraMuxWithAnimationAndLock(camera);
+  }, []);
+
+  useCustomCameraMux(myCustomMux);
+
+  return <Board />;
+}
+```
+
+## 参照
+
+CameraMux from @ue-too/board for camera mux interface

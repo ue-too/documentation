@@ -1,0 +1,27 @@
+[@ue-too/curve](../../modules.md) / [index](../index.md) / getIntersectionsBetweenCurves
+
+# 関数: getIntersectionsBetweenCurves()
+
+> **getIntersectionsBetweenCurves**(`curve`, `curve2`, `deduplicationTolerance`): `object`[]
+
+定義: [packages/curve/src/b-curve.ts:1964](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1964)
+
+Finds all intersection points between two Bezier curves.
+
+## パラメータ
+
+### curve
+
+[`BCurve`](../classes/BCurve.md)
+
+### curve2
+
+[`BCurve`](../classes/BCurve.md)
+
+### deduplicationTolerance
+
+`number` = `0.01`
+
+## 戻り値
+
+`object`[]
