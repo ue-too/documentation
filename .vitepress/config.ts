@@ -67,6 +67,15 @@ function fixSidebarLinks(sidebar: any[], locale: Locale): any[] {
   })
 }
 
+// Custom guide pages per package (keyed by package name)
+const customGuides: Record<string, Record<Locale, { text: string; file: string }>> = {
+  being: {
+    en: { text: 'Usage Guide', file: 'usage-guide' },
+    'zh-TW': { text: '使用指南', file: 'usage-guide' },
+    ja: { text: '使用ガイド', file: 'usage-guide' },
+  },
+}
+
 // Add overview link to the top of a package sidebar
 function addIndexToSidebar(sidebar: any[], locale: Locale, packageName: string): any[] {
   const prefix = locale === 'en' ? '' : `/${locale}`
@@ -74,7 +83,21 @@ function addIndexToSidebar(sidebar: any[], locale: Locale, packageName: string):
     text: locale === 'zh-TW' ? '概覽' : locale === 'ja' ? '概要' : 'Overview',
     link: `${prefix}/${packageName}/`
   }
-  return [indexItem, ...sidebar]
+  const items = [indexItem]
+
+  // Add custom guide pages if they exist for this package
+  const guide = customGuides[packageName]?.[locale]
+  if (guide) {
+    const guidePath = join(localeDocsDir(locale, packageName), `${guide.file}.md`)
+    if (existsSync(guidePath)) {
+      items.push({
+        text: guide.text,
+        link: `${prefix}/${packageName}/${guide.file}`
+      })
+    }
+  }
+
+  return [...items, ...sidebar]
 }
 
 // Build the sidebar config for a given locale
