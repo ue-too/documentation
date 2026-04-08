@@ -2,7 +2,7 @@
 
 # クラス: VanillaTouchEventParser
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:84](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L84)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:84](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L84)
 
 DOM event parser for touch input.
 
@@ -63,7 +63,7 @@ parser.tearDown();
 
 > **new VanillaTouchEventParser**(`touchInputStateMachine`, `orchestrator`, `canvas?`): `VanillaTouchEventParser`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:96](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L96)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:96](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L96)
 
 #### パラメータ
 
@@ -91,7 +91,7 @@ parser.tearDown();
 
 > **get** **disabled**(): `boolean`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:164](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L164)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:164](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L164)
 
 Whether all touch input is disabled
 
@@ -113,7 +113,7 @@ Whether all touch input is disabled
 
 > **get** **orchestrator**(): [`InputOrchestrator`](InputOrchestrator.md)
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:110](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L110)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:110](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L110)
 
 ##### 戻り値
 
@@ -125,7 +125,7 @@ Whether all touch input is disabled
 
 > **attach**(`canvas`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:252](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L252)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:252](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L252)
 
 Attaches to a new canvas element
 
@@ -149,7 +149,7 @@ Attaches to a new canvas element
 
 > **bindListeners**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:114](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L114)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:114](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L114)
 
 #### 戻り値
 
@@ -161,7 +161,7 @@ Attaches to a new canvas element
 
 > **disable**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:168](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L168)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:168](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L168)
 
 Disables the parser; the event listeners are still attached just not processing any events
 
@@ -179,7 +179,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **disableStrategy**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:125](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L125)
 
 #### 戻り値
 
@@ -191,7 +191,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **enable**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:172](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L172)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:172](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L172)
 
 Enables the parser
 
@@ -209,7 +209,7 @@ Enables the parser
 
 > **enableStrategy**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:121](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L121)
 
 #### 戻り値
 
@@ -221,7 +221,7 @@ Enables the parser
 
 > **setUp**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:129](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L129)
 
 Initializes event listeners
 
@@ -239,7 +239,7 @@ Initializes event listeners
 
 > **tearDown**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:158](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L158)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:158](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L158)
 
 Removes event listeners and cleans up
 
@@ -257,7 +257,7 @@ Removes event listeners and cleans up
 
 > **touchcancelHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:206](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L206)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:206](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L206)
 
 #### パラメータ
 
@@ -275,7 +275,7 @@ Removes event listeners and cleans up
 
 > **touchendHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:221](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L221)
 
 #### パラメータ
 
@@ -293,7 +293,7 @@ Removes event listeners and cleans up
 
 > **touchmoveHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:236](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L236)
 
 #### パラメータ
 
@@ -311,7 +311,7 @@ Removes event listeners and cleans up
 
 > **touchstartHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:189](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L189)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts:189](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-touch-event-parser.ts#L189)
 
 #### パラメータ
 

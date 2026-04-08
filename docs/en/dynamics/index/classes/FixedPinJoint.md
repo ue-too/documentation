@@ -2,7 +2,7 @@
 
 # Class: FixedPinJoint
 
-Defined in: [constraint.ts:50](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L50)
+Defined in: [constraint.ts:50](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L50)
 
 Pin joint connecting a body to a fixed world point.
 
@@ -37,7 +37,7 @@ world.addConstraint(joint);
 
 > **new FixedPinJoint**(`bodyA`, `anchorA`, `worldAnchorA`): `FixedPinJoint`
 
-Defined in: [constraint.ts:55](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L55)
+Defined in: [constraint.ts:55](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L55)
 
 #### Parameters
 
@@ -63,7 +63,7 @@ Defined in: [constraint.ts:55](https://github.com/ue-too/ue-too/blob/7d57cce875e
 
 > **enforce**(`dt`): `void`
 
-Defined in: [constraint.ts:61](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L61)
+Defined in: [constraint.ts:61](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L61)
 
 Enforces the constraint for one timestep.
 
@@ -89,7 +89,7 @@ Timestep in seconds
 
 > **solveWorldPinJointConstraint**(`dt`): `void`
 
-Defined in: [constraint.ts:65](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L65)
+Defined in: [constraint.ts:65](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L65)
 
 #### Parameters
 

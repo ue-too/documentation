@@ -2,7 +2,7 @@
 
 # Class: KmtInputStateMachineWebWorkerProxy
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
 
 ## Extends
 
@@ -14,7 +14,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
 
 #### Parameters
 
@@ -200,7 +200,7 @@ Defined in: packages/being/dist/interface.d.ts:402
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
 
 #### Parameters
 

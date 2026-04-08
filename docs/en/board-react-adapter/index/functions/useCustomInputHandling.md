@@ -4,7 +4,7 @@
 
 > **useCustomInputHandling**(): `object`
 
-Defined in: [hooks/useBoardify.tsx:325](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/hooks/useBoardify.tsx#L325)
+Defined in: [hooks/useBoardify.tsx:325](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-react-adapter/src/hooks/useBoardify.tsx#L325)
 
 The custom input handling logic is before everything else. To use this hook, you would need to handle the event from the canvas and pass down the result to the `processInputEvent` function.
 

@@ -4,7 +4,7 @@
 
 > **KmtOutputEvent** = \{ `delta`: `Point`; `type`: `"pan"`; \} \| \{ `anchorPointInViewPort`: `Point`; `delta`: `number`; `type`: `"zoom"`; \} \| \{ `deltaRotation`: `number`; `type`: `"rotate"`; \} \| \{ `style`: [`CursorStyle`](../enumerations/CursorStyle.md); `type`: `"cursor"`; \} \| \{ `type`: `"none"`; \}
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:176](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L176)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:176](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L176)
 
 Output events produced by the KMT state machine for the orchestrator.
 

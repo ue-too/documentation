@@ -4,7 +4,7 @@
 
 > **GuardMapping**\<`Context`, `G`, `States`\> = `object`
 
-定義: [interface.ts:457](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L457)
+定義: [interface.ts:457](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L457)
 
 ## Description
 
@@ -41,7 +41,7 @@ You probably don't need to use this type directly.
 
 > **guard**: `G` *extends* [`Guard`](Guard.md)\<`Context`, infer K\> ? `K` : `never`
 
-定義: [interface.ts:462](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L462)
+定義: [interface.ts:462](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L462)
 
 ***
 
@@ -49,4 +49,4 @@ You probably don't need to use this type directly.
 
 > **target**: `States`
 
-定義: [interface.ts:463](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L463)
+定義: [interface.ts:463](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L463)

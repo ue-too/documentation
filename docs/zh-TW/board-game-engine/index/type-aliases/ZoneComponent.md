@@ -4,7 +4,7 @@
 
 > **ZoneComponent** = `object`
 
-定義於: [zone-system/zone-component.ts:35](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
+定義於: [zone-system/zone-component.ts:35](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
 
 ## 屬性
 
@@ -12,7 +12,7 @@
 
 > **ordered**: `boolean`
 
-定義於: [zone-system/zone-component.ts:39](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
+定義於: [zone-system/zone-component.ts:39](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **owner**: `Entity` \| `null`
 
-定義於: [zone-system/zone-component.ts:37](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
+定義於: [zone-system/zone-component.ts:37](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
 
 ***
 
@@ -28,7 +28,7 @@
 
 > **visibility**: `"public"` \| `"private"` \| `"owner-only"`
 
-定義於: [zone-system/zone-component.ts:38](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
+定義於: [zone-system/zone-component.ts:38](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
 
 ***
 
@@ -36,4 +36,4 @@
 
 > **zone**: `string`
 
-定義於: [zone-system/zone-component.ts:36](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L36)
+定義於: [zone-system/zone-component.ts:36](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/zone-component.ts#L36)

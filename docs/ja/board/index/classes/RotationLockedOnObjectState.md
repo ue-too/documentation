@@ -2,7 +2,7 @@
 
 # クラス: RotationLockedOnObjectState
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:354](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L354)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:354](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L354)
 
 State implementation for camera locked to follow an object rotation.
 Only accepts locked object rotation events until unlocked.
@@ -17,7 +17,7 @@ Only accepts locked object rotation events until unlocked.
 
 > **new RotationLockedOnObjectState**(): `RotationLockedOnObjectState`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:360](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L360)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:360](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L360)
 
 #### 戻り値
 
@@ -69,7 +69,7 @@ Only accepts locked object rotation events until unlocked.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`RotateEventPayloadMapping`](../type-aliases/RotateEventPayloadMapping.md), `BaseContext`, [`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputMapping`](../type-aliases/RotateControlOutputMapping.md)\>
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:364](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L364)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:364](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L364)
 
 #### 上書き
 
@@ -249,7 +249,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectRotateByInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:381](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L381)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:381](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L381)
 
 #### パラメータ
 
@@ -271,7 +271,7 @@ keyof `EventPayloadMapping`[]
 
 > **lockedOnObjectRotateToInputHandler**(`context`, `payload`): [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:388](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L388)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:388](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L388)
 
 #### パラメータ
 

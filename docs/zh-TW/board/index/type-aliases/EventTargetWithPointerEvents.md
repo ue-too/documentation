@@ -4,7 +4,7 @@
 
 > **EventTargetWithPointerEvents** = `object`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:105](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L105)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:105](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L105)
 
 Minimal event target interface for framework interoperability.
 
@@ -19,7 +19,7 @@ types of event targets (HTMLElement, Canvas, PixiJS Container, etc.).
 
 > **addEventListener**: (`type`, `listener`, `options?`) => `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:106](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L106)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:106](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L106)
 
 #### 參數
 
@@ -47,7 +47,7 @@ types of event targets (HTMLElement, Canvas, PixiJS Container, etc.).
 
 > **removeEventListener**: (`type`, `listener`) => `void`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:111](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L111)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:111](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L111)
 
 #### 參數
 

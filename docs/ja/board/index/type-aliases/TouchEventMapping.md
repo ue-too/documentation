@@ -4,7 +4,7 @@
 
 > **TouchEventMapping** = `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L77)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:77](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L77)
 
 Event mapping for the touch input state machine.
 
@@ -19,7 +19,7 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchend**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:80](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L80)
 
 ***
 
@@ -27,7 +27,7 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchmove**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:79](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L79)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:79](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L79)
 
 ***
 
@@ -35,4 +35,4 @@ the three core touch events: touchstart, touchmove, and touchend.
 
 > **touchstart**: [`TouchEventPayload`](TouchEventPayload.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:78](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L78)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:78](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L78)

@@ -4,7 +4,7 @@
 
 > **ZoomControlOutputMapping** = `object`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:117](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L117)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:117](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L117)
 
 Output event type mapping for zoom control events.
 Maps input event names to their corresponding output event types.
@@ -15,7 +15,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectZoomByAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:125](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L125)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:125](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L125)
 
 ***
 
@@ -23,7 +23,7 @@ Maps input event names to their corresponding output event types.
 
 > **lockedOnObjectZoomToAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:126](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L126)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:126](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L126)
 
 ***
 
@@ -31,7 +31,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionZoomByAtCenterInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:122](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L122)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:122](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L122)
 
 ***
 
@@ -39,7 +39,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionZoomByAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:120](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L120)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:120](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L120)
 
 ***
 
@@ -47,7 +47,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionZoomToAtCenterInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:123](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L123)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:123](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L123)
 
 ***
 
@@ -55,7 +55,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionZoomToAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:121](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L121)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:121](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L121)
 
 ***
 
@@ -63,7 +63,7 @@ Maps input event names to their corresponding output event types.
 
 > **transitionZoomToAtWorldInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:124](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L124)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:124](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L124)
 
 ***
 
@@ -71,7 +71,7 @@ Maps input event names to their corresponding output event types.
 
 > **userZoomByAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:118](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L118)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:118](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L118)
 
 ***
 
@@ -79,4 +79,4 @@ Maps input event names to their corresponding output event types.
 
 > **userZoomToAtInput**: [`ZoomControlOutputEvent`](ZoomControlOutputEvent.md)
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:119](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L119)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:119](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L119)

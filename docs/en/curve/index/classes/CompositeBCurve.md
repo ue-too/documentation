@@ -2,7 +2,7 @@
 
 # Class: CompositeBCurve
 
-Defined in: [packages/curve/src/composite-curve.ts:358](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L358)
+Defined in: [packages/curve/src/composite-curve.ts:358](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L358)
 
 Composite Bezier curve made of multiple control points with handles.
 
@@ -12,7 +12,7 @@ Composite Bezier curve made of multiple control points with handles.
 
 > **new CompositeBCurve**(`controlPoints`): `CompositeBCurve`
 
-Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L361)
+Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L361)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [packages/curve/src/composite-curve.ts:361](https://github.com/ue-to
 
 > **appendControlPoint**(`position`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L369)
+Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L369)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/curve/src/composite-curve.ts:369](https://github.com/ue-to
 
 > **getControlPoints**(): [`ControlPoint`](ControlPoint.md)[]
 
-Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L365)
+Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L365)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/curve/src/composite-curve.ts:365](https://github.com/ue-to
 
 > **setLeftHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L395)
+Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L395)
 
 #### Parameters
 
@@ -82,7 +82,7 @@ Defined in: [packages/curve/src/composite-curve.ts:395](https://github.com/ue-to
 
 > **setPositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L421)
+Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L421)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [packages/curve/src/composite-curve.ts:421](https://github.com/ue-to
 
 > **setRightHandlePositionOfControlPoint**(`controlPointIndex`, `destPos`): `void`
 
-Defined in: [packages/curve/src/composite-curve.ts:408](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L408)
+Defined in: [packages/curve/src/composite-curve.ts:408](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L408)
 
 #### Parameters
 

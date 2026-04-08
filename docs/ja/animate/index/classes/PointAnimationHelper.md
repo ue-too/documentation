@@ -2,7 +2,7 @@
 
 # クラス: PointAnimationHelper
 
-定義: [animatable-attribute.ts:103](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/animatable-attribute.ts#L103)
+定義: [animatable-attribute.ts:103](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L103)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new PointAnimationHelper**(): `PointAnimationHelper`
 
-定義: [animatable-attribute.ts:104](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/animatable-attribute.ts#L104)
+定義: [animatable-attribute.ts:104](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L104)
 
 #### 戻り値
 
@@ -48,7 +48,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **lerp**(`ratio`, `start`, `end`): `Point`
 
-定義: [animatable-attribute.ts:106](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/animatable-attribute.ts#L106)
+定義: [animatable-attribute.ts:106](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L106)
 
 Interpolates between two keyframes at a given ratio.
 

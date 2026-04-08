@@ -2,7 +2,7 @@
 
 # 類別: RotateControlStateMachine
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:128](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L128)
 
 State machine controlling rotation input flow and animations.
 
@@ -49,7 +49,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **new RotateControlStateMachine**(`states`, `initialState`, `context`): `RotateControlStateMachine`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:134](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L134)
 
 #### 參數
 
@@ -299,7 +299,7 @@ stateMachine.notifyRotateToAnimationInput(Math.PI);
 
 > **initateTransition**(): `void`
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:185](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L185)
 
 Initiates transition to `TRANSITION` state.
 
@@ -318,7 +318,7 @@ Called when starting programmatic camera movements.
 
 > **notifyRotateByInput**(`diff`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:160](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L160)
 
 Notifies the state machine of user rotation input.
 
@@ -347,7 +347,7 @@ where it may transition back to `ACCEPTING_USER_INPUT` (user interrupting animat
 
 > **notifyRotateToAnimationInput**(`target`): `EventResult`\<[`RotateControlStates`](../type-aliases/RotateControlStates.md), [`RotateControlOutputEvent`](../type-aliases/RotateControlOutputEvent.md)\>
 
-定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
+定義於: [packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts:174](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/rotation-control-state-machine.ts#L174)
 
 Initiates a rotation animation to a target angle.
 

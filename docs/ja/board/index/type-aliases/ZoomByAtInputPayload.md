@@ -4,7 +4,7 @@
 
 > **ZoomByAtInputPayload** = `object`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:25](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L25)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:25](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L25)
 
 Payload for zoom-by-at input events (relative zoom around a point).
 
@@ -14,7 +14,7 @@ Payload for zoom-by-at input events (relative zoom around a point).
 
 > **anchorPoint**: `Point`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:29](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L29)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:29](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L29)
 
 Anchor point for zoom operation
 
@@ -24,6 +24,6 @@ Anchor point for zoom operation
 
 > **deltaZoom**: `number`
 
-定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:27](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L27)
+定義: [packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts:27](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/zoom-control-state-machine.ts#L27)
 
 Zoom delta amount (multiplier)

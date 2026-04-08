@@ -2,7 +2,7 @@
 
 # クラス: ShuffleZoneEffect
 
-定義: [zone-system/effect.ts:45](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L45)
+定義: [zone-system/effect.ts:45](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L45)
 
 ## 実装
 
@@ -14,7 +14,7 @@
 
 > **new ShuffleZoneEffect**(`_locationSystem`, `_zoneEntity`): `ShuffleZoneEffect`
 
-定義: [zone-system/effect.ts:46](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L46)
+定義: [zone-system/effect.ts:46](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L46)
 
 #### パラメータ
 
@@ -36,7 +36,7 @@
 
 > **apply**(): `void`
 
-定義: [zone-system/effect.ts:51](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L51)
+定義: [zone-system/effect.ts:51](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L51)
 
 #### 戻り値
 

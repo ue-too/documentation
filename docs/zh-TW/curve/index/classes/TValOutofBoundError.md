@@ -2,7 +2,7 @@
 
 # 類別: TValOutofBoundError
 
-定義於: [packages/curve/src/b-curve.ts:1841](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/b-curve.ts#L1841)
+定義於: [packages/curve/src/b-curve.ts:1841](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/b-curve.ts#L1841)
 
 Error thrown when t-value is out of valid range [0, 1].
 
@@ -16,7 +16,7 @@ Error thrown when t-value is out of valid range [0, 1].
 
 > **new TValOutofBoundError**(`message`): `TValOutofBoundError`
 
-定義於: [packages/curve/src/b-curve.ts:1842](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/b-curve.ts#L1842)
+定義於: [packages/curve/src/b-curve.ts:1842](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/b-curve.ts#L1842)
 
 #### 參數
 

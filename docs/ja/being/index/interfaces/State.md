@@ -2,7 +2,7 @@
 
 # インターフェイス: State\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:286](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L286)
+定義: [interface.ts:286](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L286)
 
 ## Description
 
@@ -46,7 +46,7 @@ This allows for a state to be reusable across different state machines.
 
 > **delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: [interface.ts:332](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L332)
+定義: [interface.ts:332](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L332)
 
 ***
 
@@ -54,7 +54,7 @@ This allows for a state to be reusable across different state machines.
 
 > **eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義: [interface.ts:329](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L329)
+定義: [interface.ts:329](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L329)
 
 ***
 
@@ -62,7 +62,7 @@ This allows for a state to be reusable across different state machines.
 
 > **eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:335](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L335)
+定義: [interface.ts:335](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L335)
 
 ***
 
@@ -70,7 +70,7 @@ This allows for a state to be reusable across different state machines.
 
 > **guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義: [interface.ts:328](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L328)
+定義: [interface.ts:328](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L328)
 
 ## メソッド
 
@@ -78,7 +78,7 @@ This allows for a state to be reusable across different state machines.
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: [interface.ts:304](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L304)
+定義: [interface.ts:304](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L304)
 
 #### パラメータ
 
@@ -104,7 +104,7 @@ This allows for a state to be reusable across different state machines.
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:314](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L314)
+定義: [interface.ts:314](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L314)
 
 #### 型パラメーター
 
@@ -136,7 +136,7 @@ This allows for a state to be reusable across different state machines.
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義: [interface.ts:294](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L294)
+定義: [interface.ts:294](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L294)
 
 #### パラメータ
 

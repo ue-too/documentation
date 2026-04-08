@@ -4,7 +4,7 @@
 
 > **ActionFunction**\<`Context`, `EventPayloadMapping`, `EventName`, `EventOutputMapping`\> = (`context`, `payload`, `stateMachine`) => `EventName` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`EventName`\] \| `void` : `void` \| `unknown`
 
-定義於: [schema-factory.ts:37](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/schema-factory.ts#L37)
+定義於: [schema-factory.ts:37](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/schema-factory.ts#L37)
 
 Action function that can be executed when an event is handled.
 Receives context, event payload, and the state machine instance.
