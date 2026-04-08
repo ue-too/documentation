@@ -2,7 +2,7 @@
 
 # Class: Line
 
-Defined in: [packages/curve/src/line.ts:32](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L32)
+Defined in: [packages/curve/src/line.ts:32](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L32)
 
 Line segment class with geometric utilities.
 
@@ -38,7 +38,7 @@ if (result.within) {
 
 > **new Line**(`startPoint`, `endPoint`): `Line`
 
-Defined in: [packages/curve/src/line.ts:36](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L36)
+Defined in: [packages/curve/src/line.ts:36](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L36)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [packages/curve/src/line.ts:36](https://github.com/ue-too/ue-too/blo
 
 > **getEndPoint**(): `Point`
 
-Defined in: [packages/curve/src/line.ts:45](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L45)
+Defined in: [packages/curve/src/line.ts:45](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L45)
 
 #### Returns
 
@@ -72,7 +72,7 @@ Defined in: [packages/curve/src/line.ts:45](https://github.com/ue-too/ue-too/blo
 
 > **getStartPoint**(): `Point`
 
-Defined in: [packages/curve/src/line.ts:41](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L41)
+Defined in: [packages/curve/src/line.ts:41](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L41)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [packages/curve/src/line.ts:41](https://github.com/ue-too/ue-too/blo
 
 > **getTranslationRotationToAlginXAxis**(): `object`
 
-Defined in: [packages/curve/src/line.ts:70](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L70)
+Defined in: [packages/curve/src/line.ts:70](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L70)
 
 #### Returns
 
@@ -104,7 +104,7 @@ Defined in: [packages/curve/src/line.ts:70](https://github.com/ue-too/ue-too/blo
 
 > **intersectionWithAnotherLine**(`lineToIntersect`): `object`
 
-Defined in: [packages/curve/src/line.ts:49](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L49)
+Defined in: [packages/curve/src/line.ts:49](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L49)
 
 #### Parameters
 
@@ -134,7 +134,7 @@ Defined in: [packages/curve/src/line.ts:49](https://github.com/ue-too/ue-too/blo
 
 > **length**(): `number`
 
-Defined in: [packages/curve/src/line.ts:66](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L66)
+Defined in: [packages/curve/src/line.ts:66](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L66)
 
 #### Returns
 
@@ -146,7 +146,7 @@ Defined in: [packages/curve/src/line.ts:66](https://github.com/ue-too/ue-too/blo
 
 > **lerp**(`ratio`): `Point`
 
-Defined in: [packages/curve/src/line.ts:103](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L103)
+Defined in: [packages/curve/src/line.ts:103](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L103)
 
 #### Parameters
 
@@ -164,7 +164,7 @@ Defined in: [packages/curve/src/line.ts:103](https://github.com/ue-too/ue-too/bl
 
 > **pointInLine**(`point`): `boolean`
 
-Defined in: [packages/curve/src/line.ts:80](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L80)
+Defined in: [packages/curve/src/line.ts:80](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L80)
 
 #### Parameters
 
@@ -182,7 +182,7 @@ Defined in: [packages/curve/src/line.ts:80](https://github.com/ue-too/ue-too/blo
 
 > **projectPoint**(`point`): `object`
 
-Defined in: [packages/curve/src/line.ts:58](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L58)
+Defined in: [packages/curve/src/line.ts:58](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/line.ts#L58)
 
 #### Parameters
 

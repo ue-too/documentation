@@ -2,7 +2,7 @@
 
 # インターフェイス: AnimatorContainer
 
-定義: [composite-animation.ts:70](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L70)
+定義: [composite-animation.ts:70](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/composite-animation.ts#L70)
 
 Interface for containers that hold and manage child animators.
 
@@ -17,7 +17,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **checkCyclicChildren**(): `boolean`
 
-定義: [composite-animation.ts:72](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L72)
+定義: [composite-animation.ts:72](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/composite-animation.ts#L72)
 
 #### 戻り値
 
@@ -29,7 +29,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **containsAnimation**(`animationInInterest`): `boolean`
 
-定義: [composite-animation.ts:73](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L73)
+定義: [composite-animation.ts:73](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/composite-animation.ts#L73)
 
 #### パラメータ
 
@@ -47,7 +47,7 @@ Handles duration updates and prevents cyclic dependencies.
 
 > **updateDuration**(): `void`
 
-定義: [composite-animation.ts:71](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L71)
+定義: [composite-animation.ts:71](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/composite-animation.ts#L71)
 
 #### 戻り値
 

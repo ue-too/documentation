@@ -1,4 +1,4 @@
-# @ue-too/math v0.17.0
+# @ue-too/math v0.17.1
 
 ## 文件
 

@@ -2,7 +2,7 @@
 
 # Interface: BaseAppComponents
 
-Defined in: [init-app.ts:30](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L30)
+Defined in: [init-app.ts:30](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L30)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [init-app.ts:30](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **app**: `Application`
 
-Defined in: [init-app.ts:31](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L31)
+Defined in: [init-app.ts:31](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L31)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [init-app.ts:31](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **camera**: `DefaultBoardCamera`
 
-Defined in: [init-app.ts:32](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L32)
+Defined in: [init-app.ts:32](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L32)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [init-app.ts:32](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **cameraRig**: `CameraRig`
 
-Defined in: [init-app.ts:34](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L34)
+Defined in: [init-app.ts:34](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L34)
 
 ***
 
@@ -34,7 +34,7 @@ Defined in: [init-app.ts:34](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **canvasProxy**: `CanvasProxy`
 
-Defined in: [init-app.ts:33](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L33)
+Defined in: [init-app.ts:33](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L33)
 
 ***
 
@@ -42,7 +42,7 @@ Defined in: [init-app.ts:33](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **cleanup**: () => `void`
 
-Defined in: [init-app.ts:40](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L40)
+Defined in: [init-app.ts:40](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L40)
 
 #### Returns
 
@@ -54,7 +54,7 @@ Defined in: [init-app.ts:40](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **cleanups**: () => `void`[]
 
-Defined in: [init-app.ts:41](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L41)
+Defined in: [init-app.ts:41](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L41)
 
 #### Returns
 
@@ -66,7 +66,7 @@ Defined in: [init-app.ts:41](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **inputOrchestrator**: `InputOrchestrator`
 
-Defined in: [init-app.ts:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L35)
+Defined in: [init-app.ts:35](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L35)
 
 ***
 
@@ -74,7 +74,7 @@ Defined in: [init-app.ts:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **kmtInputStateMachine**: `StateMachine`
 
-Defined in: [init-app.ts:37](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L37)
+Defined in: [init-app.ts:37](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L37)
 
 ***
 
@@ -82,7 +82,7 @@ Defined in: [init-app.ts:37](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **kmtParser**: `VanillaKMTEventParser`
 
-Defined in: [init-app.ts:38](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L38)
+Defined in: [init-app.ts:38](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L38)
 
 ***
 
@@ -90,7 +90,7 @@ Defined in: [init-app.ts:38](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **observableInputTracker**: `ObservableInputTracker`
 
-Defined in: [init-app.ts:36](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L36)
+Defined in: [init-app.ts:36](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L36)
 
 ***
 
@@ -98,4 +98,4 @@ Defined in: [init-app.ts:36](https://github.com/ue-too/ue-too/blob/79a36cf61d861
 
 > **touchParser**: `TouchEventParser`
 
-Defined in: [init-app.ts:39](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-pixi-integration/src/init-app.ts#L39)
+Defined in: [init-app.ts:39](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-pixi-integration/src/init-app.ts#L39)

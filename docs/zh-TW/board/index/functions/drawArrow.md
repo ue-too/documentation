@@ -4,7 +4,7 @@
 
 > **drawArrow**(`context`, `cameraZoomLevel`, `startPoint`, `endPoint`, `width`, `arrowRatio`): `void`
 
-定義於: [packages/board/src/utils/drawing.ts:44](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/drawing.ts#L44)
+定義於: [packages/board/src/utils/drawing.ts:44](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/drawing.ts#L44)
 
 Draws an arrow from start to end point with an arrowhead.
 

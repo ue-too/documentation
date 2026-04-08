@@ -2,7 +2,7 @@
 
 # Class: FabricInputEventParser
 
-Defined in: [fabric-input-event-parser.ts:9](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L9)
+Defined in: [fabric-input-event-parser.ts:9](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L9)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [fabric-input-event-parser.ts:9](https://github.com/ue-too/ue-too/bl
 
 > **new FabricInputEventParser**(`fabricCanvas`, `kmtInputStateMachine`, `inputOrchestrator`): `FabricInputEventParser`
 
-Defined in: [fabric-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L17)
+Defined in: [fabric-input-event-parser.ts:17](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L17)
 
 #### Parameters
 
@@ -38,7 +38,7 @@ Defined in: [fabric-input-event-parser.ts:17](https://github.com/ue-too/ue-too/b
 
 > **get** **disabled**(): `boolean`
 
-Defined in: [fabric-input-event-parser.ts:104](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L104)
+Defined in: [fabric-input-event-parser.ts:104](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L104)
 
 ##### Returns
 
@@ -50,7 +50,7 @@ Defined in: [fabric-input-event-parser.ts:104](https://github.com/ue-too/ue-too/
 
 > **bindFunctions**(): `void`
 
-Defined in: [fabric-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L30)
+Defined in: [fabric-input-event-parser.ts:30](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L30)
 
 #### Returns
 
@@ -62,7 +62,7 @@ Defined in: [fabric-input-event-parser.ts:30](https://github.com/ue-too/ue-too/b
 
 > **disable**(): `void`
 
-Defined in: [fabric-input-event-parser.ts:96](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L96)
+Defined in: [fabric-input-event-parser.ts:96](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L96)
 
 #### Returns
 
@@ -74,7 +74,7 @@ Defined in: [fabric-input-event-parser.ts:96](https://github.com/ue-too/ue-too/b
 
 > **enable**(): `void`
 
-Defined in: [fabric-input-event-parser.ts:100](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L100)
+Defined in: [fabric-input-event-parser.ts:100](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L100)
 
 #### Returns
 
@@ -86,7 +86,7 @@ Defined in: [fabric-input-event-parser.ts:100](https://github.com/ue-too/ue-too/
 
 > **keydownHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:184](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L184)
+Defined in: [fabric-input-event-parser.ts:184](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L184)
 
 #### Parameters
 
@@ -104,7 +104,7 @@ Defined in: [fabric-input-event-parser.ts:184](https://github.com/ue-too/ue-too/
 
 > **keyupHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:197](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L197)
+Defined in: [fabric-input-event-parser.ts:197](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L197)
 
 #### Parameters
 
@@ -122,7 +122,7 @@ Defined in: [fabric-input-event-parser.ts:197](https://github.com/ue-too/ue-too/
 
 > **pointerDownHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L70)
+Defined in: [fabric-input-event-parser.ts:70](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L70)
 
 #### Parameters
 
@@ -140,7 +140,7 @@ Defined in: [fabric-input-event-parser.ts:70](https://github.com/ue-too/ue-too/b
 
 > **pointerMoveHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:133](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L133)
+Defined in: [fabric-input-event-parser.ts:133](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L133)
 
 #### Parameters
 
@@ -158,7 +158,7 @@ Defined in: [fabric-input-event-parser.ts:133](https://github.com/ue-too/ue-too/
 
 > **pointerUpHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:108](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L108)
+Defined in: [fabric-input-event-parser.ts:108](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L108)
 
 #### Parameters
 
@@ -176,7 +176,7 @@ Defined in: [fabric-input-event-parser.ts:108](https://github.com/ue-too/ue-too/
 
 > **scrollHandler**(`event`): `void`
 
-Defined in: [fabric-input-event-parser.ts:162](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L162)
+Defined in: [fabric-input-event-parser.ts:162](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L162)
 
 #### Parameters
 
@@ -194,7 +194,7 @@ Defined in: [fabric-input-event-parser.ts:162](https://github.com/ue-too/ue-too/
 
 > **setUp**(): `void`
 
-Defined in: [fabric-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L39)
+Defined in: [fabric-input-event-parser.ts:39](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L39)
 
 #### Returns
 
@@ -206,7 +206,7 @@ Defined in: [fabric-input-event-parser.ts:39](https://github.com/ue-too/ue-too/b
 
 > **tearDown**(): `void`
 
-Defined in: [fabric-input-event-parser.ts:52](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L52)
+Defined in: [fabric-input-event-parser.ts:52](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-fabric-integration/src/fabric-input-event-parser.ts#L52)
 
 #### Returns
 

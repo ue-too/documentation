@@ -4,6 +4,6 @@
 
 > `const` **TEXT\_HALF\_TICK\_OFFSET**: `2.5` = `2.5`
 
-Defined in: [packages/board/src/utils/drawing.ts:116](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/drawing.ts#L116)
+Defined in: [packages/board/src/utils/drawing.ts:116](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/drawing.ts#L116)
 
 Offset for half-step tick labels in pixels (viewport space).

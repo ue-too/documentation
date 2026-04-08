@@ -4,7 +4,7 @@
 
 > **convertFromWindow2Canvas**(`pointInWindow`, `canvas`): `Point`
 
-定義: [packages/board/src/utils/coordinate-conversions/window-canvas.ts:48](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/coordinate-conversions/window-canvas.ts#L48)
+定義: [packages/board/src/utils/coordinate-conversions/window-canvas.ts:48](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/coordinate-conversions/window-canvas.ts#L48)
 
 Converts a point from browser window coordinates to canvas coordinates.
 

@@ -2,7 +2,7 @@
 
 # 類別: EntityFieldModificationEffect
 
-定義於: [action-system/effect.ts:219](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L219)
+定義於: [action-system/effect.ts:219](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L219)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new EntityFieldModificationEffect**(`coordinator`, `componentName`, `entity`, `valuePath`, `newEntityValue`): `EntityFieldModificationEffect`
 
-定義於: [action-system/effect.ts:226](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L226)
+定義於: [action-system/effect.ts:226](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L226)
 
 #### 參數
 
@@ -48,7 +48,7 @@
 
 > **apply**(): `void`
 
-定義於: [action-system/effect.ts:240](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L240)
+定義於: [action-system/effect.ts:240](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L240)
 
 #### 回傳
 

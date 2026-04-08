@@ -4,7 +4,7 @@
 
 > **OrthoGridLocationComponent** = `object`
 
-定義於: [grid-system/ortho-grid.ts:24](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L24)
+定義於: [grid-system/ortho-grid.ts:24](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/grid-system/ortho-grid.ts#L24)
 
 ## 屬性
 
@@ -12,7 +12,7 @@
 
 > **column**: `number`
 
-定義於: [grid-system/ortho-grid.ts:27](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L27)
+定義於: [grid-system/ortho-grid.ts:27](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/grid-system/ortho-grid.ts#L27)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **grid**: `Entity`
 
-定義於: [grid-system/ortho-grid.ts:25](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L25)
+定義於: [grid-system/ortho-grid.ts:25](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/grid-system/ortho-grid.ts#L25)
 
 ***
 
@@ -28,4 +28,4 @@
 
 > **row**: `number`
 
-定義於: [grid-system/ortho-grid.ts:26](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L26)
+定義於: [grid-system/ortho-grid.ts:26](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/grid-system/ortho-grid.ts#L26)

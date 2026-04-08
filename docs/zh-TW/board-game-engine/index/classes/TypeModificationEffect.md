@@ -2,7 +2,7 @@
 
 # 類別: TypeModificationEffect\<T\>
 
-定義於: [action-system/effect.ts:156](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L156)
+定義於: [action-system/effect.ts:156](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L156)
 
 ## 型別參數
 
@@ -20,7 +20,7 @@
 
 > **new TypeModificationEffect**\<`T`\>(`coordinator`, `componentName`, `entity`, `valuePath`, `newType`, `allowedValues?`): `TypeModificationEffect`\<`T`\>
 
-定義於: [action-system/effect.ts:164](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L164)
+定義於: [action-system/effect.ts:164](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L164)
 
 #### 參數
 
@@ -58,7 +58,7 @@ readonly `T`[]
 
 > **apply**(): `void`
 
-定義於: [action-system/effect.ts:180](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/action-system/effect.ts#L180)
+定義於: [action-system/effect.ts:180](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/action-system/effect.ts#L180)
 
 #### 回傳
 

@@ -12,7 +12,7 @@ synchronization, and provides idiomatic React patterns for working with the boar
 
 ## Core Components
 
-- **Board**: Main component that renders the canvas and manages the board instance
+- **[Board](functions/Board.md)**: Main component that renders the canvas and manages the board instance
 - **[BoardProvider](functions/BoardProvider.md)**: Context provider for sharing board across components
 
 ## State Hooks
@@ -92,11 +92,12 @@ function App() {
 
 ## 參閱
 
-Board for the main component
+[Board](functions/Board.md) for the main component
 
 ## Components
 
 - [BoardProps](type-aliases/BoardProps.md)
+- [Board](functions/Board.md)
 - [BoardProvider](functions/BoardProvider.md)
 
 ## Hooks

@@ -4,7 +4,7 @@
 
 > **clampZoomLevel**(`zoomLevel`, `zoomLevelLimits?`): `number`
 
-定義: [packages/board/src/camera/utils/zoom.ts:76](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/zoom.ts#L76)
+定義: [packages/board/src/camera/utils/zoom.ts:76](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/utils/zoom.ts#L76)
 
 Clamps a zoom level to stay within specified limits.
 

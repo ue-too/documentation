@@ -2,7 +2,7 @@
 
 # 類別: PinJoint
 
-定義於: [constraint.ts:149](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L149)
+定義於: [constraint.ts:149](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L149)
 
 Pin joint connecting two bodies together.
 
@@ -42,7 +42,7 @@ world.addConstraint(joint);
 
 > **new PinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `PinJoint`
 
-定義於: [constraint.ts:155](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L155)
+定義於: [constraint.ts:155](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L155)
 
 #### 參數
 
@@ -72,7 +72,7 @@ world.addConstraint(joint);
 
 > **enforce**(`dt`): `void`
 
-定義於: [constraint.ts:167](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L167)
+定義於: [constraint.ts:167](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L167)
 
 Enforces the constraint for one timestep.
 
@@ -98,7 +98,7 @@ Timestep in seconds
 
 > **solvePinJointConstraint**(`dt`): `void`
 
-定義於: [constraint.ts:171](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L171)
+定義於: [constraint.ts:171](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/dynamics/src/constraint.ts#L171)
 
 #### 參數
 
