@@ -2,7 +2,7 @@
 
 # 類別: KeyFramesContiner\<T\>
 
-定義於: [composite-animation.ts:1213](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1213)
+定義於: [composite-animation.ts:1213](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1213)
 
 ## 型別參數
 
@@ -16,7 +16,7 @@
 
 > **new KeyFramesContiner**\<`T`\>(): `KeyFramesContiner`\<`T`\>
 
-定義於: [composite-animation.ts:1216](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1216)
+定義於: [composite-animation.ts:1216](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1216)
 
 #### 回傳
 
@@ -30,7 +30,7 @@
 
 > **get** **keyframes**(): [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-定義於: [composite-animation.ts:1220](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1220)
+定義於: [composite-animation.ts:1220](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1220)
 
 ##### 回傳
 
@@ -42,7 +42,7 @@
 
 > **clearFrames**(): `void`
 
-定義於: [composite-animation.ts:1254](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1254)
+定義於: [composite-animation.ts:1254](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1254)
 
 #### 回傳
 
@@ -54,7 +54,7 @@
 
 > **from**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-定義於: [composite-animation.ts:1224](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1224)
+定義於: [composite-animation.ts:1224](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1224)
 
 #### 參數
 
@@ -72,7 +72,7 @@
 
 > **insertAt**(`percentage`, `value`): `void`
 
-定義於: [composite-animation.ts:1250](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1250)
+定義於: [composite-animation.ts:1250](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1250)
 
 #### 參數
 
@@ -94,7 +94,7 @@
 
 > **to**(`value`): [`Keyframes`](../interfaces/Keyframes.md)\<`T`\>
 
-定義於: [composite-animation.ts:1237](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/composite-animation.ts#L1237)
+定義於: [composite-animation.ts:1237](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L1237)
 
 #### 參數
 

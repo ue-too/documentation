@@ -2,7 +2,7 @@
 
 # Class: SynchronousObservable\<T\>
 
-Defined in: [packages/board/src/utils/observable.ts:210](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L210)
+Defined in: [packages/board/src/utils/observable.ts:210](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L210)
 
 Synchronous Observable implementation that notifies observers immediately.
 
@@ -70,7 +70,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-Defined in: [packages/board/src/utils/observable.ts:262](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L262)
+Defined in: [packages/board/src/utils/observable.ts:262](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L262)
 
 Notifies all observers with the provided data synchronously.
 
@@ -101,7 +101,7 @@ all observers have completed execution.
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-Defined in: [packages/board/src/utils/observable.ts:224](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L224)
+Defined in: [packages/board/src/utils/observable.ts:224](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L224)
 
 Subscribes an observer to receive notifications.
 

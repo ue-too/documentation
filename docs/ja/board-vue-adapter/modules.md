@@ -1,4 +1,4 @@
-# @ue-too/board-vue-adapter v0.16.0
+# @ue-too/board-vue-adapter v0.17.0
 
 ## ドキュメント
 

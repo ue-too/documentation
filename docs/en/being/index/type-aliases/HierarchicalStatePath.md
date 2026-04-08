@@ -4,7 +4,7 @@
 
 > **HierarchicalStatePath**\<`ParentStates`, `ChildStates`\> = `ParentStates` \| `` `${ParentStates}.${ChildStates}` ``
 
-Defined in: [hierarchical.ts:34](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/hierarchical.ts#L34)
+Defined in: [hierarchical.ts:34](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/hierarchical.ts#L34)
 
 Represents a hierarchical state path using dot notation.
 Example: "PARENT.CHILD" means we're in CHILD state within PARENT state.

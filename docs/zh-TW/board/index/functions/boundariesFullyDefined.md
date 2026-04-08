@@ -4,7 +4,7 @@
 
 > **boundariesFullyDefined**(`boundaries`): `boundaries is { max: { x: number; y: number }; min: { x: number; y: number } }`
 
-定義於: [packages/board/src/camera/utils/position.ts:196](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/utils/position.ts#L196)
+定義於: [packages/board/src/camera/utils/position.ts:196](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/position.ts#L196)
 
 Checks if boundaries have all four constraints (min/max for both x and y) defined.
 

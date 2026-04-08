@@ -2,7 +2,7 @@
 
 # インターフェイス: SerializedEntity
 
-定義: [index.ts:359](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/ecs/src/index.ts#L359)
+定義: [index.ts:359](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/ecs/src/index.ts#L359)
 
 Serialized representation of an entity's component data.
 
@@ -12,7 +12,7 @@ Serialized representation of an entity's component data.
 
 > **components**: `Record`\<`string`, `unknown`\>
 
-定義: [index.ts:363](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/ecs/src/index.ts#L363)
+定義: [index.ts:363](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/ecs/src/index.ts#L363)
 
 Map of component names (as strings) to their serialized data
 
@@ -22,6 +22,6 @@ Map of component names (as strings) to their serialized data
 
 > **entity**: `number`
 
-定義: [index.ts:361](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/ecs/src/index.ts#L361)
+定義: [index.ts:361](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/ecs/src/index.ts#L361)
 
 The entity ID

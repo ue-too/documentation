@@ -4,7 +4,7 @@
 
 > **CameraRigConfig** = [`PanHandlerConfig`](PanHandlerConfig.md) & [`ZoomHandlerConfig`](ZoomHandlerConfig.md) & [`RotationHandlerConfig`](RotationHandlerConfig.md)
 
-定義於: [packages/board/src/camera/camera-rig/camera-rig.ts:50](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/camera-rig/camera-rig.ts#L50)
+定義於: [packages/board/src/camera/camera-rig/camera-rig.ts:50](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/camera-rig/camera-rig.ts#L50)
 
 Configuration for camera rig behavior combining pan, zoom, and rotation settings.
 Composed from individual handler configs.

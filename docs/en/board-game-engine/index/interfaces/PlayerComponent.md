@@ -2,7 +2,7 @@
 
 # Interface: PlayerComponent
 
-Defined in: [player-system/player-component.ts:14](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L14)
+Defined in: [player-system/player-component.ts:14](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L14)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [player-system/player-component.ts:14](https://github.com/ue-too/ue-
 
 > **inPlay**: `boolean`
 
-Defined in: [player-system/player-component.ts:17](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L17)
+Defined in: [player-system/player-component.ts:17](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L17)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [player-system/player-component.ts:17](https://github.com/ue-too/ue-
 
 > **name**: `string`
 
-Defined in: [player-system/player-component.ts:15](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L15)
+Defined in: [player-system/player-component.ts:15](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L15)
 
 ***
 
@@ -26,4 +26,4 @@ Defined in: [player-system/player-component.ts:15](https://github.com/ue-too/ue-
 
 > **playerNumber**: `number`
 
-Defined in: [player-system/player-component.ts:16](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L16)
+Defined in: [player-system/player-component.ts:16](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L16)

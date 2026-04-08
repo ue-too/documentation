@@ -4,7 +4,7 @@
 
 > **unitVector**(`a`): [`Point`](../type-aliases/Point-1.md)
 
-定義於: [2dVector.ts:60](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/2dVector.ts#L60)
+定義於: [2dVector.ts:60](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/2dVector.ts#L60)
 
 ## 參數
 

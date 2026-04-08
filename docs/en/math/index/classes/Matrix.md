@@ -2,7 +2,7 @@
 
 # Class: Matrix
 
-Defined in: [matrix.ts:3](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L3)
+Defined in: [matrix.ts:3](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L3)
 
 ## Constructors
 
@@ -10,7 +10,7 @@ Defined in: [matrix.ts:3](https://github.com/ue-too/ue-too/blob/9b787448328cf446
 
 > **new Matrix**(`_matrix`): `Matrix`
 
-Defined in: [matrix.ts:6](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L6)
+Defined in: [matrix.ts:6](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L6)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [matrix.ts:6](https://github.com/ue-too/ue-too/blob/9b787448328cf446
 
 > **get** **inverse**(): [`Matrix3x3`](../interfaces/Matrix3x3.md) \| `null`
 
-Defined in: [matrix.ts:10](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L10)
+Defined in: [matrix.ts:10](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L10)
 
 ##### Returns
 
@@ -42,7 +42,7 @@ Defined in: [matrix.ts:10](https://github.com/ue-too/ue-too/blob/9b787448328cf44
 
 > **invertPoint**(`point`): [`Point`](../type-aliases/Point-1.md) \| `null`
 
-Defined in: [matrix.ts:23](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L23)
+Defined in: [matrix.ts:23](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L23)
 
 #### Parameters
 
@@ -60,7 +60,7 @@ Defined in: [matrix.ts:23](https://github.com/ue-too/ue-too/blob/9b787448328cf44
 
 > **setMatrix**(`matrix`): `void`
 
-Defined in: [matrix.ts:14](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L14)
+Defined in: [matrix.ts:14](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L14)
 
 #### Parameters
 
@@ -78,7 +78,7 @@ Defined in: [matrix.ts:14](https://github.com/ue-too/ue-too/blob/9b787448328cf44
 
 > **transformPoint**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-Defined in: [matrix.ts:19](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/math/src/matrix.ts#L19)
+Defined in: [matrix.ts:19](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/matrix.ts#L19)
 
 #### Parameters
 

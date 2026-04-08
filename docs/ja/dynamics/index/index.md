@@ -229,6 +229,8 @@ console.log('Spatial index:', spatialStats);
 
 ## Other
 
+- [Crescent](classes/Crescent.md)
+- [Fan](classes/Fan.md)
 - [RectangleBound](classes/RectangleBound.md)
 - [PairEvents](interfaces/PairEvents.md)
 - [PinJointConstraint](interfaces/PinJointConstraint.md)

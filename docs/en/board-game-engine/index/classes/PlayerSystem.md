@@ -2,7 +2,7 @@
 
 # Class: PlayerSystem
 
-Defined in: [player-system/player-component.ts:20](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L20)
+Defined in: [player-system/player-component.ts:20](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L20)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [player-system/player-component.ts:20](https://github.com/ue-too/ue-
 
 > **new PlayerSystem**(`_coordinator`, `_playerCount`): `PlayerSystem`
 
-Defined in: [player-system/player-component.ts:23](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L23)
+Defined in: [player-system/player-component.ts:23](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L23)
 
 #### Parameters
 
@@ -36,7 +36,7 @@ Defined in: [player-system/player-component.ts:23](https://github.com/ue-too/ue-
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [player-system/player-component.ts:21](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L21)
+Defined in: [player-system/player-component.ts:21](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L21)
 
 #### Implementation of
 
@@ -48,7 +48,7 @@ Defined in: [player-system/player-component.ts:21](https://github.com/ue-too/ue-
 
 > **addPlayer**(`name`): `number` \| `null`
 
-Defined in: [player-system/player-component.ts:41](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L41)
+Defined in: [player-system/player-component.ts:41](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L41)
 
 #### Parameters
 
@@ -66,7 +66,7 @@ Defined in: [player-system/player-component.ts:41](https://github.com/ue-too/ue-
 
 > **getPlayerOrder**(): `number`[]
 
-Defined in: [player-system/player-component.ts:155](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L155)
+Defined in: [player-system/player-component.ts:155](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L155)
 
 #### Returns
 
@@ -78,7 +78,7 @@ Defined in: [player-system/player-component.ts:155](https://github.com/ue-too/ue
 
 > **getPlayers**(): `number`[]
 
-Defined in: [player-system/player-component.ts:70](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L70)
+Defined in: [player-system/player-component.ts:70](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L70)
 
 #### Returns
 
@@ -90,7 +90,7 @@ Defined in: [player-system/player-component.ts:70](https://github.com/ue-too/ue-
 
 > **organizePlayerOrder**(): `void`
 
-Defined in: [player-system/player-component.ts:123](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L123)
+Defined in: [player-system/player-component.ts:123](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L123)
 
 #### Returns
 
@@ -102,7 +102,7 @@ Defined in: [player-system/player-component.ts:123](https://github.com/ue-too/ue
 
 > **playerCount**(): `number`
 
-Defined in: [player-system/player-component.ts:66](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L66)
+Defined in: [player-system/player-component.ts:66](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L66)
 
 #### Returns
 
@@ -114,7 +114,7 @@ Defined in: [player-system/player-component.ts:66](https://github.com/ue-too/ue-
 
 > **removePlayer**(`player`): `void`
 
-Defined in: [player-system/player-component.ts:54](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L54)
+Defined in: [player-system/player-component.ts:54](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L54)
 
 #### Parameters
 
@@ -132,7 +132,7 @@ Defined in: [player-system/player-component.ts:54](https://github.com/ue-too/ue-
 
 > **setPlayerOrder**(`players`): `void`
 
-Defined in: [player-system/player-component.ts:103](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L103)
+Defined in: [player-system/player-component.ts:103](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L103)
 
 #### Parameters
 
@@ -150,7 +150,7 @@ Defined in: [player-system/player-component.ts:103](https://github.com/ue-too/ue
 
 > **shufflePlayerOrder**(): `void`
 
-Defined in: [player-system/player-component.ts:86](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/player-system/player-component.ts#L86)
+Defined in: [player-system/player-component.ts:86](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/player-system/player-component.ts#L86)
 
 #### Returns
 

@@ -2,7 +2,7 @@
 
 # Class: StringAnimationHelper
 
-Defined in: [animatable-attribute.ts:194](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/animatable-attribute.ts#L194)
+Defined in: [animatable-attribute.ts:194](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/animatable-attribute.ts#L194)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new StringAnimationHelper**(): `StringAnimationHelper`
 
-Defined in: [animatable-attribute.ts:195](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/animatable-attribute.ts#L195)
+Defined in: [animatable-attribute.ts:195](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/animatable-attribute.ts#L195)
 
 #### Returns
 
@@ -48,7 +48,7 @@ Defined in: [animatable-attribute.ts:195](https://github.com/ue-too/ue-too/blob/
 
 > **lerp**(`ratio`, `start`, `end`): `string`
 
-Defined in: [animatable-attribute.ts:197](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/animatable-attribute.ts#L197)
+Defined in: [animatable-attribute.ts:197](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/animatable-attribute.ts#L197)
 
 Interpolates between two keyframes at a given ratio.
 

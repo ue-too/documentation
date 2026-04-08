@@ -4,7 +4,7 @@
 
 > **clampPointEntireViewPort**(`point`, `viewPortWidth`, `viewPortHeight`, `boundaries`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/position.ts:456](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/utils/position.ts#L456)
+Defined in: [packages/board/src/camera/utils/position.ts:456](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/position.ts#L456)
 
 Clamps camera position to ensure the entire viewport stays within boundaries.
 More restrictive than [clampPoint](clampPoint.md) as it considers viewport size and rotation.

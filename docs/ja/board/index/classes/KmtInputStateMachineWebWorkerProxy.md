@@ -2,7 +2,7 @@
 
 # クラス: KmtInputStateMachineWebWorkerProxy
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:761](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L761)
 
 ## 拡張
 
@@ -14,7 +14,7 @@
 
 > **new KmtInputStateMachineWebWorkerProxy**(`webworker`): `KmtInputStateMachineWebWorkerProxy`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:769](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L769)
 
 #### パラメータ
 
@@ -200,7 +200,7 @@
 
 > **happens**(...`args`): `EventResult`\<`"IDLE"` \| `"READY_TO_PAN_VIA_SPACEBAR"` \| `"READY_TO_PAN_VIA_SCROLL_WHEEL"` \| `"PAN"` \| `"INITIAL_PAN"` \| `"PAN_VIA_SCROLL_WHEEL"` \| `"DISABLED"`\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:786](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L786)
 
 #### パラメータ
 

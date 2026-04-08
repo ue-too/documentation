@@ -2,7 +2,7 @@
 
 # インターフェイス: BaseContext
 
-定義: [interface.ts:29](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L29)
+定義: [interface.ts:29](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L29)
 
 Base context interface for state machines.
 
@@ -37,7 +37,7 @@ interface MyContext extends BaseContext {
 
 > **cleanup**(): `void`
 
-定義: [interface.ts:31](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L31)
+定義: [interface.ts:31](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L31)
 
 #### 戻り値
 
@@ -49,7 +49,7 @@ interface MyContext extends BaseContext {
 
 > **setup**(): `void`
 
-定義: [interface.ts:30](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L30)
+定義: [interface.ts:30](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L30)
 
 #### 戻り値
 

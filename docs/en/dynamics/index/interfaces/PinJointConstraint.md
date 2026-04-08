@@ -2,7 +2,7 @@
 
 # Interface: PinJointConstraint
 
-Defined in: [constraint.ts:254](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/constraint.ts#L254)
+Defined in: [constraint.ts:254](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L254)
 
 ## Properties
 
@@ -10,7 +10,7 @@ Defined in: [constraint.ts:254](https://github.com/ue-too/ue-too/blob/9b78744832
 
 > **anchorA**: `Point`
 
-Defined in: [constraint.ts:257](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/constraint.ts#L257)
+Defined in: [constraint.ts:257](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L257)
 
 ***
 
@@ -18,7 +18,7 @@ Defined in: [constraint.ts:257](https://github.com/ue-too/ue-too/blob/9b78744832
 
 > **anchorB**: `Point`
 
-Defined in: [constraint.ts:258](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/constraint.ts#L258)
+Defined in: [constraint.ts:258](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L258)
 
 ***
 
@@ -26,7 +26,7 @@ Defined in: [constraint.ts:258](https://github.com/ue-too/ue-too/blob/9b78744832
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:255](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/constraint.ts#L255)
+Defined in: [constraint.ts:255](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L255)
 
 ***
 
@@ -34,4 +34,4 @@ Defined in: [constraint.ts:255](https://github.com/ue-too/ue-too/blob/9b78744832
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-Defined in: [constraint.ts:256](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/constraint.ts#L256)
+Defined in: [constraint.ts:256](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/constraint.ts#L256)

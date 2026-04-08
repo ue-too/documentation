@@ -4,7 +4,7 @@
 
 > **Point** = `object`
 
-定義於: [packages/curve/src/b-curve.ts:1846](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1846)
+定義於: [packages/curve/src/b-curve.ts:1851](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1851)
 
 2D/3D point type.
 
@@ -14,7 +14,7 @@
 
 > **x**: `number`
 
-定義於: [packages/curve/src/b-curve.ts:1847](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1847)
+定義於: [packages/curve/src/b-curve.ts:1852](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1852)
 
 ***
 
@@ -22,7 +22,7 @@
 
 > **y**: `number`
 
-定義於: [packages/curve/src/b-curve.ts:1848](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1848)
+定義於: [packages/curve/src/b-curve.ts:1853](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1853)
 
 ***
 
@@ -30,4 +30,4 @@
 
 > `optional` **z**: `number`
 
-定義於: [packages/curve/src/b-curve.ts:1849](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1849)
+定義於: [packages/curve/src/b-curve.ts:1854](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1854)

@@ -4,7 +4,7 @@
 
 > **broadPhaseWithRigidBodyReturned**(`quadTree`, `bodies`): `object`[]
 
-Defined in: [collision.ts:483](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/collision.ts#L483)
+Defined in: [collision.ts:487](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/collision.ts#L487)
 
 ## Parameters
 

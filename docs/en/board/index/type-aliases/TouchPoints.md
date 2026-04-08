@@ -4,7 +4,7 @@
 
 > **TouchPoints** = `object`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:18](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L18)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:18](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L18)
 
 Represents a single touch point in window coordinates.
 
@@ -19,7 +19,7 @@ Each finger/contact point maintains its identifier for the duration of the touch
 
 > **ident**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:19](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L19)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:19](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L19)
 
 The unique identifier for this touch point (from TouchEvent.identifier)
 
@@ -29,7 +29,7 @@ The unique identifier for this touch point (from TouchEvent.identifier)
 
 > **x**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:20](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L20)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:20](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L20)
 
 X coordinate in window space
 
@@ -39,6 +39,6 @@ X coordinate in window space
 
 > **y**: `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:21](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L21)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts:21](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/touch-input-context.ts#L21)
 
 Y coordinate in window space

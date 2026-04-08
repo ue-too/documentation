@@ -2,7 +2,7 @@
 
 # インターフェイス: StateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:212](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L212)
+定義: [interface.ts:212](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L212)
 
 ## Description
 
@@ -46,7 +46,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **currentState**: `States` \| `"INITIAL"` \| `"TERMINAL"`
 
-定義: [interface.ts:256](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L256)
+定義: [interface.ts:256](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L256)
 
 ***
 
@@ -54,7 +54,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **possibleStates**: `States`[]
 
-定義: [interface.ts:243](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L243)
+定義: [interface.ts:243](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L243)
 
 ***
 
@@ -62,7 +62,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **states**: `Record`\<`States`, [`State`](State.md)\<`EventPayloadMapping`, `Context`, `string` *extends* `States` ? `string` : `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:233](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L233)
+定義: [interface.ts:233](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L233)
 
 ## メソッド
 
@@ -72,7 +72,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:222](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L222)
+定義: [interface.ts:222](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L222)
 
 ##### 型パラメーター
 
@@ -94,7 +94,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義: [interface.ts:229](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L229)
+定義: [interface.ts:229](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L229)
 
 ##### 型パラメーター
 
@@ -118,7 +118,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **onHappens**(`callback`): `void`
 
-定義: [interface.ts:244](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L244)
+定義: [interface.ts:244](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L244)
 
 #### パラメータ
 
@@ -136,7 +136,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **onStateChange**(`callback`): `void`
 
-定義: [interface.ts:242](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L242)
+定義: [interface.ts:242](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L242)
 
 #### パラメータ
 
@@ -154,7 +154,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **reset**(): `void`
 
-定義: [interface.ts:253](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L253)
+定義: [interface.ts:253](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L253)
 
 #### 戻り値
 
@@ -166,7 +166,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **setContext**(`context`): `void`
 
-定義: [interface.ts:232](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L232)
+定義: [interface.ts:232](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L232)
 
 #### パラメータ
 
@@ -184,7 +184,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **start**(): `void`
 
-定義: [interface.ts:254](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L254)
+定義: [interface.ts:254](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L254)
 
 #### 戻り値
 
@@ -196,7 +196,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **switchTo**(`state`): `void`
 
-定義: [interface.ts:220](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L220)
+定義: [interface.ts:220](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L220)
 
 #### パラメータ
 
@@ -214,7 +214,7 @@ The naming is that an event would "happen" and the state of the state machine wo
 
 > **wrapup**(): `void`
 
-定義: [interface.ts:255](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L255)
+定義: [interface.ts:255](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L255)
 
 #### 戻り値
 

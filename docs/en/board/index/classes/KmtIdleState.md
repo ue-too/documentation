@@ -2,7 +2,7 @@
 
 # Class: KmtIdleState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:233](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L233)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:233](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L233)
 
 IDLE state - default state waiting for user input.
 
@@ -36,7 +36,7 @@ from mice (which typically only produce deltaY). This affects zoom behavior.
 
 > **new KmtIdleState**(): `KmtIdleState`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:239](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L239)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:239](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L239)
 
 #### Returns
 
@@ -76,7 +76,7 @@ Defined in: packages/being/dist/interface.d.ts:492
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md)\>\>\> = `{}`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:247](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L247)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:247](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L247)
 
 #### Overrides
 
@@ -88,7 +88,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:318](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L318)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:318](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L318)
 
 #### Overrides
 
@@ -100,7 +100,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > `protected` **\_guards**: `Guard`\<[`KmtInputContext`](../interfaces/KmtInputContext.md), `"isIdle"`\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:243](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L243)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:243](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L243)
 
 #### Overrides
 
@@ -268,7 +268,7 @@ Defined in: packages/being/dist/interface.d.ts:501
 
 > **middlePointerDownHandler**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:358](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L358)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:358](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L358)
 
 #### Parameters
 
@@ -290,7 +290,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **scrollHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:295](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L295)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:295](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L295)
 
 #### Parameters
 
@@ -312,7 +312,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **scrollPan**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:257](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L257)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:257](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L257)
 
 #### Parameters
 
@@ -334,7 +334,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **scrollWithCtrlHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:311](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L311)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:311](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L311)
 
 #### Parameters
 
@@ -356,7 +356,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **scrollZoom**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:271](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L271)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:271](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L271)
 
 #### Parameters
 
@@ -378,7 +378,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **spacebarDownHandler**(`context`, `payload`): `number`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:350](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L350)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:350](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L350)
 
 #### Parameters
 
@@ -400,7 +400,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-inp
 
 > **uponEnter**(`context`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:346](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L346)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:346](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L346)
 
 #### Parameters
 
