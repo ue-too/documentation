@@ -4,7 +4,7 @@
 
 > **linear**(`percentage`): `number`
 
-定義: [composite-animation.ts:11](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/composite-animation.ts#L11)
+定義: [composite-animation.ts:11](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/animate/src/composite-animation.ts#L11)
 
 Linear easing function (no easing).
 

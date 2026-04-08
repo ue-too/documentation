@@ -4,7 +4,7 @@
 
 > **subVector**(`a`, `b`): [`Point`](../type-aliases/Point-1.md)
 
-定義於: [2dVector.ts:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/math/src/2dVector.ts#L35)
+定義於: [2dVector.ts:35](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/math/src/2dVector.ts#L35)
 
 ## 參數
 

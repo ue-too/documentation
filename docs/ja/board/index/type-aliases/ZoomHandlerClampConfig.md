@@ -4,7 +4,7 @@
 
 > **ZoomHandlerClampConfig** = `object`
 
-定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:44](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/camera-rig/zoom-handler.ts#L44)
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:44](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/zoom-handler.ts#L44)
 
 Configuration for zoom level boundary clamping.
 
@@ -32,6 +32,6 @@ camera.zoomBoundaries = { min: 0.5, max: 4.0 };
 
 > **clampZoom**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:48](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/camera-rig/zoom-handler.ts#L48)
+定義: [packages/board/src/camera/camera-rig/zoom-handler.ts:48](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/zoom-handler.ts#L48)
 
 Whether to enforce zoom level boundaries.

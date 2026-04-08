@@ -4,7 +4,7 @@
 
 > **ZoneComponent** = `object`
 
-Defined in: [zone-system/zone-component.ts:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
+Defined in: [zone-system/zone-component.ts:35](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L35)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [zone-system/zone-component.ts:35](https://github.com/ue-too/ue-too/
 
 > **ordered**: `boolean`
 
-Defined in: [zone-system/zone-component.ts:39](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
+Defined in: [zone-system/zone-component.ts:39](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L39)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [zone-system/zone-component.ts:39](https://github.com/ue-too/ue-too/
 
 > **owner**: `Entity` \| `null`
 
-Defined in: [zone-system/zone-component.ts:37](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
+Defined in: [zone-system/zone-component.ts:37](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L37)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [zone-system/zone-component.ts:37](https://github.com/ue-too/ue-too/
 
 > **visibility**: `"public"` \| `"private"` \| `"owner-only"`
 
-Defined in: [zone-system/zone-component.ts:38](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
+Defined in: [zone-system/zone-component.ts:38](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L38)
 
 ***
 
@@ -36,4 +36,4 @@ Defined in: [zone-system/zone-component.ts:38](https://github.com/ue-too/ue-too/
 
 > **zone**: `string`
 
-Defined in: [zone-system/zone-component.ts:36](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L36)
+Defined in: [zone-system/zone-component.ts:36](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/zone-component.ts#L36)

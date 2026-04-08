@@ -4,7 +4,7 @@
 
 > **StateChangeCallback**\<`States`\> = (`currentState`, `nextState`) => `void`
 
-定義: [interface.ts:264](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L264)
+定義: [interface.ts:264](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L264)
 
 ## 型パラメーター
 

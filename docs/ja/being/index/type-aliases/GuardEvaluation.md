@@ -4,7 +4,7 @@
 
 > **GuardEvaluation**\<`Context`\> = (`context`) => `boolean`
 
-定義: [interface.ts:392](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L392)
+定義: [interface.ts:392](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/interface.ts#L392)
 
 ## 型パラメーター
 

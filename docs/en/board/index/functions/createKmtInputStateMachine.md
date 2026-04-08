@@ -4,7 +4,7 @@
 
 > **createKmtInputStateMachine**(`context`): [`KmtInputStateMachine`](../type-aliases/KmtInputStateMachine.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:733](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L733)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:733](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L733)
 
 Creates a new KMT (Keyboard/Mouse/Trackpad) input state machine.
 

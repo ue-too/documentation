@@ -4,7 +4,7 @@
 
 > **PanToHandlerFunction** = (`destination`, `camera`, `config`) => `Point`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:160](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/camera-rig/pan-handler.ts#L160)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:160](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L160)
 
 Handler function type for absolute "pan to" camera operations.
 

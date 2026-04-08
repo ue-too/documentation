@@ -4,7 +4,7 @@
 
 > **BoardProps** = `object`
 
-定義於: [components/Board.tsx:31](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L31)
+定義於: [components/Board.tsx:30](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L30)
 
 Props for the Board component.
 
@@ -14,7 +14,7 @@ Props for the Board component.
 
 > `optional` **animationCallback**: (`timestamp`, `ctx`) => `void`
 
-定義於: [components/Board.tsx:39](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L39)
+定義於: [components/Board.tsx:38](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L38)
 
 Callback function for drawing on each animation frame
 
@@ -38,7 +38,7 @@ Callback function for drawing on each animation frame
 
 > `optional` **children**: `React.ReactNode`
 
-定義於: [components/Board.tsx:44](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L44)
+定義於: [components/Board.tsx:43](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L43)
 
 Child components that can access the board via hooks
 
@@ -48,7 +48,7 @@ Child components that can access the board via hooks
 
 > `optional` **fullScreen**: `boolean`
 
-定義於: [components/Board.tsx:33](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L33)
+定義於: [components/Board.tsx:32](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L32)
 
 Enable fullscreen mode (canvas resizes with window)
 
@@ -58,7 +58,7 @@ Enable fullscreen mode (canvas resizes with window)
 
 > `optional` **height**: `number`
 
-定義於: [components/Board.tsx:37](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L37)
+定義於: [components/Board.tsx:36](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L36)
 
 Canvas height in pixels
 
@@ -68,6 +68,6 @@ Canvas height in pixels
 
 > `optional` **width**: `number`
 
-定義於: [components/Board.tsx:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/components/Board.tsx#L35)
+定義於: [components/Board.tsx:34](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-react-adapter/src/components/Board.tsx#L34)
 
 Canvas width in pixels
