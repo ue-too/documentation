@@ -4,7 +4,7 @@
 
 > **PanHandlerRestrictionConfig** = `object`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:102](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/pan-handler.ts#L102)
 
 Configuration for restricting camera movement along specific axes.
 
@@ -53,7 +53,7 @@ const screenConfig: PanHandlerRestrictionConfig = {
 
 > **restrictRelativeXTranslation**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:115](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/pan-handler.ts#L115)
 
 Whether to prevent horizontal movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's vertical direction.
@@ -64,7 +64,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's vertical
 
 > **restrictRelativeYTranslation**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:120](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/pan-handler.ts#L120)
 
 Whether to prevent vertical movement in viewport/screen space.
 Accounts for camera rotation - locks movement perpendicular to screen's horizontal direction.
@@ -75,7 +75,7 @@ Accounts for camera rotation - locks movement perpendicular to screen's horizont
 
 > **restrictXTranslation**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:106](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/pan-handler.ts#L106)
 
 Whether to prevent movement along the world X axis.
 
@@ -85,6 +85,6 @@ Whether to prevent movement along the world X axis.
 
 > **restrictYTranslation**: `boolean`
 
-定義: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
+定義: [packages/board/src/camera/camera-rig/pan-handler.ts:110](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/pan-handler.ts#L110)
 
 Whether to prevent movement along the world Y axis.

@@ -2,7 +2,7 @@
 
 # Class: PendingState
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:173](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L173)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:173](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L173)
 
 ## Description
 
@@ -68,7 +68,7 @@ Defined in: packages/being/dist/interface.d.ts:491
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:179](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L179)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:179](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L179)
 
 #### Overrides
 
@@ -248,7 +248,7 @@ Defined in: packages/being/dist/interface.d.ts:501
 
 > **touchend**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:203](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L203)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:203](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L203)
 
 #### Parameters
 
@@ -270,7 +270,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchmove**(`context`, `payload`): [`TouchOutputEvent`](../type-aliases/TouchOutputEvent.md)
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:207](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L207)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:207](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L207)
 
 #### Parameters
 
@@ -292,7 +292,7 @@ Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-i
 
 > **touchstart**(`context`, `payload`): `void`
 
-Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:199](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L199)
+Defined in: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:199](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L199)
 
 #### Parameters
 

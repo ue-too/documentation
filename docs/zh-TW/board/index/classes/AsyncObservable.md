@@ -2,7 +2,7 @@
 
 # 類別: AsyncObservable\<T\>
 
-定義於: [packages/board/src/utils/observable.ts:113](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/observable.ts#L113)
+定義於: [packages/board/src/utils/observable.ts:113](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/utils/observable.ts#L113)
 
 Asynchronous Observable implementation that notifies observers via microtasks.
 
@@ -69,7 +69,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-定義於: [packages/board/src/utils/observable.ts:165](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/observable.ts#L165)
+定義於: [packages/board/src/utils/observable.ts:165](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/utils/observable.ts#L165)
 
 Notifies all observers with the provided data asynchronously.
 
@@ -100,7 +100,7 @@ This method returns immediately; observers run later in the event loop.
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-定義於: [packages/board/src/utils/observable.ts:127](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/utils/observable.ts#L127)
+定義於: [packages/board/src/utils/observable.ts:127](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/utils/observable.ts#L127)
 
 Subscribes an observer to receive notifications.
 

@@ -2,7 +2,7 @@
 
 # クラス: VanillaKMTEventParser
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:167](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L167)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:167](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L167)
 
 Interface for KMT (Keyboard/Mouse/Trackpad) event parsers.
 
@@ -22,7 +22,7 @@ and coordinate with the orchestrator for output processing.
 
 > **new VanillaKMTEventParser**(`kmtInputStateMachine`, `orchestrator`, `canvas?`): `VanillaKMTEventParser`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:175](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L175)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:175](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L175)
 
 #### パラメータ
 
@@ -50,7 +50,7 @@ and coordinate with the orchestrator for output processing.
 
 > **get** **disabled**(): `boolean`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:188](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L188)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:188](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L188)
 
 Whether the parser is currently disabled
 
@@ -72,7 +72,7 @@ Whether the parser is currently disabled
 
 > **set** **stateMachine**(`stateMachine`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:389](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L389)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:389](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L389)
 
 ##### パラメータ
 
@@ -90,7 +90,7 @@ Whether the parser is currently disabled
 
 > **addEventListeners**(`signal`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:200](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L200)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:200](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L200)
 
 #### パラメータ
 
@@ -108,7 +108,7 @@ Whether the parser is currently disabled
 
 > **attach**(`canvas`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:383](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L383)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:383](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L383)
 
 Attaches to a new canvas element
 
@@ -132,7 +132,7 @@ Attaches to a new canvas element
 
 > **bindFunctions**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:241](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L241)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:241](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L241)
 
 #### 戻り値
 
@@ -144,7 +144,7 @@ Attaches to a new canvas element
 
 > **disable**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:192](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L192)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:192](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L192)
 
 Disables the parser; the event listeners are still attached just not processing any events
 
@@ -162,7 +162,7 @@ Disables the parser; the event listeners are still attached just not processing 
 
 > **enable**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:196](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L196)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:196](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L196)
 
 Enables the parser
 
@@ -180,7 +180,7 @@ Enables the parser
 
 > **keypressHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:341](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L341)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:341](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L341)
 
 #### パラメータ
 
@@ -198,7 +198,7 @@ Enables the parser
 
 > **keyupHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:374](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L374)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:374](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L374)
 
 #### パラメータ
 
@@ -216,7 +216,7 @@ Enables the parser
 
 > **pointerDownHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:263](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L263)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:263](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L263)
 
 #### パラメータ
 
@@ -234,7 +234,7 @@ Enables the parser
 
 > **pointerMoveHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:300](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L300)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:300](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L300)
 
 #### パラメータ
 
@@ -252,7 +252,7 @@ Enables the parser
 
 > **pointerUpHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:283](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L283)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:283](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L283)
 
 #### パラメータ
 
@@ -270,7 +270,7 @@ Enables the parser
 
 > **scrollHandler**(`e`): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:321](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L321)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:321](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L321)
 
 #### パラメータ
 
@@ -288,7 +288,7 @@ Enables the parser
 
 > **setUp**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:228](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L228)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:228](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L228)
 
 Initializes event listeners
 
@@ -306,7 +306,7 @@ Initializes event listeners
 
 > **tearDown**(): `void`
 
-定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:235](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L235)
+定義: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:235](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L235)
 
 Removes event listeners and cleans up
 

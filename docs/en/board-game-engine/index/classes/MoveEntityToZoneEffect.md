@@ -2,7 +2,7 @@
 
 # Class: MoveEntityToZoneEffect
 
-Defined in: [zone-system/effect.ts:13](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L13)
+Defined in: [zone-system/effect.ts:13](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L13)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/effect.ts:13](https://github.com/ue-too/ue-too/blob/7d5
 
 > **new MoveEntityToZoneEffect**(`coordinator`, `entity`, `zoneEntity`, `addToIfZoneOrdered`): `MoveEntityToZoneEffect`
 
-Defined in: [zone-system/effect.ts:19](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L19)
+Defined in: [zone-system/effect.ts:19](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L19)
 
 #### Parameters
 
@@ -44,7 +44,7 @@ Defined in: [zone-system/effect.ts:19](https://github.com/ue-too/ue-too/blob/7d5
 
 > **apply**(): `void`
 
-Defined in: [zone-system/effect.ts:31](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/zone-system/effect.ts#L31)
+Defined in: [zone-system/effect.ts:31](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/zone-system/effect.ts#L31)
 
 #### Returns
 

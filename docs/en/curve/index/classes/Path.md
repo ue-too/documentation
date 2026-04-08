@@ -2,7 +2,7 @@
 
 # Class: Path
 
-Defined in: [packages/curve/src/path.ts:53](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L53)
+Defined in: [packages/curve/src/path.ts:53](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L53)
 
 Path made of sequential line segments.
 
@@ -12,7 +12,7 @@ Path made of sequential line segments.
 
 > **new Path**(`lines`): `Path`
 
-Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L56)
+Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L56)
 
 #### Parameters
 
@@ -30,7 +30,7 @@ Defined in: [packages/curve/src/path.ts:56](https://github.com/ue-too/ue-too/blo
 
 > **append**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L60)
+Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L60)
 
 #### Parameters
 
@@ -48,7 +48,7 @@ Defined in: [packages/curve/src/path.ts:60](https://github.com/ue-too/ue-too/blo
 
 > **clear**(): `void`
 
-Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L64)
+Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L64)
 
 #### Returns
 
@@ -60,7 +60,7 @@ Defined in: [packages/curve/src/path.ts:64](https://github.com/ue-too/ue-too/blo
 
 > **getLength**(): `number`
 
-Defined in: [packages/curve/src/path.ts:76](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L76)
+Defined in: [packages/curve/src/path.ts:76](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L76)
 
 #### Returns
 
@@ -72,7 +72,7 @@ Defined in: [packages/curve/src/path.ts:76](https://github.com/ue-too/ue-too/blo
 
 > **getLines**(): [`Line`](Line.md)[]
 
-Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L72)
+Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L72)
 
 #### Returns
 
@@ -84,7 +84,7 @@ Defined in: [packages/curve/src/path.ts:72](https://github.com/ue-too/ue-too/blo
 
 > **getPercentages**(): `object`[]
 
-Defined in: [packages/curve/src/path.ts:86](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L86)
+Defined in: [packages/curve/src/path.ts:86](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L86)
 
 #### Returns
 
@@ -96,7 +96,7 @@ Defined in: [packages/curve/src/path.ts:86](https://github.com/ue-too/ue-too/blo
 
 > **getPointByPercentage**(`percentage`): `Point`
 
-Defined in: [packages/curve/src/path.ts:102](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L102)
+Defined in: [packages/curve/src/path.ts:102](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L102)
 
 #### Parameters
 
@@ -114,7 +114,7 @@ Defined in: [packages/curve/src/path.ts:102](https://github.com/ue-too/ue-too/bl
 
 > **prepend**(`line`): `void`
 
-Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/path.ts#L68)
+Defined in: [packages/curve/src/path.ts:68](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/path.ts#L68)
 
 #### Parameters
 

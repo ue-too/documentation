@@ -4,7 +4,7 @@
 
 > **midPointOnGreatCircle**(`startCoord`, `endCoord`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義: [greateCircle.ts:86](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/border/src/greateCircle.ts#L86)
+定義: [greateCircle.ts:86](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/border/src/greateCircle.ts#L86)
 
 Calculates the midpoint along a great circle path.
 

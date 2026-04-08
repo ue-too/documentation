@@ -2,7 +2,7 @@
 
 # クラス: IdleState
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:109](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L109)
 
 IDLE state - waiting for two-finger touch.
 
@@ -63,7 +63,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_eventGuards**: `Partial`\<`EventGuards`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchContext`](../interfaces/TouchContext.md), *typeof* [`_guards`](#guards)\>\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:137](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L137)
 
 #### 上書き
 
@@ -75,7 +75,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`TouchEventMapping`](../type-aliases/TouchEventMapping.md), [`TouchContext`](../interfaces/TouchContext.md), [`TouchStates`](../type-aliases/TouchStates.md), [`TouchInputEventOutputMapping`](../type-aliases/TouchInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:115](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L115)
 
 #### 上書き
 
@@ -87,7 +87,7 @@ This ensures the state machine only handles two-finger gestures.
 
 > `protected` **\_guards**: `Guard`\<[`TouchContext`](../interfaces/TouchContext.md), `"touchPointsCount"`\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:131](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L131)
 
 #### 上書き
 
@@ -255,7 +255,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchend**(`context`, `payload`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:163](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L163)
 
 #### パラメータ
 
@@ -277,7 +277,7 @@ keyof `EventPayloadMapping`[]
 
 > **touchstart**(`context`, `payload`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
+定義: [packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts:159](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/touch-input-state-machine.ts#L159)
 
 #### パラメータ
 

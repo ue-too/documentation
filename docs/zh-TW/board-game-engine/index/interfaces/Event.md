@@ -2,7 +2,7 @@
 
 # 介面: Event
 
-定義於: [event-system/event.ts:1](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/event-system/event.ts#L1)
+定義於: [event-system/event.ts:1](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/event-system/event.ts#L1)
 
 ## 屬性
 
@@ -10,7 +10,7 @@
 
 > **data**: `Record`\<`string`, `unknown`\>
 
-定義於: [event-system/event.ts:3](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/event-system/event.ts#L3)
+定義於: [event-system/event.ts:3](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/event-system/event.ts#L3)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **timestamp**: `number`
 
-定義於: [event-system/event.ts:4](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/event-system/event.ts#L4)
+定義於: [event-system/event.ts:4](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/event-system/event.ts#L4)
 
 ***
 
@@ -26,4 +26,4 @@
 
 > **type**: `string`
 
-定義於: [event-system/event.ts:2](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board-game-engine/src/event-system/event.ts#L2)
+定義於: [event-system/event.ts:2](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/event-system/event.ts#L2)

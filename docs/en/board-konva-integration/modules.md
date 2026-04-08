@@ -1,4 +1,4 @@
-# @ue-too/board-konva-integration v0.17.1
+# @ue-too/board-konva-integration v0.17.2
 
 ## Documents
 

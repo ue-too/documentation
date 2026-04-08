@@ -4,7 +4,7 @@
 
 > **invertFromWorldSpace**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:263](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/board/src/camera/utils/coordinate-conversion.ts#L263)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:263](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/utils/coordinate-conversion.ts#L263)
 
 Converts a world point to canvas coordinates (bottom-left origin).
 

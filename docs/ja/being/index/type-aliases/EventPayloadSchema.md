@@ -4,7 +4,7 @@
 
 > **EventPayloadSchema** = `Record`\<`string`, `string`\> \| \{ \}
 
-定義: [schema-factory.ts:25](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/schema-factory.ts#L25)
+定義: [schema-factory.ts:25](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/schema-factory.ts#L25)
 
 Payload type definition for an event in the schema.
 Can be an empty object (no payload) or an object with typed fields.

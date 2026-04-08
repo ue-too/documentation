@@ -4,7 +4,7 @@
 
 > **createStateMachineFromSchema**\<`Schema`\>(`schema`, `context`): `Schema` *extends* [`StateMachineSchema`](../interfaces/StateMachineSchema.md)\<`C`, `EPM`, `any`, `EOM`\> ? [`StateMachine`](../interfaces/StateMachine.md)\<`EPM`, `C`, `any`, `EOM`\> : [`StateMachine`](../interfaces/StateMachine.md)\<`any`, [`BaseContext`](../interfaces/BaseContext.md), `any`, `any`\>
 
-Defined in: [schema-factory.ts:404](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/being/src/schema-factory.ts#L404)
+Defined in: [schema-factory.ts:404](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/schema-factory.ts#L404)
 
 Creates a state machine from a schema definition.
 

@@ -4,7 +4,7 @@
 
 > **HandlePoint** = `object`
 
-Defined in: [packages/curve/src/composite-curve.ts:13](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L13)
+Defined in: [packages/curve/src/composite-curve.ts:13](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L13)
 
 Handle point with position and type.
 
@@ -14,7 +14,7 @@ Handle point with position and type.
 
 > **position**: `Point`
 
-Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L14)
+Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L14)
 
 ***
 
@@ -22,4 +22,4 @@ Defined in: [packages/curve/src/composite-curve.ts:14](https://github.com/ue-too
 
 > **type**: [`HandleType`](HandleType.md)
 
-Defined in: [packages/curve/src/composite-curve.ts:15](https://github.com/ue-too/ue-too/blob/7d57cce875ed7b8a4f4ee4e325a18e34159928f6/packages/curve/src/composite-curve.ts#L15)
+Defined in: [packages/curve/src/composite-curve.ts:15](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/curve/src/composite-curve.ts#L15)
