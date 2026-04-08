@@ -2,7 +2,7 @@
 
 # Class: LocationSystem
 
-Defined in: [zone-system/zone-component.ts:61](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
+Defined in: [zone-system/zone-component.ts:61](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
 
 ## Implements
 
@@ -14,7 +14,7 @@ Defined in: [zone-system/zone-component.ts:61](https://github.com/ue-too/ue-too/
 
 > **new LocationSystem**(`coordinator`): `LocationSystem`
 
-Defined in: [zone-system/zone-component.ts:65](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
+Defined in: [zone-system/zone-component.ts:65](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
 
 #### Parameters
 
@@ -32,7 +32,7 @@ Defined in: [zone-system/zone-component.ts:65](https://github.com/ue-too/ue-too/
 
 > **entities**: `Set`\<`number`\>
 
-Defined in: [zone-system/zone-component.ts:62](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
+Defined in: [zone-system/zone-component.ts:62](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
 
 #### Implementation of
 
@@ -44,7 +44,7 @@ Defined in: [zone-system/zone-component.ts:62](https://github.com/ue-too/ue-too/
 
 > **addEntityToZone**(`zoneEntity`, `entity`, `direction`): `void`
 
-Defined in: [zone-system/zone-component.ts:178](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
+Defined in: [zone-system/zone-component.ts:178](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
 
 #### Parameters
 
@@ -70,7 +70,7 @@ Defined in: [zone-system/zone-component.ts:178](https://github.com/ue-too/ue-too
 
 > **getEntitiesInZone**(`zoneEntity`): `number`[]
 
-Defined in: [zone-system/zone-component.ts:86](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
+Defined in: [zone-system/zone-component.ts:86](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
 
 #### Parameters
 
@@ -88,7 +88,7 @@ Defined in: [zone-system/zone-component.ts:86](https://github.com/ue-too/ue-too/
 
 > **isZoneEmpty**(`zoneEntity`): `boolean`
 
-Defined in: [zone-system/zone-component.ts:217](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
+Defined in: [zone-system/zone-component.ts:217](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
 
 #### Parameters
 
@@ -106,7 +106,7 @@ Defined in: [zone-system/zone-component.ts:217](https://github.com/ue-too/ue-too
 
 > **offsetZoneSortIndex**(`zoneEntity`, `offset`): `void`
 
-Defined in: [zone-system/zone-component.ts:120](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
+Defined in: [zone-system/zone-component.ts:120](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
 
 #### Parameters
 
@@ -128,7 +128,7 @@ Defined in: [zone-system/zone-component.ts:120](https://github.com/ue-too/ue-too
 
 > **organizeZoneSortIndex**(`zoneEntity`): `number`
 
-Defined in: [zone-system/zone-component.ts:136](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
+Defined in: [zone-system/zone-component.ts:136](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
 
 #### Parameters
 
@@ -146,7 +146,7 @@ Defined in: [zone-system/zone-component.ts:136](https://github.com/ue-too/ue-too
 
 > **shuffleZone**(`zoneEntity`): `void`
 
-Defined in: [zone-system/zone-component.ts:154](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
+Defined in: [zone-system/zone-component.ts:154](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
 
 #### Parameters
 

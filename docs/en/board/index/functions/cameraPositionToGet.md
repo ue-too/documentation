@@ -4,7 +4,7 @@
 
 > **cameraPositionToGet**(`pointInWorld`, `toPointInViewPort`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:468](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/utils/coordinate-conversion.ts#L468)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:468](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/coordinate-conversion.ts#L468)
 
 Calculates the camera position needed to place a world point at a specific viewport location.
 Useful for implementing "zoom to point" or "focus on object" features.

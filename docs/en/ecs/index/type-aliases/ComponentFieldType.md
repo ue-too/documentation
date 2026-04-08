@@ -4,6 +4,6 @@
 
 > **ComponentFieldType** = `"string"` \| `"number"` \| `"boolean"` \| `"object"` \| `"array"` \| `"entity"`
 
-Defined in: [index.ts:145](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/ecs/src/index.ts#L145)
+Defined in: [index.ts:145](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/ecs/src/index.ts#L145)
 
 Supported field types for runtime-defined component schemas.

@@ -4,7 +4,7 @@
 
 > **pointIsInViewPort**(`point`, `viewPortWidth`, `viewPortHeight`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `boolean`
 
-定義: [packages/board/src/camera/utils/coordinate-conversion.ts:314](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/utils/coordinate-conversion.ts#L314)
+定義: [packages/board/src/camera/utils/coordinate-conversion.ts:314](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/coordinate-conversion.ts#L314)
 
 Checks if a world point is currently visible in the viewport.
 

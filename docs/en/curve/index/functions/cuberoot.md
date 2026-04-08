@@ -4,7 +4,7 @@
 
 > **cuberoot**(`x`): `number`
 
-Defined in: [packages/curve/src/b-curve.ts:2230](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L2230)
+Defined in: [packages/curve/src/b-curve.ts:2235](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L2235)
 
 ## Parameters
 

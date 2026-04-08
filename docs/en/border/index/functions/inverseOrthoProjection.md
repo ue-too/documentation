@@ -4,7 +4,7 @@
 
 > **inverseOrthoProjection**(`interestPoint`, `origin`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-Defined in: [projection.ts:176](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/border/src/projection.ts#L176)
+Defined in: [projection.ts:176](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/border/src/projection.ts#L176)
 
 Converts an orthographic projection point back to geographic coordinates.
 

@@ -2,7 +2,7 @@
 
 # 介面: Observable\<T\>
 
-定義於: [packages/board/src/utils/observable.ts:71](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L71)
+定義於: [packages/board/src/utils/observable.ts:71](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L71)
 
 Interface for the Observable pattern implementation.
 
@@ -29,7 +29,7 @@ Tuple type of data emitted to observers
 
 > **notify**(...`data`): `void`
 
-定義於: [packages/board/src/utils/observable.ts:73](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L73)
+定義於: [packages/board/src/utils/observable.ts:73](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L73)
 
 #### 參數
 
@@ -47,7 +47,7 @@ Tuple type of data emitted to observers
 
 > **subscribe**(`observer`, `options?`): () => `void`
 
-定義於: [packages/board/src/utils/observable.ts:72](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L72)
+定義於: [packages/board/src/utils/observable.ts:72](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L72)
 
 #### 參數
 

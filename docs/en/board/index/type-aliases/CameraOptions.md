@@ -4,7 +4,7 @@
 
 > **CameraOptions** = `object`
 
-Defined in: [packages/board/src/camera/base.ts:27](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L27)
+Defined in: [packages/board/src/camera/base.ts:27](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L27)
 
 ## Properties
 
@@ -12,7 +12,7 @@ Defined in: [packages/board/src/camera/base.ts:27](https://github.com/ue-too/ue-
 
 > `optional` **boundaries**: [`Boundaries`](Boundaries.md)
 
-Defined in: [packages/board/src/camera/base.ts:33](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L33)
+Defined in: [packages/board/src/camera/base.ts:33](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L33)
 
 ***
 
@@ -20,7 +20,7 @@ Defined in: [packages/board/src/camera/base.ts:33](https://github.com/ue-too/ue-
 
 > `optional` **position**: `Point`
 
-Defined in: [packages/board/src/camera/base.ts:30](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L30)
+Defined in: [packages/board/src/camera/base.ts:30](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L30)
 
 ***
 
@@ -28,7 +28,7 @@ Defined in: [packages/board/src/camera/base.ts:30](https://github.com/ue-too/ue-
 
 > `optional` **rotation**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:31](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L31)
+Defined in: [packages/board/src/camera/base.ts:31](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L31)
 
 ***
 
@@ -36,7 +36,7 @@ Defined in: [packages/board/src/camera/base.ts:31](https://github.com/ue-too/ue-
 
 > `optional` **rotationBoundaries**: [`RotationLimits`](RotationLimits.md)
 
-Defined in: [packages/board/src/camera/base.ts:35](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L35)
+Defined in: [packages/board/src/camera/base.ts:35](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L35)
 
 ***
 
@@ -44,7 +44,7 @@ Defined in: [packages/board/src/camera/base.ts:35](https://github.com/ue-too/ue-
 
 > `optional` **viewPortHeight**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:29](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L29)
+Defined in: [packages/board/src/camera/base.ts:29](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L29)
 
 ***
 
@@ -52,7 +52,7 @@ Defined in: [packages/board/src/camera/base.ts:29](https://github.com/ue-too/ue-
 
 > `optional` **viewPortWidth**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:28](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L28)
+Defined in: [packages/board/src/camera/base.ts:28](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L28)
 
 ***
 
@@ -60,7 +60,7 @@ Defined in: [packages/board/src/camera/base.ts:28](https://github.com/ue-too/ue-
 
 > `optional` **zoomLevel**: `number`
 
-Defined in: [packages/board/src/camera/base.ts:32](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L32)
+Defined in: [packages/board/src/camera/base.ts:32](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L32)
 
 ***
 
@@ -68,4 +68,4 @@ Defined in: [packages/board/src/camera/base.ts:32](https://github.com/ue-too/ue-
 
 > `optional` **zoomLevelBoundaries**: [`ZoomLevelLimits`](ZoomLevelLimits.md)
 
-Defined in: [packages/board/src/camera/base.ts:34](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/base.ts#L34)
+Defined in: [packages/board/src/camera/base.ts:34](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/base.ts#L34)

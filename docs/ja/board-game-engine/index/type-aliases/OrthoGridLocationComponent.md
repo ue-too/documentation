@@ -4,7 +4,7 @@
 
 > **OrthoGridLocationComponent** = `object`
 
-定義: [grid-system/ortho-grid.ts:24](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L24)
+定義: [grid-system/ortho-grid.ts:24](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L24)
 
 ## プロパティ
 
@@ -12,7 +12,7 @@
 
 > **column**: `number`
 
-定義: [grid-system/ortho-grid.ts:27](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L27)
+定義: [grid-system/ortho-grid.ts:27](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L27)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **grid**: `Entity`
 
-定義: [grid-system/ortho-grid.ts:25](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L25)
+定義: [grid-system/ortho-grid.ts:25](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L25)
 
 ***
 
@@ -28,4 +28,4 @@
 
 > **row**: `number`
 
-定義: [grid-system/ortho-grid.ts:26](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L26)
+定義: [grid-system/ortho-grid.ts:26](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L26)

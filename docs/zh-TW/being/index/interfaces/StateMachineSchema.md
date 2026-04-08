@@ -2,7 +2,7 @@
 
 # 介面: StateMachineSchema\<Context, EventPayloadMapping, StateNames, EventOutputMapping\>
 
-定義於: [schema-factory.ts:290](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/schema-factory.ts#L290)
+定義於: [schema-factory.ts:290](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/schema-factory.ts#L290)
 
 Complete schema definition for a state machine.
 
@@ -38,7 +38,7 @@ Optional mapping of events to their output types
 
 > **events**: `EventPayloadMapping`
 
-定義於: [schema-factory.ts:301](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/schema-factory.ts#L301)
+定義於: [schema-factory.ts:301](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/schema-factory.ts#L301)
 
 Mapping of event names to their payload types
 
@@ -48,7 +48,7 @@ Mapping of event names to their payload types
 
 > **initialState**: `StateNames`
 
-定義於: [schema-factory.ts:310](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/schema-factory.ts#L310)
+定義於: [schema-factory.ts:310](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/schema-factory.ts#L310)
 
 Initial state name
 
@@ -58,7 +58,7 @@ Initial state name
 
 > **stateDefinitions**: [`StateDefinition`](StateDefinition.md)\<`Context`, `EventPayloadMapping`, `StateNames`, `EventOutputMapping`\>[]
 
-定義於: [schema-factory.ts:303](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/schema-factory.ts#L303)
+定義於: [schema-factory.ts:303](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/schema-factory.ts#L303)
 
 Array of state definitions
 
@@ -68,6 +68,6 @@ Array of state definitions
 
 > **states**: readonly `StateNames`[] \| `StateNames`[]
 
-定義於: [schema-factory.ts:299](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/schema-factory.ts#L299)
+定義於: [schema-factory.ts:299](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/schema-factory.ts#L299)
 
 Array of all possible state names

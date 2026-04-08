@@ -2,7 +2,7 @@
 
 # 類別: World
 
-定義於: [world.ts:65](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L65)
+定義於: [world.ts:65](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L65)
 
 Main physics world managing rigid body simulation.
 
@@ -49,7 +49,7 @@ function update(dt: number) {
 
 > **new World**(`maxTransWidth`, `maxTransHeight`, `spatialIndexType`): `World`
 
-定義於: [world.ts:80](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L80)
+定義於: [world.ts:82](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L82)
 
 #### 參數
 
@@ -75,7 +75,7 @@ function update(dt: number) {
 
 > **\_context**: `CanvasRenderingContext2D` \| `null` = `null`
 
-定義於: [world.ts:78](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L78)
+定義於: [world.ts:80](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L80)
 
 ## 存取器
 
@@ -85,7 +85,7 @@ function update(dt: number) {
 
 > **get** **currentSpatialIndexType**(): [`SpatialIndexType`](../type-aliases/SpatialIndexType.md)
 
-定義於: [world.ts:273](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L273)
+定義於: [world.ts:284](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L284)
 
 ##### 回傳
 
@@ -99,7 +99,7 @@ function update(dt: number) {
 
 > **get** **resolveCollision**(): `boolean`
 
-定義於: [world.ts:228](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L228)
+定義於: [world.ts:231](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L231)
 
 ##### 回傳
 
@@ -109,7 +109,7 @@ function update(dt: number) {
 
 > **set** **resolveCollision**(`resolveCollision`): `void`
 
-定義於: [world.ts:232](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L232)
+定義於: [world.ts:235](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L235)
 
 ##### 參數
 
@@ -129,7 +129,7 @@ function update(dt: number) {
 
 > **get** **sleepingEnabled**(): `boolean`
 
-定義於: [world.ts:303](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L303)
+定義於: [world.ts:314](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L314)
 
 ##### 回傳
 
@@ -139,11 +139,41 @@ function update(dt: number) {
 
 > **set** **sleepingEnabled**(`enabled`): `void`
 
-定義於: [world.ts:307](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L307)
+定義於: [world.ts:318](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L318)
 
 ##### 參數
 
 ###### enabled
+
+`boolean`
+
+##### 回傳
+
+`void`
+
+***
+
+### useLinearCollisionResolution
+
+#### Getter 簽章
+
+> **get** **useLinearCollisionResolution**(): `boolean`
+
+定義於: [world.ts:239](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L239)
+
+##### 回傳
+
+`boolean`
+
+#### Setter 簽章
+
+> **set** **useLinearCollisionResolution**(`value`): `void`
+
+定義於: [world.ts:243](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L243)
+
+##### 參數
+
+###### value
 
 `boolean`
 
@@ -157,7 +187,7 @@ function update(dt: number) {
 
 > **addConstraint**(`constraint`): `void`
 
-定義於: [world.ts:256](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L256)
+定義於: [world.ts:267](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L267)
 
 #### 參數
 
@@ -175,7 +205,7 @@ function update(dt: number) {
 
 > **addPinJoint**(`bodyA`, `bodyB`, `anchorA`, `anchorB`): `void`
 
-定義於: [world.ts:264](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L264)
+定義於: [world.ts:275](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L275)
 
 #### 參數
 
@@ -205,7 +235,7 @@ function update(dt: number) {
 
 > **addRigidBody**(`ident`, `body`): `void`
 
-定義於: [world.ts:110](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L110)
+定義於: [world.ts:112](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L112)
 
 #### 參數
 
@@ -227,7 +257,7 @@ function update(dt: number) {
 
 > **getCollisionStats**(): `object`
 
-定義於: [world.ts:325](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L325)
+定義於: [world.ts:336](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L336)
 
 #### 回傳
 
@@ -259,7 +289,7 @@ function update(dt: number) {
 
 > **getConstraints**(): [`Constraint`](../interfaces/Constraint.md)[]
 
-定義於: [world.ts:260](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L260)
+定義於: [world.ts:271](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L271)
 
 #### 回傳
 
@@ -271,7 +301,7 @@ function update(dt: number) {
 
 > **getPairManager**(): [`PairManager`](PairManager.md)
 
-定義於: [world.ts:320](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L320)
+定義於: [world.ts:331](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L331)
 
 #### 回傳
 
@@ -283,7 +313,7 @@ function update(dt: number) {
 
 > **getRigidBodyList**(): [`RigidBody`](../interfaces/RigidBody.md)[]
 
-定義於: [world.ts:236](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L236)
+定義於: [world.ts:247](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L247)
 
 #### 回傳
 
@@ -295,7 +325,7 @@ function update(dt: number) {
 
 > **getRigidBodyMap**(): `Map`\<`string`, [`RigidBody`](../interfaces/RigidBody.md)\>
 
-定義於: [world.ts:244](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L244)
+定義於: [world.ts:255](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L255)
 
 #### 回傳
 
@@ -307,7 +337,7 @@ function update(dt: number) {
 
 > **getSpatialIndexStats**(): `any`
 
-定義於: [world.ts:290](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L290)
+定義於: [world.ts:301](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L301)
 
 #### 回傳
 
@@ -319,7 +349,7 @@ function update(dt: number) {
 
 > **removeRigidBody**(`ident`): `void`
 
-定義於: [world.ts:120](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L120)
+定義於: [world.ts:122](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L122)
 
 #### 參數
 
@@ -337,7 +367,7 @@ function update(dt: number) {
 
 > **resolveCollisionPhase**(): `Point`[]
 
-定義於: [world.ts:173](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L173)
+定義於: [world.ts:175](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L175)
 
 #### 回傳
 
@@ -349,7 +379,7 @@ function update(dt: number) {
 
 > **setMaxTransHeight**(`height`): `void`
 
-定義於: [world.ts:248](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L248)
+定義於: [world.ts:259](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L259)
 
 #### 參數
 
@@ -367,7 +397,7 @@ function update(dt: number) {
 
 > **setMaxTransWidth**(`width`): `void`
 
-定義於: [world.ts:252](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L252)
+定義於: [world.ts:263](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L263)
 
 #### 參數
 
@@ -385,7 +415,7 @@ function update(dt: number) {
 
 > **setSpatialIndexType**(`type`): `void`
 
-定義於: [world.ts:277](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L277)
+定義於: [world.ts:288](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L288)
 
 #### 參數
 
@@ -403,7 +433,7 @@ function update(dt: number) {
 
 > **step**(`deltaTime`): `void`
 
-定義於: [world.ts:142](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/world.ts#L142)
+定義於: [world.ts:144](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/world.ts#L144)
 
 #### 參數
 

@@ -2,7 +2,7 @@
 
 # 類別: BCurve
 
-定義於: [packages/curve/src/b-curve.ts:134](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L134)
+定義於: [packages/curve/src/b-curve.ts:134](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L134)
 
 Bezier curve class supporting quadratic (3 points) and cubic (4 points) curves.
 
@@ -55,7 +55,7 @@ const tangent = curve.derivative(0.5);
 
 > **new BCurve**(`controlPoints`): `BCurve`
 
-定義於: [packages/curve/src/b-curve.ts:170](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L170)
+定義於: [packages/curve/src/b-curve.ts:171](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L171)
 
 #### 參數
 
@@ -75,7 +75,7 @@ const tangent = curve.derivative(0.5);
 
 > **get** **AABB**(): `object`
 
-定義於: [packages/curve/src/b-curve.ts:1464](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1464)
+定義於: [packages/curve/src/b-curve.ts:1469](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1469)
 
 ##### 回傳
 
@@ -97,7 +97,7 @@ const tangent = curve.derivative(0.5);
 
 > **get** **fullLength**(): `number`
 
-定義於: [packages/curve/src/b-curve.ts:422](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L422)
+定義於: [packages/curve/src/b-curve.ts:423](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L423)
 
 ##### 回傳
 
@@ -109,7 +109,7 @@ const tangent = curve.derivative(0.5);
 
 > **advanceAtTWithLength**(`tVal`, `length`): `AdvanceAtTWithLengthRes`
 
-定義於: [packages/curve/src/b-curve.ts:1213](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1213)
+定義於: [packages/curve/src/b-curve.ts:1218](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1218)
 
 #### 參數
 
@@ -131,7 +131,7 @@ const tangent = curve.derivative(0.5);
 
 > **advanceByDistance**(`startT`, `distance`): `AdvanceAtTWithLengthRes`
 
-定義於: [packages/curve/src/b-curve.ts:1301](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1301)
+定義於: [packages/curve/src/b-curve.ts:1306](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1306)
 
 #### 參數
 
@@ -153,7 +153,7 @@ const tangent = curve.derivative(0.5);
 
 > **compute**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:326](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L326)
+定義於: [packages/curve/src/b-curve.ts:327](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L327)
 
 #### 參數
 
@@ -171,7 +171,7 @@ const tangent = curve.derivative(0.5);
 
 > **curvature**(`tVal`): `number`
 
-定義於: [packages/curve/src/b-curve.ts:932](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L932)
+定義於: [packages/curve/src/b-curve.ts:937](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L937)
 
 #### 參數
 
@@ -189,7 +189,7 @@ const tangent = curve.derivative(0.5);
 
 > **derivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:454](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L454)
+定義於: [packages/curve/src/b-curve.ts:459](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L459)
 
 #### 參數
 
@@ -207,7 +207,7 @@ const tangent = curve.derivative(0.5);
 
 > **derivativeByPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:235](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L235)
+定義於: [packages/curve/src/b-curve.ts:236](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L236)
 
 Gets the derivative (tangent vector) at a given percentage of the curve length.
 
@@ -245,7 +245,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **derivativeNormalized**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:458](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L458)
+定義於: [packages/curve/src/b-curve.ts:463](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L463)
 
 #### 參數
 
@@ -263,7 +263,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **determinant3by3**(`matrix`): `number`
 
-定義於: [packages/curve/src/b-curve.ts:919](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L919)
+定義於: [packages/curve/src/b-curve.ts:924](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L924)
 
 #### 參數
 
@@ -281,7 +281,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findArcs**(`errorThreshold`): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:732](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L732)
+定義於: [packages/curve/src/b-curve.ts:737](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L737)
 
 #### 參數
 
@@ -299,7 +299,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findArcStartingAt**(`errorThreshold`, `low`): \{ `arc?`: \{ `center`: [`Point`](../type-aliases/Point.md); `endPoint`: [`Point`](../type-aliases/Point.md); `endT`: `number`; `radius`: `number`; `startPoint`: [`Point`](../type-aliases/Point.md); `startT`: `number`; \}; `good`: `boolean`; \} \| `null`
 
-定義於: [packages/curve/src/b-curve.ts:767](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L767)
+定義於: [packages/curve/src/b-curve.ts:772](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L772)
 
 #### 參數
 
@@ -321,7 +321,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **findClosest**(`x`, `y`, `LUT`, `circleRadius`, `distanceEpsilon`, `pd2?`, `pd1?`): `number`
 
-定義於: [packages/curve/src/b-curve.ts:1410](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1410)
+定義於: [packages/curve/src/b-curve.ts:1415](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1415)
 
 #### 參數
 
@@ -363,7 +363,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **fitArc**(`startPoint`, `endPoint`, `midPoint`): `object`
 
-定義於: [packages/curve/src/b-curve.ts:846](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L846)
+定義於: [packages/curve/src/b-curve.ts:851](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L851)
 
 #### 參數
 
@@ -409,7 +409,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **get**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:342](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L342)
+定義於: [packages/curve/src/b-curve.ts:343](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L343)
 
 #### 參數
 
@@ -427,7 +427,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **getArcLengthLUT**(`steps`): `object`
 
-定義於: [packages/curve/src/b-curve.ts:464](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L464)
+定義於: [packages/curve/src/b-curve.ts:469](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L469)
 
 #### 參數
 
@@ -453,7 +453,7 @@ const normalized = PointCal.unitVector(tangent); // Normalize for direction
 
 > **getArcs**(`errorThreshold`): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:763](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L763)
+定義於: [packages/curve/src/b-curve.ts:768](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L768)
 
 Get a sequence of circular arcs that approximate the curve.
 
@@ -477,7 +477,7 @@ A list of arcs that cover the curve from \(t=0\) to \(t=1\).
 
 > **getCacheStats**(): `object`
 
-定義於: [packages/curve/src/b-curve.ts:148](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L148)
+定義於: [packages/curve/src/b-curve.ts:149](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L149)
 
 Gets cache statistics for performance monitoring
 
@@ -501,7 +501,7 @@ Object containing cache size and hit rate information
 
 > **getCircleIntersections**(`circleCenter`, `circleRadius`): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:1156](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1156)
+定義於: [packages/curve/src/b-curve.ts:1161](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1161)
 
 #### 參數
 
@@ -523,7 +523,7 @@ Object containing cache size and hit rate information
 
 > **getCoefficientOfTTerms**(): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:956](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L956)
+定義於: [packages/curve/src/b-curve.ts:961](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L961)
 
 #### 回傳
 
@@ -535,7 +535,7 @@ Object containing cache size and hit rate information
 
 > **getCoefficientOfTTermsWithControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:966](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L966)
+定義於: [packages/curve/src/b-curve.ts:971](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L971)
 
 #### 參數
 
@@ -553,7 +553,7 @@ Object containing cache size and hit rate information
 
 > **getControlPoints**(): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:296](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L296)
+定義於: [packages/curve/src/b-curve.ts:297](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L297)
 
 #### 回傳
 
@@ -565,7 +565,7 @@ Object containing cache size and hit rate information
 
 > **getControlPointsAlignedWithXAxis**(): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:1008](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1008)
+定義於: [packages/curve/src/b-curve.ts:1013](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1013)
 
 #### 回傳
 
@@ -577,7 +577,7 @@ Object containing cache size and hit rate information
 
 > **getCurveIntersections**(`curve`, `deduplicationTolerance?`): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:1453](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1453)
+定義於: [packages/curve/src/b-curve.ts:1458](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1458)
 
 #### 參數
 
@@ -599,7 +599,7 @@ Object containing cache size and hit rate information
 
 > **getDerivativeCoefficients**(): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:960](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L960)
+定義於: [packages/curve/src/b-curve.ts:965](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L965)
 
 #### 回傳
 
@@ -611,7 +611,7 @@ Object containing cache size and hit rate information
 
 > **getDerivativeControlPoints**(`controlPoints`): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:272](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L272)
+定義於: [packages/curve/src/b-curve.ts:273](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L273)
 
 #### 參數
 
@@ -629,7 +629,7 @@ Object containing cache size and hit rate information
 
 > **getExtrema**(): `object`
 
-定義於: [packages/curve/src/b-curve.ts:1027](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1027)
+定義於: [packages/curve/src/b-curve.ts:1032](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1032)
 
 #### 回傳
 
@@ -649,7 +649,7 @@ Object containing cache size and hit rate information
 
 > **getLineIntersections**(`line`): `number`[]
 
-定義於: [packages/curve/src/b-curve.ts:1111](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1111)
+定義於: [packages/curve/src/b-curve.ts:1116](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1116)
 
 #### 參數
 
@@ -667,7 +667,7 @@ Object containing cache size and hit rate information
 
 > **getLUT**(`steps`): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:389](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L389)
+定義於: [packages/curve/src/b-curve.ts:390](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L390)
 
 #### 參數
 
@@ -685,7 +685,7 @@ Object containing cache size and hit rate information
 
 > **getLUTWithTVal**(`steps?`): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:404](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L404)
+定義於: [packages/curve/src/b-curve.ts:405](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L405)
 
 #### 參數
 
@@ -703,7 +703,7 @@ Object containing cache size and hit rate information
 
 > **getPointbyPercentage**(`percentage`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:181](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L181)
+定義於: [packages/curve/src/b-curve.ts:182](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L182)
 
 #### 參數
 
@@ -721,7 +721,7 @@ Object containing cache size and hit rate information
 
 > **getProjection**(`point`): `object`
 
-定義於: [packages/curve/src/b-curve.ts:661](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L661)
+定義於: [packages/curve/src/b-curve.ts:666](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L666)
 
 #### 參數
 
@@ -747,7 +747,7 @@ Object containing cache size and hit rate information
 
 > **getSelfIntersections**(): `object`[]
 
-定義於: [packages/curve/src/b-curve.ts:1142](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1142)
+定義於: [packages/curve/src/b-curve.ts:1147](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1147)
 
 #### 回傳
 
@@ -759,7 +759,7 @@ Object containing cache size and hit rate information
 
 > **lengthAtT**(`tVal`): `number`
 
-定義於: [packages/curve/src/b-curve.ts:430](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L430)
+定義於: [packages/curve/src/b-curve.ts:431](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L431)
 
 #### 參數
 
@@ -777,7 +777,7 @@ Object containing cache size and hit rate information
 
 > **normal**(`tVal`): `object`
 
-定義於: [packages/curve/src/b-curve.ts:1486](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1486)
+定義於: [packages/curve/src/b-curve.ts:1491](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1491)
 
 #### 參數
 
@@ -803,7 +803,7 @@ Object containing cache size and hit rate information
 
 > **preWarmCache**(`steps`): `void`
 
-定義於: [packages/curve/src/b-curve.ts:159](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L159)
+定義於: [packages/curve/src/b-curve.ts:160](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L160)
 
 Pre-warms the cache with commonly used t values for better performance
 
@@ -825,7 +825,7 @@ Number of steps to pre-cache (default: 100)
 
 > **refineBinary**(`curve`, `x`, `y`, `LUT`, `i`, `targetDistance`, `epsilon`): \{ `distance`: `number`; `point`: [`Point`](../type-aliases/Point.md); `tVal`: `number`; \} \| `undefined`
 
-定義於: [packages/curve/src/b-curve.ts:1349](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1349)
+定義於: [packages/curve/src/b-curve.ts:1354](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1354)
 
 #### 參數
 
@@ -867,7 +867,7 @@ Number of steps to pre-cache (default: 100)
 
 > **secondDerivative**(`tVal`): [`Point`](../type-aliases/Point.md)
 
-定義於: [packages/curve/src/b-curve.ts:949](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L949)
+定義於: [packages/curve/src/b-curve.ts:954](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L954)
 
 #### 參數
 
@@ -885,7 +885,7 @@ Number of steps to pre-cache (default: 100)
 
 > **setControlPointAtIndex**(`index`, `newPoint`): `boolean`
 
-定義於: [packages/curve/src/b-curve.ts:311](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L311)
+定義於: [packages/curve/src/b-curve.ts:312](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L312)
 
 #### 參數
 
@@ -907,7 +907,7 @@ Number of steps to pre-cache (default: 100)
 
 > **setControlPoints**(`controlPoints`): `void`
 
-定義於: [packages/curve/src/b-curve.ts:300](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L300)
+定義於: [packages/curve/src/b-curve.ts:301](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L301)
 
 #### 參數
 
@@ -925,7 +925,7 @@ Number of steps to pre-cache (default: 100)
 
 > **split**(`tVal`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-定義於: [packages/curve/src/b-curve.ts:502](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L502)
+定義於: [packages/curve/src/b-curve.ts:507](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L507)
 
 #### 參數
 
@@ -943,7 +943,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitAndTakeMidCurve**(`tVal`, `tVal2`): `BCurve`
 
-定義於: [packages/curve/src/b-curve.ts:653](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L653)
+定義於: [packages/curve/src/b-curve.ts:658](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L658)
 
 #### 參數
 
@@ -965,7 +965,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIn3Curves**(`tVal`, `tVal2`): \[`BCurve`, `BCurve`, `BCurve`\]
 
-定義於: [packages/curve/src/b-curve.ts:633](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L633)
+定義於: [packages/curve/src/b-curve.ts:638](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L638)
 
 #### 參數
 
@@ -987,7 +987,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIn3WithControlPoints**(`tVal`, `tVal2`): \[[`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[], [`Point`](../type-aliases/Point.md)[]\]
 
-定義於: [packages/curve/src/b-curve.ts:613](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L613)
+定義於: [packages/curve/src/b-curve.ts:618](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L618)
 
 #### 參數
 
@@ -1009,7 +1009,7 @@ Number of steps to pre-cache (default: 100)
 
 > **splitIntoCurves**(`tVal`): \[`BCurve`, `BCurve`\]
 
-定義於: [packages/curve/src/b-curve.ts:497](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L497)
+定義於: [packages/curve/src/b-curve.ts:502](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L502)
 
 #### 參數
 
@@ -1027,7 +1027,7 @@ Number of steps to pre-cache (default: 100)
 
 > **translateRotateControlPoints**(`translation`, `rotationAngle`): [`Point`](../type-aliases/Point.md)[]
 
-定義於: [packages/curve/src/b-curve.ts:1097](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1097)
+定義於: [packages/curve/src/b-curve.ts:1102](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1102)
 
 #### 參數
 

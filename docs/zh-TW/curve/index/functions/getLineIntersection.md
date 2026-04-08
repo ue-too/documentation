@@ -4,7 +4,7 @@
 
 > **getLineIntersection**(`startPoint`, `endPoint`, `startPoint2`, `endPoint2`): `object`
 
-定義於: [packages/curve/src/line.ts:112](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/line.ts#L112)
+定義於: [packages/curve/src/line.ts:112](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/line.ts#L112)
 
 ## 參數
 

@@ -4,7 +4,7 @@
 
 > **normalizeAngleZero2TwoPI**(`angle`): `number`
 
-定義於: [packages/board/src/camera/utils/rotation.ts:241](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/camera/utils/rotation.ts#L241)
+定義於: [packages/board/src/camera/utils/rotation.ts:241](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/camera/utils/rotation.ts#L241)
 
 Normalizes an angle to the range [0, 2π).
 

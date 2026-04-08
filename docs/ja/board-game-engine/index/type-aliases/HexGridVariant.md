@@ -4,4 +4,4 @@
 
 > **HexGridVariant** = `"odd-r"` \| `"even-r"` \| `"odd-q"` \| `"even-q"`
 
-定義: [grid-system/hex-grid.ts:17](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/hex-grid.ts#L17)
+定義: [grid-system/hex-grid.ts:17](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/hex-grid.ts#L17)

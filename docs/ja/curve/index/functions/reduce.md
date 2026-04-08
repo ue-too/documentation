@@ -4,7 +4,7 @@
 
 > **reduce**(`curve`): [`BCurve`](../classes/BCurve.md)[]
 
-定義: [packages/curve/src/b-curve.ts:1497](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/b-curve.ts#L1497)
+定義: [packages/curve/src/b-curve.ts:1502](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/b-curve.ts#L1502)
 
 Reduces a Bezier curve into simpler segments.
 

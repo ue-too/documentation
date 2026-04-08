@@ -4,7 +4,7 @@
 
 > **useCustomCameraMux**(`cameraMux`): `void`
 
-定義: [hooks/useBoardify.tsx:294](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-react-adapter/src/hooks/useBoardify.tsx#L294)
+定義: [hooks/useBoardify.tsx:294](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/hooks/useBoardify.tsx#L294)
 
 Hook to set a custom camera multiplexer on the board.
 

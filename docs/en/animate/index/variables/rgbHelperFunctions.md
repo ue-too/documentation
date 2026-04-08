@@ -4,7 +4,7 @@
 
 > `const` **rgbHelperFunctions**: [`AnimatableAttributeHelper`](../interfaces/AnimatableAttributeHelper.md)\<[`RGB`](../type-aliases/RGB.md)\>
 
-Defined in: [animatable-attribute.ts:276](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/animate/src/animatable-attribute.ts#L276)
+Defined in: [animatable-attribute.ts:276](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/animate/src/animatable-attribute.ts#L276)
 
 Built-in interpolation helper for animating RGB color values.
 

@@ -4,7 +4,7 @@
 
 > **CreateStateType**\<`ArrayLiteral`\> = `ArrayLiteral`\[`number`\]
 
-定義於: [interface.ts:57](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/being/src/interface.ts#L57)
+定義於: [interface.ts:57](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/being/src/interface.ts#L57)
 
 Utility type to derive a string literal union from a readonly array of string literals.
 

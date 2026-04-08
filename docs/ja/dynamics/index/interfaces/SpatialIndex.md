@@ -2,7 +2,7 @@
 
 # インターフェイス: SpatialIndex\<T\>
 
-定義: [dynamic-tree.ts:15](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/dynamic-tree.ts#L15)
+定義: [dynamic-tree.ts:15](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/dynamic-tree.ts#L15)
 
 Interface for spatial indexing data structures.
 
@@ -18,7 +18,7 @@ Interface for spatial indexing data structures.
 
 > **clear**(): `void`
 
-定義: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/dynamic-tree.ts#L16)
+定義: [dynamic-tree.ts:16](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/dynamic-tree.ts#L16)
 
 #### 戻り値
 
@@ -30,7 +30,7 @@ Interface for spatial indexing data structures.
 
 > `optional` **draw**(`context`): `void`
 
-定義: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/dynamic-tree.ts#L19)
+定義: [dynamic-tree.ts:19](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/dynamic-tree.ts#L19)
 
 #### パラメータ
 
@@ -48,7 +48,7 @@ Interface for spatial indexing data structures.
 
 > **insert**(`object`): `void`
 
-定義: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/dynamic-tree.ts#L17)
+定義: [dynamic-tree.ts:17](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/dynamic-tree.ts#L17)
 
 #### パラメータ
 
@@ -66,7 +66,7 @@ Interface for spatial indexing data structures.
 
 > **retrieve**(`object`): `T`[]
 
-定義: [dynamic-tree.ts:18](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/dynamics/src/dynamic-tree.ts#L18)
+定義: [dynamic-tree.ts:18](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/dynamics/src/dynamic-tree.ts#L18)
 
 #### パラメータ
 

@@ -4,7 +4,7 @@
 
 > **getComponentNameString**(`componentName`): `string`
 
-定義: [index.ts:247](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/ecs/src/index.ts#L247)
+定義: [index.ts:247](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/ecs/src/index.ts#L247)
 
 Helper function to get the string description from a component name symbol.
 Useful for debugging and serialization.

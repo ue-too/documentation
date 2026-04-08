@@ -2,7 +2,7 @@
 
 # 類別: OrthoGridSystem
 
-定義於: [grid-system/ortho-grid.ts:86](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L86)
+定義於: [grid-system/ortho-grid.ts:86](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L86)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new OrthoGridSystem**(`coordinator`): `OrthoGridSystem`
 
-定義於: [grid-system/ortho-grid.ts:90](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L90)
+定義於: [grid-system/ortho-grid.ts:90](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L90)
 
 #### 參數
 
@@ -32,7 +32,7 @@
 
 > **entities**: `Set`\<`number`\>
 
-定義於: [grid-system/ortho-grid.ts:87](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L87)
+定義於: [grid-system/ortho-grid.ts:87](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L87)
 
 #### 實作了
 
@@ -44,7 +44,7 @@
 
 > **addEntityToGridCell**(`grid`, `row`, `column`, `entity`, `direction`, `displace`): `void`
 
-定義於: [grid-system/ortho-grid.ts:124](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L124)
+定義於: [grid-system/ortho-grid.ts:124](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L124)
 
 #### 參數
 
@@ -82,7 +82,7 @@
 
 > **getCellEntityAt**(`grid`, `row`, `column`): `number` \| `null`
 
-定義於: [grid-system/ortho-grid.ts:218](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L218)
+定義於: [grid-system/ortho-grid.ts:218](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L218)
 
 #### 參數
 
@@ -108,7 +108,7 @@
 
 > **getEntireGridEntities**(`grid`): \{ `entities`: (`number` \| `null`)[][]; `hasHole`: `boolean`; \} \| `null`
 
-定義於: [grid-system/ortho-grid.ts:178](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/grid-system/ortho-grid.ts#L178)
+定義於: [grid-system/ortho-grid.ts:178](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/grid-system/ortho-grid.ts#L178)
 
 #### 參數
 

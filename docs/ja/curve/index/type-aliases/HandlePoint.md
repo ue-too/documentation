@@ -4,7 +4,7 @@
 
 > **HandlePoint** = `object`
 
-定義: [packages/curve/src/composite-curve.ts:13](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/composite-curve.ts#L13)
+定義: [packages/curve/src/composite-curve.ts:13](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/composite-curve.ts#L13)
 
 Handle point with position and type.
 
@@ -14,7 +14,7 @@ Handle point with position and type.
 
 > **position**: `Point`
 
-定義: [packages/curve/src/composite-curve.ts:14](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/composite-curve.ts#L14)
+定義: [packages/curve/src/composite-curve.ts:14](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/composite-curve.ts#L14)
 
 ***
 
@@ -22,4 +22,4 @@ Handle point with position and type.
 
 > **type**: [`HandleType`](HandleType.md)
 
-定義: [packages/curve/src/composite-curve.ts:15](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/curve/src/composite-curve.ts#L15)
+定義: [packages/curve/src/composite-curve.ts:15](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/curve/src/composite-curve.ts#L15)

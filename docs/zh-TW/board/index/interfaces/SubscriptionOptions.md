@@ -2,7 +2,7 @@
 
 # 介面: SubscriptionOptions
 
-定義於: [packages/board/src/utils/observable.ts:52](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L52)
+定義於: [packages/board/src/utils/observable.ts:52](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L52)
 
 Options for subscribing to an Observable.
 
@@ -32,6 +32,6 @@ controller.abort();
 
 > `optional` **signal**: `AbortSignal`
 
-定義於: [packages/board/src/utils/observable.ts:53](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board/src/utils/observable.ts#L53)
+定義於: [packages/board/src/utils/observable.ts:53](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board/src/utils/observable.ts#L53)
 
 Optional AbortSignal for automatic unsubscription

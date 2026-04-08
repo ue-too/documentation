@@ -4,7 +4,7 @@
 
 > **useBoardCamera**(): `ObservableBoardCamera`
 
-Defined in: [hooks/useBoardify.tsx:453](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-react-adapter/src/hooks/useBoardify.tsx#L453)
+Defined in: [hooks/useBoardify.tsx:453](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-react-adapter/src/hooks/useBoardify.tsx#L453)
 
 Hook to access the camera instance from the Board context.
 

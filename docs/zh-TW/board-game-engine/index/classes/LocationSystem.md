@@ -2,7 +2,7 @@
 
 # 類別: LocationSystem
 
-定義於: [zone-system/zone-component.ts:61](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
+定義於: [zone-system/zone-component.ts:61](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L61)
 
 ## 實作
 
@@ -14,7 +14,7 @@
 
 > **new LocationSystem**(`coordinator`): `LocationSystem`
 
-定義於: [zone-system/zone-component.ts:65](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
+定義於: [zone-system/zone-component.ts:65](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L65)
 
 #### 參數
 
@@ -32,7 +32,7 @@
 
 > **entities**: `Set`\<`number`\>
 
-定義於: [zone-system/zone-component.ts:62](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
+定義於: [zone-system/zone-component.ts:62](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L62)
 
 #### 實作了
 
@@ -44,7 +44,7 @@
 
 > **addEntityToZone**(`zoneEntity`, `entity`, `direction`): `void`
 
-定義於: [zone-system/zone-component.ts:178](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
+定義於: [zone-system/zone-component.ts:178](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L178)
 
 #### 參數
 
@@ -70,7 +70,7 @@
 
 > **getEntitiesInZone**(`zoneEntity`): `number`[]
 
-定義於: [zone-system/zone-component.ts:86](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
+定義於: [zone-system/zone-component.ts:86](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L86)
 
 #### 參數
 
@@ -88,7 +88,7 @@
 
 > **isZoneEmpty**(`zoneEntity`): `boolean`
 
-定義於: [zone-system/zone-component.ts:217](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
+定義於: [zone-system/zone-component.ts:217](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L217)
 
 #### 參數
 
@@ -106,7 +106,7 @@
 
 > **offsetZoneSortIndex**(`zoneEntity`, `offset`): `void`
 
-定義於: [zone-system/zone-component.ts:120](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
+定義於: [zone-system/zone-component.ts:120](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L120)
 
 #### 參數
 
@@ -128,7 +128,7 @@
 
 > **organizeZoneSortIndex**(`zoneEntity`): `number`
 
-定義於: [zone-system/zone-component.ts:136](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
+定義於: [zone-system/zone-component.ts:136](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L136)
 
 #### 參數
 
@@ -146,7 +146,7 @@
 
 > **shuffleZone**(`zoneEntity`): `void`
 
-定義於: [zone-system/zone-component.ts:154](https://github.com/ue-too/ue-too/blob/9b787448328cf446379b1ea4cc5f4c79149cbec8/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
+定義於: [zone-system/zone-component.ts:154](https://github.com/ue-too/ue-too/blob/79a36cf61d861e6b4e3302e81111636c6082a3db/packages/board-game-engine/src/zone-system/zone-component.ts#L154)
 
 #### 參數
 
