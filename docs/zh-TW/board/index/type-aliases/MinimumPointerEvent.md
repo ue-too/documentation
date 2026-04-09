@@ -4,7 +4,7 @@
 
 > **MinimumPointerEvent** = `object`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:43](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L43)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:43](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L43)
 
 Minimal pointer event interface for framework interoperability.
 
@@ -19,7 +19,7 @@ both vanilla JavaScript PointerEvents and framework-wrapped events (e.g., PixiJS
 
 > **button**: `number`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:45](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L45)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:45](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L45)
 
 Mouse button number (0=left, 1=middle, 2=right)
 
@@ -29,7 +29,7 @@ Mouse button number (0=left, 1=middle, 2=right)
 
 > **buttons**: `number`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:53](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L53)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:53](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L53)
 
 Bitmask of currently pressed buttons
 
@@ -39,7 +39,7 @@ Bitmask of currently pressed buttons
 
 > **clientX**: `number`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:49](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L49)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:49](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L49)
 
 X coordinate in window space
 
@@ -49,7 +49,7 @@ X coordinate in window space
 
 > **clientY**: `number`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:51](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L51)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:51](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L51)
 
 Y coordinate in window space
 
@@ -59,6 +59,6 @@ Y coordinate in window space
 
 > **pointerType**: `string`
 
-定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:47](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L47)
+定義於: [packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts:47](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/raw-input-parser/vanilla-kmt-event-parser.ts#L47)
 
 Pointer type ("mouse", "pen", "touch")

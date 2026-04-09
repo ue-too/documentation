@@ -2,7 +2,7 @@
 
 # インターフェイス: PinJointConstraint
 
-定義: [constraint.ts:254](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L254)
+定義: [constraint.ts:254](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L254)
 
 ## プロパティ
 
@@ -10,7 +10,7 @@
 
 > **anchorA**: `Point`
 
-定義: [constraint.ts:257](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L257)
+定義: [constraint.ts:257](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L257)
 
 ***
 
@@ -18,7 +18,7 @@
 
 > **anchorB**: `Point`
 
-定義: [constraint.ts:258](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L258)
+定義: [constraint.ts:258](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L258)
 
 ***
 
@@ -26,7 +26,7 @@
 
 > **bodyA**: [`RigidBody`](RigidBody.md)
 
-定義: [constraint.ts:255](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L255)
+定義: [constraint.ts:255](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L255)
 
 ***
 
@@ -34,4 +34,4 @@
 
 > **bodyB**: [`RigidBody`](RigidBody.md)
 
-定義: [constraint.ts:256](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L256)
+定義: [constraint.ts:256](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L256)

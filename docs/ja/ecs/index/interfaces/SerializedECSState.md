@@ -2,7 +2,7 @@
 
 # インターフェイス: SerializedECSState
 
-定義: [index.ts:370](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/ecs/src/index.ts#L370)
+定義: [index.ts:370](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/ecs/src/index.ts#L370)
 
 Serialized representation of the entire ECS state.
 
@@ -12,7 +12,7 @@ Serialized representation of the entire ECS state.
 
 > **entities**: [`SerializedEntity`](SerializedEntity.md)[]
 
-定義: [index.ts:372](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/ecs/src/index.ts#L372)
+定義: [index.ts:372](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/ecs/src/index.ts#L372)
 
 Array of all entities with their component data
 
@@ -22,6 +22,6 @@ Array of all entities with their component data
 
 > `optional` **schemas**: [`SerializedComponentSchema`](SerializedComponentSchema.md)[]
 
-定義: [index.ts:374](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/ecs/src/index.ts#L374)
+定義: [index.ts:374](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/ecs/src/index.ts#L374)
 
 Optional: Array of component schemas (if using schema-based components)

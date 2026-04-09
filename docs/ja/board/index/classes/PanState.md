@@ -2,7 +2,7 @@
 
 # クラス: PanState
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:557](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L557)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:557](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L557)
 
 ## Description
 
@@ -18,7 +18,7 @@ The pan state of the keyboard mouse and trackpad input state machine.
 
 > **new PanState**(): `PanState`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:563](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L563)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:563](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L563)
 
 #### 戻り値
 
@@ -70,7 +70,7 @@ The pan state of the keyboard mouse and trackpad input state machine.
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:567](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L567)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:567](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L567)
 
 #### 上書き
 
@@ -184,7 +184,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:591](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L591)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:591](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L591)
 
 #### パラメータ
 
@@ -242,7 +242,7 @@ keyof `EventPayloadMapping`[]
 
 > **leftPointerMoveHandler**(`context`, `payload`): [`KmtOutputEvent`](../type-aliases/KmtOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:595](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L595)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:595](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L595)
 
 #### パラメータ
 
@@ -264,7 +264,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:587](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L587)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:587](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L587)
 
 #### パラメータ
 

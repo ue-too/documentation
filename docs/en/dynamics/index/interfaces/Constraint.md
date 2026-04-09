@@ -2,7 +2,7 @@
 
 # Interface: Constraint
 
-Defined in: [constraint.ts:17](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L17)
+Defined in: [constraint.ts:17](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L17)
 
 Physics constraint interface.
 
@@ -20,7 +20,7 @@ to prevent drift over time.
 
 > **enforce**(`dt`): `void`
 
-Defined in: [constraint.ts:23](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/constraint.ts#L23)
+Defined in: [constraint.ts:23](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/constraint.ts#L23)
 
 Enforces the constraint for one timestep.
 

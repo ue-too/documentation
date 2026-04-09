@@ -4,7 +4,7 @@
 
 > **CameraEventMap** = `object`
 
-定義於: [packages/board/src/camera/update-publisher.ts:52](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L52)
+定義於: [packages/board/src/camera/update-publisher.ts:52](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L52)
 
 Mapping of camera event names to their payload types.
 Used for type-safe event subscription.
@@ -15,7 +15,7 @@ Used for type-safe event subscription.
 
 > **all**: [`AllCameraEventPayload`](AllCameraEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:60](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L60)
+定義於: [packages/board/src/camera/update-publisher.ts:60](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L60)
 
 Any camera change event (union of pan, zoom, rotate)
 
@@ -25,7 +25,7 @@ Any camera change event (union of pan, zoom, rotate)
 
 > **pan**: [`CameraPanEventPayload`](CameraPanEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:54](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L54)
+定義於: [packages/board/src/camera/update-publisher.ts:54](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L54)
 
 Position change event
 
@@ -35,7 +35,7 @@ Position change event
 
 > **rotate**: [`CameraRotateEventPayload`](CameraRotateEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:58](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L58)
+定義於: [packages/board/src/camera/update-publisher.ts:58](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L58)
 
 Rotation change event
 
@@ -45,6 +45,6 @@ Rotation change event
 
 > **zoom**: [`CameraZoomEventPayload`](CameraZoomEventPayload.md)
 
-定義於: [packages/board/src/camera/update-publisher.ts:56](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L56)
+定義於: [packages/board/src/camera/update-publisher.ts:56](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L56)
 
 Zoom level change event

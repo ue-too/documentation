@@ -2,7 +2,7 @@
 
 # 抽象 クラス: CompositeState\<EventPayloadMapping, Context, ParentStates, ChildStates, EventOutputMapping\>
 
-定義: [hierarchical.ts:106](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L106)
+定義: [hierarchical.ts:106](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L106)
 
 Composite state that contains a child state machine.
 
@@ -93,7 +93,7 @@ Event output mapping
 
 > `protected` **\_childStateMachineConfig**: [`ChildStateMachineConfig`](../interfaces/ChildStateMachineConfig.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\> \| `null` = `null`
 
-定義: [hierarchical.ts:120](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L120)
+定義: [hierarchical.ts:120](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L120)
 
 ***
 
@@ -101,7 +101,7 @@ Event output mapping
 
 > `protected` **\_context**: `Context` \| `null` = `null`
 
-定義: [hierarchical.ts:127](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L127)
+定義: [hierarchical.ts:127](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L127)
 
 ***
 
@@ -109,7 +109,7 @@ Event output mapping
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `ParentStates`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-定義: [interface.ts:855](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L855)
+定義: [interface.ts:855](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L855)
 
 #### 継承元
 
@@ -121,7 +121,7 @@ Event output mapping
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `ParentStates`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-定義: [interface.ts:851](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L851)
+定義: [interface.ts:851](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L851)
 
 #### 継承元
 
@@ -133,7 +133,7 @@ Event output mapping
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義: [interface.ts:846](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L846)
+定義: [interface.ts:846](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L846)
 
 #### 継承元
 
@@ -145,7 +145,7 @@ Event output mapping
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:834](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L834)
+定義: [interface.ts:834](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L834)
 
 #### 継承元
 
@@ -157,7 +157,7 @@ Event output mapping
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義: [interface.ts:845](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L845)
+定義: [interface.ts:845](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L845)
 
 #### 継承元
 
@@ -169,7 +169,7 @@ Event output mapping
 
 > `protected` **\_historyState**: `ChildStates` \| `null` = `null`
 
-定義: [hierarchical.ts:126](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L126)
+定義: [hierarchical.ts:126](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L126)
 
 ## アクセッサー
 
@@ -179,7 +179,7 @@ Event output mapping
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義: [interface.ts:884](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L884)
+定義: [interface.ts:884](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L884)
 
 ##### 戻り値
 
@@ -197,7 +197,7 @@ Event output mapping
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義: [interface.ts:869](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L869)
+定義: [interface.ts:869](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L869)
 
 ##### 戻り値
 
@@ -215,7 +215,7 @@ Event output mapping
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:875](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L875)
+定義: [interface.ts:875](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L875)
 
 ##### 戻り値
 
@@ -233,7 +233,7 @@ Event output mapping
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義: [interface.ts:865](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L865)
+定義: [interface.ts:865](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L865)
 
 ##### 戻り値
 
@@ -251,7 +251,7 @@ Event output mapping
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義: [interface.ts:859](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L859)
+定義: [interface.ts:859](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L859)
 
 ##### 戻り値
 
@@ -267,7 +267,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義: [hierarchical.ts:217](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L217)
+定義: [hierarchical.ts:217](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L217)
 
 #### パラメータ
 
@@ -297,7 +297,7 @@ keyof `EventPayloadMapping`[]
 
 > `abstract` `protected` **getChildStateMachine**(): [`ChildStateMachineConfig`](../interfaces/ChildStateMachineConfig.md)\<`EventPayloadMapping`, `Context`, `ChildStates`, `EventOutputMapping`\>
 
-定義: [hierarchical.ts:133](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L133)
+定義: [hierarchical.ts:133](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L133)
 
 Returns the configuration for the child state machine.
 Override this method to provide child state machine setup.
@@ -312,7 +312,7 @@ Override this method to provide child state machine setup.
 
 > **getCurrentChildState**(): `ChildStates` \| `null`
 
-定義: [hierarchical.ts:143](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L143)
+定義: [hierarchical.ts:143](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L143)
 
 Gets the current child state, or null if no child state machine is active.
 
@@ -326,7 +326,7 @@ Gets the current child state, or null if no child state machine is active.
 
 > **getStatePath**(`parentState`): [`HierarchicalStatePath`](../type-aliases/HierarchicalStatePath.md)\<`ParentStates`, `ChildStates`\>
 
-定義: [hierarchical.ts:164](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L164)
+定義: [hierarchical.ts:164](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L164)
 
 Gets the full hierarchical path of the current state.
 
@@ -346,7 +346,7 @@ Gets the full hierarchical path of the current state.
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`ParentStates`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [hierarchical.ts:255](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L255)
+定義: [hierarchical.ts:255](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L255)
 
 #### 型パラメーター
 
@@ -382,7 +382,7 @@ Gets the full hierarchical path of the current state.
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義: [hierarchical.ts:177](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/hierarchical.ts#L177)
+定義: [hierarchical.ts:177](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/hierarchical.ts#L177)
 
 #### パラメータ
 

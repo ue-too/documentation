@@ -4,7 +4,7 @@
 
 > **convert2WorldSpaceWithTransformationMatrix**(`point`, `transformationMatrix`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:567](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/utils/coordinate-conversion.ts#L567)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:567](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/utils/coordinate-conversion.ts#L567)
 
 Transforms a viewport point to world space using a precomputed transformation matrix.
 Faster than repeated function calls when transforming many points with the same camera state.

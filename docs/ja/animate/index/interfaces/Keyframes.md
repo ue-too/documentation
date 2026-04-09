@@ -2,7 +2,7 @@
 
 # インターフェイス: Keyframes\<T\>
 
-定義: [composite-animation.ts:1205](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1205)
+定義: [composite-animation.ts:1205](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1205)
 
 ## 型パラメーター
 
@@ -16,7 +16,7 @@
 
 > **keyframes**: [`Keyframe`](../type-aliases/Keyframe.md)\<`T`\>[]
 
-定義: [composite-animation.ts:1206](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1206)
+定義: [composite-animation.ts:1206](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1206)
 
 ## メソッド
 
@@ -24,7 +24,7 @@
 
 > **clearFrames**(): `void`
 
-定義: [composite-animation.ts:1210](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1210)
+定義: [composite-animation.ts:1210](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1210)
 
 #### 戻り値
 
@@ -36,7 +36,7 @@
 
 > **from**(`value`): `Keyframes`\<`T`\>
 
-定義: [composite-animation.ts:1207](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1207)
+定義: [composite-animation.ts:1207](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1207)
 
 #### パラメータ
 
@@ -54,7 +54,7 @@
 
 > **insertAt**(`percentage`, `value`): `void`
 
-定義: [composite-animation.ts:1209](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1209)
+定義: [composite-animation.ts:1209](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1209)
 
 #### パラメータ
 
@@ -76,7 +76,7 @@
 
 > **to**(`value`): `Keyframes`\<`T`\>
 
-定義: [composite-animation.ts:1208](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/composite-animation.ts#L1208)
+定義: [composite-animation.ts:1208](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/composite-animation.ts#L1208)
 
 #### パラメータ
 

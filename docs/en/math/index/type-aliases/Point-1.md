@@ -4,7 +4,7 @@
 
 > **Point** = `object`
 
-Defined in: [2dVector.ts:17](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/2dVector.ts#L17)
+Defined in: [2dVector.ts:17](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/2dVector.ts#L17)
 
 Represents a 2D or 3D point with optional z-coordinate.
 
@@ -29,7 +29,7 @@ const p3d: Point = { x: 10, y: 20, z: 30 };
 
 > **x**: `number`
 
-Defined in: [2dVector.ts:19](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/2dVector.ts#L19)
+Defined in: [2dVector.ts:19](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/2dVector.ts#L19)
 
 X-coordinate
 
@@ -39,7 +39,7 @@ X-coordinate
 
 > **y**: `number`
 
-Defined in: [2dVector.ts:21](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/2dVector.ts#L21)
+Defined in: [2dVector.ts:21](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/2dVector.ts#L21)
 
 Y-coordinate
 
@@ -49,6 +49,6 @@ Y-coordinate
 
 > `optional` **z**: `number`
 
-Defined in: [2dVector.ts:23](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/2dVector.ts#L23)
+Defined in: [2dVector.ts:23](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/2dVector.ts#L23)
 
 Optional Z-coordinate for 3D operations

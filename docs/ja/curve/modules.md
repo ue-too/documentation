@@ -1,4 +1,4 @@
-# @ue-too/curve v0.17.2
+# @ue-too/curve v0.17.3
 
 ## ドキュメント
 

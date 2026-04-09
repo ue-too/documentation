@@ -2,7 +2,7 @@
 
 # 抽象 類別: TemplateState\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義於: [interface.ts:826](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L826)
+定義於: [interface.ts:826](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L826)
 
 Abstract base class for state machine states.
 
@@ -134,7 +134,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_defer**: [`Defer`](../type-aliases/Defer.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-定義於: [interface.ts:855](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L855)
+定義於: [interface.ts:855](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L855)
 
 ***
 
@@ -142,7 +142,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_delay**: [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined` = `undefined`
 
-定義於: [interface.ts:851](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L851)
+定義於: [interface.ts:851](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L851)
 
 ***
 
@@ -150,7 +150,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_eventGuards**: `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:846](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L846)
+定義於: [interface.ts:846](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L846)
 
 ***
 
@@ -158,7 +158,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_eventReactions**: [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: [interface.ts:834](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L834)
+定義於: [interface.ts:834](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L834)
 
 ***
 
@@ -166,7 +166,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_guards**: [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義於: [interface.ts:845](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L845)
+定義於: [interface.ts:845](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L845)
 
 ## 存取器
 
@@ -176,7 +176,7 @@ Optional mapping of events to their output types
 
 > **get** **delay**(): [`Delay`](../type-aliases/Delay.md)\<`Context`, `EventPayloadMapping`, `States`, `EventOutputMapping`\> \| `undefined`
 
-定義於: [interface.ts:884](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L884)
+定義於: [interface.ts:884](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L884)
 
 ##### 回傳
 
@@ -194,7 +194,7 @@ Optional mapping of events to their output types
 
 > **get** **eventGuards**(): `Partial`\<[`EventGuards`](../type-aliases/EventGuards.md)\<`EventPayloadMapping`, `States`, `Context`, [`Guard`](../type-aliases/Guard.md)\<`Context`\>\>\>
 
-定義於: [interface.ts:869](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L869)
+定義於: [interface.ts:869](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L869)
 
 ##### 回傳
 
@@ -212,7 +212,7 @@ Optional mapping of events to their output types
 
 > **get** **eventReactions**(): [`EventReactions`](../type-aliases/EventReactions.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義於: [interface.ts:875](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L875)
+定義於: [interface.ts:875](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L875)
 
 ##### 回傳
 
@@ -230,7 +230,7 @@ Optional mapping of events to their output types
 
 > **get** **guards**(): [`Guard`](../type-aliases/Guard.md)\<`Context`\>
 
-定義於: [interface.ts:865](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L865)
+定義於: [interface.ts:865](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L865)
 
 ##### 回傳
 
@@ -248,7 +248,7 @@ Optional mapping of events to their output types
 
 > **get** **handlingEvents**(): keyof `EventPayloadMapping`[]
 
-定義於: [interface.ts:859](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L859)
+定義於: [interface.ts:859](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L859)
 
 ##### 回傳
 
@@ -260,7 +260,7 @@ keyof `EventPayloadMapping`[]
 
 > **beforeExit**(`context`, `stateMachine`, `to`): `void`
 
-定義於: [interface.ts:903](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L903)
+定義於: [interface.ts:903](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L903)
 
 #### 參數
 
@@ -290,7 +290,7 @@ keyof `EventPayloadMapping`[]
 
 > **handles**\<`K`\>(`args`, `context`, `stateMachine`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義於: [interface.ts:916](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L916)
+定義於: [interface.ts:916](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L916)
 
 #### 型別參數
 
@@ -326,7 +326,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`, `stateMachine`, `from`): `void`
 
-定義於: [interface.ts:890](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L890)
+定義於: [interface.ts:890](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L890)
 
 #### 參數
 

@@ -2,7 +2,7 @@
 
 # Class: TransitionState
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:265](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L265)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:265](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L265)
 
 State implementation for pan animations and transitions.
 Processes animation updates and allows user input to interrupt.
@@ -17,7 +17,7 @@ Processes animation updates and allows user input to interrupt.
 
 > **new TransitionState**(): `TransitionState`
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:271](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L271)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:271](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L271)
 
 #### Returns
 
@@ -69,7 +69,7 @@ Defined in: packages/being/dist/interface.d.ts:491
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`PanEventPayloadMapping`](../type-aliases/PanEventPayloadMapping.md), `BaseContext`, [`PanControlStates`](../type-aliases/PanControlStates.md), [`PanControlOutputMapping`](../type-aliases/PanControlOutputMapping.md)\>
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:275](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L275)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:275](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L275)
 
 #### Overrides
 
@@ -249,7 +249,7 @@ Defined in: packages/being/dist/interface.d.ts:501
 
 > **lockedOnObjectPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:335](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L335)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:335](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L335)
 
 #### Parameters
 
@@ -271,7 +271,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **lockedOnObjectPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:342](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L342)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:342](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L342)
 
 #### Parameters
 
@@ -293,7 +293,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **transitionPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:321](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L321)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:321](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L321)
 
 #### Parameters
 
@@ -315,7 +315,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **transitionPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:328](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L328)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:328](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L328)
 
 #### Parameters
 
@@ -367,7 +367,7 @@ Defined in: packages/being/dist/interface.d.ts:499
 
 > **userPanByInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:307](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L307)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:307](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L307)
 
 #### Parameters
 
@@ -389,7 +389,7 @@ Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control
 
 > **userPanToInputHandler**(`context`, `payload`): [`PanControlOutputEvent`](../type-aliases/PanControlOutputEvent.md)
 
-Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:314](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L314)
+Defined in: [packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts:314](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/animation-and-lock/pan-control-state-machine.ts#L314)
 
 #### Parameters
 

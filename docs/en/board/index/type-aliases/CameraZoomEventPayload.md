@@ -4,7 +4,7 @@
 
 > **CameraZoomEventPayload** = `object`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:29](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L29)
+Defined in: [packages/board/src/camera/update-publisher.ts:29](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L29)
 
 Payload for camera zoom (scale change) events.
 
@@ -14,6 +14,6 @@ Payload for camera zoom (scale change) events.
 
 > **deltaZoomAmount**: `number`
 
-Defined in: [packages/board/src/camera/update-publisher.ts:31](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/update-publisher.ts#L31)
+Defined in: [packages/board/src/camera/update-publisher.ts:31](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/update-publisher.ts#L31)
 
 Change in zoom level (positive = zoom in, negative = zoom out)

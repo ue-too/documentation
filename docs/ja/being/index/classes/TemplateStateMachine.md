@@ -2,7 +2,7 @@
 
 # クラス: TemplateStateMachine\<EventPayloadMapping, Context, States, EventOutputMapping\>
 
-定義: [interface.ts:561](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L561)
+定義: [interface.ts:561](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L561)
 
 Concrete implementation of a finite state machine.
 
@@ -111,7 +111,7 @@ Optional mapping of events to their output types
 
 > **new TemplateStateMachine**\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>(`states`, `initialState`, `context`, `autoStart`): `TemplateStateMachine`\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>
 
-定義: [interface.ts:592](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L592)
+定義: [interface.ts:592](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L592)
 
 #### パラメータ
 
@@ -141,7 +141,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_context**: `Context`
 
-定義: [interface.ts:579](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L579)
+定義: [interface.ts:579](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L579)
 
 ***
 
@@ -149,7 +149,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_currentState**: `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義: [interface.ts:574](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L574)
+定義: [interface.ts:574](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L574)
 
 ***
 
@@ -157,7 +157,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_happensCallbacks**: (`args`, `context`) => `void`[]
 
-定義: [interface.ts:582](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L582)
+定義: [interface.ts:582](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L582)
 
 #### パラメータ
 
@@ -179,7 +179,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_initialState**: `States`
 
-定義: [interface.ts:590](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L590)
+定義: [interface.ts:590](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L590)
 
 ***
 
@@ -187,7 +187,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_stateChangeCallbacks**: [`StateChangeCallback`](../type-aliases/StateChangeCallback.md)\<`States`\>[]
 
-定義: [interface.ts:581](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L581)
+定義: [interface.ts:581](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L581)
 
 ***
 
@@ -195,7 +195,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_states**: `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:575](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L575)
+定義: [interface.ts:575](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L575)
 
 ***
 
@@ -203,7 +203,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_statesArray**: `States`[]
 
-定義: [interface.ts:580](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L580)
+定義: [interface.ts:580](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L580)
 
 ***
 
@@ -211,7 +211,7 @@ Optional mapping of events to their output types
 
 > `protected` **\_timeouts**: `number` \| `undefined` = `undefined`
 
-定義: [interface.ts:589](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L589)
+定義: [interface.ts:589](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L589)
 
 ## アクセッサー
 
@@ -221,7 +221,7 @@ Optional mapping of events to their output types
 
 > **get** **currentState**(): `"INITIAL"` \| `"TERMINAL"` \| `States`
 
-定義: [interface.ts:723](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L723)
+定義: [interface.ts:723](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L723)
 
 ##### 戻り値
 
@@ -239,7 +239,7 @@ Optional mapping of events to their output types
 
 > **get** **possibleStates**(): `States`[]
 
-定義: [interface.ts:731](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L731)
+定義: [interface.ts:731](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L731)
 
 ##### 戻り値
 
@@ -257,7 +257,7 @@ Optional mapping of events to their output types
 
 > **get** **states**(): `Record`\<`States`, [`State`](../interfaces/State.md)\<`EventPayloadMapping`, `Context`, `States`, `EventOutputMapping`\>\>
 
-定義: [interface.ts:735](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L735)
+定義: [interface.ts:735](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L735)
 
 ##### 戻り値
 
@@ -275,7 +275,7 @@ Optional mapping of events to their output types
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `K` *extends* keyof `EventOutputMapping` ? `EventOutputMapping`\[`K`\<`K`\>\] : `void`\>
 
-定義: [interface.ts:653](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L653)
+定義: [interface.ts:653](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L653)
 
 ##### 型パラメーター
 
@@ -301,7 +301,7 @@ Optional mapping of events to their output types
 
 > **happens**\<`K`\>(...`args`): [`EventResult`](../type-aliases/EventResult.md)\<`States`, `unknown`\>
 
-定義: [interface.ts:659](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L659)
+定義: [interface.ts:659](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L659)
 
 ##### 型パラメーター
 
@@ -329,7 +329,7 @@ Optional mapping of events to their output types
 
 > **onHappens**(`callback`): `void`
 
-定義: [interface.ts:711](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L711)
+定義: [interface.ts:711](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L711)
 
 #### パラメータ
 
@@ -351,7 +351,7 @@ Optional mapping of events to their output types
 
 > **onStateChange**(`callback`): `void`
 
-定義: [interface.ts:707](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L707)
+定義: [interface.ts:707](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L707)
 
 #### パラメータ
 
@@ -373,7 +373,7 @@ Optional mapping of events to their output types
 
 > **reset**(): `void`
 
-定義: [interface.ts:613](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L613)
+定義: [interface.ts:613](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L613)
 
 #### 戻り値
 
@@ -389,7 +389,7 @@ Optional mapping of events to their output types
 
 > **setContext**(`context`): `void`
 
-定義: [interface.ts:727](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L727)
+定義: [interface.ts:727](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L727)
 
 #### パラメータ
 
@@ -411,7 +411,7 @@ Optional mapping of events to their output types
 
 > **start**(): `void`
 
-定義: [interface.ts:619](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L619)
+定義: [interface.ts:619](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L619)
 
 #### 戻り値
 
@@ -427,7 +427,7 @@ Optional mapping of events to their output types
 
 > **switchTo**(`state`): `void`
 
-定義: [interface.ts:648](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L648)
+定義: [interface.ts:648](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L648)
 
 #### パラメータ
 
@@ -449,7 +449,7 @@ Optional mapping of events to their output types
 
 > **wrapup**(): `void`
 
-定義: [interface.ts:632](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/being/src/interface.ts#L632)
+定義: [interface.ts:632](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/being/src/interface.ts#L632)
 
 #### 戻り値
 

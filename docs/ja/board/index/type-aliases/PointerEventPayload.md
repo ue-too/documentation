@@ -4,7 +4,7 @@
 
 > **PointerEventPayload** = `object`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L58)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:58](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L58)
 
 Payload for pointer events (mouse button press/release/move).
 
@@ -14,7 +14,7 @@ Payload for pointer events (mouse button press/release/move).
 
 > **x**: `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L59)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:59](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L59)
 
 X coordinate in window space
 
@@ -24,6 +24,6 @@ X coordinate in window space
 
 > **y**: `number`
 
-定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L60)
+定義: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:60](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L60)
 
 Y coordinate in window space

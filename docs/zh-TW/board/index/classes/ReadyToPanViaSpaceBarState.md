@@ -2,7 +2,7 @@
 
 # 類別: ReadyToPanViaSpaceBarState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:408](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L408)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:408](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L408)
 
 ## Description
 
@@ -18,7 +18,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > **new ReadyToPanViaSpaceBarState**(): `ReadyToPanViaSpaceBarState`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:414](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L414)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:414](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L414)
 
 #### 回傳
 
@@ -70,7 +70,7 @@ The ready to pan via space bar state of the keyboard mouse and trackpad input st
 
 > `protected` **\_eventReactions**: `EventReactions`\<[`KmtInputEventMapping`](../type-aliases/KmtInputEventMapping.md), [`KmtInputContext`](../interfaces/KmtInputContext.md), [`KmtInputStates`](../type-aliases/KmtInputStates.md), [`KmtInputEventOutputMapping`](../type-aliases/KmtInputEventOutputMapping.md)\>
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:418](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L418)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:418](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L418)
 
 #### 覆寫了
 
@@ -250,7 +250,7 @@ keyof `EventPayloadMapping`[]
 
 > **leftPointerDownHandler**(`context`, `payload`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:446](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L446)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:446](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L446)
 
 #### 參數
 
@@ -272,7 +272,7 @@ keyof `EventPayloadMapping`[]
 
 > **uponEnter**(`context`): `void`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:442](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L442)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:442](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L442)
 
 #### 參數
 

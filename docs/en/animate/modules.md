@@ -1,4 +1,4 @@
-# @ue-too/animate v0.17.2
+# @ue-too/animate v0.17.3
 
 ## Documents
 

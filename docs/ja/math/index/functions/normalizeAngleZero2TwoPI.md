@@ -4,7 +4,7 @@
 
 > **normalizeAngleZero2TwoPI**(`angle`): `number`
 
-定義: [index.ts:688](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/index.ts#L688)
+定義: [index.ts:688](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/index.ts#L688)
 
 Normalizes an angle to the range [0, 2π).
 

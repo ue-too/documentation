@@ -4,7 +4,7 @@
 
 > **convert2WorldSpaceAnchorAtCenter**(`point`, `cameraPosition`, `cameraZoomLevel`, `cameraRotation`): `Point`
 
-Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:166](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/utils/coordinate-conversion.ts#L166)
+Defined in: [packages/board/src/camera/utils/coordinate-conversion.ts:166](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/utils/coordinate-conversion.ts#L166)
 
 Converts a viewport point (center-anchored) to world space.
 This is the most commonly used viewport-to-world conversion function.

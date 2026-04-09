@@ -2,7 +2,7 @@
 
 # 介面: CameraMux
 
-定義於: [packages/board/src/camera/camera-mux/interface.ts:140](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/interface.ts#L140)
+定義於: [packages/board/src/camera/camera-mux/interface.ts:140](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/interface.ts#L140)
 
 Input multiplexer interface for camera control flow management.
 Acts as a gatekeeper that can allow or block camera inputs based on state.
@@ -60,7 +60,7 @@ class AnimatedMux implements CameraMux {
 
 > **notifyPanInput**(`diff`): [`CameraMuxPanOutput`](../type-aliases/CameraMuxPanOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/interface.ts:147](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/interface.ts#L147)
+定義於: [packages/board/src/camera/camera-mux/interface.ts:147](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/interface.ts#L147)
 
 Processes a pan input request.
 
@@ -84,7 +84,7 @@ Output indicating if pan is allowed and the delta to apply
 
 > **notifyRotationInput**(`deltaRotation`): [`CameraMuxRotationOutput`](../type-aliases/CameraMuxRotationOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/interface.ts:167](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/interface.ts#L167)
+定義於: [packages/board/src/camera/camera-mux/interface.ts:167](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/interface.ts#L167)
 
 Processes a rotation input request.
 
@@ -108,7 +108,7 @@ Output indicating if rotation is allowed and the delta to apply
 
 > **notifyZoomInput**(`deltaZoomAmount`, `anchorPoint`): [`CameraMuxZoomOutput`](../type-aliases/CameraMuxZoomOutput.md)
 
-定義於: [packages/board/src/camera/camera-mux/interface.ts:156](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-mux/interface.ts#L156)
+定義於: [packages/board/src/camera/camera-mux/interface.ts:156](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-mux/interface.ts#L156)
 
 Processes a zoom input request.
 

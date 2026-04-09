@@ -2,7 +2,7 @@
 
 # Interface: Precondition
 
-Defined in: [action-system/precondition.ts:3](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/action-system/precondition.ts#L3)
+Defined in: [action-system/precondition.ts:3](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/action-system/precondition.ts#L3)
 
 ## Methods
 
@@ -10,7 +10,7 @@ Defined in: [action-system/precondition.ts:3](https://github.com/ue-too/ue-too/b
 
 > **check**(): `boolean`
 
-Defined in: [action-system/precondition.ts:4](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/action-system/precondition.ts#L4)
+Defined in: [action-system/precondition.ts:4](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/action-system/precondition.ts#L4)
 
 #### Returns
 

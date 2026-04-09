@@ -2,7 +2,7 @@
 
 # 類別: VisaulCircleBody
 
-定義於: [rigidbody.ts:359](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L359)
+定義於: [rigidbody.ts:359](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L359)
 
 Rigid body interface for 2D physics simulation.
 
@@ -25,7 +25,7 @@ Implemented by [Circle](Circle.md) and [Polygon](Polygon.md) classes.
 
 > **new VisaulCircleBody**(`center`, `radius`, `drawingContext`, `_orientationAngle`, `mass`, `isStatic`, `frictionEnabled`): `VisaulCircleBody`
 
-定義於: [rigidbody.ts:372](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L372)
+定義於: [rigidbody.ts:372](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L372)
 
 #### 參數
 
@@ -67,7 +67,7 @@ Implemented by [Circle](Circle.md) and [Polygon](Polygon.md) classes.
 
 > **collisionFilter**: [`CollisionFilter`](../interfaces/CollisionFilter.md)
 
-定義於: [rigidbody.ts:364](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L364)
+定義於: [rigidbody.ts:364](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L364)
 
 Collision filtering configuration
 
@@ -81,7 +81,7 @@ Collision filtering configuration
 
 > **isSleeping**: `boolean` = `false`
 
-定義於: [rigidbody.ts:367](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L367)
+定義於: [rigidbody.ts:367](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L367)
 
 #### 實作了
 
@@ -93,7 +93,7 @@ Collision filtering configuration
 
 > **sleepThreshold**: `number` = `0.01`
 
-定義於: [rigidbody.ts:368](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L368)
+定義於: [rigidbody.ts:368](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L368)
 
 #### 實作了
 
@@ -105,7 +105,7 @@ Collision filtering configuration
 
 > **sleepTime**: `number` = `0.5`
 
-定義於: [rigidbody.ts:369](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L369)
+定義於: [rigidbody.ts:369](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L369)
 
 #### 實作了
 
@@ -117,7 +117,7 @@ Collision filtering configuration
 
 > **timeAtRest**: `number` = `0`
 
-定義於: [rigidbody.ts:370](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L370)
+定義於: [rigidbody.ts:370](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L370)
 
 #### 實作了
 
@@ -131,7 +131,7 @@ Collision filtering configuration
 
 > **get** **AABB**(): `object`
 
-定義於: [rigidbody.ts:429](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L429)
+定義於: [rigidbody.ts:429](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L429)
 
 Axis-Aligned Bounding Box for broad phase collision
 
@@ -161,7 +161,7 @@ Axis-Aligned Bounding Box for broad phase collision
 
 > **get** **angularVelocity**(): `number`
 
-定義於: [rigidbody.ts:477](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L477)
+定義於: [rigidbody.ts:477](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L477)
 
 Angular velocity (radians/second)
 
@@ -173,7 +173,7 @@ Angular velocity (radians/second)
 
 > **set** **angularVelocity**(`angularVelocity`): `void`
 
-定義於: [rigidbody.ts:473](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L473)
+定義於: [rigidbody.ts:473](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L473)
 
 Angular velocity (radians/second)
 
@@ -201,7 +201,7 @@ Angular velocity (radians/second)
 
 > **get** **center**(): `Point`
 
-定義於: [rigidbody.ts:449](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L449)
+定義於: [rigidbody.ts:449](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L449)
 
 Center position in world coordinates
 
@@ -213,7 +213,7 @@ Center position in world coordinates
 
 > **set** **center**(`dest`): `void`
 
-定義於: [rigidbody.ts:453](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L453)
+定義於: [rigidbody.ts:453](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L453)
 
 Center position in world coordinates
 
@@ -241,7 +241,7 @@ Center position in world coordinates
 
 > **get** **linearVelocity**(): `Point`
 
-定義於: [rigidbody.ts:457](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L457)
+定義於: [rigidbody.ts:457](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L457)
 
 Linear velocity (pixels/second)
 
@@ -253,7 +253,7 @@ Linear velocity (pixels/second)
 
 > **set** **linearVelocity**(`dest`): `void`
 
-定義於: [rigidbody.ts:461](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L461)
+定義於: [rigidbody.ts:461](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L461)
 
 Linear velocity (pixels/second)
 
@@ -281,7 +281,7 @@ Linear velocity (pixels/second)
 
 > **get** **mass**(): `number`
 
-定義於: [rigidbody.ts:481](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L481)
+定義於: [rigidbody.ts:481](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L481)
 
 Mass in arbitrary units (affects force response)
 
@@ -303,7 +303,7 @@ Mass in arbitrary units (affects force response)
 
 > **get** **momentOfInertia**(): `number`
 
-定義於: [rigidbody.ts:504](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L504)
+定義於: [rigidbody.ts:504](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L504)
 
 Moment of inertia (rotational mass)
 
@@ -325,7 +325,7 @@ Moment of inertia (rotational mass)
 
 > **get** **orientationAngle**(): `number`
 
-定義於: [rigidbody.ts:465](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L465)
+定義於: [rigidbody.ts:465](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L465)
 
 Rotation angle in radians
 
@@ -347,7 +347,7 @@ Rotation angle in radians
 
 > **get** **staticFrictionCoeff**(): `number`
 
-定義於: [rigidbody.ts:489](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L489)
+定義於: [rigidbody.ts:489](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L489)
 
 Static friction coefficient (0-1)
 
@@ -359,7 +359,7 @@ Static friction coefficient (0-1)
 
 > **set** **staticFrictionCoeff**(`coeff`): `void`
 
-定義於: [rigidbody.ts:493](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L493)
+定義於: [rigidbody.ts:493](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L493)
 
 Static friction coefficient (0-1)
 
@@ -385,7 +385,7 @@ Static friction coefficient (0-1)
 
 > **applyForce**(`force`): `void`
 
-定義於: [rigidbody.ts:425](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L425)
+定義於: [rigidbody.ts:425](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L425)
 
 #### 參數
 
@@ -407,7 +407,7 @@ Static friction coefficient (0-1)
 
 > **applyForceInOrientation**(`force`): `void`
 
-定義於: [rigidbody.ts:437](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L437)
+定義於: [rigidbody.ts:437](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L437)
 
 #### 參數
 
@@ -429,7 +429,7 @@ Static friction coefficient (0-1)
 
 > **draw**(`ctx`): `void`
 
-定義於: [rigidbody.ts:392](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L392)
+定義於: [rigidbody.ts:392](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L392)
 
 #### 參數
 
@@ -451,7 +451,7 @@ Static friction coefficient (0-1)
 
 > **getAdjacentFaces**(`collisionNormal`): `object`[]
 
-定義於: [rigidbody.ts:497](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L497)
+定義於: [rigidbody.ts:497](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L497)
 
 #### 參數
 
@@ -473,7 +473,7 @@ Static friction coefficient (0-1)
 
 > **getCollisionAxes**(`relativeBody`): `Point`[]
 
-定義於: [rigidbody.ts:421](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L421)
+定義於: [rigidbody.ts:421](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L421)
 
 #### 參數
 
@@ -495,7 +495,7 @@ Static friction coefficient (0-1)
 
 > **getMass**(): `number`
 
-定義於: [rigidbody.ts:433](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L433)
+定義於: [rigidbody.ts:433](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L433)
 
 #### 回傳
 
@@ -507,7 +507,7 @@ Static friction coefficient (0-1)
 
 > **getMinMaxProjection**(`unitvector`): `object`
 
-定義於: [rigidbody.ts:417](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L417)
+定義於: [rigidbody.ts:417](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L417)
 
 #### 參數
 
@@ -537,7 +537,7 @@ Static friction coefficient (0-1)
 
 > **getNormalOfSignificantFace**(`collisionNormal`): `Point`
 
-定義於: [rigidbody.ts:485](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L485)
+定義於: [rigidbody.ts:485](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L485)
 
 #### 參數
 
@@ -559,7 +559,7 @@ Static friction coefficient (0-1)
 
 > **getSignificantVertices**(`collisionNormal`): `Point`[]
 
-定義於: [rigidbody.ts:445](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L445)
+定義於: [rigidbody.ts:445](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L445)
 
 #### 參數
 
@@ -581,7 +581,7 @@ Static friction coefficient (0-1)
 
 > **isMovingStatic**(): `boolean`
 
-定義於: [rigidbody.ts:413](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L413)
+定義於: [rigidbody.ts:413](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L413)
 
 #### 回傳
 
@@ -597,7 +597,7 @@ Static friction coefficient (0-1)
 
 > **isStatic**(): `boolean`
 
-定義於: [rigidbody.ts:409](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L409)
+定義於: [rigidbody.ts:409](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L409)
 
 #### 回傳
 
@@ -613,7 +613,7 @@ Static friction coefficient (0-1)
 
 > **move**(`delta`): `void`
 
-定義於: [rigidbody.ts:441](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L441)
+定義於: [rigidbody.ts:441](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L441)
 
 #### 參數
 
@@ -635,7 +635,7 @@ Static friction coefficient (0-1)
 
 > **setSleeping**(`sleeping`): `void`
 
-定義於: [rigidbody.ts:509](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L509)
+定義於: [rigidbody.ts:509](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L509)
 
 #### 參數
 
@@ -657,7 +657,7 @@ Static friction coefficient (0-1)
 
 > **significantVertex**(`collisionNormal`): `Point`
 
-定義於: [rigidbody.ts:469](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L469)
+定義於: [rigidbody.ts:469](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L469)
 
 #### 參數
 
@@ -679,7 +679,7 @@ Static friction coefficient (0-1)
 
 > **step**(`deltaTime`): `void`
 
-定義於: [rigidbody.ts:404](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L404)
+定義於: [rigidbody.ts:404](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L404)
 
 #### 參數
 
@@ -701,7 +701,7 @@ Static friction coefficient (0-1)
 
 > **updateSleeping**(`deltaTime`): `void`
 
-定義於: [rigidbody.ts:520](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/dynamics/src/rigidbody.ts#L520)
+定義於: [rigidbody.ts:520](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/dynamics/src/rigidbody.ts#L520)
 
 #### 參數
 
