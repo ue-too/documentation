@@ -2,7 +2,7 @@
 
 # 類別: NumberAnimationHelper
 
-定義於: [animatable-attribute.ts:149](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L149)
+定義於: [animatable-attribute.ts:149](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/animatable-attribute.ts#L149)
 
 Interface for type-specific interpolation helpers.
 
@@ -36,7 +36,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **new NumberAnimationHelper**(): `NumberAnimationHelper`
 
-定義於: [animatable-attribute.ts:150](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L150)
+定義於: [animatable-attribute.ts:150](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/animatable-attribute.ts#L150)
 
 #### 回傳
 
@@ -48,7 +48,7 @@ const myHelper: AnimatableAttributeHelper<number> = {
 
 > **lerp**(`ratio`, `start`, `end`): `number`
 
-定義於: [animatable-attribute.ts:152](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/animate/src/animatable-attribute.ts#L152)
+定義於: [animatable-attribute.ts:152](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/animate/src/animatable-attribute.ts#L152)
 
 Interpolates between two keyframes at a given ratio.
 

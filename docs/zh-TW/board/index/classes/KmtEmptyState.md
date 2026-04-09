@@ -2,7 +2,7 @@
 
 # 類別: KmtEmptyState
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:664](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L664)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:664](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L664)
 
 ## Extends
 
@@ -14,7 +14,7 @@
 
 > **new KmtEmptyState**(): `KmtEmptyState`
 
-定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:670](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L670)
+定義於: [packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts:670](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-state-machine/kmt-input-state-machine.ts#L670)
 
 #### 回傳
 

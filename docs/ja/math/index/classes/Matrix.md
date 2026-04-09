@@ -2,7 +2,7 @@
 
 # クラス: Matrix
 
-定義: [matrix.ts:3](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L3)
+定義: [matrix.ts:3](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L3)
 
 ## コンストラクター
 
@@ -10,7 +10,7 @@
 
 > **new Matrix**(`_matrix`): `Matrix`
 
-定義: [matrix.ts:6](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L6)
+定義: [matrix.ts:6](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L6)
 
 #### パラメータ
 
@@ -30,7 +30,7 @@
 
 > **get** **inverse**(): [`Matrix3x3`](../interfaces/Matrix3x3.md) \| `null`
 
-定義: [matrix.ts:10](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L10)
+定義: [matrix.ts:10](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L10)
 
 ##### 戻り値
 
@@ -42,7 +42,7 @@
 
 > **invertPoint**(`point`): [`Point`](../type-aliases/Point-1.md) \| `null`
 
-定義: [matrix.ts:23](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L23)
+定義: [matrix.ts:23](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L23)
 
 #### パラメータ
 
@@ -60,7 +60,7 @@
 
 > **setMatrix**(`matrix`): `void`
 
-定義: [matrix.ts:14](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L14)
+定義: [matrix.ts:14](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L14)
 
 #### パラメータ
 
@@ -78,7 +78,7 @@
 
 > **transformPoint**(`point`): [`Point`](../type-aliases/Point-1.md)
 
-定義: [matrix.ts:19](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/matrix.ts#L19)
+定義: [matrix.ts:19](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/matrix.ts#L19)
 
 #### パラメータ
 

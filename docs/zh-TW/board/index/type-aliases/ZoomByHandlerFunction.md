@@ -4,7 +4,7 @@
 
 > **ZoomByHandlerFunction** = (`delta`, `camera`, `config`) => `number`
 
-定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:161](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/camera/camera-rig/zoom-handler.ts#L161)
+定義於: [packages/board/src/camera/camera-rig/zoom-handler.ts:161](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/camera/camera-rig/zoom-handler.ts#L161)
 
 Handler function type for relative "zoom by" camera operations.
 

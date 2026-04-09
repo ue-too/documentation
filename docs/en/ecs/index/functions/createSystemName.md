@@ -4,7 +4,7 @@
 
 > **createSystemName**(`name`): `symbol`
 
-Defined in: [index.ts:287](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/ecs/src/index.ts#L287)
+Defined in: [index.ts:287](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/ecs/src/index.ts#L287)
 
 Helper function to create a system name from a string.
 This creates a unique symbol for the system name.

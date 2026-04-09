@@ -4,7 +4,7 @@
 
 > **intermediatePointOnGreatCircle**(`startCoord`, `endCoord`, `fraction`): [`GeoCoord`](../type-aliases/GeoCoord.md)
 
-定義: [greateCircle.ts:38](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/border/src/greateCircle.ts#L38)
+定義: [greateCircle.ts:38](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/border/src/greateCircle.ts#L38)
 
 Calculates an intermediate point along a great circle path.
 

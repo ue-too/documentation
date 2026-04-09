@@ -1,4 +1,4 @@
-# @ue-too/border v0.17.2
+# @ue-too/border v0.17.3
 
 ## ドキュメント
 

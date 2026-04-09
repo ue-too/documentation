@@ -4,7 +4,7 @@
 
 > **Board**(`props`): `Element`
 
-定義於: [components/Board.tsx:185](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-react-adapter/src/components/Board.tsx#L185)
+定義於: [components/Board.tsx:185](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-react-adapter/src/components/Board.tsx#L185)
 
 Main Board component with provider wrapper for React applications.
 

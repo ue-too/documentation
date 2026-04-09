@@ -4,7 +4,7 @@
 
 > **OutputEvent** = [`KmtOutputEvent`](KmtOutputEvent.md) \| [`TouchOutputEvent`](TouchOutputEvent.md)
 
-定義: [packages/board/src/input-interpretation/input-orchestrator.ts:23](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board/src/input-interpretation/input-orchestrator.ts#L23)
+定義: [packages/board/src/input-interpretation/input-orchestrator.ts:23](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board/src/input-interpretation/input-orchestrator.ts#L23)
 
 Union type of all output events from state machines.
 

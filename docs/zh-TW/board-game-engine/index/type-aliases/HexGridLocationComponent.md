@@ -4,7 +4,7 @@
 
 > **HexGridLocationComponent** = `object`
 
-定義於: [grid-system/hex-grid.ts:27](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/grid-system/hex-grid.ts#L27)
+定義於: [grid-system/hex-grid.ts:27](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/grid-system/hex-grid.ts#L27)
 
 ## 屬性
 
@@ -12,7 +12,7 @@
 
 > **grid**: `Entity`
 
-定義於: [grid-system/hex-grid.ts:28](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/grid-system/hex-grid.ts#L28)
+定義於: [grid-system/hex-grid.ts:28](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/grid-system/hex-grid.ts#L28)
 
 ***
 
@@ -20,7 +20,7 @@
 
 > **q**: `number`
 
-定義於: [grid-system/hex-grid.ts:29](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/grid-system/hex-grid.ts#L29)
+定義於: [grid-system/hex-grid.ts:29](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/grid-system/hex-grid.ts#L29)
 
 ***
 
@@ -28,4 +28,4 @@
 
 > **r**: `number`
 
-定義於: [grid-system/hex-grid.ts:30](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/board-game-engine/src/grid-system/hex-grid.ts#L30)
+定義於: [grid-system/hex-grid.ts:30](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/board-game-engine/src/grid-system/hex-grid.ts#L30)

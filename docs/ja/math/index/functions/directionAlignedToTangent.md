@@ -4,7 +4,7 @@
 
 > **directionAlignedToTangent**(`direction`, `tangent`): `boolean`
 
-定義: [index.ts:824](https://github.com/ue-too/ue-too/blob/feb7c80222df5d3cd97bfa1933bafe3190c6e48d/packages/math/src/index.ts#L824)
+定義: [index.ts:824](https://github.com/ue-too/ue-too/blob/68da915137a31a45d7ce8043b13275ff7283045d/packages/math/src/index.ts#L824)
 
 Checks if a direction vector is aligned with a tangent vector.
 
