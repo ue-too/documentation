@@ -74,6 +74,11 @@ const customGuides: Record<string, Record<Locale, { text: string; file: string }
     'zh-TW': { text: '使用指南', file: 'usage-guide' },
     ja: { text: '使用ガイド', file: 'usage-guide' },
   },
+  board: {
+    en: { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    'zh-TW': { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+    ja: { text: 'Extending Input State Machines', file: 'extending-input-state-machines' },
+  },
 }
 
 // Add overview link to the top of a package sidebar
